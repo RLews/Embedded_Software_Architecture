@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# source insight project
+*.si4project
+
+# mdk project build dir
+Objects
+Listings
