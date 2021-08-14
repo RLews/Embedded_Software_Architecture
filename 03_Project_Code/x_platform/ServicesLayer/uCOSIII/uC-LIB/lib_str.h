@@ -194,15 +194,15 @@
 *********************************************************************************************************
 */
 
-                                                                /* Configure floating point feature(s) [see Note #1] :  */
+/* Configure floating point feature(s) [see Note #1] :  */
 #ifndef  LIB_STR_CFG_FP_EN
 #define  LIB_STR_CFG_FP_EN                      DEF_DISABLED
-                                                                /*   DEF_DISABLED     Floating point functions DISABLED */
-                                                                /*   DEF_ENABLED      Floating point functions ENABLED  */
+/*   DEF_DISABLED     Floating point functions DISABLED */
+/*   DEF_ENABLED      Floating point functions ENABLED  */
 #endif
 
-                                                                /* Configure floating point feature(s)' number of ...   */
-                                                                /* ... significant digits (see Note #2).                */
+/* Configure floating point feature(s)' number of ...   */
+/* ... significant digits (see Note #2).                */
 #ifndef  LIB_STR_CFG_FP_MAX_NBR_DIG_SIG
 #define  LIB_STR_CFG_FP_MAX_NBR_DIG_SIG         LIB_STR_FP_MAX_NBR_DIG_SIG_DFLT
 #endif
@@ -258,7 +258,7 @@
 *********************************************************************************************************
 */
 
-                                                                /* See Note #1.                                         */
+/* See Note #1.                                         */
 #define  Str_FmtPrint                   snprintf
 #define  Str_FmtScan                    sscanf
 
@@ -269,113 +269,113 @@
 *********************************************************************************************************
 */
 
-                                                                /* ------------------ STR LEN  FNCTS ------------------ */
-CPU_SIZE_T   Str_Len            (const  CPU_CHAR      *pstr);
+/* ------------------ STR LEN  FNCTS ------------------ */
+CPU_SIZE_T   Str_Len(const  CPU_CHAR      *pstr);
 
-CPU_SIZE_T   Str_Len_N          (const  CPU_CHAR      *pstr,
-                                        CPU_SIZE_T     len_max);
-
-
-                                                                       /* ------------------ STR COPY FNCTS ------------------ */
-CPU_CHAR    *Str_Copy           (       CPU_CHAR      *pstr_dest,
-                                 const  CPU_CHAR      *pstr_src);
-
-CPU_CHAR    *Str_Copy_N         (       CPU_CHAR      *pstr_dest,
-                                 const  CPU_CHAR      *pstr_src,
-                                        CPU_SIZE_T     len_max);
+CPU_SIZE_T   Str_Len_N(const  CPU_CHAR      *pstr,
+                       CPU_SIZE_T     len_max);
 
 
-CPU_CHAR    *Str_Cat            (       CPU_CHAR      *pstr_dest,
-                                 const  CPU_CHAR      *pstr_cat);
+/* ------------------ STR COPY FNCTS ------------------ */
+CPU_CHAR    *Str_Copy(CPU_CHAR      *pstr_dest,
+                      const  CPU_CHAR      *pstr_src);
 
-CPU_CHAR    *Str_Cat_N          (       CPU_CHAR      *pstr_dest,
-                                 const  CPU_CHAR      *pstr_cat,
-                                        CPU_SIZE_T     len_max);
+CPU_CHAR    *Str_Copy_N(CPU_CHAR      *pstr_dest,
+                        const  CPU_CHAR      *pstr_src,
+                        CPU_SIZE_T     len_max);
 
 
-                                                                       /* ------------------ STR CMP  FNCTS ------------------ */
-CPU_INT16S   Str_Cmp            (const  CPU_CHAR      *p1_str,
-                                 const  CPU_CHAR      *p2_str);
+CPU_CHAR    *Str_Cat(CPU_CHAR      *pstr_dest,
+                     const  CPU_CHAR      *pstr_cat);
 
-CPU_INT16S   Str_Cmp_N          (const  CPU_CHAR      *p1_str,
-                                 const  CPU_CHAR      *p2_str,
-                                        CPU_SIZE_T     len_max);
+CPU_CHAR    *Str_Cat_N(CPU_CHAR      *pstr_dest,
+                       const  CPU_CHAR      *pstr_cat,
+                       CPU_SIZE_T     len_max);
 
-CPU_INT16S   Str_CmpIgnoreCase  (const  CPU_CHAR      *p1_str,
-                                 const  CPU_CHAR      *p2_str);
+
+/* ------------------ STR CMP  FNCTS ------------------ */
+CPU_INT16S   Str_Cmp(const  CPU_CHAR      *p1_str,
+                     const  CPU_CHAR      *p2_str);
+
+CPU_INT16S   Str_Cmp_N(const  CPU_CHAR      *p1_str,
+                       const  CPU_CHAR      *p2_str,
+                       CPU_SIZE_T     len_max);
+
+CPU_INT16S   Str_CmpIgnoreCase(const  CPU_CHAR      *p1_str,
+                               const  CPU_CHAR      *p2_str);
 
 CPU_INT16S   Str_CmpIgnoreCase_N(const  CPU_CHAR      *p1_str,
                                  const  CPU_CHAR      *p2_str,
-                                        CPU_SIZE_T     len_max);
+                                 CPU_SIZE_T     len_max);
 
 
-                                                                       /* ------------------ STR SRCH FNCTS ------------------ */
-CPU_CHAR    *Str_Char           (const  CPU_CHAR      *pstr,
-                                        CPU_CHAR       srch_char);
+/* ------------------ STR SRCH FNCTS ------------------ */
+CPU_CHAR    *Str_Char(const  CPU_CHAR      *pstr,
+                      CPU_CHAR       srch_char);
 
-CPU_CHAR    *Str_Char_N         (const  CPU_CHAR      *pstr,
-                                        CPU_SIZE_T     len_max,
-                                        CPU_CHAR       srch_char);
+CPU_CHAR    *Str_Char_N(const  CPU_CHAR      *pstr,
+                        CPU_SIZE_T     len_max,
+                        CPU_CHAR       srch_char);
 
-CPU_CHAR    *Str_Char_Last      (const  CPU_CHAR      *pstr,
-                                        CPU_CHAR       srch_char);
+CPU_CHAR    *Str_Char_Last(const  CPU_CHAR      *pstr,
+                           CPU_CHAR       srch_char);
 
-CPU_CHAR    *Str_Char_Last_N    (const  CPU_CHAR      *pstr,
-                                        CPU_SIZE_T     len_max,
-                                        CPU_CHAR       srch_char);
+CPU_CHAR    *Str_Char_Last_N(const  CPU_CHAR      *pstr,
+                             CPU_SIZE_T     len_max,
+                             CPU_CHAR       srch_char);
 
-CPU_CHAR    *Str_Char_Replace   (       CPU_CHAR      *pstr,
-                                        CPU_CHAR       char_srch,
-                                        CPU_CHAR       char_replace);
+CPU_CHAR    *Str_Char_Replace(CPU_CHAR      *pstr,
+                              CPU_CHAR       char_srch,
+                              CPU_CHAR       char_replace);
 
-CPU_CHAR    *Str_Char_Replace_N (       CPU_CHAR      *pstr,
-                                        CPU_CHAR       char_srch,
-                                        CPU_CHAR       char_replace,
-                                        CPU_SIZE_T     len_max);
+CPU_CHAR    *Str_Char_Replace_N(CPU_CHAR      *pstr,
+                                CPU_CHAR       char_srch,
+                                CPU_CHAR       char_replace,
+                                CPU_SIZE_T     len_max);
 
-CPU_CHAR    *Str_Str            (const  CPU_CHAR      *pstr,
-                                 const  CPU_CHAR      *pstr_srch);
+CPU_CHAR    *Str_Str(const  CPU_CHAR      *pstr,
+                     const  CPU_CHAR      *pstr_srch);
 
-CPU_CHAR    *Str_Str_N          (const  CPU_CHAR      *pstr,
-                                 const  CPU_CHAR      *pstr_srch,
-                                        CPU_SIZE_T     len_max);
+CPU_CHAR    *Str_Str_N(const  CPU_CHAR      *pstr,
+                       const  CPU_CHAR      *pstr_srch,
+                       CPU_SIZE_T     len_max);
 
 
-                                                                       /* ------------------ STR FMT  FNCTS ------------------ */
-CPU_CHAR    *Str_FmtNbr_Int32U  (       CPU_INT32U     nbr,
-                                        CPU_INT08U     nbr_dig,
-                                        CPU_INT08U     nbr_base,
-                                        CPU_CHAR       lead_char,
-                                        CPU_BOOLEAN    lower_case,
-                                        CPU_BOOLEAN    nul,
-                                        CPU_CHAR      *pstr);
+/* ------------------ STR FMT  FNCTS ------------------ */
+CPU_CHAR    *Str_FmtNbr_Int32U(CPU_INT32U     nbr,
+                               CPU_INT08U     nbr_dig,
+                               CPU_INT08U     nbr_base,
+                               CPU_CHAR       lead_char,
+                               CPU_BOOLEAN    lower_case,
+                               CPU_BOOLEAN    nul,
+                               CPU_CHAR      *pstr);
 
-CPU_CHAR    *Str_FmtNbr_Int32S  (       CPU_INT32S     nbr,
-                                        CPU_INT08U     nbr_dig,
-                                        CPU_INT08U     nbr_base,
-                                        CPU_CHAR       lead_char,
-                                        CPU_BOOLEAN    lower_case,
-                                        CPU_BOOLEAN    nul,
-                                        CPU_CHAR      *pstr);
+CPU_CHAR    *Str_FmtNbr_Int32S(CPU_INT32S     nbr,
+                               CPU_INT08U     nbr_dig,
+                               CPU_INT08U     nbr_base,
+                               CPU_CHAR       lead_char,
+                               CPU_BOOLEAN    lower_case,
+                               CPU_BOOLEAN    nul,
+                               CPU_CHAR      *pstr);
 
 #if (LIB_STR_CFG_FP_EN == DEF_ENABLED)
-CPU_CHAR    *Str_FmtNbr_32      (       CPU_FP32       nbr,
-                                        CPU_INT08U     nbr_dig,
-                                        CPU_INT08U     nbr_dp,
-                                        CPU_CHAR       lead_char,
-                                        CPU_BOOLEAN    nul,
-                                        CPU_CHAR      *pstr);
+CPU_CHAR    *Str_FmtNbr_32(CPU_FP32       nbr,
+                           CPU_INT08U     nbr_dig,
+                           CPU_INT08U     nbr_dp,
+                           CPU_CHAR       lead_char,
+                           CPU_BOOLEAN    nul,
+                           CPU_CHAR      *pstr);
 #endif
 
 
-                                                                       /* ----------------- STR PARSE FNCTS ------------------ */
+/* ----------------- STR PARSE FNCTS ------------------ */
 CPU_INT32U   Str_ParseNbr_Int32U(const  CPU_CHAR      *pstr,
-                                        CPU_CHAR     **pstr_next,
-                                        CPU_INT08U     nbr_base);
+                                 CPU_CHAR     **pstr_next,
+                                 CPU_INT08U     nbr_base);
 
 CPU_INT32S   Str_ParseNbr_Int32S(const  CPU_CHAR      *pstr,
-                                        CPU_CHAR     **pstr_next,
-                                        CPU_INT08U     nbr_base);
+                                 CPU_CHAR     **pstr_next,
+                                 CPU_INT08U     nbr_base);
 
 
 /*

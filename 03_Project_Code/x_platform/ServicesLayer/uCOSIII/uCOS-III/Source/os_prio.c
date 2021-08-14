@@ -14,11 +14,11 @@
 *
 * LICENSING TERMS:
 * ---------------
-*           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or 
+*           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or
 *           for peaceful research.  If you plan or intend to use uC/OS-III in a commercial application/
-*           product then, you need to contact Micrium to properly license uC/OS-III for its use in your 
-*           application/product.   We provide ALL the source code for your convenience and to help you 
-*           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use 
+*           product then, you need to contact Micrium to properly license uC/OS-III for its use in your
+*           application/product.   We provide ALL the source code for your convenience and to help you
+*           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use
 *           it commercially without paying a licensing fee.
 *
 *           Knowledge of the source code may NOT be used to develop a similar product.
@@ -39,8 +39,8 @@ const  CPU_CHAR  *os_prio__c = "$Id: $";
 
 
 CPU_DATA   OSPrioTbl[OS_PRIO_TBL_SIZE];                     /* Declare the array local to this file to allow for  ... */
-                                                            /* ... optimization.  In other words, this allows the ... */
-                                                            /* ... table to be located in fast memory                 */
+/* ... optimization.  In other words, this allows the ... */
+/* ... table to be located in fast memory                 */
 
 /*
 ************************************************************************************************************************
@@ -56,14 +56,15 @@ CPU_DATA   OSPrioTbl[OS_PRIO_TBL_SIZE];                     /* Declare the array
 ************************************************************************************************************************
 */
 
-void  OS_PrioInit (void)
+void  OS_PrioInit(void)
 {
     CPU_DATA  i;
 
 
-                                                            /* Clear the bitmap table ... no task is ready            */
-    for (i = 0u; i < OS_PRIO_TBL_SIZE; i++) {
-         OSPrioTbl[i] = (CPU_DATA)0;
+    /* Clear the bitmap table ... no task is ready            */
+    for(i = 0u; i < OS_PRIO_TBL_SIZE; i++)
+    {
+        OSPrioTbl[i] = (CPU_DATA)0;
     }
 }
 
@@ -82,7 +83,7 @@ void  OS_PrioInit (void)
 ************************************************************************************************************************
 */
 
-OS_PRIO  OS_PrioGetHighest (void)
+OS_PRIO  OS_PrioGetHighest(void)
 {
     CPU_DATA  *p_tbl;
     OS_PRIO    prio;
@@ -90,10 +91,13 @@ OS_PRIO  OS_PrioGetHighest (void)
 
     prio  = (OS_PRIO)0;
     p_tbl = &OSPrioTbl[0];
-    while (*p_tbl == (CPU_DATA)0) {                         /* Search the bitmap table for the highest priority       */
+
+    while(*p_tbl == (CPU_DATA)0)                            /* Search the bitmap table for the highest priority       */
+    {
         prio += DEF_INT_CPU_NBR_BITS;                       /* Compute the step of each CPU_DATA entry                */
         p_tbl++;
     }
+
     prio += (OS_PRIO)CPU_CntLeadZeros(*p_tbl);              /* Find the position of the first bit set at the entry    */
     return (prio);
 }
@@ -112,7 +116,7 @@ OS_PRIO  OS_PrioGetHighest (void)
 ************************************************************************************************************************
 */
 
-void  OS_PrioInsert (OS_PRIO  prio)
+void  OS_PrioInsert(OS_PRIO  prio)
 {
     CPU_DATA  bit;
     CPU_DATA  bit_nbr;
@@ -140,7 +144,7 @@ void  OS_PrioInsert (OS_PRIO  prio)
 ************************************************************************************************************************
 */
 
-void  OS_PrioRemove (OS_PRIO  prio)
+void  OS_PrioRemove(OS_PRIO  prio)
 {
     CPU_DATA  bit;
     CPU_DATA  bit_nbr;

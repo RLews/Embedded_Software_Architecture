@@ -27,15 +27,15 @@
 int main(void)
 {
 #if (D_RTE_OS_CONFIG == D_OS_UC_RTOS)
-	RTE_HAL_SYSINIT();
-	RTE_OSAL_OSINIT();
+    RTE_HAL_SYSINIT();
+    RTE_OSAL_OSINIT();
 #endif
 
-	while (1)
-	{
-		/* do nothing */
-	}
+    while(1)
+    {
+        /* do nothing */
+    }
 
-	return 0;
+    return 0;
 }
 

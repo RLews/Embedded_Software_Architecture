@@ -1,8 +1,8 @@
 /*!
 ************************************************************************************************************************
 * @file rte_bsw_hal_if.h
-* @brief 
-* @details 
+* @brief
+* @details
 * @author Lews Hammond
 * @date 2021-8-14
 ************************************************************************************************************************
@@ -24,13 +24,13 @@ extern "C" {
 
 
 /*! @brief 交互接口使用宏替换 */
-#define RTE_HAL_SYSINIT()						Hal_SysInit()
+#define RTE_HAL_SYSINIT()                       Hal_SysInit()
 
-#define RTE_OSAL_OSINIT()						Osal_OsInit()
+#define RTE_OSAL_OSINIT()                       Osal_OsInit()
 
-#define RTE_D_OSAL_ENTER_CRITICAL()				D_OSAL_ENTER_CRITICAL()
+#define RTE_D_OSAL_ENTER_CRITICAL()             D_OSAL_ENTER_CRITICAL()
 
-#define RTE_D_OSAL_EXIT_CRITICAL()				D_OSAL_EXIT_CRITICAL()
+#define RTE_D_OSAL_EXIT_CRITICAL()              D_OSAL_EXIT_CRITICAL()
 /* ...... */
 
 #ifdef __cplusplus

@@ -140,7 +140,7 @@
 #define  DEF_NULL                                          0
 
 
-                                                                /* ----------------- BOOLEAN DEFINES ------------------ */
+/* ----------------- BOOLEAN DEFINES ------------------ */
 #define  DEF_FALSE                                         0u
 #define  DEF_TRUE                                          1u
 
@@ -166,7 +166,7 @@
 #define  DEF_OK                                            1u
 
 
-                                                                /* ------------------- BIT DEFINES -------------------- */
+/* ------------------- BIT DEFINES -------------------- */
 #define  DEF_BIT_NONE                                   0x00u
 
 #define  DEF_BIT_00                                     0x01u
@@ -241,11 +241,11 @@
 #define  DEF_BIT_63                       0x8000000000000000u
 
 
-                                                                /* ------------------ ALIGN DEFINES ------------------- */
+/* ------------------ ALIGN DEFINES ------------------- */
 #define  DEF_ALIGN_MAX_NBR_OCTETS                       4096u
 
 
-                                                                /* ------------------ OCTET DEFINES ------------------- */
+/* ------------------ OCTET DEFINES ------------------- */
 #define  DEF_OCTET_NBR_BITS                                8u
 #define  DEF_OCTET_MASK                                 0xFFu
 
@@ -258,14 +258,14 @@
 #define  DEF_NIBBLE_MASK                                0x0Fu
 
 
-                                                                /* --------------- NUMBER BASE DEFINES ---------------- */
+/* --------------- NUMBER BASE DEFINES ---------------- */
 #define  DEF_NBR_BASE_BIN                                  2u
 #define  DEF_NBR_BASE_OCT                                  8u
 #define  DEF_NBR_BASE_DEC                                 10u
 #define  DEF_NBR_BASE_HEX                                 16u
 
 
-                                                                /* ----------------- INTEGER DEFINES ------------------ */
+/* ----------------- INTEGER DEFINES ------------------ */
 #define  DEF_INT_08_NBR_BITS                               8u
 #define  DEF_INT_08_MASK                                0xFFu
 
@@ -345,7 +345,7 @@
 #define  DEF_INT_64S_NBR_DIG_MAX                          19u
 
 
-                                                                /* --------------- CPU INTEGER DEFINES ---------------- */
+/* --------------- CPU INTEGER DEFINES ---------------- */
 #define  DEF_INT_CPU_NBR_BITS                           (CPU_CFG_DATA_SIZE     * DEF_OCTET_NBR_BITS)
 #define  DEF_INT_CPU_NBR_BITS_MAX                       (CPU_CFG_DATA_SIZE_MAX * DEF_OCTET_NBR_BITS)
 
@@ -423,7 +423,7 @@
 #endif
 
 
-                                                                /* ------------------- TIME DEFINES ------------------- */
+/* ------------------- TIME DEFINES ------------------- */
 #define  DEF_TIME_NBR_DAY_PER_WK                           7u
 #define  DEF_TIME_NBR_DAY_PER_YR                         365u
 #define  DEF_TIME_NBR_DAY_PER_YR_LEAP                    366u
@@ -459,7 +459,8 @@
 *********************************************************************************************************
 */
 
-typedef enum lib_err {
+typedef enum lib_err
+{
 
     LIB_ERR_NONE                            =         0u,
 
@@ -510,7 +511,7 @@ typedef enum lib_err {
 *********************************************************************************************************
 */
 
-                                                                /* Trace level, default to TRACE_LEVEL_OFF.             */
+/* Trace level, default to TRACE_LEVEL_OFF.             */
 #ifndef  TRACE_LEVEL_OFF
 #define  TRACE_LEVEL_OFF                                   0u
 #endif
@@ -1227,7 +1228,7 @@ typedef enum lib_err {
 *********************************************************************************************************
 */
 
-                                                                /* See 'lib_def.h  Note #1a'.                           */
+/* See 'lib_def.h  Note #1a'.                           */
 #if     (CPU_CORE_VERSION < 12900u)
 #error  "CPU_CORE_VERSION  [SHOULD be >= V1.29.00]"
 #endif

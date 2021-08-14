@@ -14,11 +14,11 @@
 *
 * LICENSING TERMS:
 * ---------------
-*           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or 
+*           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or
 *           for peaceful research.  If you plan or intend to use uC/OS-III in a commercial application/
-*           product then, you need to contact Micrium to properly license uC/OS-III for its use in your 
-*           application/product.   We provide ALL the source code for your convenience and to help you 
-*           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use 
+*           product then, you need to contact Micrium to properly license uC/OS-III for its use in your
+*           application/product.   We provide ALL the source code for your convenience and to help you
+*           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use
 *           it commercially without paying a licensing fee.
 *
 *           Knowledge of the source code may NOT be used to develop a similar product.
@@ -70,41 +70,53 @@ const  CPU_CHAR  *os_sem__c = "$Id: $";
 ************************************************************************************************************************
 */
 
-void  OSSemCreate (OS_SEM      *p_sem,
-                   CPU_CHAR    *p_name,
-                   OS_SEM_CTR   cnt,
-                   OS_ERR      *p_err)
+void  OSSemCreate(OS_SEM      *p_sem,
+                  CPU_CHAR    *p_name,
+                  OS_SEM_CTR   cnt,
+                  OS_ERR      *p_err)
 {
     CPU_SR_ALLOC();
 
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return;
     }
+
 #endif
 
 #ifdef OS_SAFETY_CRITICAL_IEC61508
-    if (OSSafetyCriticalStartFlag == DEF_TRUE) {
-       *p_err = OS_ERR_ILLEGAL_CREATE_RUN_TIME;
+
+    if(OSSafetyCriticalStartFlag == DEF_TRUE)
+    {
+        *p_err = OS_ERR_ILLEGAL_CREATE_RUN_TIME;
         return;
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0) {              /* Not allowed to be called from an ISR                   */
-       *p_err = OS_ERR_CREATE_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0)                 /* Not allowed to be called from an ISR                   */
+    {
+        *p_err = OS_ERR_CREATE_ISR;
         return;
     }
+
 #endif
 
 #if OS_CFG_ARG_CHK_EN > 0u
-    if (p_sem == (OS_SEM *)0) {                             /* Validate 'p_sem'                                       */
-       *p_err = OS_ERR_OBJ_PTR_NULL;
+
+    if(p_sem == (OS_SEM *)0)                                /* Validate 'p_sem'                                       */
+    {
+        *p_err = OS_ERR_OBJ_PTR_NULL;
         return;
     }
+
 #endif
 
     OS_CRITICAL_ENTER();
@@ -120,7 +132,7 @@ void  OSSemCreate (OS_SEM      *p_sem,
     OSSemQty++;
 
     OS_CRITICAL_EXIT_NO_SCHED();
-   *p_err = OS_ERR_NONE;
+    *p_err = OS_ERR_NONE;
 }
 
 /*$PAGE*/
@@ -160,9 +172,9 @@ void  OSSemCreate (OS_SEM      *p_sem,
 */
 
 #if OS_CFG_SEM_DEL_EN > 0u
-OS_OBJ_QTY  OSSemDel (OS_SEM  *p_sem,
-                      OS_OPT   opt,
-                      OS_ERR  *p_err)
+OS_OBJ_QTY  OSSemDel(OS_SEM  *p_sem,
+                     OS_OPT   opt,
+                     OS_ERR  *p_err)
 {
     OS_OBJ_QTY     cnt;
     OS_OBJ_QTY     nbr_tasks;
@@ -175,88 +187,112 @@ OS_OBJ_QTY  OSSemDel (OS_SEM  *p_sem,
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return ((OS_OBJ_QTY)0);
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0) {              /* Not allowed to delete a semaphore from an ISR          */
-       *p_err = OS_ERR_DEL_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0)                 /* Not allowed to delete a semaphore from an ISR          */
+    {
+        *p_err = OS_ERR_DEL_ISR;
         return ((OS_OBJ_QTY)0);
     }
+
 #endif
 
 #if OS_CFG_ARG_CHK_EN > 0u
-    if (p_sem == (OS_SEM *)0) {                             /* Validate 'p_sem'                                       */
-       *p_err = OS_ERR_OBJ_PTR_NULL;
+
+    if(p_sem == (OS_SEM *)0)                                /* Validate 'p_sem'                                       */
+    {
+        *p_err = OS_ERR_OBJ_PTR_NULL;
         return ((OS_OBJ_QTY)0);
     }
-    switch (opt) {                                          /* Validate 'opt'                                         */
+
+    switch(opt)                                             /* Validate 'opt'                                         */
+    {
         case OS_OPT_DEL_NO_PEND:
         case OS_OPT_DEL_ALWAYS:
-             break;
+            break;
 
         default:
             *p_err = OS_ERR_OPT_INVALID;
-             return ((OS_OBJ_QTY)0);
+            return ((OS_OBJ_QTY)0);
     }
+
 #endif
 
 #if OS_CFG_OBJ_TYPE_CHK_EN > 0u
-    if (p_sem->Type != OS_OBJ_TYPE_SEM) {                   /* Make sure semaphore was created                        */
-       *p_err = OS_ERR_OBJ_TYPE;
+
+    if(p_sem->Type != OS_OBJ_TYPE_SEM)                      /* Make sure semaphore was created                        */
+    {
+        *p_err = OS_ERR_OBJ_TYPE;
         return ((OS_OBJ_QTY)0);
     }
+
 #endif
 
     CPU_CRITICAL_ENTER();
     p_pend_list = &p_sem->PendList;
     cnt         = p_pend_list->NbrEntries;
     nbr_tasks   = cnt;
-    switch (opt) {
+
+    switch(opt)
+    {
         case OS_OPT_DEL_NO_PEND:                            /* Delete semaphore only if no task waiting               */
-             if (nbr_tasks == (OS_OBJ_QTY)0) {
+            if(nbr_tasks == (OS_OBJ_QTY)0)
+            {
 #if OS_CFG_DBG_EN > 0u
-                 OS_SemDbgListRemove(p_sem);
+                OS_SemDbgListRemove(p_sem);
 #endif
-                 OSSemQty--;
-                 OS_SemClr(p_sem);
-                 CPU_CRITICAL_EXIT();
+                OSSemQty--;
+                OS_SemClr(p_sem);
+                CPU_CRITICAL_EXIT();
                 *p_err = OS_ERR_NONE;
-             } else {
-                 CPU_CRITICAL_EXIT();
+            }
+            else
+            {
+                CPU_CRITICAL_EXIT();
                 *p_err = OS_ERR_TASK_WAITING;
-             }
-             break;
+            }
+
+            break;
 
         case OS_OPT_DEL_ALWAYS:                             /* Always delete the semaphore                            */
-             OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
-             ts = OS_TS_GET();                              /* Get local time stamp so all tasks get the same time    */
-             while (cnt > 0u) {                             /* Remove all tasks on the pend list                      */
-                 p_pend_data = p_pend_list->HeadPtr;
-                 p_tcb       = p_pend_data->TCBPtr;
-                 OS_PendObjDel((OS_PEND_OBJ *)((void *)p_sem),
-                               p_tcb,
-                               ts);
-                 cnt--;
-             }
+            OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
+            ts = OS_TS_GET();                              /* Get local time stamp so all tasks get the same time    */
+
+            while(cnt > 0u)                                /* Remove all tasks on the pend list                      */
+            {
+                p_pend_data = p_pend_list->HeadPtr;
+                p_tcb       = p_pend_data->TCBPtr;
+                OS_PendObjDel((OS_PEND_OBJ *)((void *)p_sem),
+                              p_tcb,
+                              ts);
+                cnt--;
+            }
+
 #if OS_CFG_DBG_EN > 0u
-             OS_SemDbgListRemove(p_sem);
+            OS_SemDbgListRemove(p_sem);
 #endif
-             OSSemQty--;
-             OS_SemClr(p_sem);
-             OS_CRITICAL_EXIT_NO_SCHED();
-             OSSched();                                     /* Find highest priority task ready to run                */
+            OSSemQty--;
+            OS_SemClr(p_sem);
+            OS_CRITICAL_EXIT_NO_SCHED();
+            OSSched();                                     /* Find highest priority task ready to run                */
             *p_err = OS_ERR_NONE;
-             break;
+            break;
 
         default:
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_OPT_INVALID;
-             break;
+            break;
     }
+
     return ((OS_OBJ_QTY)nbr_tasks);
 }
 #endif
@@ -308,11 +344,11 @@ OS_OBJ_QTY  OSSemDel (OS_SEM  *p_sem,
 ************************************************************************************************************************
 */
 
-OS_SEM_CTR  OSSemPend (OS_SEM   *p_sem,
-                       OS_TICK   timeout,
-                       OS_OPT    opt,
-                       CPU_TS   *p_ts,
-                       OS_ERR   *p_err)
+OS_SEM_CTR  OSSemPend(OS_SEM   *p_sem,
+                      OS_TICK   timeout,
+                      OS_OPT    opt,
+                      CPU_TS   *p_ts,
+                      OS_ERR   *p_err)
 {
     OS_SEM_CTR    ctr;
     OS_PEND_DATA  pend_data;
@@ -321,66 +357,91 @@ OS_SEM_CTR  OSSemPend (OS_SEM   *p_sem,
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return ((OS_SEM_CTR)0);
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0) {              /* Not allowed to call from an ISR                        */
-       *p_err = OS_ERR_PEND_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0)                 /* Not allowed to call from an ISR                        */
+    {
+        *p_err = OS_ERR_PEND_ISR;
         return ((OS_SEM_CTR)0);
     }
+
 #endif
 
 #if OS_CFG_ARG_CHK_EN > 0u
-    if (p_sem == (OS_SEM *)0) {                             /* Validate 'p_sem'                                       */
-       *p_err = OS_ERR_OBJ_PTR_NULL;
+
+    if(p_sem == (OS_SEM *)0)                                /* Validate 'p_sem'                                       */
+    {
+        *p_err = OS_ERR_OBJ_PTR_NULL;
         return ((OS_SEM_CTR)0);
     }
-    switch (opt) {                                          /* Validate 'opt'                                         */
+
+    switch(opt)                                             /* Validate 'opt'                                         */
+    {
         case OS_OPT_PEND_BLOCKING:
         case OS_OPT_PEND_NON_BLOCKING:
-             break;
+            break;
 
         default:
             *p_err = OS_ERR_OPT_INVALID;
-             return ((OS_SEM_CTR)0);
+            return ((OS_SEM_CTR)0);
     }
+
 #endif
 
 #if OS_CFG_OBJ_TYPE_CHK_EN > 0u
-    if (p_sem->Type != OS_OBJ_TYPE_SEM) {                   /* Make sure semaphore was created                        */
-       *p_err = OS_ERR_OBJ_TYPE;
+
+    if(p_sem->Type != OS_OBJ_TYPE_SEM)                      /* Make sure semaphore was created                        */
+    {
+        *p_err = OS_ERR_OBJ_TYPE;
         return ((OS_SEM_CTR)0);
     }
+
 #endif
 
-    if (p_ts != (CPU_TS *)0) {
-       *p_ts  = (CPU_TS)0;                                  /* Initialize the returned timestamp                      */
+    if(p_ts != (CPU_TS *)0)
+    {
+        *p_ts  = (CPU_TS)0;                                  /* Initialize the returned timestamp                      */
     }
+
     CPU_CRITICAL_ENTER();
-    if (p_sem->Ctr > (OS_SEM_CTR)0) {                       /* Resource available?                                    */
+
+    if(p_sem->Ctr > (OS_SEM_CTR)0)                          /* Resource available?                                    */
+    {
         p_sem->Ctr--;                                       /* Yes, caller may proceed                                */
-        if (p_ts != (CPU_TS *)0) {
-           *p_ts  = p_sem->TS;                              /*      get timestamp of last post                        */
+
+        if(p_ts != (CPU_TS *)0)
+        {
+            *p_ts  = p_sem->TS;                              /*      get timestamp of last post                        */
         }
+
         ctr   = p_sem->Ctr;
         CPU_CRITICAL_EXIT();
-       *p_err = OS_ERR_NONE;
+        *p_err = OS_ERR_NONE;
         return (ctr);
     }
 
-    if ((opt & OS_OPT_PEND_NON_BLOCKING) != (OS_OPT)0) {    /* Caller wants to block if not available?                */
+    if((opt & OS_OPT_PEND_NON_BLOCKING) != (OS_OPT)0)       /* Caller wants to block if not available?                */
+    {
         ctr   = p_sem->Ctr;                                 /* No                                                     */
         CPU_CRITICAL_EXIT();
-       *p_err = OS_ERR_PEND_WOULD_BLOCK;
+        *p_err = OS_ERR_PEND_WOULD_BLOCK;
         return (ctr);
-    } else {                                                /* Yes                                                    */
-        if (OSSchedLockNestingCtr > (OS_NESTING_CTR)0) {    /* Can't pend when the scheduler is locked                */
+    }
+    else                                                    /* Yes                                                    */
+    {
+        if(OSSchedLockNestingCtr > (OS_NESTING_CTR)0)       /* Can't pend when the scheduler is locked                */
+        {
             CPU_CRITICAL_EXIT();
-           *p_err = OS_ERR_SCHED_LOCKED;
+            *p_err = OS_ERR_SCHED_LOCKED;
             return ((OS_SEM_CTR)0);
         }
     }
@@ -396,40 +457,51 @@ OS_SEM_CTR  OSSemPend (OS_SEM   *p_sem,
     OSSched();                                              /* Find the next highest priority task ready to run       */
 
     CPU_CRITICAL_ENTER();
-    switch (OSTCBCurPtr->PendStatus) {
+
+    switch(OSTCBCurPtr->PendStatus)
+    {
         case OS_STATUS_PEND_OK:                             /* We got the semaphore                                   */
-             if (p_ts != (CPU_TS *)0) {
+            if(p_ts != (CPU_TS *)0)
+            {
                 *p_ts  =  OSTCBCurPtr->TS;
-             }
+            }
+
             *p_err = OS_ERR_NONE;
-             break;
+            break;
 
         case OS_STATUS_PEND_ABORT:                          /* Indicate that we aborted                               */
-             if (p_ts != (CPU_TS *)0) {
+            if(p_ts != (CPU_TS *)0)
+            {
                 *p_ts  =  OSTCBCurPtr->TS;
-             }
+            }
+
             *p_err = OS_ERR_PEND_ABORT;
-             break;
+            break;
 
         case OS_STATUS_PEND_TIMEOUT:                        /* Indicate that we didn't get semaphore within timeout   */
-             if (p_ts != (CPU_TS *)0) {
-                *p_ts  = (CPU_TS  )0;
-             }
+            if(p_ts != (CPU_TS *)0)
+            {
+                *p_ts  = (CPU_TS)0;
+            }
+
             *p_err = OS_ERR_TIMEOUT;
-             break;
+            break;
 
         case OS_STATUS_PEND_DEL:                            /* Indicate that object pended on has been deleted        */
-             if (p_ts != (CPU_TS *)0) {
+            if(p_ts != (CPU_TS *)0)
+            {
                 *p_ts  =  OSTCBCurPtr->TS;
-             }
+            }
+
             *p_err = OS_ERR_OBJ_DEL;
-             break;
+            break;
 
         default:
             *p_err = OS_ERR_STATUS_INVALID;
-             CPU_CRITICAL_EXIT();
-             return ((OS_SEM_CTR)0);
+            CPU_CRITICAL_EXIT();
+            return ((OS_SEM_CTR)0);
     }
+
     ctr = p_sem->Ctr;
     CPU_CRITICAL_EXIT();
     return (ctr);
@@ -468,9 +540,9 @@ OS_SEM_CTR  OSSemPend (OS_SEM   *p_sem,
 */
 
 #if OS_CFG_SEM_PEND_ABORT_EN > 0u
-OS_OBJ_QTY  OSSemPendAbort (OS_SEM  *p_sem,
-                            OS_OPT   opt,
-                            OS_ERR  *p_err)
+OS_OBJ_QTY  OSSemPendAbort(OS_SEM  *p_sem,
+                           OS_OPT   opt,
+                           OS_ERR  *p_err)
 {
     OS_PEND_LIST  *p_pend_list;
     OS_TCB        *p_tcb;
@@ -481,72 +553,94 @@ OS_OBJ_QTY  OSSemPendAbort (OS_SEM  *p_sem,
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return ((OS_OBJ_QTY)0u);
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0u) {             /* Not allowed to Pend Abort from an ISR                  */
-       *p_err =  OS_ERR_PEND_ABORT_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0u)                /* Not allowed to Pend Abort from an ISR                  */
+    {
+        *p_err =  OS_ERR_PEND_ABORT_ISR;
         return ((OS_OBJ_QTY)0u);
     }
+
 #endif
 
 #if OS_CFG_ARG_CHK_EN > 0u
-    if (p_sem == (OS_SEM *)0) {                             /* Validate 'p_sem'                                       */
-       *p_err =  OS_ERR_OBJ_PTR_NULL;
+
+    if(p_sem == (OS_SEM *)0)                                /* Validate 'p_sem'                                       */
+    {
+        *p_err =  OS_ERR_OBJ_PTR_NULL;
         return ((OS_OBJ_QTY)0u);
     }
-    switch (opt) {                                          /* Validate 'opt'                                         */
+
+    switch(opt)                                             /* Validate 'opt'                                         */
+    {
         case OS_OPT_PEND_ABORT_1:
         case OS_OPT_PEND_ABORT_ALL:
         case OS_OPT_PEND_ABORT_1   | OS_OPT_POST_NO_SCHED:
         case OS_OPT_PEND_ABORT_ALL | OS_OPT_POST_NO_SCHED:
-             break;
+            break;
 
         default:
             *p_err =  OS_ERR_OPT_INVALID;
-             return ((OS_OBJ_QTY)0u);
+            return ((OS_OBJ_QTY)0u);
     }
+
 #endif
 
 #if OS_CFG_OBJ_TYPE_CHK_EN > 0u
-    if (p_sem->Type != OS_OBJ_TYPE_SEM) {                   /* Make sure semaphore was created                        */
-       *p_err =  OS_ERR_OBJ_TYPE;
+
+    if(p_sem->Type != OS_OBJ_TYPE_SEM)                      /* Make sure semaphore was created                        */
+    {
+        *p_err =  OS_ERR_OBJ_TYPE;
         return ((OS_OBJ_QTY)0u);
     }
+
 #endif
 
     CPU_CRITICAL_ENTER();
     p_pend_list = &p_sem->PendList;
-    if (p_pend_list->NbrEntries == (OS_OBJ_QTY)0u) {        /* Any task waiting on semaphore?                         */
+
+    if(p_pend_list->NbrEntries == (OS_OBJ_QTY)0u)           /* Any task waiting on semaphore?                         */
+    {
         CPU_CRITICAL_EXIT();                                /* No                                                     */
-       *p_err =  OS_ERR_PEND_ABORT_NONE;
+        *p_err =  OS_ERR_PEND_ABORT_NONE;
         return ((OS_OBJ_QTY)0u);
     }
 
     OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
     nbr_tasks = 0u;
     ts        = OS_TS_GET();                                /* Get local time stamp so all tasks get the same time    */
-    while (p_pend_list->NbrEntries > (OS_OBJ_QTY)0u) {
+
+    while(p_pend_list->NbrEntries > (OS_OBJ_QTY)0u)
+    {
         p_tcb = p_pend_list->HeadPtr->TCBPtr;
         OS_PendAbort((OS_PEND_OBJ *)((void *)p_sem),
                      p_tcb,
                      ts);
         nbr_tasks++;
-        if (opt != OS_OPT_PEND_ABORT_ALL) {                 /* Pend abort all tasks waiting?                          */
+
+        if(opt != OS_OPT_PEND_ABORT_ALL)                    /* Pend abort all tasks waiting?                          */
+        {
             break;                                          /* No                                                     */
         }
     }
+
     OS_CRITICAL_EXIT_NO_SCHED();
 
-    if ((opt & OS_OPT_POST_NO_SCHED) == (OS_OPT)0u) {
+    if((opt & OS_OPT_POST_NO_SCHED) == (OS_OPT)0u)
+    {
         OSSched();                                          /* Run the scheduler                                      */
     }
 
-   *p_err = OS_ERR_NONE;
+    *p_err = OS_ERR_NONE;
     return (nbr_tasks);
 }
 #endif
@@ -581,9 +675,9 @@ OS_OBJ_QTY  OSSemPendAbort (OS_SEM  *p_sem,
 ************************************************************************************************************************
 */
 
-OS_SEM_CTR  OSSemPost (OS_SEM  *p_sem,
-                       OS_OPT   opt,
-                       OS_ERR  *p_err)
+OS_SEM_CTR  OSSemPost(OS_SEM  *p_sem,
+                      OS_OPT   opt,
+                      OS_ERR  *p_err)
 {
     OS_SEM_CTR  ctr;
     CPU_TS      ts;
@@ -591,51 +685,65 @@ OS_SEM_CTR  OSSemPost (OS_SEM  *p_sem,
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return ((OS_SEM_CTR)0);
     }
+
 #endif
 
 #if OS_CFG_ARG_CHK_EN > 0u
-    if (p_sem == (OS_SEM *)0) {                             /* Validate 'p_sem'                                       */
-       *p_err  = OS_ERR_OBJ_PTR_NULL;
+
+    if(p_sem == (OS_SEM *)0)                                /* Validate 'p_sem'                                       */
+    {
+        *p_err  = OS_ERR_OBJ_PTR_NULL;
         return ((OS_SEM_CTR)0);
     }
-    switch (opt) {                                          /* Validate 'opt'                                         */
+
+    switch(opt)                                             /* Validate 'opt'                                         */
+    {
         case OS_OPT_POST_1:
         case OS_OPT_POST_ALL:
         case OS_OPT_POST_1   | OS_OPT_POST_NO_SCHED:
         case OS_OPT_POST_ALL | OS_OPT_POST_NO_SCHED:
-             break;
+            break;
 
         default:
             *p_err =  OS_ERR_OPT_INVALID;
-             return ((OS_SEM_CTR)0u);
+            return ((OS_SEM_CTR)0u);
     }
+
 #endif
 
 #if OS_CFG_OBJ_TYPE_CHK_EN > 0u
-    if (p_sem->Type != OS_OBJ_TYPE_SEM) {                   /* Make sure semaphore was created                        */
-       *p_err = OS_ERR_OBJ_TYPE;
+
+    if(p_sem->Type != OS_OBJ_TYPE_SEM)                      /* Make sure semaphore was created                        */
+    {
+        *p_err = OS_ERR_OBJ_TYPE;
         return ((OS_SEM_CTR)0);
     }
+
 #endif
 
     ts = OS_TS_GET();                                       /* Get timestamp                                          */
 
 #if OS_CFG_ISR_POST_DEFERRED_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0) {              /* See if called from an ISR                              */
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0)                 /* See if called from an ISR                              */
+    {
         OS_IntQPost((OS_OBJ_TYPE)OS_OBJ_TYPE_SEM,           /* Post to ISR queue                                      */
                     (void      *)p_sem,
                     (void      *)0,
                     (OS_MSG_SIZE)0,
-                    (OS_FLAGS   )0,
-                    (OS_OPT     )opt,
-                    (CPU_TS     )ts,
+                    (OS_FLAGS)0,
+                    (OS_OPT)opt,
+                    (CPU_TS)ts,
                     (OS_ERR    *)p_err);
         return ((OS_SEM_CTR)0);
     }
+
 #endif
 
     ctr = OS_SemPost(p_sem,                                 /* Post to semaphore                                      */
@@ -673,9 +781,9 @@ OS_SEM_CTR  OSSemPost (OS_SEM  *p_sem,
 */
 
 #if OS_CFG_SEM_SET_EN > 0u
-void  OSSemSet (OS_SEM      *p_sem,
-                OS_SEM_CTR   cnt,
-                OS_ERR      *p_err)
+void  OSSemSet(OS_SEM      *p_sem,
+               OS_SEM_CTR   cnt,
+               OS_ERR      *p_err)
 {
     OS_PEND_LIST  *p_pend_list;
     CPU_SR_ALLOC();
@@ -683,45 +791,66 @@ void  OSSemSet (OS_SEM      *p_sem,
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return;
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0) {              /* Can't call this function from an ISR                   */
-       *p_err = OS_ERR_SET_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0)                 /* Can't call this function from an ISR                   */
+    {
+        *p_err = OS_ERR_SET_ISR;
         return;
     }
+
 #endif
 
 #if OS_CFG_ARG_CHK_EN > 0u
-    if (p_sem == (OS_SEM *)0) {                             /* Validate 'p_sem'                                       */
-       *p_err = OS_ERR_OBJ_PTR_NULL;
+
+    if(p_sem == (OS_SEM *)0)                                /* Validate 'p_sem'                                       */
+    {
+        *p_err = OS_ERR_OBJ_PTR_NULL;
         return;
     }
+
 #endif
 
 #if OS_CFG_OBJ_TYPE_CHK_EN > 0u
-    if (p_sem->Type != OS_OBJ_TYPE_SEM) {                   /* Make sure semaphore was created                        */
-       *p_err = OS_ERR_OBJ_TYPE;
+
+    if(p_sem->Type != OS_OBJ_TYPE_SEM)                      /* Make sure semaphore was created                        */
+    {
+        *p_err = OS_ERR_OBJ_TYPE;
         return;
     }
+
 #endif
 
-   *p_err = OS_ERR_NONE;
+    *p_err = OS_ERR_NONE;
     CPU_CRITICAL_ENTER();
-    if (p_sem->Ctr > (OS_SEM_CTR)0) {                       /* See if semaphore already has a count                   */
+
+    if(p_sem->Ctr > (OS_SEM_CTR)0)                          /* See if semaphore already has a count                   */
+    {
         p_sem->Ctr = cnt;                                   /* Yes, set it to the new value specified.                */
-    } else {
+    }
+    else
+    {
         p_pend_list = &p_sem->PendList;                     /* No                                                     */
-        if (p_pend_list->NbrEntries == (OS_OBJ_QTY)0) {     /*      See if task(s) waiting?                           */
+
+        if(p_pend_list->NbrEntries == (OS_OBJ_QTY)0)        /*      See if task(s) waiting?                           */
+        {
             p_sem->Ctr = cnt;                               /*      No, OK to set the value                           */
-        } else {
-           *p_err      = OS_ERR_TASK_WAITING;
+        }
+        else
+        {
+            *p_err      = OS_ERR_TASK_WAITING;
         }
     }
+
     CPU_CRITICAL_EXIT();
 }
 #endif
@@ -743,11 +872,11 @@ void  OSSemSet (OS_SEM      *p_sem,
 ************************************************************************************************************************
 */
 
-void  OS_SemClr (OS_SEM  *p_sem)
+void  OS_SemClr(OS_SEM  *p_sem)
 {
     p_sem->Type    = OS_OBJ_TYPE_NONE;                      /* Mark the data structure as a NONE                      */
     p_sem->Ctr     = (OS_SEM_CTR)0;                         /* Set semaphore value                                    */
-    p_sem->TS      = (CPU_TS    )0;                         /* Clear the time stamp                                   */
+    p_sem->TS      = (CPU_TS)0;                             /* Clear the time stamp                                   */
     p_sem->NamePtr = (CPU_CHAR *)((void *)"?SEM");
     OS_PendListInit(&p_sem->PendList);                      /* Initialize the waiting list                            */
 }
@@ -769,22 +898,27 @@ void  OS_SemClr (OS_SEM  *p_sem)
 
 
 #if OS_CFG_DBG_EN > 0u
-void  OS_SemDbgListAdd (OS_SEM  *p_sem)
+void  OS_SemDbgListAdd(OS_SEM  *p_sem)
 {
     p_sem->DbgNamePtr               = (CPU_CHAR *)((void *)" ");
     p_sem->DbgPrevPtr               = (OS_SEM   *)0;
-    if (OSSemDbgListPtr == (OS_SEM *)0) {
+
+    if(OSSemDbgListPtr == (OS_SEM *)0)
+    {
         p_sem->DbgNextPtr           = (OS_SEM   *)0;
-    } else {
+    }
+    else
+    {
         p_sem->DbgNextPtr           =  OSSemDbgListPtr;
         OSSemDbgListPtr->DbgPrevPtr =  p_sem;
     }
+
     OSSemDbgListPtr                 =  p_sem;
 }
 
 
 
-void  OS_SemDbgListRemove (OS_SEM  *p_sem)
+void  OS_SemDbgListRemove(OS_SEM  *p_sem)
 {
     OS_SEM  *p_sem_next;
     OS_SEM  *p_sem_prev;
@@ -793,18 +927,26 @@ void  OS_SemDbgListRemove (OS_SEM  *p_sem)
     p_sem_prev = p_sem->DbgPrevPtr;
     p_sem_next = p_sem->DbgNextPtr;
 
-    if (p_sem_prev == (OS_SEM *)0) {
+    if(p_sem_prev == (OS_SEM *)0)
+    {
         OSSemDbgListPtr = p_sem_next;
-        if (p_sem_next != (OS_SEM *)0) {
+
+        if(p_sem_next != (OS_SEM *)0)
+        {
             p_sem_next->DbgPrevPtr = (OS_SEM *)0;
         }
+
         p_sem->DbgNextPtr = (OS_SEM *)0;
 
-    } else if (p_sem_next == (OS_SEM *)0) {
+    }
+    else if(p_sem_next == (OS_SEM *)0)
+    {
         p_sem_prev->DbgNextPtr = (OS_SEM *)0;
         p_sem->DbgPrevPtr      = (OS_SEM *)0;
 
-    } else {
+    }
+    else
+    {
         p_sem_prev->DbgNextPtr =  p_sem_next;
         p_sem_next->DbgPrevPtr =  p_sem_prev;
         p_sem->DbgNextPtr      = (OS_SEM *)0;
@@ -831,13 +973,16 @@ void  OS_SemDbgListRemove (OS_SEM  *p_sem)
 ************************************************************************************************************************
 */
 
-void  OS_SemInit (OS_ERR  *p_err)
+void  OS_SemInit(OS_ERR  *p_err)
 {
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return;
     }
+
 #endif
 
 #if OS_CFG_DBG_EN > 0u
@@ -845,7 +990,7 @@ void  OS_SemInit (OS_ERR  *p_err)
 #endif
 
     OSSemQty        = (OS_OBJ_QTY)0;
-   *p_err           = OS_ERR_NONE;
+    *p_err           = OS_ERR_NONE;
 }
 
 /*$PAGE*/
@@ -881,10 +1026,10 @@ void  OS_SemInit (OS_ERR  *p_err)
 ************************************************************************************************************************
 */
 
-OS_SEM_CTR  OS_SemPost (OS_SEM  *p_sem,
-                        OS_OPT   opt,
-                        CPU_TS   ts,
-                        OS_ERR  *p_err)
+OS_SEM_CTR  OS_SemPost(OS_SEM  *p_sem,
+                       OS_OPT   opt,
+                       CPU_TS   ts,
+                       OS_ERR  *p_err)
 {
     OS_OBJ_QTY     cnt;
     OS_SEM_CTR     ctr;
@@ -898,51 +1043,68 @@ OS_SEM_CTR  OS_SemPost (OS_SEM  *p_sem,
 
     CPU_CRITICAL_ENTER();
     p_pend_list = &p_sem->PendList;
-    if (p_pend_list->NbrEntries == (OS_OBJ_QTY)0) {         /* Any task waiting on semaphore?                         */
-        switch (sizeof(OS_SEM_CTR)) {
+
+    if(p_pend_list->NbrEntries == (OS_OBJ_QTY)0)            /* Any task waiting on semaphore?                         */
+    {
+        switch(sizeof(OS_SEM_CTR))
+        {
             case 1u:
-                 if (p_sem->Ctr == DEF_INT_08U_MAX_VAL) {
-                     CPU_CRITICAL_EXIT();
+                if(p_sem->Ctr == DEF_INT_08U_MAX_VAL)
+                {
+                    CPU_CRITICAL_EXIT();
                     *p_err = OS_ERR_SEM_OVF;
-                     return ((OS_SEM_CTR)0);
-                 }
-                 break;
+                    return ((OS_SEM_CTR)0);
+                }
+
+                break;
 
             case 2u:
-                 if (p_sem->Ctr == DEF_INT_16U_MAX_VAL) {
-                     CPU_CRITICAL_EXIT();
+                if(p_sem->Ctr == DEF_INT_16U_MAX_VAL)
+                {
+                    CPU_CRITICAL_EXIT();
                     *p_err = OS_ERR_SEM_OVF;
-                     return ((OS_SEM_CTR)0);
-                 }
-                 break;
+                    return ((OS_SEM_CTR)0);
+                }
+
+                break;
 
             case 4u:
-                 if (p_sem->Ctr == DEF_INT_32U_MAX_VAL) {
-                     CPU_CRITICAL_EXIT();
+                if(p_sem->Ctr == DEF_INT_32U_MAX_VAL)
+                {
+                    CPU_CRITICAL_EXIT();
                     *p_err = OS_ERR_SEM_OVF;
-                     return ((OS_SEM_CTR)0);
-                 }
-                 break;
+                    return ((OS_SEM_CTR)0);
+                }
+
+                break;
 
             default:
-                 break;
+                break;
         }
+
         p_sem->Ctr++;                                       /* No                                                     */
         ctr       = p_sem->Ctr;
         p_sem->TS = ts;                                     /* Save timestamp in semaphore control block              */
         CPU_CRITICAL_EXIT();
-       *p_err     = OS_ERR_NONE;
+        *p_err     = OS_ERR_NONE;
         return (ctr);
     }
 
     OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
-    if ((opt & OS_OPT_POST_ALL) != (OS_OPT)0) {             /* Post message to all tasks waiting?                     */
+
+    if((opt & OS_OPT_POST_ALL) != (OS_OPT)0)                /* Post message to all tasks waiting?                     */
+    {
         cnt = p_pend_list->NbrEntries;                      /* Yes                                                    */
-    } else {
+    }
+    else
+    {
         cnt = (OS_OBJ_QTY)1;                                /* No                                                     */
     }
+
     p_pend_data = p_pend_list->HeadPtr;
-    while (cnt > 0u) {
+
+    while(cnt > 0u)
+    {
         p_tcb            = p_pend_data->TCBPtr;
         p_pend_data_next = p_pend_data->NextPtr;
         OS_Post((OS_PEND_OBJ *)((void *)p_sem),
@@ -953,12 +1115,16 @@ OS_SEM_CTR  OS_SemPost (OS_SEM  *p_sem,
         p_pend_data = p_pend_data_next;
         cnt--;
     }
+
     ctr = p_sem->Ctr;
     OS_CRITICAL_EXIT_NO_SCHED();
-    if ((opt & OS_OPT_POST_NO_SCHED) == (OS_OPT)0) {
+
+    if((opt & OS_OPT_POST_NO_SCHED) == (OS_OPT)0)
+    {
         OSSched();                                          /* Run the scheduler                                      */
     }
-   *p_err = OS_ERR_NONE;
+
+    *p_err = OS_ERR_NONE;
     return (ctr);
 }
 

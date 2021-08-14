@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file drv_sd.h
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -17,17 +17,17 @@
 
 
 
-#define D_SD_CARD_BLOCK_SIZE			512U
+#define D_SD_CARD_BLOCK_SIZE            512U
 
-#define D_SD_CARD_DATA_START_TOKEN		0xFEu
-#define D_SD_CARD_DATA_END_CMD			0xFDu
+#define D_SD_CARD_DATA_START_TOKEN      0xFEu
+#define D_SD_CARD_DATA_END_CMD          0xFDu
 
 
 /* data write response define */
-#define D_SD_MSD_DATA_OK				0x05U
-#define D_SD_MSD_DATA_CRC_ERR			0x0BU
-#define D_SD_MSD_DATA_WRITE_ERR			0x0DU
-#define D_SD_MSD_DATA_OTHER_ERR			0xFFU
+#define D_SD_MSD_DATA_OK                0x05U
+#define D_SD_MSD_DATA_CRC_ERR           0x0BU
+#define D_SD_MSD_DATA_WRITE_ERR         0x0DU
+#define D_SD_MSD_DATA_OTHER_ERR         0xFFU
 
 
 #endif

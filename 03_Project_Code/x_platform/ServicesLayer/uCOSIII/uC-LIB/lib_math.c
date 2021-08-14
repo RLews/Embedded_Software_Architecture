@@ -141,7 +141,7 @@ RAND_NBR  Math_RandSeedCur;                                     /* Cur rand nbr 
 *********************************************************************************************************
 */
 
-void  Math_Init (void)
+void  Math_Init(void)
 {
     Math_RandSetSeed((RAND_NBR)RAND_SEED_INIT_VAL);             /* See Note #2.                                         */
 }
@@ -169,7 +169,7 @@ void  Math_Init (void)
 *********************************************************************************************************
 */
 
-void  Math_RandSetSeed (RAND_NBR  seed)
+void  Math_RandSetSeed(RAND_NBR  seed)
 {
     CPU_SR_ALLOC();
 
@@ -209,7 +209,7 @@ void  Math_RandSetSeed (RAND_NBR  seed)
 *********************************************************************************************************
 */
 
-RAND_NBR  Math_Rand (void)
+RAND_NBR  Math_Rand(void)
 {
     RAND_NBR  seed;
     RAND_NBR  rand_nbr;
@@ -266,12 +266,12 @@ RAND_NBR  Math_Rand (void)
 *********************************************************************************************************
 */
 
-RAND_NBR  Math_RandSeed (RAND_NBR  seed)
+RAND_NBR  Math_RandSeed(RAND_NBR  seed)
 {
     RAND_NBR  rand_nbr;
 
 
-    rand_nbr = (((RAND_NBR)RAND_LCG_PARAM_A * seed) + (RAND_NBR)RAND_LCG_PARAM_B)  %  ((RAND_NBR)RAND_LCG_PARAM_M + 1u);
+    rand_nbr = (((RAND_NBR)RAND_LCG_PARAM_A * seed) + (RAND_NBR)RAND_LCG_PARAM_B)  % ((RAND_NBR)RAND_LCG_PARAM_M + 1u);
 
     return (rand_nbr);
 }

@@ -97,44 +97,45 @@
 *********************************************************************************************************
 */
 
-static  const  CPU_INT32U  Str_MultOvfThTbl_Int32U[] = {
-   (CPU_INT32U) DEF_INT_32U_MAX_VAL,                /*                Invalid base  0.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  1u),         /*                Invalid base  1.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  2u),         /* 32-bit mult ovf th for base  2.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  3u),         /* 32-bit mult ovf th for base  3.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  4u),         /* 32-bit mult ovf th for base  4.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  5u),         /* 32-bit mult ovf th for base  5.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  6u),         /* 32-bit mult ovf th for base  6.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  7u),         /* 32-bit mult ovf th for base  7.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  8u),         /* 32-bit mult ovf th for base  8.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  9u),         /* 32-bit mult ovf th for base  9.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 10u),         /* 32-bit mult ovf th for base 10.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 11u),         /* 32-bit mult ovf th for base 11.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 12u),         /* 32-bit mult ovf th for base 12.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 13u),         /* 32-bit mult ovf th for base 13.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 14u),         /* 32-bit mult ovf th for base 14.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 15u),         /* 32-bit mult ovf th for base 15.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 16u),         /* 32-bit mult ovf th for base 16.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 17u),         /* 32-bit mult ovf th for base 17.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 18u),         /* 32-bit mult ovf th for base 18.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 19u),         /* 32-bit mult ovf th for base 19.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 20u),         /* 32-bit mult ovf th for base 20.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 21u),         /* 32-bit mult ovf th for base 21.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 22u),         /* 32-bit mult ovf th for base 22.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 23u),         /* 32-bit mult ovf th for base 23.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 24u),         /* 32-bit mult ovf th for base 24.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 25u),         /* 32-bit mult ovf th for base 25.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 26u),         /* 32-bit mult ovf th for base 26.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 27u),         /* 32-bit mult ovf th for base 27.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 28u),         /* 32-bit mult ovf th for base 28.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 29u),         /* 32-bit mult ovf th for base 29.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 30u),         /* 32-bit mult ovf th for base 30.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 31u),         /* 32-bit mult ovf th for base 31.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 32u),         /* 32-bit mult ovf th for base 32.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 33u),         /* 32-bit mult ovf th for base 33.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 34u),         /* 32-bit mult ovf th for base 34.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 35u),         /* 32-bit mult ovf th for base 35.  */
-   (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 36u)          /* 32-bit mult ovf th for base 36.  */
+static  const  CPU_INT32U  Str_MultOvfThTbl_Int32U[] =
+{
+    (CPU_INT32U) DEF_INT_32U_MAX_VAL,                /*                Invalid base  0.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  1u),         /*                Invalid base  1.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  2u),         /* 32-bit mult ovf th for base  2.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  3u),         /* 32-bit mult ovf th for base  3.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  4u),         /* 32-bit mult ovf th for base  4.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  5u),         /* 32-bit mult ovf th for base  5.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  6u),         /* 32-bit mult ovf th for base  6.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  7u),         /* 32-bit mult ovf th for base  7.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  8u),         /* 32-bit mult ovf th for base  8.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL /  9u),         /* 32-bit mult ovf th for base  9.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 10u),         /* 32-bit mult ovf th for base 10.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 11u),         /* 32-bit mult ovf th for base 11.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 12u),         /* 32-bit mult ovf th for base 12.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 13u),         /* 32-bit mult ovf th for base 13.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 14u),         /* 32-bit mult ovf th for base 14.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 15u),         /* 32-bit mult ovf th for base 15.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 16u),         /* 32-bit mult ovf th for base 16.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 17u),         /* 32-bit mult ovf th for base 17.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 18u),         /* 32-bit mult ovf th for base 18.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 19u),         /* 32-bit mult ovf th for base 19.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 20u),         /* 32-bit mult ovf th for base 20.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 21u),         /* 32-bit mult ovf th for base 21.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 22u),         /* 32-bit mult ovf th for base 22.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 23u),         /* 32-bit mult ovf th for base 23.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 24u),         /* 32-bit mult ovf th for base 24.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 25u),         /* 32-bit mult ovf th for base 25.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 26u),         /* 32-bit mult ovf th for base 26.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 27u),         /* 32-bit mult ovf th for base 27.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 28u),         /* 32-bit mult ovf th for base 28.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 29u),         /* 32-bit mult ovf th for base 29.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 30u),         /* 32-bit mult ovf th for base 30.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 31u),         /* 32-bit mult ovf th for base 31.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 32u),         /* 32-bit mult ovf th for base 32.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 33u),         /* 32-bit mult ovf th for base 33.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 34u),         /* 32-bit mult ovf th for base 34.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 35u),         /* 32-bit mult ovf th for base 35.  */
+    (CPU_INT32U)(DEF_INT_32U_MAX_VAL / 36u)          /* 32-bit mult ovf th for base 36.  */
 };
 
 
@@ -151,20 +152,20 @@ static  const  CPU_INT32U  Str_MultOvfThTbl_Int32U[] = {
 *********************************************************************************************************
 */
 
-static  CPU_CHAR    *Str_FmtNbr_Int32  (       CPU_INT32U     nbr,
-                                               CPU_INT08U     nbr_dig,
-                                               CPU_INT08U     nbr_base,
-                                               CPU_BOOLEAN    nbr_neg,
-                                               CPU_CHAR       lead_char,
-                                               CPU_BOOLEAN    lower_case,
-                                               CPU_BOOLEAN    nul,
-                                               CPU_CHAR      *pstr);
+static  CPU_CHAR    *Str_FmtNbr_Int32(CPU_INT32U     nbr,
+                                      CPU_INT08U     nbr_dig,
+                                      CPU_INT08U     nbr_base,
+                                      CPU_BOOLEAN    nbr_neg,
+                                      CPU_CHAR       lead_char,
+                                      CPU_BOOLEAN    lower_case,
+                                      CPU_BOOLEAN    nul,
+                                      CPU_CHAR      *pstr);
 
 static  CPU_INT32U   Str_ParseNbr_Int32(const  CPU_CHAR      *pstr,
-                                               CPU_CHAR     **pstr_next,
-                                               CPU_INT08U     nbr_base,
-                                               CPU_BOOLEAN    nbr_signed,
-                                               CPU_BOOLEAN   *pnbr_neg);
+                                        CPU_CHAR     **pstr_next,
+                                        CPU_INT08U     nbr_base,
+                                        CPU_BOOLEAN    nbr_signed,
+                                        CPU_BOOLEAN   *pnbr_neg);
 
 
 /*
@@ -213,7 +214,7 @@ static  CPU_INT32U   Str_ParseNbr_Int32(const  CPU_CHAR      *pstr,
 *********************************************************************************************************
 */
 
-CPU_SIZE_T  Str_Len (const  CPU_CHAR  *pstr)
+CPU_SIZE_T  Str_Len(const  CPU_CHAR  *pstr)
 {
     CPU_SIZE_T  len;
 
@@ -272,18 +273,20 @@ CPU_SIZE_T  Str_Len (const  CPU_CHAR  *pstr)
 *********************************************************************************************************
 */
 
-CPU_SIZE_T  Str_Len_N (const  CPU_CHAR    *pstr,
-                              CPU_SIZE_T   len_max)
+CPU_SIZE_T  Str_Len_N(const  CPU_CHAR    *pstr,
+                      CPU_SIZE_T   len_max)
 {
     const  CPU_CHAR    *pstr_len;
-           CPU_SIZE_T   len;
+    CPU_SIZE_T   len;
 
 
     pstr_len = pstr;
     len      = 0u;
-    while (( pstr_len != (const CPU_CHAR *)  0 ) &&             /* Calc str len until NULL ptr (see Note #3a) ...       */
-           (*pstr_len != (      CPU_CHAR  )'\0') &&             /* ... or NULL char found      (see Note #3b) ...       */
-           ( len      <  (      CPU_SIZE_T)len_max)) {          /* ... or max nbr chars srch'd (see Note #3c).          */
+
+    while((pstr_len != (const CPU_CHAR *)  0) &&                /* Calc str len until NULL ptr (see Note #3a) ...       */
+          (*pstr_len != (CPU_CHAR)'\0') &&                     /* ... or NULL char found      (see Note #3b) ...       */
+          (len      < (CPU_SIZE_T)len_max))                    /* ... or max nbr chars srch'd (see Note #3c).          */
+    {
         pstr_len++;
         len++;
     }
@@ -344,8 +347,8 @@ CPU_SIZE_T  Str_Len_N (const  CPU_CHAR    *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Copy (       CPU_CHAR  *pstr_dest,
-                     const  CPU_CHAR  *pstr_src)
+CPU_CHAR  *Str_Copy(CPU_CHAR  *pstr_dest,
+                    const  CPU_CHAR  *pstr_src)
 {
     CPU_CHAR  *pstr_rtn;
 
@@ -434,19 +437,22 @@ CPU_CHAR  *Str_Copy (       CPU_CHAR  *pstr_dest,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Copy_N (       CPU_CHAR    *pstr_dest,
-                       const  CPU_CHAR    *pstr_src,
-                              CPU_SIZE_T   len_max)
+CPU_CHAR  *Str_Copy_N(CPU_CHAR    *pstr_dest,
+                      const  CPU_CHAR    *pstr_src,
+                      CPU_SIZE_T   len_max)
 {
-           CPU_CHAR    *pstr_copy_dest;
+    CPU_CHAR    *pstr_copy_dest;
     const  CPU_CHAR    *pstr_copy_src;
-           CPU_SIZE_T   len_copy;
+    CPU_SIZE_T   len_copy;
 
-                                                                /* Rtn NULL if str ptr(s) NULL (see Note #3a1).         */
-    if (pstr_dest == (CPU_CHAR *)0) {
+    /* Rtn NULL if str ptr(s) NULL (see Note #3a1).         */
+    if(pstr_dest == (CPU_CHAR *)0)
+    {
         return ((CPU_CHAR *)0);
     }
-    if (pstr_src  == (const CPU_CHAR *)0) {
+
+    if(pstr_src  == (const CPU_CHAR *)0)
+    {
         return ((CPU_CHAR *)0);
     }
 
@@ -455,23 +461,27 @@ CPU_CHAR  *Str_Copy_N (       CPU_CHAR    *pstr_dest,
     pstr_copy_src  = pstr_src;
     len_copy       = 0u;
 
-    while (( pstr_copy_dest != (      CPU_CHAR *)  0 ) &&       /* Copy str until NULL ptr(s)  [see Note #3b]  ...      */
-           ( pstr_copy_src  != (const CPU_CHAR *)  0 ) &&
-           (*pstr_copy_src  != (      CPU_CHAR  )'\0') &&       /* ... or NULL char found      (see Note #3c); ...      */
-           ( len_copy       <  (      CPU_SIZE_T)len_max)) {    /* ... or max nbr chars copied (see Note #3d).          */
-       *pstr_copy_dest = *pstr_copy_src;
+    while((pstr_copy_dest != (CPU_CHAR *)  0) &&                /* Copy str until NULL ptr(s)  [see Note #3b]  ...      */
+          (pstr_copy_src  != (const CPU_CHAR *)  0) &&
+          (*pstr_copy_src  != (CPU_CHAR)'\0') &&               /* ... or NULL char found      (see Note #3c); ...      */
+          (len_copy       < (CPU_SIZE_T)len_max))              /* ... or max nbr chars copied (see Note #3d).          */
+    {
+        *pstr_copy_dest = *pstr_copy_src;
         pstr_copy_dest++;
         pstr_copy_src++;
         len_copy++;
     }
-                                                                /* Rtn NULL if NULL ptr(s) found  (see Note #3b1).      */
-    if ((pstr_copy_dest == (      CPU_CHAR *)0) ||
-        (pstr_copy_src  == (const CPU_CHAR *)0)) {
-         return ((CPU_CHAR *)0);
+
+    /* Rtn NULL if NULL ptr(s) found  (see Note #3b1).      */
+    if((pstr_copy_dest == (CPU_CHAR *)0) ||
+       (pstr_copy_src  == (const CPU_CHAR *)0))
+    {
+        return ((CPU_CHAR *)0);
     }
 
-    if (len_copy < len_max) {                                   /* If  copy str len < max buf len (see Note #2a2A), ... */
-       *pstr_copy_dest = (CPU_CHAR)'\0';                        /* ... copy NULL char  (see Note #3c1).                 */
+    if(len_copy < len_max)                                      /* If  copy str len < max buf len (see Note #2a2A), ... */
+    {
+        *pstr_copy_dest = (CPU_CHAR)'\0';                        /* ... copy NULL char  (see Note #3c1).                 */
     }
 
 
@@ -535,8 +545,8 @@ CPU_CHAR  *Str_Copy_N (       CPU_CHAR    *pstr_dest,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Cat (       CPU_CHAR  *pstr_dest,
-                    const  CPU_CHAR  *pstr_cat)
+CPU_CHAR  *Str_Cat(CPU_CHAR  *pstr_dest,
+                   const  CPU_CHAR  *pstr_cat)
 {
     CPU_CHAR  *pstr_rtn;
 
@@ -617,55 +627,66 @@ CPU_CHAR  *Str_Cat (       CPU_CHAR  *pstr_dest,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Cat_N (       CPU_CHAR    *pstr_dest,
-                      const  CPU_CHAR    *pstr_cat,
-                             CPU_SIZE_T   len_max)
+CPU_CHAR  *Str_Cat_N(CPU_CHAR    *pstr_dest,
+                     const  CPU_CHAR    *pstr_cat,
+                     CPU_SIZE_T   len_max)
 {
-           CPU_CHAR    *pstr_cat_dest;
+    CPU_CHAR    *pstr_cat_dest;
     const  CPU_CHAR    *pstr_cat_src;
-           CPU_SIZE_T   len_cat;
+    CPU_SIZE_T   len_cat;
 
-                                                                /* Rtn NULL if str ptr(s) NULL (see Note #3a1).         */
-    if (pstr_dest == (CPU_CHAR *)0) {
-        return ((CPU_CHAR *)0);
-    }
-    if (pstr_cat  == (const CPU_CHAR *)0) {
+    /* Rtn NULL if str ptr(s) NULL (see Note #3a1).         */
+    if(pstr_dest == (CPU_CHAR *)0)
+    {
         return ((CPU_CHAR *)0);
     }
 
-    if (len_max < 1) {                                          /* Rtn dest str if cat len = 0 (see Note #3d2A).        */
+    if(pstr_cat  == (const CPU_CHAR *)0)
+    {
+        return ((CPU_CHAR *)0);
+    }
+
+    if(len_max < 1)                                             /* Rtn dest str if cat len = 0 (see Note #3d2A).        */
+    {
         return ((CPU_CHAR *)pstr_dest);
     }
 
 
     pstr_cat_dest = pstr_dest;
-    while (( pstr_cat_dest != (CPU_CHAR *)  0 ) &&              /* Adv to end of cur dest str until NULL ptr ...        */
-           (*pstr_cat_dest != (CPU_CHAR  )'\0')) {              /* ... or NULL char found..                             */
+
+    while((pstr_cat_dest != (CPU_CHAR *)  0) &&                 /* Adv to end of cur dest str until NULL ptr ...        */
+          (*pstr_cat_dest != (CPU_CHAR)'\0'))                  /* ... or NULL char found..                             */
+    {
         pstr_cat_dest++;
     }
-    if (pstr_cat_dest == (CPU_CHAR *)0) {                       /* Rtn NULL if NULL ptr found (see Note #3b1).          */
+
+    if(pstr_cat_dest == (CPU_CHAR *)0)                          /* Rtn NULL if NULL ptr found (see Note #3b1).          */
+    {
         return ((CPU_CHAR *)0);
     }
 
     pstr_cat_src = pstr_cat;
     len_cat      = 0u;
 
-    while (( pstr_cat_dest != (      CPU_CHAR *)  0 ) &&        /* Cat str until NULL ptr(s)  [see Note #3b]  ...       */
-           ( pstr_cat_src  != (const CPU_CHAR *)  0 ) &&
-           (*pstr_cat_src  != (      CPU_CHAR  )'\0') &&        /* ... or NULL char found     (see Note #3c); ...       */
-           ( len_cat       <  (      CPU_SIZE_T)len_max)) {     /* ... or max nbr chars cat'd (see Note #3d).           */
-       *pstr_cat_dest = *pstr_cat_src;
+    while((pstr_cat_dest != (CPU_CHAR *)  0) &&                 /* Cat str until NULL ptr(s)  [see Note #3b]  ...       */
+          (pstr_cat_src  != (const CPU_CHAR *)  0) &&
+          (*pstr_cat_src  != (CPU_CHAR)'\0') &&                /* ... or NULL char found     (see Note #3c); ...       */
+          (len_cat       < (CPU_SIZE_T)len_max))               /* ... or max nbr chars cat'd (see Note #3d).           */
+    {
+        *pstr_cat_dest = *pstr_cat_src;
         pstr_cat_dest++;
         pstr_cat_src++;
         len_cat++;
     }
-                                                                /* Rtn NULL if NULL ptr(s) found (see Note #3b1).       */
-    if ((pstr_cat_dest == (      CPU_CHAR *)0) ||
-        (pstr_cat_src  == (const CPU_CHAR *)0)) {
-         return ((CPU_CHAR *)0);
+
+    /* Rtn NULL if NULL ptr(s) found (see Note #3b1).       */
+    if((pstr_cat_dest == (CPU_CHAR *)0) ||
+       (pstr_cat_src  == (const CPU_CHAR *)0))
+    {
+        return ((CPU_CHAR *)0);
     }
 
-   *pstr_cat_dest = (CPU_CHAR)'\0';                             /* Append NULL char    (see Note #2a2C).                */
+    *pstr_cat_dest = (CPU_CHAR)'\0';                             /* Append NULL char    (see Note #2a2C).                */
 
 
     return (pstr_dest);                                         /* Rtn ptr to dest str (see Note #2b1).                 */
@@ -747,8 +768,8 @@ CPU_CHAR  *Str_Cat_N (       CPU_CHAR    *pstr_dest,
 *********************************************************************************************************
 */
 
-CPU_INT16S  Str_Cmp (const  CPU_CHAR  *p1_str,
-                     const  CPU_CHAR  *p2_str)
+CPU_INT16S  Str_Cmp(const  CPU_CHAR  *p1_str,
+                    const  CPU_CHAR  *p2_str)
 {
     CPU_INT16S  cmp_val;
 
@@ -848,30 +869,36 @@ CPU_INT16S  Str_Cmp (const  CPU_CHAR  *p1_str,
 *********************************************************************************************************
 */
 
-CPU_INT16S  Str_Cmp_N (const  CPU_CHAR    *p1_str,
-                       const  CPU_CHAR    *p2_str,
-                              CPU_SIZE_T   len_max)
+CPU_INT16S  Str_Cmp_N(const  CPU_CHAR    *p1_str,
+                      const  CPU_CHAR    *p2_str,
+                      CPU_SIZE_T   len_max)
 {
     const  CPU_CHAR    *p1_str_cmp;
     const  CPU_CHAR    *p2_str_cmp;
     const  CPU_CHAR    *p1_str_cmp_next;
     const  CPU_CHAR    *p2_str_cmp_next;
-           CPU_INT16S   cmp_val;
-           CPU_SIZE_T   cmp_len;
+    CPU_INT16S   cmp_val;
+    CPU_SIZE_T   cmp_len;
 
 
-    if (len_max < 1) {                                          /* If cmp len = 0,        rtn 0       (see Note #3d1A). */
+    if(len_max < 1)                                             /* If cmp len = 0,        rtn 0       (see Note #3d1A). */
+    {
         return (0);
     }
 
-    if (p1_str == (const CPU_CHAR *)0) {
-        if (p2_str == (const CPU_CHAR *)0) {
+    if(p1_str == (const CPU_CHAR *)0)
+    {
+        if(p2_str == (const CPU_CHAR *)0)
+        {
             return (0);                                         /* If BOTH str ptrs NULL, rtn 0       (see Note #3a1A). */
         }
+
         cmp_val = (CPU_INT16S)0 - (CPU_INT16S)(*p2_str);
         return (cmp_val);                                       /* If p1_str NULL, rtn neg p2_str val (see Note #3a1B1).*/
     }
-    if (p2_str == (const CPU_CHAR *)0) {
+
+    if(p2_str == (const CPU_CHAR *)0)
+    {
         cmp_val = (CPU_INT16S)(*p1_str);
         return (cmp_val);                                       /* If p2_str NULL, rtn pos p1_str val (see Note #3a1B2).*/
     }
@@ -885,11 +912,12 @@ CPU_INT16S  Str_Cmp_N (const  CPU_CHAR    *p1_str,
     p2_str_cmp_next++;
     cmp_len         = 0u;
 
-    while ((*p1_str_cmp      == *p2_str_cmp)            &&      /* Cmp strs until non-matching chars (see Note #3c) ... */
-           (*p1_str_cmp      != (      CPU_CHAR  )'\0') &&      /* ... or NULL chars                 (see Note #3b) ... */
-           ( p1_str_cmp_next != (const CPU_CHAR *)  0 ) &&      /* ... or NULL ptr(s) found          (see Note #3a2).   */
-           ( p2_str_cmp_next != (const CPU_CHAR *)  0 ) &&
-           ( cmp_len         <  (      CPU_SIZE_T)len_max)) {   /* ... or max nbr chars cmp'd        (see Note #3d2).   */
+    while((*p1_str_cmp      == *p2_str_cmp)            &&       /* Cmp strs until non-matching chars (see Note #3c) ... */
+          (*p1_str_cmp      != (CPU_CHAR)'\0') &&              /* ... or NULL chars                 (see Note #3b) ... */
+          (p1_str_cmp_next != (const CPU_CHAR *)  0) &&        /* ... or NULL ptr(s) found          (see Note #3a2).   */
+          (p2_str_cmp_next != (const CPU_CHAR *)  0) &&
+          (cmp_len         < (CPU_SIZE_T)len_max))             /* ... or max nbr chars cmp'd        (see Note #3d2).   */
+    {
         p1_str_cmp++;
         p2_str_cmp++;
         p1_str_cmp_next++;
@@ -898,26 +926,38 @@ CPU_INT16S  Str_Cmp_N (const  CPU_CHAR    *p1_str,
     }
 
 
-    if (cmp_len == len_max) {                                   /* If strs     identical for max len nbr of chars, ...  */
+    if(cmp_len == len_max)                                      /* If strs     identical for max len nbr of chars, ...  */
+    {
         return (0);                                             /* ... rtn 0                 (see Note #3d2A).          */
     }
 
-    if (*p1_str_cmp != *p2_str_cmp) {                           /* If strs NOT identical, ...                           */
-                                                                /* ... calc & rtn char diff  (see Note #3c1).           */
-         cmp_val = (CPU_INT16S)(*p1_str_cmp) - (CPU_INT16S)(*p2_str_cmp);
+    if(*p1_str_cmp != *p2_str_cmp)                              /* If strs NOT identical, ...                           */
+    {
+        /* ... calc & rtn char diff  (see Note #3c1).           */
+        cmp_val = (CPU_INT16S)(*p1_str_cmp) - (CPU_INT16S)(*p2_str_cmp);
 
-    } else if (*p1_str_cmp  == (CPU_CHAR)'\0') {                /* If NULL char(s) found, ...                           */
-         cmp_val = (CPU_INT16S)0;                               /* ... strs identical; rtn 0 (see Note #3b).            */
+    }
+    else if(*p1_str_cmp  == (CPU_CHAR)'\0')                     /* If NULL char(s) found, ...                           */
+    {
+        cmp_val = (CPU_INT16S)0;                               /* ... strs identical; rtn 0 (see Note #3b).            */
 
-    } else {
-        if (p1_str_cmp_next == (const CPU_CHAR *)0) {
-            if (p2_str_cmp_next == (const CPU_CHAR *)0) {       /* If BOTH next str ptrs NULL, ...                      */
+    }
+    else
+    {
+        if(p1_str_cmp_next == (const CPU_CHAR *)0)
+        {
+            if(p2_str_cmp_next == (const CPU_CHAR *)0)          /* If BOTH next str ptrs NULL, ...                      */
+            {
                 cmp_val = (CPU_INT16S)0;                        /* ... rtn 0                       (see Note #3a2A).    */
-            } else {                                            /* If p1_str_cmp_next NULL, ...                         */
-                                                                /* ... rtn neg p2_str_cmp_next val (see Note #3a2B1).   */
+            }
+            else                                                /* If p1_str_cmp_next NULL, ...                         */
+            {
+                /* ... rtn neg p2_str_cmp_next val (see Note #3a2B1).   */
                 cmp_val = (CPU_INT16S)0 - (CPU_INT16S)(*p2_str_cmp_next);
             }
-        } else {                                                /* If p2_str_cmp_next NULL, ...                         */
+        }
+        else                                                    /* If p2_str_cmp_next NULL, ...                         */
+        {
             cmp_val = (CPU_INT16S)(*p1_str_cmp_next);           /* ... rtn pos p1_str_cmp_next val (see Note #3a2B2).   */
         }
     }
@@ -1012,8 +1052,8 @@ CPU_INT16S  Str_Cmp_N (const  CPU_CHAR    *p1_str,
 *********************************************************************************************************
 */
 
-CPU_INT16S  Str_CmpIgnoreCase (const  CPU_CHAR  *p1_str,
-                               const  CPU_CHAR  *p2_str)
+CPU_INT16S  Str_CmpIgnoreCase(const  CPU_CHAR  *p1_str,
+                              const  CPU_CHAR  *p2_str)
 {
     CPU_INT16S  cmp_val;
 
@@ -1123,33 +1163,39 @@ CPU_INT16S  Str_CmpIgnoreCase (const  CPU_CHAR  *p1_str,
 *********************************************************************************************************
 */
 
-CPU_INT16S  Str_CmpIgnoreCase_N (const  CPU_CHAR    *p1_str,
-                                 const  CPU_CHAR    *p2_str,
-                                        CPU_SIZE_T   len_max)
+CPU_INT16S  Str_CmpIgnoreCase_N(const  CPU_CHAR    *p1_str,
+                                const  CPU_CHAR    *p2_str,
+                                CPU_SIZE_T   len_max)
 {
     const  CPU_CHAR    *p1_str_cmp;
     const  CPU_CHAR    *p2_str_cmp;
     const  CPU_CHAR    *p1_str_cmp_next;
     const  CPU_CHAR    *p2_str_cmp_next;
-           CPU_CHAR     char_1;
-           CPU_CHAR     char_2;
-           CPU_INT16S   cmp_val;
-           CPU_SIZE_T   cmp_len;
+    CPU_CHAR     char_1;
+    CPU_CHAR     char_2;
+    CPU_INT16S   cmp_val;
+    CPU_SIZE_T   cmp_len;
 
 
-    if (len_max < 1) {                                          /* If cmp len = 0,        rtn 0       (see Note #3d1A). */
+    if(len_max < 1)                                             /* If cmp len = 0,        rtn 0       (see Note #3d1A). */
+    {
         return (0);
     }
 
-    if (p1_str == (const CPU_CHAR *)0) {
-        if (p2_str == (const CPU_CHAR *)0) {
+    if(p1_str == (const CPU_CHAR *)0)
+    {
+        if(p2_str == (const CPU_CHAR *)0)
+        {
             return (0);                                         /* If BOTH str ptrs NULL, rtn 0       (see Note #3a1A). */
         }
+
         char_2  =  ASCII_ToLower(*p2_str);
         cmp_val = (CPU_INT16S)0 - (CPU_INT16S)char_2;
         return (cmp_val);                                       /* If p1_str NULL, rtn neg p2_str val (see Note #3a1B1).*/
     }
-    if (p2_str == (const CPU_CHAR *)0) {
+
+    if(p2_str == (const CPU_CHAR *)0)
+    {
         char_1  =  ASCII_ToLower(*p1_str);
         cmp_val = (CPU_INT16S)char_1;
         return (cmp_val);                                       /* If p2_str NULL, rtn pos p1_str val (see Note #3a1B2).*/
@@ -1166,11 +1212,12 @@ CPU_INT16S  Str_CmpIgnoreCase_N (const  CPU_CHAR    *p1_str,
     char_2          = ASCII_ToLower(*p2_str_cmp);
     cmp_len         = 0u;
 
-    while (( char_1          ==  char_2)                &&      /* Cmp strs until non-matching chars (see Note #3c) ... */
-           (*p1_str_cmp      != (      CPU_CHAR  )'\0') &&      /* ... or NULL chars                 (see Note #3b) ... */
-           ( p1_str_cmp_next != (const CPU_CHAR *)  0 ) &&      /* ... or NULL ptr(s) found          (see Note #3a2).   */
-           ( p2_str_cmp_next != (const CPU_CHAR *)  0 ) &&
-           ( cmp_len         <  (      CPU_SIZE_T)len_max)) {   /* ... or max nbr chars cmp'd        (see Note #3d2).   */
+    while((char_1          ==  char_2)                &&        /* Cmp strs until non-matching chars (see Note #3c) ... */
+          (*p1_str_cmp      != (CPU_CHAR)'\0') &&              /* ... or NULL chars                 (see Note #3b) ... */
+          (p1_str_cmp_next != (const CPU_CHAR *)  0) &&        /* ... or NULL ptr(s) found          (see Note #3a2).   */
+          (p2_str_cmp_next != (const CPU_CHAR *)  0) &&
+          (cmp_len         < (CPU_SIZE_T)len_max))             /* ... or max nbr chars cmp'd        (see Note #3d2).   */
+    {
         p1_str_cmp++;
         p2_str_cmp++;
         p1_str_cmp_next++;
@@ -1181,25 +1228,37 @@ CPU_INT16S  Str_CmpIgnoreCase_N (const  CPU_CHAR    *p1_str,
     }
 
 
-    if (cmp_len == len_max) {                                   /* If strs     identical for max len nbr of chars, ...  */
+    if(cmp_len == len_max)                                      /* If strs     identical for max len nbr of chars, ...  */
+    {
         return (0);                                             /* ... rtn 0                 (see Note #3d2A).          */
     }
 
-    if (char_1 != char_2) {                                     /* If strs NOT identical, ...                           */
-         cmp_val = (CPU_INT16S)char_1 - (CPU_INT16S)char_2;     /* ... calc & rtn char diff  (see Note #3c1).           */
+    if(char_1 != char_2)                                        /* If strs NOT identical, ...                           */
+    {
+        cmp_val = (CPU_INT16S)char_1 - (CPU_INT16S)char_2;     /* ... calc & rtn char diff  (see Note #3c1).           */
 
-    } else if (char_1 == (CPU_CHAR)'\0') {                      /* If NULL char(s) found, ...                           */
-         cmp_val = (CPU_INT16S)0;                               /* ... strs identical; rtn 0 (see Note #3b).            */
+    }
+    else if(char_1 == (CPU_CHAR)'\0')                           /* If NULL char(s) found, ...                           */
+    {
+        cmp_val = (CPU_INT16S)0;                               /* ... strs identical; rtn 0 (see Note #3b).            */
 
-    } else {
-        if (p1_str_cmp_next == (const CPU_CHAR *)0) {
-            if (p2_str_cmp_next == (const CPU_CHAR *)0) {       /* If BOTH next str ptrs NULL, ...                      */
+    }
+    else
+    {
+        if(p1_str_cmp_next == (const CPU_CHAR *)0)
+        {
+            if(p2_str_cmp_next == (const CPU_CHAR *)0)          /* If BOTH next str ptrs NULL, ...                      */
+            {
                 cmp_val = (CPU_INT16S)0;                        /* ... rtn 0                       (see Note #3a2A).    */
-            } else {                                            /* If p1_str_cmp_next NULL, ...                         */
+            }
+            else                                                /* If p1_str_cmp_next NULL, ...                         */
+            {
                 char_2  =  ASCII_ToLower(*p2_str_cmp_next);
                 cmp_val = (CPU_INT16S)0 - (CPU_INT16S)char_2;   /* ... rtn neg p2_str_cmp_next val (see Note #3a2B1).   */
             }
-        } else {                                                /* If p2_str_cmp_next NULL, ...                         */
+        }
+        else                                                    /* If p2_str_cmp_next NULL, ...                         */
+        {
             char_1  =  ASCII_ToLower(*p1_str_cmp_next);
             cmp_val = (CPU_INT16S)char_1;                       /* ... rtn pos p1_str_cmp_next val (see Note #3a2B2).   */
         }
@@ -1262,8 +1321,8 @@ CPU_INT16S  Str_CmpIgnoreCase_N (const  CPU_CHAR    *p1_str,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Char (const  CPU_CHAR  *pstr,
-                            CPU_CHAR   srch_char)
+CPU_CHAR  *Str_Char(const  CPU_CHAR  *pstr,
+                    CPU_CHAR   srch_char)
 {
     CPU_CHAR  *pstr_rtn;
 
@@ -1342,19 +1401,21 @@ CPU_CHAR  *Str_Char (const  CPU_CHAR  *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Char_N (const  CPU_CHAR    *pstr,
-                              CPU_SIZE_T   len_max,
-                              CPU_CHAR     srch_char)
+CPU_CHAR  *Str_Char_N(const  CPU_CHAR    *pstr,
+                      CPU_SIZE_T   len_max,
+                      CPU_CHAR     srch_char)
 {
     const  CPU_CHAR    *pstr_char;
-           CPU_SIZE_T   len_srch;
+    CPU_SIZE_T   len_srch;
 
 
-    if (pstr == (const CPU_CHAR *)0) {                          /* Rtn NULL if srch str ptr NULL (see Note #3a1).       */
+    if(pstr == (const CPU_CHAR *)0)                             /* Rtn NULL if srch str ptr NULL (see Note #3a1).       */
+    {
         return ((CPU_CHAR *)0);
     }
 
-    if (len_max < 1) {                                          /* Rtn NULL if srch len = 0      (see Note #3e1).       */
+    if(len_max < 1)                                             /* Rtn NULL if srch len = 0      (see Note #3e1).       */
+    {
         return ((CPU_CHAR *)0);
     }
 
@@ -1362,25 +1423,29 @@ CPU_CHAR  *Str_Char_N (const  CPU_CHAR    *pstr,
     pstr_char = pstr;
     len_srch  = 0u;
 
-    while (( pstr_char != (const CPU_CHAR *)  0 )      &&       /* Srch str until NULL ptr     [see Note #3b]  ...      */
-           (*pstr_char != (      CPU_CHAR  )'\0')      &&       /* ... or NULL char            (see Note #3c)  ...      */
-           (*pstr_char != (      CPU_CHAR  )srch_char) &&       /* ... or srch char found      (see Note #3d); ...      */
-           ( len_srch  <  (      CPU_SIZE_T)len_max)) {         /* ... or max nbr chars srch'd (see Note #3e).          */
+    while((pstr_char != (const CPU_CHAR *)  0)      &&          /* Srch str until NULL ptr     [see Note #3b]  ...      */
+          (*pstr_char != (CPU_CHAR)'\0')      &&               /* ... or NULL char            (see Note #3c)  ...      */
+          (*pstr_char != (CPU_CHAR)srch_char) &&               /* ... or srch char found      (see Note #3d); ...      */
+          (len_srch  < (CPU_SIZE_T)len_max))                   /* ... or max nbr chars srch'd (see Note #3e).          */
+    {
         pstr_char++;
         len_srch++;
     }
 
 
-    if (pstr_char == (const CPU_CHAR *)0) {                     /* Rtn NULL if NULL ptr found      (see Note #3b1).     */
+    if(pstr_char == (const CPU_CHAR *)0)                        /* Rtn NULL if NULL ptr found      (see Note #3b1).     */
+    {
         return ((CPU_CHAR *)0);
     }
 
-    if (len_srch >= len_max) {                                  /* Rtn NULL if srch char NOT found ...                  */
+    if(len_srch >= len_max)                                     /* Rtn NULL if srch char NOT found ...                  */
+    {
         return ((CPU_CHAR *)0);                                 /* ... within max nbr of chars     (see Note #3e1).     */
     }
 
-    if (*pstr_char != srch_char) {                              /* Rtn NULL if srch char NOT found (see Note #3c1).     */
-         return ((CPU_CHAR *)0);
+    if(*pstr_char != srch_char)                                 /* Rtn NULL if srch char NOT found (see Note #3c1).     */
+    {
+        return ((CPU_CHAR *)0);
     }
 
 
@@ -1439,8 +1504,8 @@ CPU_CHAR  *Str_Char_N (const  CPU_CHAR    *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Char_Last (const  CPU_CHAR  *pstr,
-                                 CPU_CHAR   srch_char)
+CPU_CHAR  *Str_Char_Last(const  CPU_CHAR  *pstr,
+                         CPU_CHAR   srch_char)
 {
     CPU_CHAR  *pstr_rtn;
 
@@ -1521,41 +1586,46 @@ CPU_CHAR  *Str_Char_Last (const  CPU_CHAR  *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Char_Last_N (const  CPU_CHAR    *pstr,
-                                   CPU_SIZE_T   len_max,
-                                   CPU_CHAR     srch_char)
+CPU_CHAR  *Str_Char_Last_N(const  CPU_CHAR    *pstr,
+                           CPU_SIZE_T   len_max,
+                           CPU_CHAR     srch_char)
 {
     const  CPU_CHAR    *pstr_char;
-           CPU_SIZE_T   str_len_max;
-           CPU_SIZE_T   str_len;
+    CPU_SIZE_T   str_len_max;
+    CPU_SIZE_T   str_len;
 
 
-    if (pstr == (const CPU_CHAR *)0) {                          /* Rtn NULL if srch str ptr NULL (see Note #3a1).       */
+    if(pstr == (const CPU_CHAR *)0)                             /* Rtn NULL if srch str ptr NULL (see Note #3a1).       */
+    {
         return ((CPU_CHAR *)0);
     }
 
-    if (len_max < 1) {                                          /* Rtn NULL if srch len = 0      (see Note #3e1).       */
+    if(len_max < 1)                                             /* Rtn NULL if srch len = 0      (see Note #3e1).       */
+    {
         return ((CPU_CHAR *)0);
     }
 
 
     pstr_char    = pstr;
-     str_len_max = len_max - sizeof((CPU_CHAR)'\0');            /* Str len adj'd for NULL char len.                     */
-     str_len     = Str_Len_N(pstr_char, str_len_max);
+    str_len_max = len_max - sizeof((CPU_CHAR)'\0');            /* Str len adj'd for NULL char len.                     */
+    str_len     = Str_Len_N(pstr_char, str_len_max);
     pstr_char   += str_len;
 
-    if (pstr_char == (const CPU_CHAR *)0) {                     /* Rtn NULL if NULL ptr found        (see Note #3b1).   */
+    if(pstr_char == (const CPU_CHAR *)0)                        /* Rtn NULL if NULL ptr found        (see Note #3b1).   */
+    {
         return ((CPU_CHAR *)0);
     }
 
-    while (( pstr_char != pstr) &&                              /* Srch str from end until beginning (see Note #3c) ... */
-           (*pstr_char != srch_char)) {                         /* ... until srch char found         (see Note #3d).    */
+    while((pstr_char != pstr) &&                                /* Srch str from end until beginning (see Note #3c) ... */
+          (*pstr_char != srch_char))                           /* ... until srch char found         (see Note #3d).    */
+    {
         pstr_char--;
     }
 
 
-    if (*pstr_char != srch_char) {                              /* Rtn NULL if srch char NOT found   (see Note #3c1).   */
-         return ((CPU_CHAR *)0);
+    if(*pstr_char != srch_char)                                 /* Rtn NULL if srch char NOT found   (see Note #3c1).   */
+    {
+        return ((CPU_CHAR *)0);
     }
 
 
@@ -1600,9 +1670,9 @@ CPU_CHAR  *Str_Char_Last_N (const  CPU_CHAR    *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Char_Replace (CPU_CHAR  *pstr,
-                             CPU_CHAR   char_srch,
-                             CPU_CHAR   char_replace)
+CPU_CHAR  *Str_Char_Replace(CPU_CHAR  *pstr,
+                            CPU_CHAR   char_srch,
+                            CPU_CHAR   char_replace)
 {
     CPU_CHAR  *pstr_rtn;
 
@@ -1662,31 +1732,35 @@ CPU_CHAR  *Str_Char_Replace (CPU_CHAR  *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Char_Replace_N (CPU_CHAR    *pstr,
-                               CPU_CHAR     char_srch,
-                               CPU_CHAR     char_replace,
-                               CPU_SIZE_T   len_max)
+CPU_CHAR  *Str_Char_Replace_N(CPU_CHAR    *pstr,
+                              CPU_CHAR     char_srch,
+                              CPU_CHAR     char_replace,
+                              CPU_SIZE_T   len_max)
 {
     CPU_CHAR    *pstr_char;
     CPU_SIZE_T   len;
 
 
-    if (pstr == (const CPU_CHAR *)0) {                          /* Rtn NULL if srch str ptr NULL (see Note #2a1).       */
+    if(pstr == (const CPU_CHAR *)0)                             /* Rtn NULL if srch str ptr NULL (see Note #2a1).       */
+    {
         return ((CPU_CHAR *)0);
     }
 
-    if (len_max < 1) {                                          /* Rtn NULL if srch len = 0      (see Note #2e1).       */
+    if(len_max < 1)                                             /* Rtn NULL if srch len = 0      (see Note #2e1).       */
+    {
         return ((CPU_CHAR *)0);
     }
 
     pstr_char = pstr;
     len       = len_max;
 
-    while (( pstr_char != (const CPU_CHAR *)0) &&               /* Srch str until NULL ptr     [see Note #2b]  ...      */
-           (*pstr_char !=  ASCII_CHAR_NULL   ) &&               /* ... or NULL char            (see Note #2c)  ...      */
-           ( len        >                   0)) {               /* ... or max nbr chars srch'd (see Note #2e).          */
+    while((pstr_char != (const CPU_CHAR *)0) &&                 /* Srch str until NULL ptr     [see Note #2b]  ...      */
+          (*pstr_char !=  ASCII_CHAR_NULL) &&                  /* ... or NULL char            (see Note #2c)  ...      */
+          (len        >                   0))                  /* ... or max nbr chars srch'd (see Note #2e).          */
+    {
 
-        if (*pstr_char == char_srch) {
+        if(*pstr_char == char_srch)
+        {
             *pstr_char  = char_replace;                         /* Replace char if srch char is found.                  */
         }
 
@@ -1758,8 +1832,8 @@ CPU_CHAR  *Str_Char_Replace_N (CPU_CHAR    *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Str (const  CPU_CHAR  *pstr,
-                    const  CPU_CHAR  *pstr_srch)
+CPU_CHAR  *Str_Str(const  CPU_CHAR  *pstr,
+                   const  CPU_CHAR  *pstr_srch)
 {
     CPU_CHAR  *pstr_rtn;
 
@@ -1842,51 +1916,65 @@ CPU_CHAR  *Str_Str (const  CPU_CHAR  *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_Str_N (const  CPU_CHAR    *pstr,
-                      const  CPU_CHAR    *pstr_srch,
-                             CPU_SIZE_T   len_max)
+CPU_CHAR  *Str_Str_N(const  CPU_CHAR    *pstr,
+                     const  CPU_CHAR    *pstr_srch,
+                     CPU_SIZE_T   len_max)
 {
-           CPU_SIZE_T    str_len;
-           CPU_SIZE_T    str_len_srch;
-           CPU_SIZE_T    len_max_srch;
-           CPU_SIZE_T    srch_len;
-           CPU_SIZE_T    srch_ix;
-           CPU_BOOLEAN   srch_done;
-           CPU_INT16S    srch_cmp;
+    CPU_SIZE_T    str_len;
+    CPU_SIZE_T    str_len_srch;
+    CPU_SIZE_T    len_max_srch;
+    CPU_SIZE_T    srch_len;
+    CPU_SIZE_T    srch_ix;
+    CPU_BOOLEAN   srch_done;
+    CPU_INT16S    srch_cmp;
     const  CPU_CHAR     *pstr_str;
     const  CPU_CHAR     *pstr_srch_ix;
 
-                                                                /* Rtn NULL if str ptr(s) NULL (see Note #3a).          */
-    if (pstr == (const CPU_CHAR *)0) {
-        return ((CPU_CHAR *)0);
-    }
-    if (pstr_srch == (const CPU_CHAR *)0) {
-        return ((CPU_CHAR *)0);
-    }
-
-    if (len_max < 1) {                                          /* Rtn NULL if srch len = 0    (see Note #3g).          */
+    /* Rtn NULL if str ptr(s) NULL (see Note #3a).          */
+    if(pstr == (const CPU_CHAR *)0)
+    {
         return ((CPU_CHAR *)0);
     }
 
-                                                                /* Lim max srch str len (to chk > str len).             */
+    if(pstr_srch == (const CPU_CHAR *)0)
+    {
+        return ((CPU_CHAR *)0);
+    }
+
+    if(len_max < 1)                                             /* Rtn NULL if srch len = 0    (see Note #3g).          */
+    {
+        return ((CPU_CHAR *)0);
+    }
+
+    /* Lim max srch str len (to chk > str len).             */
     len_max_srch = (len_max <       DEF_INT_CPU_U_MAX_VAL)
-                 ? (len_max + 1u) : DEF_INT_CPU_U_MAX_VAL;
+                   ? (len_max + 1u) : DEF_INT_CPU_U_MAX_VAL;
 
     str_len      = Str_Len_N(pstr,      len_max);
     str_len_srch = Str_Len_N(pstr_srch, len_max_srch);
-    if (str_len_srch < 1) {                                     /* Rtn ptr to str if srch str len = 0 (see Note #2b2).  */
+
+    if(str_len_srch < 1)                                        /* Rtn ptr to str if srch str len = 0 (see Note #2b2).  */
+    {
         return ((CPU_CHAR *)pstr);
     }
-    if (str_len_srch > str_len) {                               /* Rtn NULL if srch str len > str len (see Note #3d).   */
+
+    if(str_len_srch > str_len)                                  /* Rtn NULL if srch str len > str len (see Note #3d).   */
+    {
         return ((CPU_CHAR *)0);
     }
-                                                                /* Rtn NULL if NULL ptr found         (see Note #3b1).  */
+
+    /* Rtn NULL if NULL ptr found         (see Note #3b1).  */
     pstr_str = pstr      + str_len;
-    if (pstr_str == (const CPU_CHAR *)0) {
+
+    if(pstr_str == (const CPU_CHAR *)0)
+    {
         return ((CPU_CHAR *)0);
     }
+
     pstr_str = pstr_srch + str_len_srch;
-    if (pstr_str == (const CPU_CHAR *)0) {
+
+    if(pstr_str == (const CPU_CHAR *)0)
+    {
         return ((CPU_CHAR *)0);
     }
 
@@ -1895,15 +1983,18 @@ CPU_CHAR  *Str_Str_N (const  CPU_CHAR    *pstr,
     srch_ix   = 0u;
     srch_done = DEF_NO;
 
-    do {
+    do
+    {
         pstr_srch_ix = (const CPU_CHAR *)(pstr + srch_ix);
         srch_cmp     =  Str_Cmp_N(pstr_srch_ix, pstr_srch, str_len_srch);
         srch_done    = (srch_cmp == 0) ? DEF_YES : DEF_NO;
         srch_ix++;
-    } while ((srch_done == DEF_NO) && (srch_ix <= srch_len));
+    }
+    while((srch_done == DEF_NO) && (srch_ix <= srch_len));
 
 
-    if (srch_cmp != 0) {                                        /* Rtn NULL if srch str NOT found (see Note #3e2).      */
+    if(srch_cmp != 0)                                           /* Rtn NULL if srch str NOT found (see Note #3e2).      */
+    {
         return ((CPU_CHAR *)0);
     }
 
@@ -2035,13 +2126,13 @@ CPU_CHAR  *Str_Str_N (const  CPU_CHAR    *pstr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_FmtNbr_Int32U (CPU_INT32U    nbr,
-                              CPU_INT08U    nbr_dig,
-                              CPU_INT08U    nbr_base,
-                              CPU_CHAR      lead_char,
-                              CPU_BOOLEAN   lower_case,
-                              CPU_BOOLEAN   nul,
-                              CPU_CHAR     *pstr)
+CPU_CHAR  *Str_FmtNbr_Int32U(CPU_INT32U    nbr,
+                             CPU_INT08U    nbr_dig,
+                             CPU_INT08U    nbr_base,
+                             CPU_CHAR      lead_char,
+                             CPU_BOOLEAN   lower_case,
+                             CPU_BOOLEAN   nul,
+                             CPU_CHAR     *pstr)
 {
     CPU_CHAR  *pstr_fmt;
 
@@ -2251,35 +2342,38 @@ CPU_CHAR  *Str_FmtNbr_Int32U (CPU_INT32U    nbr,
 *********************************************************************************************************
 */
 
-CPU_CHAR  *Str_FmtNbr_Int32S (CPU_INT32S    nbr,
-                              CPU_INT08U    nbr_dig,
-                              CPU_INT08U    nbr_base,
-                              CPU_CHAR      lead_char,
-                              CPU_BOOLEAN   lower_case,
-                              CPU_BOOLEAN   nul,
-                              CPU_CHAR     *pstr)
+CPU_CHAR  *Str_FmtNbr_Int32S(CPU_INT32S    nbr,
+                             CPU_INT08U    nbr_dig,
+                             CPU_INT08U    nbr_base,
+                             CPU_CHAR      lead_char,
+                             CPU_BOOLEAN   lower_case,
+                             CPU_BOOLEAN   nul,
+                             CPU_CHAR     *pstr)
 {
     CPU_CHAR     *pstr_fmt;
     CPU_INT32S    nbr_fmt;
     CPU_BOOLEAN   nbr_neg;
 
 
-    if (nbr < 0) {                                              /* If nbr neg, ...                                      */
+    if(nbr < 0)                                                 /* If nbr neg, ...                                      */
+    {
         nbr_fmt = -nbr;                                         /* ... negate nbr.                                      */
         nbr_neg =  DEF_YES;
-    } else {
+    }
+    else
+    {
         nbr_fmt =  nbr;
         nbr_neg =  DEF_NO;
     }
 
     pstr_fmt = Str_FmtNbr_Int32((CPU_INT32U)nbr_fmt,            /* Fmt signed int into str.                             */
-                                            nbr_dig,
-                                            nbr_base,
-                                            nbr_neg,
-                                            lead_char,
-                                            lower_case,
-                                            nul,
-                                            pstr);
+                                nbr_dig,
+                                nbr_base,
+                                nbr_neg,
+                                lead_char,
+                                lower_case,
+                                nul,
+                                pstr);
 
     return (pstr_fmt);
 }
@@ -2565,12 +2659,12 @@ CPU_CHAR  *Str_FmtNbr_Int32S (CPU_INT32S    nbr,
 */
 
 #if (LIB_STR_CFG_FP_EN == DEF_ENABLED)
-CPU_CHAR  *Str_FmtNbr_32 (CPU_FP32      nbr,
-                          CPU_INT08U    nbr_dig,
-                          CPU_INT08U    nbr_dp,
-                          CPU_CHAR      lead_char,
-                          CPU_BOOLEAN   nul,
-                          CPU_CHAR     *pstr)
+CPU_CHAR  *Str_FmtNbr_32(CPU_FP32      nbr,
+                         CPU_INT08U    nbr_dig,
+                         CPU_INT08U    nbr_dp,
+                         CPU_CHAR      lead_char,
+                         CPU_BOOLEAN   nul,
+                         CPU_CHAR     *pstr)
 {
     CPU_CHAR     *pstr_fmt;
     CPU_DATA      i;
@@ -2592,8 +2686,9 @@ CPU_CHAR  *Str_FmtNbr_32 (CPU_FP32      nbr,
     CPU_BOOLEAN   nbr_neg_fmtd;
 
 
-                                                                /* ---------------- VALIDATE FMT ARGS ----------------- */
-    if (pstr == (CPU_CHAR *)0) {                                /* Rtn NULL if str ptr NULL (see Note #6a).             */
+    /* ---------------- VALIDATE FMT ARGS ----------------- */
+    if(pstr == (CPU_CHAR *)0)                                   /* Rtn NULL if str ptr NULL (see Note #6a).             */
+    {
         return ((CPU_CHAR *)0);
     }
 
@@ -2603,33 +2698,45 @@ CPU_CHAR  *Str_FmtNbr_32 (CPU_FP32      nbr,
     nbr_fmt     =  0.0f;
     nbr_neg     =  DEF_NO;
 
-    if ((nbr_dig < 1) && (nbr_dp < 1)) {                        /* If nbr digs/dps = 0, ...                             */
+    if((nbr_dig < 1) && (nbr_dp < 1))                           /* If nbr digs/dps = 0, ...                             */
+    {
         fmt_invalid = DEF_YES;                                  /* ... fmt invalid str (see Note #6b).                  */
     }
 
-    if (lead_char != (CPU_CHAR)'\0') {
+    if(lead_char != (CPU_CHAR)'\0')
+    {
         print_char =  ASCII_IsPrint(lead_char);
-        if (print_char != DEF_YES) {                            /* If lead char non-printable  (see Note #3a1), ...     */
+
+        if(print_char != DEF_YES)                               /* If lead char non-printable  (see Note #3a1), ...     */
+        {
             fmt_invalid = DEF_YES;                              /* ... fmt invalid str         (see Note #6d).          */
 
-        } else if (lead_char != '0') {                          /* Chk lead char for non-0 dig.                         */
+        }
+        else if(lead_char != '0')                               /* Chk lead char for non-0 dig.                         */
+        {
             lead_char_dig = ASCII_IsDig(lead_char);
-            if (lead_char_dig == DEF_YES) {                     /* If  lead char     non-0 dig (see Note #3a2A), ...    */
+
+            if(lead_char_dig == DEF_YES)                        /* If  lead char     non-0 dig (see Note #3a2A), ...    */
+            {
                 fmt_invalid = DEF_YES;                          /* ... fmt invalid str         (see Note #6d).          */
             }
         }
     }
 
 
-                                                                /* ----------------- PREPARE NBR FMT ------------------ */
+    /* ----------------- PREPARE NBR FMT ------------------ */
     pstr_fmt = pstr;
 
-    if (fmt_invalid == DEF_NO) {
-        if (nbr < 0.0f) {                                       /* If nbr neg, ...                                      */
+    if(fmt_invalid == DEF_NO)
+    {
+        if(nbr < 0.0f)                                          /* If nbr neg, ...                                      */
+        {
             nbr_fmt      = -nbr;                                /* ... negate nbr.                                      */
             nbr_neg_sign =  1u;
             nbr_neg      =  DEF_YES;
-        } else {
+        }
+        else
+        {
             nbr_fmt      =  nbr;
             nbr_neg_sign =  0u;
             nbr_neg      =  DEF_NO;
@@ -2637,135 +2744,182 @@ CPU_CHAR  *Str_FmtNbr_32 (CPU_FP32      nbr,
 
         nbr_log     = nbr_fmt;
         nbr_dig_max = 0u;
-        while (nbr_log >= 1.0f) {                               /* While base-10 digs avail, ...                        */
+
+        while(nbr_log >= 1.0f)                                  /* While base-10 digs avail, ...                        */
+        {
             nbr_dig_max++;                                      /* ... calc max nbr digs.                               */
             nbr_log /= 10.0f;
         }
 
-        if (((nbr_dig >= (nbr_dig_max + nbr_neg_sign)) ||       /* If req'd nbr digs >= (max nbr digs + neg sign)    .. */
-             (nbr_dig_max < 1))                        &&       /* .. or NO nbr digs,                                .. */
-            ((nbr_dig     > 1) ||                               /* .. but NOT [(req'd nbr dig = 1) AND               .. */
-             (nbr_dp      > 0) ||                               /* ..          (req'd nbr dp  = 0) AND               .. */
-             (nbr_neg == DEF_NO))) {                            /* ..          (      nbr neg    )]   (see Note #2b3).  */
-                                                                /* .. prepare nbr digs to fmt.                          */
-            for (i = 1u; i < nbr_dig; i++) {
+        if(((nbr_dig >= (nbr_dig_max + nbr_neg_sign)) ||        /* If req'd nbr digs >= (max nbr digs + neg sign)    .. */
+            (nbr_dig_max < 1))                        &&       /* .. or NO nbr digs,                                .. */
+           ((nbr_dig     > 1) ||                               /* .. but NOT [(req'd nbr dig = 1) AND               .. */
+            (nbr_dp      > 0) ||                               /* ..          (req'd nbr dp  = 0) AND               .. */
+            (nbr_neg == DEF_NO)))                              /* ..          (      nbr neg    )]   (see Note #2b3).  */
+        {
+            /* .. prepare nbr digs to fmt.                          */
+            for(i = 1u; i < nbr_dig; i++)
+            {
                 dig_exp *= 10.0f;
             }
 
             nbr_neg_fmtd   =  DEF_NO;
             nbr_dig_sig    =  0u;
             lead_char_fmtd =  DEF_NO;
-        } else {                                                /* Else if nbr trunc'd, ...                             */
+        }
+        else                                                    /* Else if nbr trunc'd, ...                             */
+        {
             fmt_invalid = DEF_YES;                              /* ... fmt invalid str (see Note #6c).                  */
         }
     }
 
 
-                                                                /* ------------------- FMT NBR STR -------------------- */
-    for (i = nbr_dig; i > 0; i--) {                             /* Fmt str for desired nbr digs :                       */
-        if (fmt_invalid == DEF_NO) {
-            if (nbr_dig_sig < LIB_STR_CFG_FP_MAX_NBR_DIG_SIG) { /* If nbr sig digs < max, fmt str digs;           ...   */
+    /* ------------------- FMT NBR STR -------------------- */
+    for(i = nbr_dig; i > 0; i--)                                /* Fmt str for desired nbr digs :                       */
+    {
+        if(fmt_invalid == DEF_NO)
+        {
+            if(nbr_dig_sig < LIB_STR_CFG_FP_MAX_NBR_DIG_SIG)    /* If nbr sig digs < max, fmt str digs;           ...   */
+            {
                 nbr_shiftd = (CPU_INT32U)(nbr_fmt / dig_exp);
-                if ((nbr_shiftd > 0) ||                         /* If shifted nbr > 0                          ...      */
-                    (i == 1u)) {                                /* ... OR on one's dig to fmt (see Note #3c1), ...      */
-                                                                /* ... calc & fmt dig val;                     ...      */
-                    if ((nbr_neg      == DEF_YES) &&            /* If  nbr neg                     ...                  */
-                        (nbr_neg_fmtd == DEF_NO )) {            /* ... but neg sign NOT yet fmt'd; ...                  */
 
-                        if (lead_char_fmtd == DEF_YES) {        /* ... & if lead char(s) fmt'd,    ...                  */
+                if((nbr_shiftd > 0) ||                          /* If shifted nbr > 0                          ...      */
+                   (i == 1u))                                  /* ... OR on one's dig to fmt (see Note #3c1), ...      */
+                {
+                    /* ... calc & fmt dig val;                     ...      */
+                    if((nbr_neg      == DEF_YES) &&             /* If  nbr neg                     ...                  */
+                       (nbr_neg_fmtd == DEF_NO))               /* ... but neg sign NOT yet fmt'd; ...                  */
+                    {
+
+                        if(lead_char_fmtd == DEF_YES)           /* ... & if lead char(s) fmt'd,    ...                  */
+                        {
                             pstr_fmt--;                         /* ... replace last lead char w/   ...                  */
                         }
-                       *pstr_fmt++   = '-';                     /* ... prepend neg sign (see Notes #2b & #3b).          */
+
+                        *pstr_fmt++   = '-';                     /* ... prepend neg sign (see Notes #2b & #3b).          */
                         nbr_neg_fmtd = DEF_YES;
                     }
 
-                    if (nbr_shiftd > 0) {                       /* If shifted nbr > 0,        ...                       */
+                    if(nbr_shiftd > 0)                          /* If shifted nbr > 0,        ...                       */
+                    {
                         dig_val    = (CPU_INT08U)(nbr_shiftd % 10u);
-                       *pstr_fmt++ = (CPU_CHAR  )(dig_val    + '0');
+                        *pstr_fmt++ = (CPU_CHAR)(dig_val    + '0');
 
                         nbr_dig_sig++;                          /* ... inc nbr sig digs;      ...                       */
 
-                    } else if ((nbr_dig > 1) ||                 /* ... else if req'd digs > 1 ...                       */
-                               (nbr_neg == DEF_NO)) {           /* ... or non-neg nbr,        ...                       */
-                       *pstr_fmt++ = '0';                       /* ... fmt one '0' char (see Note #3c5).                */
+                    }
+                    else if((nbr_dig > 1) ||                    /* ... else if req'd digs > 1 ...                       */
+                            (nbr_neg == DEF_NO))             /* ... or non-neg nbr,        ...                       */
+                    {
+                        *pstr_fmt++ = '0';                       /* ... fmt one '0' char (see Note #3c5).                */
                     }
 
-                } else if ((nbr_neg      == DEF_YES) &&         /* ... else if nbr neg                         ...      */
-                           (lead_char_0  == DEF_YES) &&         /* ... & lead char a '0' dig                   ...      */
-                           (nbr_neg_fmtd == DEF_NO )) {         /* ... but neg sign NOT yet fmt'd,             ...      */
+                }
+                else if((nbr_neg      == DEF_YES) &&            /* ... else if nbr neg                         ...      */
+                        (lead_char_0  == DEF_YES) &&         /* ... & lead char a '0' dig                   ...      */
+                        (nbr_neg_fmtd == DEF_NO))            /* ... but neg sign NOT yet fmt'd,             ...      */
+                {
 
-                   *pstr_fmt++   = '-';                         /* ... prepend neg sign (see Note #3b);        ...      */
+                    *pstr_fmt++   = '-';                         /* ... prepend neg sign (see Note #3b);        ...      */
                     nbr_neg_fmtd = DEF_YES;
 
-                } else if (lead_char != (CPU_CHAR)'\0') {       /* ... else if avail,                          ...      */
-                   *pstr_fmt++     = lead_char;                 /* ... fmt lead char.                                   */
+                }
+                else if(lead_char != (CPU_CHAR)'\0')            /* ... else if avail,                          ...      */
+                {
+                    *pstr_fmt++     = lead_char;                 /* ... fmt lead char.                                   */
                     lead_char_fmtd = DEF_YES;
                 }
 
                 dig_exp /= 10.0f;                               /* Shift to next least-sig dig.                         */
 
-            } else {                                            /* ... else append non-sig 0's (see Note #2c2).         */
-               *pstr_fmt++ = '0';
+            }
+            else                                                /* ... else append non-sig 0's (see Note #2c2).         */
+            {
+                *pstr_fmt++ = '0';
             }
 
-        } else {                                                /* Else fmt '?' for invalid str (see Note #7).          */
-           *pstr_fmt++ = '?';
+        }
+        else                                                    /* Else fmt '?' for invalid str (see Note #7).          */
+        {
+            *pstr_fmt++ = '?';
         }
     }
 
 
-    if (nbr_dp > 0) {                                           /* Fmt str for desired nbr dp :                         */
-        if (nbr_dig < 1) {                                      /* If NO digs fmt'd;                             ...    */
-            if (fmt_invalid == DEF_NO) {                        /* ... nbr fmt valid,                            ...    */
-                if ((nbr_neg      == DEF_YES) &&                /* ... nbr neg                                   ...    */
-                    (nbr_neg_fmtd == DEF_NO )) {                /* ... but neg sign NOT yet fmt'd,               ...    */
+    if(nbr_dp > 0)                                              /* Fmt str for desired nbr dp :                         */
+    {
+        if(nbr_dig < 1)                                         /* If NO digs fmt'd;                             ...    */
+        {
+            if(fmt_invalid == DEF_NO)                           /* ... nbr fmt valid,                            ...    */
+            {
+                if((nbr_neg      == DEF_YES) &&                 /* ... nbr neg                                   ...    */
+                   (nbr_neg_fmtd == DEF_NO))                   /* ... but neg sign NOT yet fmt'd,               ...    */
+                {
                     *pstr_fmt++ = '-';                          /* ... prepend neg sign (see Notes #2b & #3b);   ...    */
-                } else {                                        /* ... else prepend 1 dig of '0' (see Note #3c5) ...    */
+                }
+                else                                            /* ... else prepend 1 dig of '0' (see Note #3c5) ...    */
+                {
                     *pstr_fmt++ = '0';
                 }
-            } else {                                            /* ... else fmt '?' for invalid str (see Note #7).      */
+            }
+            else                                                /* ... else fmt '?' for invalid str (see Note #7).      */
+            {
                 *pstr_fmt++ = '?';
             }
         }
 
-        if (fmt_invalid == DEF_NO) {                            /* If nbr fmt valid, ...                                */
-           *pstr_fmt++ = '.';                                   /* ... append dp prior to dp conversion.                */
-        } else {                                                /* Else fmt '?' for invalid str (see Note #7).          */
-           *pstr_fmt++ = '?';
+        if(fmt_invalid == DEF_NO)                               /* If nbr fmt valid, ...                                */
+        {
+            *pstr_fmt++ = '.';                                   /* ... append dp prior to dp conversion.                */
+        }
+        else                                                    /* Else fmt '?' for invalid str (see Note #7).          */
+        {
+            *pstr_fmt++ = '?';
         }
 
         dp_exp = 10.0f;
-        for (i = 0u; i < nbr_dp; i++) {
-            if (fmt_invalid == DEF_NO) {
-                                                                /* If nbr sig digs < max, fmt str dps;    ...           */
-                if (nbr_dig_sig <  LIB_STR_CFG_FP_MAX_NBR_DIG_SIG) {
+
+        for(i = 0u; i < nbr_dp; i++)
+        {
+            if(fmt_invalid == DEF_NO)
+            {
+                /* If nbr sig digs < max, fmt str dps;    ...           */
+                if(nbr_dig_sig <  LIB_STR_CFG_FP_MAX_NBR_DIG_SIG)
+                {
                     nbr_shiftd  = (CPU_INT32U)(nbr_fmt * dp_exp);
                     dig_val     = (CPU_INT32U)(nbr_shiftd % 10u);
-                   *pstr_fmt++  = (CPU_CHAR  )(dig_val    + '0');
+                    *pstr_fmt++  = (CPU_CHAR)(dig_val    + '0');
                     dp_exp     *=  10.0f;                       /* Shift to next least-sig dp.                          */
 
-                    if ((nbr_shiftd  > 0) ||                    /* If shifted nbr > 0                  ...              */
-                        (nbr_dig_sig > 0)) {                    /* ... OR  > 0 sig digs already fmt'd, ...              */
-                         nbr_dig_sig++;                         /* ... inc nbr sig digs.                                */
+                    if((nbr_shiftd  > 0) ||                     /* If shifted nbr > 0                  ...              */
+                       (nbr_dig_sig > 0))                      /* ... OR  > 0 sig digs already fmt'd, ...              */
+                    {
+                        nbr_dig_sig++;                         /* ... inc nbr sig digs.                                */
                     }
 
-                } else {                                        /* ... else append non-sig 0's (see Note #2c2).         */
-                   *pstr_fmt++ = '0';
+                }
+                else                                            /* ... else append non-sig 0's (see Note #2c2).         */
+                {
+                    *pstr_fmt++ = '0';
                 }
 
-            } else {                                            /* Else fmt '?' for invalid str (see Note #7).          */
-               *pstr_fmt++ = '?';
+            }
+            else                                                /* Else fmt '?' for invalid str (see Note #7).          */
+            {
+                *pstr_fmt++ = '?';
             }
         }
     }
 
 
-    if (nul != DEF_NO) {                                        /* If NOT DISABLED, append NULL char (see Note #4).     */
-       *pstr_fmt = (CPU_CHAR)'\0';
+    if(nul != DEF_NO)                                           /* If NOT DISABLED, append NULL char (see Note #4).     */
+    {
+        *pstr_fmt = (CPU_CHAR)'\0';
     }
 
 
-    if (fmt_invalid != DEF_NO) {                                /* Rtn NULL for invalid str fmt (see Notes #6a - #6d).  */
+    if(fmt_invalid != DEF_NO)                                   /* Rtn NULL for invalid str fmt (see Notes #6a - #6d).  */
+    {
         return ((CPU_CHAR *)0);
     }
 
@@ -2969,17 +3123,17 @@ CPU_CHAR  *Str_FmtNbr_32 (CPU_FP32      nbr,
 *********************************************************************************************************
 */
 
-CPU_INT32U  Str_ParseNbr_Int32U (const  CPU_CHAR     *pstr,
-                                        CPU_CHAR    **pstr_next,
-                                        CPU_INT08U    nbr_base)
+CPU_INT32U  Str_ParseNbr_Int32U(const  CPU_CHAR     *pstr,
+                                CPU_CHAR    **pstr_next,
+                                CPU_INT08U    nbr_base)
 {
     CPU_INT32U  nbr;
 
 
-    nbr = Str_ParseNbr_Int32(               pstr,               /* Parse/convert str ...                                */
-                                            pstr_next,
-                                            nbr_base,
-                                            DEF_NO,             /* ... as unsigned int (see Note #2a2).                 */
+    nbr = Str_ParseNbr_Int32(pstr,                              /* Parse/convert str ...                                */
+                             pstr_next,
+                             nbr_base,
+                             DEF_NO,             /* ... as unsigned int (see Note #2a2).                 */
                              (CPU_BOOLEAN *)0);
 
     return (nbr);
@@ -3185,9 +3339,9 @@ CPU_INT32U  Str_ParseNbr_Int32U (const  CPU_CHAR     *pstr,
 *********************************************************************************************************
 */
 
-CPU_INT32S  Str_ParseNbr_Int32S (const  CPU_CHAR     *pstr,
-                                        CPU_CHAR    **pstr_next,
-                                        CPU_INT08U    nbr_base)
+CPU_INT32S  Str_ParseNbr_Int32S(const  CPU_CHAR     *pstr,
+                                CPU_CHAR    **pstr_next,
+                                CPU_INT08U    nbr_base)
 {
     CPU_INT32S   nbr;
     CPU_INT32U   nbr_abs;
@@ -3198,14 +3352,17 @@ CPU_INT32S  Str_ParseNbr_Int32S (const  CPU_CHAR     *pstr,
                                  pstr_next,
                                  nbr_base,
                                  DEF_YES,                       /* ... as signed int (see Note #2a2).                   */
-                                &nbr_neg);
+                                 &nbr_neg);
 
-    if (nbr_neg == DEF_NO) {                                    /* Chk for neg nbr & ovf/undf (see Note #2a3A1).        */
-        nbr = (nbr_abs > (CPU_INT32U) DEF_INT_32S_MAX_VAL)          ?  (CPU_INT32S)DEF_INT_32S_MAX_VAL
-                                                                    :  (CPU_INT32S)nbr_abs;
-    } else {
-        nbr = (nbr_abs > (CPU_INT32U)-DEF_INT_32S_MIN_VAL_ONES_CPL) ?  (CPU_INT32S)DEF_INT_32S_MIN_VAL
-                                                                    : -(CPU_INT32S)nbr_abs;
+    if(nbr_neg == DEF_NO)                                       /* Chk for neg nbr & ovf/undf (see Note #2a3A1).        */
+    {
+        nbr = (nbr_abs > (CPU_INT32U) DEF_INT_32S_MAX_VAL)          ? (CPU_INT32S)DEF_INT_32S_MAX_VAL
+              : (CPU_INT32S)nbr_abs;
+    }
+    else
+    {
+        nbr = (nbr_abs > (CPU_INT32U)-DEF_INT_32S_MIN_VAL_ONES_CPL) ? (CPU_INT32S)DEF_INT_32S_MIN_VAL
+              : -(CPU_INT32S)nbr_abs;
     }
 
     return (nbr);
@@ -3440,14 +3597,14 @@ CPU_INT32S  Str_ParseNbr_Int32S (const  CPU_CHAR     *pstr,
 *********************************************************************************************************
 */
 
-static  CPU_CHAR  *Str_FmtNbr_Int32 (CPU_INT32U    nbr,
-                                     CPU_INT08U    nbr_dig,
-                                     CPU_INT08U    nbr_base,
-                                     CPU_BOOLEAN   nbr_neg,
-                                     CPU_CHAR      lead_char,
-                                     CPU_BOOLEAN   lower_case,
-                                     CPU_BOOLEAN   nul,
-                                     CPU_CHAR     *pstr)
+static  CPU_CHAR  *Str_FmtNbr_Int32(CPU_INT32U    nbr,
+                                    CPU_INT08U    nbr_dig,
+                                    CPU_INT08U    nbr_base,
+                                    CPU_BOOLEAN   nbr_neg,
+                                    CPU_CHAR      lead_char,
+                                    CPU_BOOLEAN   lower_case,
+                                    CPU_BOOLEAN   nul,
+                                    CPU_CHAR     *pstr)
 {
     CPU_CHAR     *pstr_fmt;
     CPU_DATA      i;
@@ -3468,137 +3625,185 @@ static  CPU_CHAR  *Str_FmtNbr_Int32 (CPU_INT32U    nbr,
     CPU_BOOLEAN   nbr_neg_fmtd;
 
 
-                                                                /* ---------------- VALIDATE FMT ARGS ----------------- */
-    if (pstr == (CPU_CHAR *)0) {                                /* Rtn NULL if str ptr NULL (see Note #6a).             */
+    /* ---------------- VALIDATE FMT ARGS ----------------- */
+    if(pstr == (CPU_CHAR *)0)                                   /* Rtn NULL if str ptr NULL (see Note #6a).             */
+    {
         return ((CPU_CHAR *)0);
     }
 
     fmt_invalid = DEF_NO;
     lead_char_0 = DEF_NO;
 
-    if (nbr_dig < 1) {                                          /* If nbr digs = 0, ...                                 */
+    if(nbr_dig < 1)                                             /* If nbr digs = 0, ...                                 */
+    {
         fmt_invalid = DEF_YES;                                  /* ... fmt invalid str (see Note #6b).                  */
     }
-                                                                /* If invalid base, ...                                 */
-    if ((nbr_base <  2u) ||
-        (nbr_base > 36u)) {
+
+    /* If invalid base, ...                                 */
+    if((nbr_base <  2u) ||
+       (nbr_base > 36u))
+    {
         fmt_invalid = DEF_YES;                                  /* ... fmt invalid str (see Note #6d).                  */
     }
 
-    if (lead_char != (CPU_CHAR)'\0') {
+    if(lead_char != (CPU_CHAR)'\0')
+    {
         print_char =  ASCII_IsPrint(lead_char);
-        if (print_char != DEF_YES) {                            /* If lead char non-printable (see Note #3a1), ...      */
+
+        if(print_char != DEF_YES)                               /* If lead char non-printable (see Note #3a1), ...      */
+        {
             fmt_invalid = DEF_YES;                              /* ... fmt invalid str        (see Note #6e).           */
 
-        } else if (lead_char != '0') {                          /* Chk lead char for non-0 nbr base dig.                */
+        }
+        else if(lead_char != '0')                               /* Chk lead char for non-0 nbr base dig.                */
+        {
             lead_char_delta_0 = (CPU_INT08U)(lead_char - '0');
-            if (lower_case != DEF_YES) {
+
+            if(lower_case != DEF_YES)
+            {
                 lead_char_delta_a = (CPU_INT08U)(lead_char - 'A');
-            } else {
+            }
+            else
+            {
                 lead_char_delta_a = (CPU_INT08U)(lead_char - 'a');
             }
 
-            lead_char_dig = (((nbr_base <= 10u) &&  (lead_char_delta_0 <  nbr_base))      ||
+            lead_char_dig = (((nbr_base <= 10u) && (lead_char_delta_0 <  nbr_base))      ||
                              ((nbr_base >  10u) && ((lead_char_delta_0 <             10u) ||
                                                     (lead_char_delta_a < (nbr_base - 10u))))) ? DEF_YES : DEF_NO;
 
-            if (lead_char_dig == DEF_YES) {                     /* If lead char non-0 nbr base dig (see Note #3a2A), ...*/
+            if(lead_char_dig == DEF_YES)                        /* If lead char non-0 nbr base dig (see Note #3a2A), ...*/
+            {
                 fmt_invalid = DEF_YES;                          /* ... fmt invalid str             (see Note #6e).      */
             }
         }
     }
 
 
-                                                                /* ----------------- PREPARE NBR FMT ------------------ */
+    /* ----------------- PREPARE NBR FMT ------------------ */
     pstr_fmt = pstr;
 
-    if (fmt_invalid == DEF_NO) {
+    if(fmt_invalid == DEF_NO)
+    {
         nbr_fmt     = nbr;
         nbr_log     = nbr;
         nbr_dig_max = 1u;
-        while (nbr_log >= nbr_base) {                           /* While nbr base digs avail, ...                       */
+
+        while(nbr_log >= nbr_base)                              /* While nbr base digs avail, ...                       */
+        {
             nbr_dig_max++;                                      /* ... calc max nbr digs.                               */
             nbr_log /= nbr_base;
         }
 
         nbr_neg_sign = (nbr_neg == DEF_YES) ? 1u : 0u;
-        if (nbr_dig >= (nbr_dig_max + nbr_neg_sign)) {          /* If req'd nbr digs >= (max nbr digs + neg sign), ...  */
+
+        if(nbr_dig >= (nbr_dig_max + nbr_neg_sign))             /* If req'd nbr digs >= (max nbr digs + neg sign), ...  */
+        {
             nbr_neg_fmtd = DEF_NO;
             nbr_dig_min  = DEF_MIN(nbr_dig_max, nbr_dig);
-                                                                /* ... calc nbr digs to fmt & nbr lead chars.           */
-            if (lead_char != (CPU_CHAR)'\0') {
+
+            /* ... calc nbr digs to fmt & nbr lead chars.           */
+            if(lead_char != (CPU_CHAR)'\0')
+            {
                 nbr_dig_fmtd  = nbr_dig;
                 nbr_lead_char = nbr_dig     -
                                 nbr_dig_min - nbr_neg_sign;
-            } else {
+            }
+            else
+            {
                 nbr_dig_fmtd  = nbr_dig_min + nbr_neg_sign;
                 nbr_lead_char = 0u;
             }
 
-            if (nbr_lead_char > 0) {                            /* If lead chars to fmt, ...                            */
+            if(nbr_lead_char > 0)                               /* If lead chars to fmt, ...                            */
+            {
                 lead_char_0 = (lead_char == '0')                /* ... chk if lead char a '0' dig (see Note #3a2B).     */
-                            ?  DEF_YES : DEF_NO;
-            } else {
+                              ?  DEF_YES : DEF_NO;
+            }
+            else
+            {
                 lead_char_0 =  DEF_NO;
             }
 
-        } else {                                                /* Else if nbr trunc'd, ...                             */
+        }
+        else                                                    /* Else if nbr trunc'd, ...                             */
+        {
             fmt_invalid = DEF_YES;                              /* ... fmt invalid str (see Note #6c).                  */
         }
     }
 
-    if (fmt_invalid != DEF_NO) {
+    if(fmt_invalid != DEF_NO)
+    {
         nbr_dig_fmtd = nbr_dig;
     }
 
 
-                                                                /* ------------------- FMT NBR STR -------------------- */
+    /* ------------------- FMT NBR STR -------------------- */
     pstr_fmt += nbr_dig_fmtd;                                   /* Start fmt @ least-sig dig.                           */
 
-    if (nul != DEF_NO) {                                        /* If NOT DISABLED, append NULL char (see Note #4).     */
-       *pstr_fmt = (CPU_CHAR)'\0';
+    if(nul != DEF_NO)                                           /* If NOT DISABLED, append NULL char (see Note #4).     */
+    {
+        *pstr_fmt = (CPU_CHAR)'\0';
     }
+
     pstr_fmt--;
 
 
-    for (i = 0u; i < nbr_dig_fmtd; i++) {                       /* Fmt str for desired nbr digs :                       */
-        if (fmt_invalid == DEF_NO) {
-            if ((nbr_fmt > 0) ||                                /* If fmt nbr > 0                               ...     */
-                (i == 0u)) {                                    /* ... OR on one's  dig to fmt (see Note #3c1), ...     */
-                                                                /* ... calc & fmt dig val;                      ...     */
+    for(i = 0u; i < nbr_dig_fmtd; i++)                          /* Fmt str for desired nbr digs :                       */
+    {
+        if(fmt_invalid == DEF_NO)
+        {
+            if((nbr_fmt > 0) ||                                 /* If fmt nbr > 0                               ...     */
+               (i == 0u))                                      /* ... OR on one's  dig to fmt (see Note #3c1), ...     */
+            {
+                /* ... calc & fmt dig val;                      ...     */
                 dig_val = (CPU_INT08U)(nbr_fmt % nbr_base);
-                if (dig_val < 10u) {
-                   *pstr_fmt-- = (CPU_CHAR)(dig_val + '0');
-                } else {
-                    if (lower_case !=  DEF_YES) {
-                       *pstr_fmt--  = (CPU_CHAR)((dig_val - 10u) + 'A');
-                    } else {
-                       *pstr_fmt--  = (CPU_CHAR)((dig_val - 10u) + 'a');
+
+                if(dig_val < 10u)
+                {
+                    *pstr_fmt-- = (CPU_CHAR)(dig_val + '0');
+                }
+                else
+                {
+                    if(lower_case !=  DEF_YES)
+                    {
+                        *pstr_fmt--  = (CPU_CHAR)((dig_val - 10u) + 'A');
+                    }
+                    else
+                    {
+                        *pstr_fmt--  = (CPU_CHAR)((dig_val - 10u) + 'a');
                     }
                 }
 
                 nbr_fmt /= nbr_base;                            /* Shift to next more-sig dig.                          */
 
-            } else if ((nbr_neg      == DEF_YES)  &&            /* ... else if nbr neg             AND          ...     */
-                     (((lead_char_0  == DEF_NO )  &&            /* ... lead char NOT a '0' dig                  ...     */
-                       (nbr_neg_fmtd == DEF_NO )) ||            /* ... but neg sign NOT yet fmt'd  OR           ...     */
-                      ((lead_char_0  != DEF_NO )  &&            /* ... lead char is  a '0' dig                  ...     */
-                       (i == (nbr_dig_fmtd - 1u))))) {          /* ... & on most-sig dig to fmt,                ...     */
+            }
+            else if((nbr_neg      == DEF_YES)  &&               /* ... else if nbr neg             AND          ...     */
+                    (((lead_char_0  == DEF_NO)  &&             /* ... lead char NOT a '0' dig                  ...     */
+                      (nbr_neg_fmtd == DEF_NO)) ||             /* ... but neg sign NOT yet fmt'd  OR           ...     */
+                     ((lead_char_0  != DEF_NO)  &&             /* ... lead char is  a '0' dig                  ...     */
+                      (i == (nbr_dig_fmtd - 1u)))))            /* ... & on most-sig dig to fmt,                ...     */
+            {
 
-               *pstr_fmt--   = '-';                             /* ... prepend neg sign (see Note #3b);         ...     */
+                *pstr_fmt--   = '-';                             /* ... prepend neg sign (see Note #3b);         ...     */
                 nbr_neg_fmtd = DEF_YES;
 
-            } else if (lead_char != (CPU_CHAR)'\0') {           /* ... else if avail,                           ...     */
-               *pstr_fmt-- = lead_char;                         /* ... fmt lead char.                                   */
+            }
+            else if(lead_char != (CPU_CHAR)'\0')                /* ... else if avail,                           ...     */
+            {
+                *pstr_fmt-- = lead_char;                         /* ... fmt lead char.                                   */
             }
 
-        } else {                                                /* Else fmt '?' for invalid str (see Note #7).          */
-           *pstr_fmt-- = '?';
+        }
+        else                                                    /* Else fmt '?' for invalid str (see Note #7).          */
+        {
+            *pstr_fmt-- = '?';
         }
     }
 
 
-    if (fmt_invalid != DEF_NO) {                                /* Rtn NULL for invalid str fmt (see Notes #6a - #6e).  */
+    if(fmt_invalid != DEF_NO)                                   /* Rtn NULL for invalid str fmt (see Notes #6a - #6e).  */
+    {
         return ((CPU_CHAR *)0);
     }
 
@@ -3833,203 +4038,261 @@ static  CPU_CHAR  *Str_FmtNbr_Int32 (CPU_INT32U    nbr,
 *********************************************************************************************************
 */
 
-static  CPU_INT32U  Str_ParseNbr_Int32 (const  CPU_CHAR      *pstr,
-                                               CPU_CHAR     **pstr_next,
-                                               CPU_INT08U     nbr_base,
-                                               CPU_BOOLEAN    nbr_signed,
-                                               CPU_BOOLEAN   *pnbr_neg)
+static  CPU_INT32U  Str_ParseNbr_Int32(const  CPU_CHAR      *pstr,
+                                       CPU_CHAR     **pstr_next,
+                                       CPU_INT08U     nbr_base,
+                                       CPU_BOOLEAN    nbr_signed,
+                                       CPU_BOOLEAN   *pnbr_neg)
 {
     const  CPU_CHAR     *pstr_parse;
     const  CPU_CHAR     *pstr_parse_nbr;
-           CPU_CHAR     *pstr_parse_unused;
-           CPU_CHAR      parse_char;
-           CPU_INT08U    parse_dig;
-           CPU_INT32U    nbr;
-           CPU_BOOLEAN   nbr_neg_unused;
-           CPU_BOOLEAN   nbr_dig;
-           CPU_BOOLEAN   nbr_alpha;
-           CPU_BOOLEAN   nbr_hex;
-           CPU_BOOLEAN   nbr_hex_lower;
-           CPU_BOOLEAN   whitespace;
-           CPU_BOOLEAN   neg;
-           CPU_BOOLEAN   ovf;
-           CPU_BOOLEAN   done;
+    CPU_CHAR     *pstr_parse_unused;
+    CPU_CHAR      parse_char;
+    CPU_INT08U    parse_dig;
+    CPU_INT32U    nbr;
+    CPU_BOOLEAN   nbr_neg_unused;
+    CPU_BOOLEAN   nbr_dig;
+    CPU_BOOLEAN   nbr_alpha;
+    CPU_BOOLEAN   nbr_hex;
+    CPU_BOOLEAN   nbr_hex_lower;
+    CPU_BOOLEAN   whitespace;
+    CPU_BOOLEAN   neg;
+    CPU_BOOLEAN   ovf;
+    CPU_BOOLEAN   done;
 
-                                                                /* --------------- VALIDATE PARSE ARGS ---------------- */
-    if (pstr_next == (CPU_CHAR **) 0) {                         /* If NOT avail, ...                                    */
+    /* --------------- VALIDATE PARSE ARGS ---------------- */
+    if(pstr_next == (CPU_CHAR **) 0)                            /* If NOT avail, ...                                    */
+    {
         pstr_next  = (CPU_CHAR **)&pstr_parse_unused;           /* ... re-cfg NULL rtn ptr to unused local var.         */
-       (void)&pstr_parse_unused;                                /* Prevent possible 'variable unused' warning.          */
+        (void)&pstr_parse_unused;                                /* Prevent possible 'variable unused' warning.          */
     }
-   *pstr_next = (CPU_CHAR *)pstr;                               /* Init rtn str for err (see Note #5).                  */
 
-    if (pnbr_neg == (CPU_BOOLEAN *) 0) {                        /* If NOT avail, ...                                    */
+    *pstr_next = (CPU_CHAR *)pstr;                               /* Init rtn str for err (see Note #5).                  */
+
+    if(pnbr_neg == (CPU_BOOLEAN *) 0)                           /* If NOT avail, ...                                    */
+    {
         pnbr_neg  = (CPU_BOOLEAN *)&nbr_neg_unused;             /* ... re-cfg NULL rtn ptr to unused local var.         */
-       (void)&nbr_neg_unused;                                   /* Prevent possible 'variable unused' warning.          */
+        (void)&nbr_neg_unused;                                   /* Prevent possible 'variable unused' warning.          */
     }
-   *pnbr_neg = DEF_NO;                                          /* Init nbr neg for err (see Note #5).                  */
+
+    *pnbr_neg = DEF_NO;                                          /* Init nbr neg for err (see Note #5).                  */
 
 
-    if (pstr == (CPU_CHAR *)0) {                                /* Rtn zero if str ptr NULL (see Note #4b1).            */
-        return (0u);
-    }
-                                                                /* Rtn zero if invalid base (see Note #4a).             */
-    if ((nbr_base == 1u) ||
-        (nbr_base > 36u)) {
+    if(pstr == (CPU_CHAR *)0)                                   /* Rtn zero if str ptr NULL (see Note #4b1).            */
+    {
         return (0u);
     }
 
+    /* Rtn zero if invalid base (see Note #4a).             */
+    if((nbr_base == 1u) ||
+       (nbr_base > 36u))
+    {
+        return (0u);
+    }
 
-                                                                /* ------------- IGNORE PRECEDING CHAR(S) ------------- */
+
+    /* ------------- IGNORE PRECEDING CHAR(S) ------------- */
     pstr_parse = pstr;                                          /* Save ptr to init'l str for err (see Note #2a2A2).    */
 
     whitespace = ASCII_IsSpace(*pstr_parse);
-    while (whitespace == DEF_YES) {                             /* Ignore initial white-space char(s) [see Note #2a1A]. */
+
+    while(whitespace == DEF_YES)                                /* Ignore initial white-space char(s) [see Note #2a1A]. */
+    {
         pstr_parse++;
         whitespace = ASCII_IsSpace(*pstr_parse);
     }
 
-    switch (*pstr_parse) {
+    switch(*pstr_parse)
+    {
         case '+':                                               /* Ignore   pos sign (see Note #2a1B2).                 */
-             pstr_parse++;
-             neg = DEF_NO;
-             break;
+            pstr_parse++;
+            neg = DEF_NO;
+            break;
 
 
         case '-':                                               /* Validate neg sign (see Note #2a1B2a).                */
-             if (nbr_signed == DEF_YES) {
-                 pstr_parse++;
-             }
-             neg = DEF_YES;
-             break;
+            if(nbr_signed == DEF_YES)
+            {
+                pstr_parse++;
+            }
+
+            neg = DEF_YES;
+            break;
 
 
         default:
-             neg = DEF_NO;
-             break;
+            neg = DEF_NO;
+            break;
     }
 
 
-                                                                /* --------- IGNORE NBR BASE PRECEDING CHAR(S) -------- */
+    /* --------- IGNORE NBR BASE PRECEDING CHAR(S) -------- */
     pstr_parse_nbr = pstr_parse;                                /* Save ptr to str's nbr (see Note #2a1A1).             */
 
-    switch (nbr_base) {
+    switch(nbr_base)
+    {
         case  0u:                                               /* Determine unspecified nbr base (see Notes #2a1B1a).  */
-             if (*pstr_parse == '0') {                          /* If avail, ...                                        */
-                  pstr_parse++;                                 /* ... adv past '0'  prefix (see Note #2a1B1b2).        */
-                  switch (*pstr_parse) {
-                      case 'x':                                 /* For '0x' prefix, ...                                 */
-                      case 'X':
-                           nbr_base   = 16u;                    /* ... set nbr base = 16    (see Note #2a1B1a3).        */
-                           parse_char = (CPU_CHAR)(*(pstr_parse + 1));
-                           nbr_hex    =  ASCII_IsDigHex(parse_char);
-                           if (nbr_hex == DEF_YES) {            /* If next char is valid hex dig, ...                   */
-                               pstr_parse++;                    /* ... adv past '0x' prefix (see Note #2a1B1b2A).       */
-                           }
-                           break;
+            if(*pstr_parse == '0')                             /* If avail, ...                                        */
+            {
+                pstr_parse++;                                 /* ... adv past '0'  prefix (see Note #2a1B1b2).        */
+
+                switch(*pstr_parse)
+                {
+                    case 'x':                                 /* For '0x' prefix, ...                                 */
+                    case 'X':
+                        nbr_base   = 16u;                    /* ... set nbr base = 16    (see Note #2a1B1a3).        */
+                        parse_char = (CPU_CHAR)(*(pstr_parse + 1));
+                        nbr_hex    =  ASCII_IsDigHex(parse_char);
+
+                        if(nbr_hex == DEF_YES)               /* If next char is valid hex dig, ...                   */
+                        {
+                            pstr_parse++;                    /* ... adv past '0x' prefix (see Note #2a1B1b2A).       */
+                        }
+
+                        break;
 
 
-                      default:                                  /* For '0'  prefix, ...                                 */
-                           nbr_base =  8u;                      /* ... set nbr base =  8    (see Note #2a1B1a2).        */
-                           break;
-                  }
+                    default:                                  /* For '0'  prefix, ...                                 */
+                        nbr_base =  8u;                      /* ... set nbr base =  8    (see Note #2a1B1a2).        */
+                        break;
+                }
 
-             } else {                                           /* For non-'0' prefix, ...                              */
-                 nbr_base = 10u;                                /* ... set nbr base = 10    (see Note #2a1B1a1).        */
-             }
-             break;
+            }
+            else                                               /* For non-'0' prefix, ...                              */
+            {
+                nbr_base = 10u;                                /* ... set nbr base = 10    (see Note #2a1B1a1).        */
+            }
+
+            break;
 
 
         case  8u:                                               /* See Note #2a1B1a2.                                   */
-             if (*pstr_parse == '0') {                          /* If avail, ...                                        */
-                  pstr_parse++;                                 /* ... adv past '0'  prefix (see Note #2a1B1b2B).       */
-             }
-             break;
+            if(*pstr_parse == '0')                             /* If avail, ...                                        */
+            {
+                pstr_parse++;                                 /* ... adv past '0'  prefix (see Note #2a1B1b2B).       */
+            }
+
+            break;
 
 
         case 16u:                                               /* See Note #2a1B1a3.                                   */
-             if (*pstr_parse == '0') {                          /* If avail, ...                                        */
-                  pstr_parse++;                                 /* ... adv past '0'  prefix (see Note #2a1B1b2).        */
-                  switch (*pstr_parse) {
-                      case 'x':
-                      case 'X':
-                           parse_char = (CPU_CHAR)(*(pstr_parse + 1));
-                           nbr_hex    =  ASCII_IsDigHex(parse_char);
-                           if (nbr_hex == DEF_YES) {            /* If next char is valid hex dig, ...                   */
-                               pstr_parse++;                    /* ... adv past '0x' prefix (see Note #2a1B1b2A).       */
-                           }
-                           break;
+            if(*pstr_parse == '0')                             /* If avail, ...                                        */
+            {
+                pstr_parse++;                                 /* ... adv past '0'  prefix (see Note #2a1B1b2).        */
+
+                switch(*pstr_parse)
+                {
+                    case 'x':
+                    case 'X':
+                        parse_char = (CPU_CHAR)(*(pstr_parse + 1));
+                        nbr_hex    =  ASCII_IsDigHex(parse_char);
+
+                        if(nbr_hex == DEF_YES)               /* If next char is valid hex dig, ...                   */
+                        {
+                            pstr_parse++;                    /* ... adv past '0x' prefix (see Note #2a1B1b2A).       */
+                        }
+
+                        break;
 
 
-                      default:
-                           break;
-                  }
-             }
-             break;
+                    default:
+                        break;
+                }
+            }
+
+            break;
 
 
         default:                                                /* See Note #2a1B1b.                                    */
-             break;
+            break;
     }
 
 
-                                                                /* ------------------ PARSE INT STR ------------------- */
+    /* ------------------ PARSE INT STR ------------------- */
     nbr  = 0u;
     ovf  = DEF_NO;
     done = DEF_NO;
 
-    while (done == DEF_NO) {                                    /* Parse str for desired nbr base digs (see Note #2a2). */
+    while(done == DEF_NO)                                       /* Parse str for desired nbr base digs (see Note #2a2). */
+    {
         parse_char = (CPU_CHAR)*pstr_parse;
         nbr_alpha  =  ASCII_IsAlphaNum(parse_char);
-        if (nbr_alpha == DEF_YES) {                             /* If valid alpha num nbr dig avail, ...                */
-                                                                /* ... convert parse char into nbr dig.                 */
+
+        if(nbr_alpha == DEF_YES)                                /* If valid alpha num nbr dig avail, ...                */
+        {
+            /* ... convert parse char into nbr dig.                 */
             nbr_dig = ASCII_IsDig(parse_char);
-            if (nbr_dig == DEF_YES) {
+
+            if(nbr_dig == DEF_YES)
+            {
                 parse_dig = (CPU_INT08U)(parse_char - '0');
-            } else {
+            }
+            else
+            {
                 nbr_hex_lower = ASCII_IsLower(parse_char);
-                if (nbr_hex_lower == DEF_YES) {
+
+                if(nbr_hex_lower == DEF_YES)
+                {
                     parse_dig = (CPU_INT08U)((parse_char - 'a') + 10u);
-                } else {
+                }
+                else
+                {
                     parse_dig = (CPU_INT08U)((parse_char - 'A') + 10u);
                 }
             }
 
-            if (parse_dig < nbr_base) {                         /* If parse char valid for nbr base ...                 */
-                if (ovf == DEF_NO) {                            /* ... & nbr NOT yet ovf'd,         ...                 */
-                    if (nbr <= Str_MultOvfThTbl_Int32U[nbr_base]) {
-                                                                /* ... merge parse char dig into nbr.                   */
+            if(parse_dig < nbr_base)                            /* If parse char valid for nbr base ...                 */
+            {
+                if(ovf == DEF_NO)                               /* ... & nbr NOT yet ovf'd,         ...                 */
+                {
+                    if(nbr <= Str_MultOvfThTbl_Int32U[nbr_base])
+                    {
+                        /* ... merge parse char dig into nbr.                   */
                         nbr *= nbr_base;
                         nbr += parse_dig;
-                        if (nbr < parse_dig) {
+
+                        if(nbr < parse_dig)
+                        {
                             ovf = DEF_YES;
                         }
-                    } else {
+                    }
+                    else
+                    {
                         ovf = DEF_YES;
                     }
                 }
+
                 pstr_parse++;
 
-            } else {                                            /* Invalid         char parsed (see Note #2a1C1a).      */
+            }
+            else                                                /* Invalid         char parsed (see Note #2a1C1a).      */
+            {
                 done = DEF_YES;
             }
 
-        } else {                                                /* Invalid OR NULL char parsed (see Note #2a1C1).       */
+        }
+        else                                                    /* Invalid OR NULL char parsed (see Note #2a1C1).       */
+        {
             done = DEF_YES;
         }
     }
 
-    if (ovf == DEF_YES) {                                       /* If nbr ovf'd, ...                                    */
+    if(ovf == DEF_YES)                                          /* If nbr ovf'd, ...                                    */
+    {
         nbr  = DEF_INT_32U_MAX_VAL;                             /* ... rtn max int val (see Note #2a3A1).               */
     }
 
 
-    if (pstr_parse !=             pstr_parse_nbr) {             /* If final parse str != init'l parse nbr str,       .. */
-       *pstr_next   = (CPU_CHAR *)pstr_parse;                   /* .. rtn   parse str's next char (see Note #2a2B2); .. */
-    } else {
-       *pstr_next   = (CPU_CHAR *)pstr;                         /* .. else rtn initial parse str  (see Note #2a2A2).    */
+    if(pstr_parse !=             pstr_parse_nbr)                /* If final parse str != init'l parse nbr str,       .. */
+    {
+        *pstr_next   = (CPU_CHAR *)pstr_parse;                   /* .. rtn   parse str's next char (see Note #2a2B2); .. */
+    }
+    else
+    {
+        *pstr_next   = (CPU_CHAR *)pstr;                         /* .. else rtn initial parse str  (see Note #2a2A2).    */
     }
 
-   *pnbr_neg = neg;                                             /* Rtn neg nbr status.                                  */
+    *pnbr_neg = neg;                                             /* Rtn neg nbr status.                                  */
 
 
     return (nbr);

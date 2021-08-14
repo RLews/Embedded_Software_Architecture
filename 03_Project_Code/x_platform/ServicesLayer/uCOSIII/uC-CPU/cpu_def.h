@@ -7,12 +7,12 @@
 *
 *               All rights reserved.  Protected by international copyright laws.
 *
-*               uC/CPU is provided in source form to registered licensees ONLY.  It is 
-*               illegal to distribute this source code to any third party unless you receive 
-*               written permission by an authorized Micrium representative.  Knowledge of 
+*               uC/CPU is provided in source form to registered licensees ONLY.  It is
+*               illegal to distribute this source code to any third party unless you receive
+*               written permission by an authorized Micrium representative.  Knowledge of
 *               the source code may NOT be used to develop a similar product.
 *
-*               Please help us continue to provide the Embedded community with the finest 
+*               Please help us continue to provide the Embedded community with the finest
 *               software available.  Your honesty is greatly appreciated.
 *
 *               You can contact us at www.micrium.com.
@@ -35,7 +35,7 @@
 *********************************************************************************************************
 *                                               MODULE
 *
-* Note(s) : (1) This CPU definition header file is protected from multiple pre-processor inclusion 
+* Note(s) : (1) This CPU definition header file is protected from multiple pre-processor inclusion
 *               through use of the CPU definition module present pre-processor macro definition.
 *********************************************************************************************************
 */
@@ -64,9 +64,9 @@
 *
 *                           where
 *                                   ver             denotes software version number scaled as an integer value
-*                                   x.yyzz          denotes software version number, where the unscaled integer 
-*                                                       portion denotes the major version number & the unscaled 
-*                                                       fractional portion denotes the (concatenated) minor 
+*                                   x.yyzz          denotes software version number, where the unscaled integer
+*                                                       portion denotes the major version number & the unscaled
+*                                                       fractional portion denotes the (concatenated) minor
 *                                                       version numbers
 *********************************************************************************************************
 */
@@ -94,14 +94,14 @@
 *********************************************************************************************************
 */
 
-                                                        /* ---------------------- CPU WORD SIZE ----------------------- */
+/* ---------------------- CPU WORD SIZE ----------------------- */
 #define  CPU_WORD_SIZE_08                          1    /*  8-bit word size (in octets).                                */
 #define  CPU_WORD_SIZE_16                          2    /* 16-bit word size (in octets).                                */
 #define  CPU_WORD_SIZE_32                          4    /* 32-bit word size (in octets).                                */
 #define  CPU_WORD_SIZE_64                          8    /* 64-bit word size (in octets).                                */
 
 
-                                                        /* ------------------ CPU WORD-ENDIAN ORDER ------------------- */
+/* ------------------ CPU WORD-ENDIAN ORDER ------------------- */
 #define  CPU_ENDIAN_TYPE_NONE                      0u
 #define  CPU_ENDIAN_TYPE_BIG                       1u   /* Big-   endian word order (see Note #1a).                     */
 #define  CPU_ENDIAN_TYPE_LITTLE                    2u   /* Little-endian word order (see Note #1b).                     */
@@ -113,14 +113,14 @@
 *
 * Note(s) : (1) Configure CPU_CFG_STK_GROWTH in 'cpu.h' with CPU's stack growth order :
 *
-*               (a) CPU_STK_GROWTH_LO_TO_HI     CPU stack pointer increments to the next higher  stack 
+*               (a) CPU_STK_GROWTH_LO_TO_HI     CPU stack pointer increments to the next higher  stack
 *                                                   memory address after data is pushed onto the stack
-*               (b) CPU_STK_GROWTH_HI_TO_LO     CPU stack pointer decrements to the next lower   stack 
+*               (b) CPU_STK_GROWTH_HI_TO_LO     CPU stack pointer decrements to the next lower   stack
 *                                                   memory address after data is pushed onto the stack
 *********************************************************************************************************
 */
 
-                                                        /* ------------------ CPU STACK GROWTH ORDER ------------------ */
+/* ------------------ CPU STACK GROWTH ORDER ------------------ */
 #define  CPU_STK_GROWTH_NONE                       0u
 #define  CPU_STK_GROWTH_LO_TO_HI                   1u   /* CPU stk incs towards higher mem addrs (see Note #1a).        */
 #define  CPU_STK_GROWTH_HI_TO_LO                   2u   /* CPU stk decs towards lower  mem addrs (see Note #1b).        */
@@ -175,11 +175,11 @@
 *                               <cpu>                       directory name for specific CPU
 *                               <compiler>                  directory name for specific compiler
 *
-*           (3) (a) To save/restore interrupt status, a local variable 'cpu_sr' of type 'CPU_SR' MAY need 
+*           (3) (a) To save/restore interrupt status, a local variable 'cpu_sr' of type 'CPU_SR' MAY need
 *                   to be declared (e.g. if 'CPU_CRITICAL_METHOD_STATUS_LOCAL' method is configured).
 *
-*                   (1) 'cpu_sr' local variable SHOULD be declared via the CPU_SR_ALLOC() macro which, 
-*                        if used, MUST be declared following ALL other local variables (see any 'cpu.h  
+*                   (1) 'cpu_sr' local variable SHOULD be declared via the CPU_SR_ALLOC() macro which,
+*                        if used, MUST be declared following ALL other local variables (see any 'cpu.h
 *                        CRITICAL SECTION CONFIGURATION  Note #3a1').
 *
 *                        Example :
@@ -194,12 +194,12 @@
 *                                   :
 *                           }
 *
-*               (b) Configure 'CPU_SR' data type with the appropriate-sized CPU data type large enough to 
+*               (b) Configure 'CPU_SR' data type with the appropriate-sized CPU data type large enough to
 *                   completely store the CPU's/compiler's status word.
 *********************************************************************************************************
 */
 
-                                                        /* --------------- CPU CRITICAL SECTION METHODS --------------- */
+/* --------------- CPU CRITICAL SECTION METHODS --------------- */
 #define  CPU_CRITICAL_METHOD_NONE                  0u   /*                                                              */
 #define  CPU_CRITICAL_METHOD_INT_DIS_EN            1u   /* DIS/EN       ints                    (see Note #1a).         */
 #define  CPU_CRITICAL_METHOD_STATUS_STK            2u   /* Push/Pop     int status onto stk     (see Note #1b).         */

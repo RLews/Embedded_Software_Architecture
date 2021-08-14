@@ -16,9 +16,9 @@
 *
 * LICENSING TERMS:
 * ---------------
-*             uC/OS-III is provided in source form to registered licensees ONLY.  It is 
-*             illegal to distribute this source code to any third party unless you receive 
-*             written permission by an authorized Micrium representative.  Knowledge of 
+*             uC/OS-III is provided in source form to registered licensees ONLY.  It is
+*             illegal to distribute this source code to any third party unless you receive
+*             written permission by an authorized Micrium representative.  Knowledge of
 *             the source code may NOT be used to develop a similar product.
 *
 *             Please help us continue to provide the Embedded community with the finest
@@ -60,12 +60,15 @@ const  CPU_CHAR  *os_cpu_c__c = "$Id: $";
 *********************************************************************************************************
 */
 
-void  OSIdleTaskHook (void)
+void  OSIdleTaskHook(void)
 {
 #if OS_CFG_APP_HOOKS_EN > 0u
-    if (OS_AppIdleTaskHookPtr != (OS_APP_HOOK_VOID)0) {
+
+    if(OS_AppIdleTaskHookPtr != (OS_APP_HOOK_VOID)0)
+    {
         (*OS_AppIdleTaskHookPtr)();
     }
+
 #endif
 }
 
@@ -83,16 +86,19 @@ void  OSIdleTaskHook (void)
 *********************************************************************************************************
 */
 
-void  OSInitHook (void)
+void  OSInitHook(void)
 {
     CPU_STK_SIZE   i;
     CPU_STK       *p_stk;
 
 
     p_stk = OSCfg_ISRStkBasePtr;                            /* Clear the ISR stack                                    */
-    for (i = 0u; i < OSCfg_ISRStkSize; i++) {
+
+    for(i = 0u; i < OSCfg_ISRStkSize; i++)
+    {
         *p_stk++ = (CPU_STK)0u;
     }
+
     OS_CPU_ExceptStkBase = (CPU_STK *)(OSCfg_ISRStkBasePtr + OSCfg_ISRStkSize - 1u);
 }
 
@@ -111,12 +117,15 @@ void  OSInitHook (void)
 *********************************************************************************************************
 */
 
-void  OSStatTaskHook (void)
+void  OSStatTaskHook(void)
 {
 #if OS_CFG_APP_HOOKS_EN > 0u
-    if (OS_AppStatTaskHookPtr != (OS_APP_HOOK_VOID)0) {
+
+    if(OS_AppStatTaskHookPtr != (OS_APP_HOOK_VOID)0)
+    {
         (*OS_AppStatTaskHookPtr)();
     }
+
 #endif
 }
 
@@ -134,12 +143,15 @@ void  OSStatTaskHook (void)
 *********************************************************************************************************
 */
 
-void  OSTaskCreateHook (OS_TCB  *p_tcb)
+void  OSTaskCreateHook(OS_TCB  *p_tcb)
 {
 #if OS_CFG_APP_HOOKS_EN > 0u
-    if (OS_AppTaskCreateHookPtr != (OS_APP_HOOK_TCB)0) {
+
+    if(OS_AppTaskCreateHookPtr != (OS_APP_HOOK_TCB)0)
+    {
         (*OS_AppTaskCreateHookPtr)(p_tcb);
     }
+
 #else
     (void)p_tcb;                                            /* Prevent compiler warning                               */
 #endif
@@ -159,12 +171,15 @@ void  OSTaskCreateHook (OS_TCB  *p_tcb)
 *********************************************************************************************************
 */
 
-void  OSTaskDelHook (OS_TCB  *p_tcb)
+void  OSTaskDelHook(OS_TCB  *p_tcb)
 {
 #if OS_CFG_APP_HOOKS_EN > 0u
-    if (OS_AppTaskDelHookPtr != (OS_APP_HOOK_TCB)0) {
+
+    if(OS_AppTaskDelHookPtr != (OS_APP_HOOK_TCB)0)
+    {
         (*OS_AppTaskDelHookPtr)(p_tcb);
     }
+
 #else
     (void)p_tcb;                                            /* Prevent compiler warning                               */
 #endif
@@ -185,12 +200,15 @@ void  OSTaskDelHook (OS_TCB  *p_tcb)
 *********************************************************************************************************
 */
 
-void  OSTaskReturnHook (OS_TCB  *p_tcb)
+void  OSTaskReturnHook(OS_TCB  *p_tcb)
 {
 #if OS_CFG_APP_HOOKS_EN > 0u
-    if (OS_AppTaskReturnHookPtr != (OS_APP_HOOK_TCB)0) {
+
+    if(OS_AppTaskReturnHookPtr != (OS_APP_HOOK_TCB)0)
+    {
         (*OS_AppTaskReturnHookPtr)(p_tcb);
     }
+
 #else
     (void)p_tcb;                                            /* Prevent compiler warning                               */
 #endif
@@ -226,12 +244,12 @@ void  OSTaskReturnHook (OS_TCB  *p_tcb)
 **********************************************************************************************************
 */
 
-CPU_STK  *OSTaskStkInit (OS_TASK_PTR    p_task,
-                         void          *p_arg,
-                         CPU_STK       *p_stk_base,
-                         CPU_STK       *p_stk_limit,
-                         CPU_STK_SIZE   stk_size,
-                         OS_OPT         opt)
+CPU_STK  *OSTaskStkInit(OS_TASK_PTR    p_task,
+                        void          *p_arg,
+                        CPU_STK       *p_stk_base,
+                        CPU_STK       *p_stk_limit,
+                        CPU_STK_SIZE   stk_size,
+                        OS_OPT         opt)
 {
     CPU_STK  *p_stk;
 
@@ -239,7 +257,7 @@ CPU_STK  *OSTaskStkInit (OS_TASK_PTR    p_task,
     (void)opt;                                              /* Prevent compiler warning                               */
 
     p_stk = &p_stk_base[stk_size];                          /* Load stack pointer                                     */
-                                                            /* Registers stacked as if auto-saved on exception        */
+    /* Registers stacked as if auto-saved on exception        */
     *--p_stk = (CPU_STK)0x01000000u;                        /* xPSR                                                   */
     *--p_stk = (CPU_STK)p_task;                             /* Entry Point                                            */
     *--p_stk = (CPU_STK)OS_TaskReturn;                      /* R14 (LR)                                               */
@@ -248,7 +266,7 @@ CPU_STK  *OSTaskStkInit (OS_TASK_PTR    p_task,
     *--p_stk = (CPU_STK)0x02020202u;                        /* R2                                                     */
     *--p_stk = (CPU_STK)p_stk_limit;                        /* R1                                                     */
     *--p_stk = (CPU_STK)p_arg;                              /* R0 : argument                                          */
-                                                            /* Remaining registers saved on process stack             */
+    /* Remaining registers saved on process stack             */
     *--p_stk = (CPU_STK)0x11111111u;                        /* R11                                                    */
     *--p_stk = (CPU_STK)0x10101010u;                        /* R10                                                    */
     *--p_stk = (CPU_STK)0x09090909u;                        /* R9                                                     */
@@ -279,7 +297,7 @@ CPU_STK  *OSTaskStkInit (OS_TASK_PTR    p_task,
 *********************************************************************************************************
 */
 
-void  OSTaskSwHook (void)
+void  OSTaskSwHook(void)
 {
 #if OS_CFG_TASK_PROFILE_EN > 0u
     CPU_TS  ts;
@@ -291,14 +309,19 @@ void  OSTaskSwHook (void)
 
 
 #if OS_CFG_APP_HOOKS_EN > 0u
-    if (OS_AppTaskSwHookPtr != (OS_APP_HOOK_VOID)0) {
+
+    if(OS_AppTaskSwHookPtr != (OS_APP_HOOK_VOID)0)
+    {
         (*OS_AppTaskSwHookPtr)();
     }
+
 #endif
 
 #if OS_CFG_TASK_PROFILE_EN > 0u
     ts = OS_TS_GET();
-    if (OSTCBCurPtr != OSTCBHighRdyPtr) {
+
+    if(OSTCBCurPtr != OSTCBHighRdyPtr)
+    {
         OSTCBCurPtr->CyclesDelta  = ts - OSTCBCurPtr->CyclesStart;
         OSTCBCurPtr->CyclesTotal += (OS_CYCLES)OSTCBCurPtr->CyclesDelta;
     }
@@ -308,16 +331,22 @@ void  OSTaskSwHook (void)
 
 #ifdef  CPU_CFG_INT_DIS_MEAS_EN
     int_dis_time = CPU_IntDisMeasMaxCurReset();             /* Keep track of per-task interrupt disable time          */
-    if (OSTCBCurPtr->IntDisTimeMax < int_dis_time) {
+
+    if(OSTCBCurPtr->IntDisTimeMax < int_dis_time)
+    {
         OSTCBCurPtr->IntDisTimeMax = int_dis_time;
     }
+
 #endif
 
 #if OS_CFG_SCHED_LOCK_TIME_MEAS_EN > 0u
-                                                            /* Keep track of per-task scheduler lock time             */
-    if (OSTCBCurPtr->SchedLockTimeMax < OSSchedLockTimeMaxCur) {
+
+    /* Keep track of per-task scheduler lock time             */
+    if(OSTCBCurPtr->SchedLockTimeMax < OSSchedLockTimeMaxCur)
+    {
         OSTCBCurPtr->SchedLockTimeMax = OSSchedLockTimeMaxCur;
     }
+
     OSSchedLockTimeMaxCur = (CPU_TS)0;                      /* Reset the per-task value                               */
 #endif
 }
@@ -336,12 +365,15 @@ void  OSTaskSwHook (void)
 *********************************************************************************************************
 */
 
-void  OSTimeTickHook (void)
+void  OSTimeTickHook(void)
 {
 #if OS_CFG_APP_HOOKS_EN > 0u
-    if (OS_AppTimeTickHookPtr != (OS_APP_HOOK_VOID)0) {
+
+    if(OS_AppTimeTickHookPtr != (OS_APP_HOOK_VOID)0)
+    {
         (*OS_AppTimeTickHookPtr)();
     }
+
 #endif
 }
 
@@ -360,7 +392,7 @@ void  OSTimeTickHook (void)
 *********************************************************************************************************
 */
 
-void  OS_CPU_SysTickHandler (void)
+void  OS_CPU_SysTickHandler(void)
 {
     CPU_SR_ALLOC();
 
@@ -388,24 +420,24 @@ void  OS_CPU_SysTickHandler (void)
 *********************************************************************************************************
 */
 
-void  OS_CPU_SysTickInit (CPU_INT32U  cnts)
+void  OS_CPU_SysTickInit(CPU_INT32U  cnts)
 {
     CPU_INT32U  prio;
 
 
     CPU_REG_NVIC_ST_RELOAD = cnts - 1u;
 
-                                                            /* Set SysTick handler prio.                              */
+    /* Set SysTick handler prio.                              */
     prio  = CPU_REG_NVIC_SHPRI3;
     prio &= DEF_BIT_FIELD(24, 0);
     prio |= DEF_BIT_MASK(OS_CPU_CFG_SYSTICK_PRIO, 24);
 
     CPU_REG_NVIC_SHPRI3 = prio;
 
-                                                            /* Enable timer.                                          */
+    /* Enable timer.                                          */
     CPU_REG_NVIC_ST_CTRL |= CPU_REG_NVIC_ST_CTRL_CLKSOURCE |
                             CPU_REG_NVIC_ST_CTRL_ENABLE;
-                                                            /* Enable timer interrupt.                                */
+    /* Enable timer interrupt.                                */
     CPU_REG_NVIC_ST_CTRL |= CPU_REG_NVIC_ST_CTRL_TICKINT;
 }
 

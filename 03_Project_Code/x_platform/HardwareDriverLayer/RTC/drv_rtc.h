@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file drv_rtc.h
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -13,12 +13,12 @@
 #include "drv_rtc_pub.h"
 
 
-#define D_RTC_BACKUP_REG_DEFAULT_VAL		0x5050
+#define D_RTC_BACKUP_REG_DEFAULT_VAL        0x5050
 
 /*
-	1970.1.1
+    1970.1.1
 */
-#define D_RTC_DEFAULT_TIME_COUNTER			0
+#define D_RTC_DEFAULT_TIME_COUNTER          0
 
 
 

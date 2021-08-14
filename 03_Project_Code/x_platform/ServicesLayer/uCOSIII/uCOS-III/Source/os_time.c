@@ -14,11 +14,11 @@
 *
 * LICENSING TERMS:
 * ---------------
-*           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or 
+*           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or
 *           for peaceful research.  If you plan or intend to use uC/OS-III in a commercial application/
-*           product then, you need to contact Micrium to properly license uC/OS-III for its use in your 
-*           application/product.   We provide ALL the source code for your convenience and to help you 
-*           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use 
+*           product then, you need to contact Micrium to properly license uC/OS-III for its use in your
+*           application/product.   We provide ALL the source code for your convenience and to help you
+*           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use
 *           it commercially without paying a licensing fee.
 *
 *           Knowledge of the source code may NOT be used to develop a similar product.
@@ -77,49 +77,59 @@ const  CPU_CHAR  *os_time__c = "$Id: $";
 ************************************************************************************************************************
 */
 
-void  OSTimeDly (OS_TICK   dly,
-                 OS_OPT    opt,
-                 OS_ERR   *p_err)
+void  OSTimeDly(OS_TICK   dly,
+                OS_OPT    opt,
+                OS_ERR   *p_err)
 {
     CPU_SR_ALLOC();
 
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return;
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0u) {             /* Not allowed to call from an ISR                        */
-       *p_err = OS_ERR_TIME_DLY_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0u)                /* Not allowed to call from an ISR                        */
+    {
+        *p_err = OS_ERR_TIME_DLY_ISR;
         return;
     }
+
 #endif
 
-    if (OSSchedLockNestingCtr > (OS_NESTING_CTR)0u) {       /* Can't delay when the scheduler is locked               */
-       *p_err = OS_ERR_SCHED_LOCKED;
+    if(OSSchedLockNestingCtr > (OS_NESTING_CTR)0u)          /* Can't delay when the scheduler is locked               */
+    {
+        *p_err = OS_ERR_SCHED_LOCKED;
         return;
     }
 
-    switch (opt) {
+    switch(opt)
+    {
         case OS_OPT_TIME_DLY:
         case OS_OPT_TIME_TIMEOUT:
         case OS_OPT_TIME_PERIODIC:
-             if (dly == (OS_TICK)0u) {                      /* 0 means no delay!                                      */
+            if(dly == (OS_TICK)0u)                         /* 0 means no delay!                                      */
+            {
                 *p_err = OS_ERR_TIME_ZERO_DLY;
-                 return;
-             }
-             break;
+                return;
+            }
+
+            break;
 
         case OS_OPT_TIME_MATCH:
-             break;
+            break;
 
         default:
             *p_err = OS_ERR_OPT_INVALID;
-             return;
+            return;
     }
 
     OS_CRITICAL_ENTER();
@@ -128,14 +138,17 @@ void  OSTimeDly (OS_TICK   dly,
                       dly,
                       opt,
                       p_err);
-    if (*p_err != OS_ERR_NONE) {
-         OS_CRITICAL_EXIT_NO_SCHED();
-         return;
+
+    if(*p_err != OS_ERR_NONE)
+    {
+        OS_CRITICAL_EXIT_NO_SCHED();
+        return;
     }
+
     OS_RdyListRemove(OSTCBCurPtr);                          /* Remove current task from ready list                    */
     OS_CRITICAL_EXIT_NO_SCHED();
     OSSched();                                              /* Find next task to run!                                 */
-   *p_err = OS_ERR_NONE;
+    *p_err = OS_ERR_NONE;
 }
 
 /*$PAGE*/
@@ -197,12 +210,12 @@ void  OSTimeDly (OS_TICK   dly,
 */
 
 #if OS_CFG_TIME_DLY_HMSM_EN > 0u
-void  OSTimeDlyHMSM (CPU_INT16U   hours,
-                     CPU_INT16U   minutes,
-                     CPU_INT16U   seconds,
-                     CPU_INT32U   milli,
-                     OS_OPT       opt,
-                     OS_ERR      *p_err)
+void  OSTimeDlyHMSM(CPU_INT16U   hours,
+                    CPU_INT16U   minutes,
+                    CPU_INT16U   seconds,
+                    CPU_INT32U   milli,
+                    OS_OPT       opt,
+                    OS_ERR      *p_err)
 {
 #if OS_CFG_ARG_CHK_EN > 0u
     CPU_BOOLEAN  opt_invalid;
@@ -216,109 +229,146 @@ void  OSTimeDlyHMSM (CPU_INT16U   hours,
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return;
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0u) {             /* Not allowed to call from an ISR                        */
-       *p_err = OS_ERR_TIME_DLY_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0u)                /* Not allowed to call from an ISR                        */
+    {
+        *p_err = OS_ERR_TIME_DLY_ISR;
         return;
     }
+
 #endif
 
-    if (OSSchedLockNestingCtr > (OS_NESTING_CTR)0u) {       /* Can't delay when the scheduler is locked               */
-       *p_err = OS_ERR_SCHED_LOCKED;
+    if(OSSchedLockNestingCtr > (OS_NESTING_CTR)0u)          /* Can't delay when the scheduler is locked               */
+    {
+        *p_err = OS_ERR_SCHED_LOCKED;
         return;
     }
 
     opt_time = opt & OS_OPT_TIME_MASK;                      /* Retrieve time options only.                            */
-    switch (opt_time) {
+
+    switch(opt_time)
+    {
         case OS_OPT_TIME_DLY:
         case OS_OPT_TIME_TIMEOUT:
         case OS_OPT_TIME_PERIODIC:
-             if (milli == (CPU_INT32U)0u) {                 /* Make sure we didn't specify a 0 delay                  */
-                 if (seconds == (CPU_INT16U)0u) {
-                     if (minutes == (CPU_INT16U)0u) {
-                         if (hours == (CPU_INT16U)0u) {
+            if(milli == (CPU_INT32U)0u)                    /* Make sure we didn't specify a 0 delay                  */
+            {
+                if(seconds == (CPU_INT16U)0u)
+                {
+                    if(minutes == (CPU_INT16U)0u)
+                    {
+                        if(hours == (CPU_INT16U)0u)
+                        {
                             *p_err = OS_ERR_TIME_ZERO_DLY;
-                             return;
-                         }
-                     }
-                 }
-             }
-             break;
+                            return;
+                        }
+                    }
+                }
+            }
+
+            break;
 
         case OS_OPT_TIME_MATCH:
-             break;
+            break;
 
         default:
             *p_err = OS_ERR_OPT_INVALID;
-             return;
+            return;
     }
 
 #if OS_CFG_ARG_CHK_EN > 0u                                  /* Validate arguments to be within range                  */
     opt_invalid = DEF_BIT_IS_SET_ANY(opt, ~OS_OPT_TIME_OPTS_MASK);
-    if (opt_invalid == DEF_YES) {
-       *p_err = OS_ERR_OPT_INVALID;
+
+    if(opt_invalid == DEF_YES)
+    {
+        *p_err = OS_ERR_OPT_INVALID;
         return;
     }
 
     opt_non_strict = DEF_BIT_IS_SET(opt, OS_OPT_TIME_HMSM_NON_STRICT);
-    if (opt_non_strict != DEF_YES) {
-         if (milli   > (CPU_INT32U)999u) {
+
+    if(opt_non_strict != DEF_YES)
+    {
+        if(milli   > (CPU_INT32U)999u)
+        {
             *p_err = OS_ERR_TIME_INVALID_MILLISECONDS;
-             return;
-         }
-         if (seconds > (CPU_INT16U)59u) {
+            return;
+        }
+
+        if(seconds > (CPU_INT16U)59u)
+        {
             *p_err = OS_ERR_TIME_INVALID_SECONDS;
-             return;
-         }
-         if (minutes > (CPU_INT16U)59u) {
+            return;
+        }
+
+        if(minutes > (CPU_INT16U)59u)
+        {
             *p_err = OS_ERR_TIME_INVALID_MINUTES;
-             return;
-         }
-         if (hours   > (CPU_INT16U)99u) {
+            return;
+        }
+
+        if(hours   > (CPU_INT16U)99u)
+        {
             *p_err = OS_ERR_TIME_INVALID_HOURS;
-             return;
-         }
-    } else {
-         if (minutes > (CPU_INT16U)9999u) {
-            *p_err = OS_ERR_TIME_INVALID_MINUTES;
-             return;
-         }
-         if (hours   > (CPU_INT16U)999u) {
-            *p_err = OS_ERR_TIME_INVALID_HOURS;
-             return;
-         }
+            return;
+        }
     }
+    else
+    {
+        if(minutes > (CPU_INT16U)9999u)
+        {
+            *p_err = OS_ERR_TIME_INVALID_MINUTES;
+            return;
+        }
+
+        if(hours   > (CPU_INT16U)999u)
+        {
+            *p_err = OS_ERR_TIME_INVALID_HOURS;
+            return;
+        }
+    }
+
 #endif
 
-                                                            /* Compute the total number of clock ticks required..     */
-                                                            /* .. (rounded to the nearest tick)                       */
+    /* Compute the total number of clock ticks required..     */
+    /* .. (rounded to the nearest tick)                       */
     tick_rate = OSCfg_TickRate_Hz;
     ticks     = ((OS_TICK)hours * (OS_TICK)3600u + (OS_TICK)minutes * (OS_TICK)60u + (OS_TICK)seconds) * tick_rate
-              + (tick_rate * ((OS_TICK)milli + (OS_TICK)500u / tick_rate)) / (OS_TICK)1000u;
+                + (tick_rate * ((OS_TICK)milli + (OS_TICK)500u / tick_rate)) / (OS_TICK)1000u;
 
-    if (ticks > (OS_TICK)0u) {
+    if(ticks > (OS_TICK)0u)
+    {
         OS_CRITICAL_ENTER();
         OSTCBCurPtr->TaskState = OS_TASK_STATE_DLY;
         OS_TickListInsert(OSTCBCurPtr,
                           ticks,
                           opt_time,
                           p_err);
-        if (*p_err != OS_ERR_NONE) {
-             OS_CRITICAL_EXIT_NO_SCHED();
-             return;
+
+        if(*p_err != OS_ERR_NONE)
+        {
+            OS_CRITICAL_EXIT_NO_SCHED();
+            return;
         }
+
         OS_RdyListRemove(OSTCBCurPtr);                      /* Remove current task from ready list                    */
         OS_CRITICAL_EXIT_NO_SCHED();
         OSSched();                                          /* Find next task to run!                                 */
-       *p_err = OS_ERR_NONE;
-    } else {
-       *p_err = OS_ERR_TIME_ZERO_DLY;
+        *p_err = OS_ERR_NONE;
+    }
+    else
+    {
+        *p_err = OS_ERR_TIME_ZERO_DLY;
     }
 }
 #endif
@@ -346,93 +396,105 @@ void  OSTimeDlyHMSM (CPU_INT16U   hours,
 */
 
 #if OS_CFG_TIME_DLY_RESUME_EN > 0u
-void  OSTimeDlyResume (OS_TCB  *p_tcb,
-                       OS_ERR  *p_err)
+void  OSTimeDlyResume(OS_TCB  *p_tcb,
+                      OS_ERR  *p_err)
 {
     CPU_SR_ALLOC();
 
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return;
     }
+
 #endif
 
 #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
-    if (OSIntNestingCtr > (OS_NESTING_CTR)0u) {             /* Not allowed to call from an ISR                        */
-       *p_err = OS_ERR_TIME_DLY_RESUME_ISR;
+
+    if(OSIntNestingCtr > (OS_NESTING_CTR)0u)                /* Not allowed to call from an ISR                        */
+    {
+        *p_err = OS_ERR_TIME_DLY_RESUME_ISR;
         return;
     }
+
 #endif
 
 #if OS_CFG_ARG_CHK_EN > 0u
-    if (p_tcb == (OS_TCB *)0) {                             /* Not possible for the running task to be delayed!       */
-       *p_err = OS_ERR_TASK_NOT_DLY;
+
+    if(p_tcb == (OS_TCB *)0)                                /* Not possible for the running task to be delayed!       */
+    {
+        *p_err = OS_ERR_TASK_NOT_DLY;
         return;
     }
+
 #endif
 
     CPU_CRITICAL_ENTER();
-    if (p_tcb == OSTCBCurPtr) {                             /* Not possible for the running task to be delayed!       */
-       *p_err = OS_ERR_TASK_NOT_DLY;
+
+    if(p_tcb == OSTCBCurPtr)                                /* Not possible for the running task to be delayed!       */
+    {
+        *p_err = OS_ERR_TASK_NOT_DLY;
         CPU_CRITICAL_EXIT();
         return;
     }
 
-    switch (p_tcb->TaskState) {
+    switch(p_tcb->TaskState)
+    {
         case OS_TASK_STATE_RDY:                             /* Cannot Abort delay if task is ready                    */
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_TASK_NOT_DLY;
-             break;
+            break;
 
         case OS_TASK_STATE_DLY:
-             OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
-             p_tcb->TaskState = OS_TASK_STATE_RDY;
-             OS_TickListRemove(p_tcb);                      /* Remove task from tick list                             */
-             OS_RdyListInsert(p_tcb);                       /* Add to ready list                                      */
-             OS_CRITICAL_EXIT_NO_SCHED();
+            OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
+            p_tcb->TaskState = OS_TASK_STATE_RDY;
+            OS_TickListRemove(p_tcb);                      /* Remove task from tick list                             */
+            OS_RdyListInsert(p_tcb);                       /* Add to ready list                                      */
+            OS_CRITICAL_EXIT_NO_SCHED();
             *p_err = OS_ERR_NONE;
-             break;
+            break;
 
         case OS_TASK_STATE_PEND:
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_TASK_NOT_DLY;
-             break;
+            break;
 
         case OS_TASK_STATE_PEND_TIMEOUT:
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_TASK_NOT_DLY;
-             break;
+            break;
 
         case OS_TASK_STATE_SUSPENDED:
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_TASK_NOT_DLY;
-             break;
+            break;
 
         case OS_TASK_STATE_DLY_SUSPENDED:
-             OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
-             p_tcb->TaskState = OS_TASK_STATE_SUSPENDED;
-             OS_TickListRemove(p_tcb);                      /* Remove task from tick list                             */
-             OS_CRITICAL_EXIT_NO_SCHED();
+            OS_CRITICAL_ENTER_CPU_CRITICAL_EXIT();
+            p_tcb->TaskState = OS_TASK_STATE_SUSPENDED;
+            OS_TickListRemove(p_tcb);                      /* Remove task from tick list                             */
+            OS_CRITICAL_EXIT_NO_SCHED();
             *p_err            = OS_ERR_TASK_SUSPENDED;
-             break;
+            break;
 
         case OS_TASK_STATE_PEND_SUSPENDED:
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_TASK_NOT_DLY;
-             break;
+            break;
 
         case OS_TASK_STATE_PEND_TIMEOUT_SUSPENDED:
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_TASK_NOT_DLY;
-             break;
+            break;
 
         default:
-             CPU_CRITICAL_EXIT();
+            CPU_CRITICAL_EXIT();
             *p_err = OS_ERR_STATE_INVALID;
-             break;
+            break;
     }
 
     OSSched();
@@ -454,7 +516,7 @@ void  OSTimeDlyResume (OS_TCB  *p_tcb,
 ************************************************************************************************************************
 */
 
-OS_TICK  OSTimeGet (OS_ERR  *p_err)
+OS_TICK  OSTimeGet(OS_ERR  *p_err)
 {
     OS_TICK  ticks;
     CPU_SR_ALLOC();
@@ -462,16 +524,19 @@ OS_TICK  OSTimeGet (OS_ERR  *p_err)
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return ((OS_TICK)0);
     }
+
 #endif
 
     CPU_CRITICAL_ENTER();
     ticks = OSTickCtr;
     CPU_CRITICAL_EXIT();
-   *p_err = OS_ERR_NONE;
+    *p_err = OS_ERR_NONE;
     return (ticks);
 }
 
@@ -491,24 +556,27 @@ OS_TICK  OSTimeGet (OS_ERR  *p_err)
 ************************************************************************************************************************
 */
 
-void  OSTimeSet (OS_TICK   ticks,
-                 OS_ERR   *p_err)
+void  OSTimeSet(OS_TICK   ticks,
+                OS_ERR   *p_err)
 {
     CPU_SR_ALLOC();
 
 
 
 #ifdef OS_SAFETY_CRITICAL
-    if (p_err == (OS_ERR *)0) {
+
+    if(p_err == (OS_ERR *)0)
+    {
         OS_SAFETY_CRITICAL_EXCEPTION();
         return;
     }
+
 #endif
 
     CPU_CRITICAL_ENTER();
     OSTickCtr = ticks;
     CPU_CRITICAL_EXIT();
-   *p_err     = OS_ERR_NONE;
+    *p_err     = OS_ERR_NONE;
 }
 
 /*$PAGE*/
@@ -525,7 +593,7 @@ void  OSTimeSet (OS_TICK   ticks,
 ************************************************************************************************************************
 */
 
-void  OSTimeTick (void)
+void  OSTimeTick(void)
 {
     OS_ERR  err;
 #if OS_CFG_ISR_POST_DEFERRED_EN > 0u
@@ -542,16 +610,16 @@ void  OSTimeTick (void)
                 (void      *)&OSRdyList[OSPrioCur],
                 (void      *) 0,
                 (OS_MSG_SIZE) 0u,
-                (OS_FLAGS   ) 0u,
-                (OS_OPT     ) 0u,
-                (CPU_TS     ) ts,
+                (OS_FLAGS) 0u,
+                (OS_OPT) 0u,
+                (CPU_TS) ts,
                 (OS_ERR    *)&err);
 
 #else
 
-   (void)OSTaskSemPost((OS_TCB *)&OSTickTaskTCB,            /* Signal tick task                                       */
-                       (OS_OPT  ) OS_OPT_POST_NONE,
-                       (OS_ERR *)&err);
+    (void)OSTaskSemPost((OS_TCB *)&OSTickTaskTCB,            /* Signal tick task                                       */
+                        (OS_OPT) OS_OPT_POST_NONE,
+                        (OS_ERR *)&err);
 
 
 #if OS_CFG_SCHED_ROUND_ROBIN_EN > 0u
@@ -560,12 +628,15 @@ void  OSTimeTick (void)
 
 #if OS_CFG_TMR_EN > 0u
     OSTmrUpdateCtr--;
-    if (OSTmrUpdateCtr == (OS_CTR)0u) {
+
+    if(OSTmrUpdateCtr == (OS_CTR)0u)
+    {
         OSTmrUpdateCtr = OSTmrUpdateCnt;
         OSTaskSemPost((OS_TCB *)&OSTmrTaskTCB,              /* Signal timer task                                      */
-                      (OS_OPT  ) OS_OPT_POST_NONE,
+                      (OS_OPT) OS_OPT_POST_NONE,
                       (OS_ERR *)&err);
     }
+
 #endif
 
 #endif

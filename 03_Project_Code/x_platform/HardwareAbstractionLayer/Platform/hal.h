@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file hal.h
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -32,16 +32,16 @@
 */
 typedef enum HAL_INIT_STA_T
 {
-	EN_HAL_UNINIT = 0,
-	EN_HAL_WDG_INIT_FINISH,
-	EN_HAL_INT_INIT_FINISH,
-	EN_HAL_IO_INIT_FINISH,
-	EN_HAL_UART_INIT_FINISH,
-	EN_HAL_RTC_INIT_FINISH,
-	EN_HAL_SRAM_INIT_FINISH,
-	EN_HAL_SRAM_INIT_ERR,
-	EN_HAL_ALL_INIT_FINISH
-}HalInitSta_t;
+    EN_HAL_UNINIT = 0,
+    EN_HAL_WDG_INIT_FINISH,
+    EN_HAL_INT_INIT_FINISH,
+    EN_HAL_IO_INIT_FINISH,
+    EN_HAL_UART_INIT_FINISH,
+    EN_HAL_RTC_INIT_FINISH,
+    EN_HAL_SRAM_INIT_FINISH,
+    EN_HAL_SRAM_INIT_ERR,
+    EN_HAL_ALL_INIT_FINISH
+} HalInitSta_t;
 
 void Hal_SysInit(void);
 HalInitSta_t Hal_GetInitStatus(void);

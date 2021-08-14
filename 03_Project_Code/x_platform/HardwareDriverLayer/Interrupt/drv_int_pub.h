@@ -1,8 +1,8 @@
 /*!
 ************************************************************************************************************************
 * @file drv_int_pub.h
-* @brief 
-* @details 
+* @brief
+* @details
 * @author Lews Hammond
 * @date 2021-8-14
 ************************************************************************************************************************
@@ -18,8 +18,8 @@
 * Interrupt Interface
 ************************************************************************************************************************
 */
-#define D_ENABLE_ALL_INTERRUPT()	__enable_irq()
-#define D_DISABLE_ALL_INTERRUPT()	__disable_irq()
+#define D_ENABLE_ALL_INTERRUPT()    __enable_irq()
+#define D_DISABLE_ALL_INTERRUPT()   __disable_irq()
 
 
 #endif

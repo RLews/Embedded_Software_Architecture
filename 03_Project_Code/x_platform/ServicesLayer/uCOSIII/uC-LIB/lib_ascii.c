@@ -150,7 +150,7 @@
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsAlpha (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsAlpha(CPU_CHAR  c)
 {
     CPU_BOOLEAN  alpha;
 
@@ -180,7 +180,7 @@ CPU_BOOLEAN  ASCII_IsAlpha (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsAlphaNum (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsAlphaNum(CPU_CHAR  c)
 {
     CPU_BOOLEAN  alpha_num;
 
@@ -210,7 +210,7 @@ CPU_BOOLEAN  ASCII_IsAlphaNum (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsLower (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsLower(CPU_CHAR  c)
 {
     CPU_BOOLEAN  lower;
 
@@ -240,7 +240,7 @@ CPU_BOOLEAN  ASCII_IsLower (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsUpper (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsUpper(CPU_CHAR  c)
 {
     CPU_BOOLEAN  upper;
 
@@ -270,7 +270,7 @@ CPU_BOOLEAN  ASCII_IsUpper (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsDig (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsDig(CPU_CHAR  c)
 {
     CPU_BOOLEAN  dig;
 
@@ -299,7 +299,7 @@ CPU_BOOLEAN  ASCII_IsDig (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsDigOct (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsDigOct(CPU_CHAR  c)
 {
     CPU_BOOLEAN  dig_oct;
 
@@ -329,7 +329,7 @@ CPU_BOOLEAN  ASCII_IsDigOct (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsDigHex (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsDigHex(CPU_CHAR  c)
 {
     CPU_BOOLEAN  dig_hex;
 
@@ -362,7 +362,7 @@ CPU_BOOLEAN  ASCII_IsDigHex (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsBlank (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsBlank(CPU_CHAR  c)
 {
     CPU_BOOLEAN  blank;
 
@@ -396,7 +396,7 @@ CPU_BOOLEAN  ASCII_IsBlank (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsSpace (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsSpace(CPU_CHAR  c)
 {
     CPU_BOOLEAN  space;
 
@@ -430,7 +430,7 @@ CPU_BOOLEAN  ASCII_IsSpace (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsPrint (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsPrint(CPU_CHAR  c)
 {
     CPU_BOOLEAN  print;
 
@@ -464,7 +464,7 @@ CPU_BOOLEAN  ASCII_IsPrint (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsGraph (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsGraph(CPU_CHAR  c)
 {
     CPU_BOOLEAN  graph;
 
@@ -494,7 +494,7 @@ CPU_BOOLEAN  ASCII_IsGraph (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsPunct (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsPunct(CPU_CHAR  c)
 {
     CPU_BOOLEAN  punct;
 
@@ -528,7 +528,7 @@ CPU_BOOLEAN  ASCII_IsPunct (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_IsCtrl (CPU_CHAR  c)
+CPU_BOOLEAN  ASCII_IsCtrl(CPU_CHAR  c)
 {
     CPU_BOOLEAN  ctrl;
 
@@ -566,7 +566,7 @@ CPU_BOOLEAN  ASCII_IsCtrl (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_CHAR  ASCII_ToLower (CPU_CHAR  c)
+CPU_CHAR  ASCII_ToLower(CPU_CHAR  c)
 {
     CPU_CHAR  lower;
 
@@ -604,7 +604,7 @@ CPU_CHAR  ASCII_ToLower (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_CHAR  ASCII_ToUpper (CPU_CHAR  c)
+CPU_CHAR  ASCII_ToUpper(CPU_CHAR  c)
 {
     CPU_CHAR  upper;
 
@@ -635,8 +635,8 @@ CPU_CHAR  ASCII_ToUpper (CPU_CHAR  c)
 *********************************************************************************************************
 */
 
-CPU_BOOLEAN  ASCII_Cmp (CPU_CHAR  c1,
-                        CPU_CHAR  c2)
+CPU_BOOLEAN  ASCII_Cmp(CPU_CHAR  c1,
+                       CPU_CHAR  c2)
 {
     CPU_CHAR     c1_upper;
     CPU_CHAR     c2_upper;

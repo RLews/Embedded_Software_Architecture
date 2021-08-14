@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file srv_queue.h
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-18
 ************************************************************************************************************************
@@ -16,20 +16,20 @@
 
 typedef enum QUEUE_ERROR_T
 {
-	EN_QUEUE_OPT_OK = 0,
-	EN_QUEUE_OPT_FULL,
-	EN_QUEUE_OPT_EMPTY,
-	EN_QUEUE_OPT_NONE
-}SrvQueueError_t;
+    EN_QUEUE_OPT_OK = 0,
+    EN_QUEUE_OPT_FULL,
+    EN_QUEUE_OPT_EMPTY,
+    EN_QUEUE_OPT_NONE
+} SrvQueueError_t;
 
 typedef struct SRV_QUEUE_T
 {
-	uint16_t frontInx;
-	uint16_t rearInx;
-	volatile uint8_t *qBuffer;
-	uint16_t bufSize;
-	uint16_t maxBufSize;
-}SrvQueue_t;
+    uint16_t frontInx;
+    uint16_t rearInx;
+    volatile uint8_t *qBuffer;
+    uint16_t bufSize;
+    uint16_t maxBufSize;
+} SrvQueue_t;
 
 void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
 

@@ -197,14 +197,14 @@ typedef  CPU_INT32U  RAND_NBR;
 *********************************************************************************************************
 */
 
-void      Math_Init       (void);
+void      Math_Init(void);
 
-                                                                /* ------------------ RAND NBR FNCTS ------------------ */
+/* ------------------ RAND NBR FNCTS ------------------ */
 void      Math_RandSetSeed(RAND_NBR  seed);
 
-RAND_NBR  Math_Rand       (void);
+RAND_NBR  Math_Rand(void);
 
-RAND_NBR  Math_RandSeed   (RAND_NBR  seed);
+RAND_NBR  Math_RandSeed(RAND_NBR  seed);
 
 
 /*

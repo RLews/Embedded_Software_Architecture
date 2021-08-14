@@ -30,7 +30,7 @@
 #define OS_CFG_H
 
 
-                                             /* ---------------------------- MISCELLANEOUS -------------------------- */
+/* ---------------------------- MISCELLANEOUS -------------------------- */
 #define OS_CFG_APP_HOOKS_EN             1u   /* Enable (1) or Disable (0) application specific hooks                  */
 #define OS_CFG_ARG_CHK_EN               1u   /* Enable (1) or Disable (0) argument checking                           */
 #define OS_CFG_CALLED_FROM_ISR_CHK_EN   1u   /* Enable (1) or Disable (0) check for called from ISR                   */
@@ -48,38 +48,38 @@
 #define OS_CFG_STK_SIZE_MIN            64u   /* Minimum allowable task stack size                                     */
 
 
-                                             /* ----------------------------- EVENT FLAGS --------------------------- */
+/* ----------------------------- EVENT FLAGS --------------------------- */
 #define OS_CFG_FLAG_EN                  1u   /* Enable (1) or Disable (0) code generation for EVENT FLAGS             */
 #define OS_CFG_FLAG_DEL_EN              1u   /*     Include code for OSFlagDel()                                      */
 #define OS_CFG_FLAG_MODE_CLR_EN         1u   /*     Include code for Wait on Clear EVENT FLAGS                        */
 #define OS_CFG_FLAG_PEND_ABORT_EN       1u   /*     Include code for OSFlagPendAbort()                                */
 
 
-                                             /* -------------------------- MEMORY MANAGEMENT ------------------------ */
+/* -------------------------- MEMORY MANAGEMENT ------------------------ */
 #define OS_CFG_MEM_EN                   1u   /* Enable (1) or Disable (0) code generation for MEMORY MANAGER          */
 
 
-                                             /* --------------------- MUTUAL EXCLUSION SEMAPHORES ------------------- */
+/* --------------------- MUTUAL EXCLUSION SEMAPHORES ------------------- */
 #define OS_CFG_MUTEX_EN                 1u   /* Enable (1) or Disable (0) code generation for MUTEX                   */
 #define OS_CFG_MUTEX_DEL_EN             1u   /*     Include code for OSMutexDel()                                     */
 #define OS_CFG_MUTEX_PEND_ABORT_EN      1u   /*     Include code for OSMutexPendAbort()                               */
 
 
-                                             /* --------------------------- MESSAGE QUEUES -------------------------- */
+/* --------------------------- MESSAGE QUEUES -------------------------- */
 #define OS_CFG_Q_EN                     1u   /* Enable (1) or Disable (0) code generation for QUEUES                  */
 #define OS_CFG_Q_DEL_EN                 1u   /*     Include code for OSQDel()                                         */
 #define OS_CFG_Q_FLUSH_EN               1u   /*     Include code for OSQFlush()                                       */
 #define OS_CFG_Q_PEND_ABORT_EN          1u   /*     Include code for OSQPendAbort()                                   */
 
 
-                                             /* ----------------------------- SEMAPHORES ---------------------------- */
+/* ----------------------------- SEMAPHORES ---------------------------- */
 #define OS_CFG_SEM_EN                   1u   /* Enable (1) or Disable (0) code generation for SEMAPHORES              */
 #define OS_CFG_SEM_DEL_EN               1u   /*    Include code for OSSemDel()                                        */
 #define OS_CFG_SEM_PEND_ABORT_EN        1u   /*    Include code for OSSemPendAbort()                                  */
 #define OS_CFG_SEM_SET_EN               1u   /*    Include code for OSSemSet()                                        */
 
 
-                                             /* -------------------------- TASK MANAGEMENT -------------------------- */
+/* -------------------------- TASK MANAGEMENT -------------------------- */
 #define OS_CFG_STAT_TASK_EN             1u   /* Enable (1) or Disable(0) the statistics task                          */
 #define OS_CFG_STAT_TASK_STK_CHK_EN     1u   /* Check task stacks from statistic task                                 */
 
@@ -93,12 +93,12 @@
 #define OS_CFG_TASK_SUSPEND_EN          1u   /* Include code for OSTaskSuspend() and OSTaskResume()                   */
 
 
-                                             /* -------------------------- TIME MANAGEMENT -------------------------- */
+/* -------------------------- TIME MANAGEMENT -------------------------- */
 #define OS_CFG_TIME_DLY_HMSM_EN         1u   /*     Include code for OSTimeDlyHMSM()                                  */
 #define OS_CFG_TIME_DLY_RESUME_EN       1u   /*     Include code for OSTimeDlyResume()                                */
 
 
-                                             /* ------------------------- TIMER MANAGEMENT -------------------------- */
+/* ------------------------- TIMER MANAGEMENT -------------------------- */
 #define OS_CFG_TMR_EN                   1u   /* Enable (1) or Disable (0) code generation for TIMERS                  */
 #define OS_CFG_TMR_DEL_EN               1u   /* Enable (1) or Disable (0) code generation for OSTmrDel()              */
 

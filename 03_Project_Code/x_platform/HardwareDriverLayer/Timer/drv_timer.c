@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file drv_timer.c
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -18,7 +18,7 @@
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -26,7 +26,7 @@
 
 void Drv_SysTickIntEnable(void)
 {
-	SysTick->CTRL |= SysTick_CTRL_TICKINT_Msk;   	//开启SYSTICK中断
+    SysTick->CTRL |= SysTick_CTRL_TICKINT_Msk;      //开启SYSTICK中断
 }
 
 /*!
@@ -36,7 +36,7 @@ void Drv_SysTickIntEnable(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -44,7 +44,7 @@ void Drv_SysTickIntEnable(void)
 
 void Drv_SysTickIntDisable(void)
 {
-	SysTick->CTRL &= (uint32_t)(~SysTick_CTRL_TICKINT_Msk);
+    SysTick->CTRL &= (uint32_t)(~SysTick_CTRL_TICKINT_Msk);
 }
 
 /*!
@@ -54,7 +54,7 @@ void Drv_SysTickIntDisable(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -62,7 +62,7 @@ void Drv_SysTickIntDisable(void)
 
 void Drv_SysTickOpen(void)
 {
-	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;   	//开启SYSTICK  
+    SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;       //开启SYSTICK
 }
 
 /*!
@@ -72,7 +72,7 @@ void Drv_SysTickOpen(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -80,7 +80,7 @@ void Drv_SysTickOpen(void)
 
 void Drv_SysTickClose(void)
 {
-	SysTick->CTRL &= (uint32_t)(~SysTick_CTRL_ENABLE_Msk);
+    SysTick->CTRL &= (uint32_t)(~SysTick_CTRL_ENABLE_Msk);
 }
 
 /*!
@@ -90,7 +90,7 @@ void Drv_SysTickClose(void)
 * @param uint32_t val：重载值
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -98,7 +98,7 @@ void Drv_SysTickClose(void)
 
 void Drv_SysTickSetReload(uint32_t val)
 {
-	SysTick->LOAD = val;
+    SysTick->LOAD = val;
 }
 
 
@@ -109,7 +109,7 @@ void Drv_SysTickSetReload(uint32_t val)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -117,6 +117,6 @@ void Drv_SysTickSetReload(uint32_t val)
 
 void Drv_SysTickSetPriority(void)
 {
-	NVIC_SetPriority (SysTick_IRQn, (1U << __NVIC_PRIO_BITS) - 1U);  /* set Priority for Cortex-M0 System Interrupts */
+    NVIC_SetPriority(SysTick_IRQn, (1U << __NVIC_PRIO_BITS) - 1U);   /* set Priority for Cortex-M0 System Interrupts */
 }
 

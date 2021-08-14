@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file hal_int.h
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -16,7 +16,7 @@
 #include "osal.h"
 
 
-#define D_SYS_EXCEPTION_OUTPUT_PERIOD		(10*1000ul) //10ms
+#define D_SYS_EXCEPTION_OUTPUT_PERIOD       (10*1000ul) //10ms
 
 
 void NMI_Handler(void);

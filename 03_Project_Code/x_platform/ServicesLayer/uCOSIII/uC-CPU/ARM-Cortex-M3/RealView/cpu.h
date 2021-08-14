@@ -7,12 +7,12 @@
 *
 *               All rights reserved.  Protected by international copyright laws.
 *
-*               uC/CPU is provided in source form to registered licensees ONLY.  It is 
-*               illegal to distribute this source code to any third party unless you receive 
-*               written permission by an authorized Micrium representative.  Knowledge of 
+*               uC/CPU is provided in source form to registered licensees ONLY.  It is
+*               illegal to distribute this source code to any third party unless you receive
+*               written permission by an authorized Micrium representative.  Knowledge of
 *               the source code may NOT be used to develop a similar product.
 *
-*               Please help us continue to provide the Embedded community with the finest 
+*               Please help us continue to provide the Embedded community with the finest
 *               software available.  Your honesty is greatly appreciated.
 *
 *               You can contact us at www.micrium.com.
@@ -42,7 +42,7 @@
 *********************************************************************************************************
 *                                               MODULE
 *
-* Note(s) : (1) This CPU header file is protected from multiple pre-processor inclusion through use of 
+* Note(s) : (1) This CPU header file is protected from multiple pre-processor inclusion through use of
 *               the  CPU module present pre-processor macro definition.
 *********************************************************************************************************
 */
@@ -139,8 +139,8 @@ typedef  volatile  CPU_INT32U  CPU_REG32;                       /* 32-bit regist
 typedef  volatile  CPU_INT64U  CPU_REG64;                       /* 64-bit register                                      */
 
 
-typedef            void      (*CPU_FNCT_VOID)(void);            /* See Note #2a.                                        */
-typedef            void      (*CPU_FNCT_PTR )(void *p_obj);     /* See Note #2b.                                        */
+typedef            void (*CPU_FNCT_VOID)(void);                 /* See Note #2a.                                        */
+typedef            void (*CPU_FNCT_PTR)(void *p_obj);           /* See Note #2b.                                        */
 
 
 /*$PAGE*/
@@ -148,7 +148,7 @@ typedef            void      (*CPU_FNCT_PTR )(void *p_obj);     /* See Note #2b.
 *********************************************************************************************************
 *                                       CPU WORD CONFIGURATION
 *
-* Note(s) : (1) Configure CPU_CFG_ADDR_SIZE, CPU_CFG_DATA_SIZE, & CPU_CFG_DATA_SIZE_MAX with CPU's &/or 
+* Note(s) : (1) Configure CPU_CFG_ADDR_SIZE, CPU_CFG_DATA_SIZE, & CPU_CFG_DATA_SIZE_MAX with CPU's &/or
 *               compiler's word sizes :
 *
 *                   CPU_WORD_SIZE_08             8-bit word size
@@ -165,7 +165,7 @@ typedef            void      (*CPU_FNCT_PTR )(void *p_obj);     /* See Note #2b.
 *********************************************************************************************************
 */
 
-                                                                /* Define  CPU         word sizes (see Note #1) :       */
+/* Define  CPU         word sizes (see Note #1) :       */
 #define  CPU_CFG_ADDR_SIZE              CPU_WORD_SIZE_32        /* Defines CPU address word size  (in octets).          */
 #define  CPU_CFG_DATA_SIZE              CPU_WORD_SIZE_32        /* Defines CPU data    word size  (in octets).          */
 #define  CPU_CFG_DATA_SIZE_MAX          CPU_WORD_SIZE_64        /* Defines CPU maximum word size  (in octets).          */
@@ -179,7 +179,7 @@ typedef            void      (*CPU_FNCT_PTR )(void *p_obj);     /* See Note #2b.
 *********************************************************************************************************
 */
 
-                                                                /* CPU address type based on address bus size.          */
+/* CPU address type based on address bus size.          */
 #if     (CPU_CFG_ADDR_SIZE == CPU_WORD_SIZE_32)
 typedef  CPU_INT32U  CPU_ADDR;
 #elif   (CPU_CFG_ADDR_SIZE == CPU_WORD_SIZE_16)
@@ -188,7 +188,7 @@ typedef  CPU_INT16U  CPU_ADDR;
 typedef  CPU_INT08U  CPU_ADDR;
 #endif
 
-                                                                /* CPU data    type based on data    bus size.          */
+/* CPU data    type based on data    bus size.          */
 #if     (CPU_CFG_DATA_SIZE == CPU_WORD_SIZE_32)
 typedef  CPU_INT32U  CPU_DATA;
 #elif   (CPU_CFG_DATA_SIZE == CPU_WORD_SIZE_16)
@@ -274,7 +274,7 @@ typedef  CPU_ADDR               CPU_STK_SIZE;                   /* Defines CPU s
 *           (3) (a) To save/restore interrupt status, a local variable 'cpu_sr' of type 'CPU_SR' MAY need
 *                   to be declared (e.g. if 'CPU_CRITICAL_METHOD_STATUS_LOCAL' method is configured).
 *
-*                   (1) 'cpu_sr' local variable SHOULD be declared via the CPU_SR_ALLOC() macro which, if 
+*                   (1) 'cpu_sr' local variable SHOULD be declared via the CPU_SR_ALLOC() macro which, if
 *                        used, MUST be declared following ALL other local variables.
 *
 *                        Example :
@@ -294,12 +294,12 @@ typedef  CPU_ADDR               CPU_STK_SIZE;                   /* Defines CPU s
 *********************************************************************************************************
 */
 /*$PAGE*/
-                                                                /* Configure CPU critical method      (see Note #1) :   */
+/* Configure CPU critical method      (see Note #1) :   */
 #define  CPU_CFG_CRITICAL_METHOD    CPU_CRITICAL_METHOD_STATUS_LOCAL
 
 typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU status register size (see Note #3b).   */
 
-                                                                /* Allocates CPU status register word (see Note #3a).   */
+/* Allocates CPU status register word (see Note #3a).   */
 #if     (CPU_CFG_CRITICAL_METHOD == CPU_CRITICAL_METHOD_STATUS_LOCAL)
 #define  CPU_SR_ALLOC()             CPU_SR  cpu_sr = (CPU_SR)0
 #else
@@ -313,12 +313,12 @@ typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU
 
 
 #ifdef   CPU_CFG_INT_DIS_MEAS_EN
-                                                                        /* Disable interrupts, ...                      */
-                                                                        /* & start interrupts disabled time measurement.*/
+/* Disable interrupts, ...                      */
+/* & start interrupts disabled time measurement.*/
 #define  CPU_CRITICAL_ENTER()  do { CPU_INT_DIS();         \
                                     CPU_IntDisMeasStart(); }  while (0)
-                                                                        /* Stop & measure   interrupts disabled time,   */
-                                                                        /* ...  & re-enable interrupts.                 */
+/* Stop & measure   interrupts disabled time,   */
+/* ...  & re-enable interrupts.                 */
 #define  CPU_CRITICAL_EXIT()   do { CPU_IntDisMeasStop();  \
                                     CPU_INT_EN();          }  while (0)
 
@@ -335,7 +335,7 @@ typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU
 *********************************************************************************************************
 *                                    CPU COUNT ZEROS CONFIGURATION
 *
-* Note(s) : (1) (a) Configure CPU_CFG_LEAD_ZEROS_ASM_PRESENT  to define count leading  zeros bits 
+* Note(s) : (1) (a) Configure CPU_CFG_LEAD_ZEROS_ASM_PRESENT  to define count leading  zeros bits
 *                   function(s) in :
 *
 *                   (1) 'cpu_a.asm',  if CPU_CFG_LEAD_ZEROS_ASM_PRESENT       #define'd in 'cpu.h'/
@@ -344,7 +344,7 @@ typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU
 *                   (2) 'cpu_core.c', if CPU_CFG_LEAD_ZEROS_ASM_PRESENT   NOT #define'd in 'cpu.h'/
 *                                         'cpu_cfg.h' to enable C-source-optimized function(s) otherwise
 *
-*               (b) Configure CPU_CFG_TRAIL_ZEROS_ASM_PRESENT to define count trailing zeros bits 
+*               (b) Configure CPU_CFG_TRAIL_ZEROS_ASM_PRESENT to define count trailing zeros bits
 *                   function(s) in :
 *
 *                   (1) 'cpu_a.asm',  if CPU_CFG_TRAIL_ZEROS_ASM_PRESENT      #define'd in 'cpu.h'/
@@ -355,10 +355,10 @@ typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU
 *********************************************************************************************************
 */
 
-                                                                /* Configure CPU count leading  zeros bits ...          */
+/* Configure CPU count leading  zeros bits ...          */
 #define  CPU_CFG_LEAD_ZEROS_ASM_PRESENT                         /* ... assembly-version (see Note #1a).                 */
 
-                                                                /* Configure CPU count trailing zeros bits ...          */
+/* Configure CPU count trailing zeros bits ...          */
 #define  CPU_CFG_TRAIL_ZEROS_ASM_PRESENT                        /* ... assembly-version (see Note #1b).                 */
 
 
@@ -369,31 +369,31 @@ typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU
 *********************************************************************************************************
 */
 
-void        CPU_IntDis       (void);
-void        CPU_IntEn        (void);
+void        CPU_IntDis(void);
+void        CPU_IntEn(void);
 
-void        CPU_IntSrcDis    (CPU_INT08U  pos);
-void        CPU_IntSrcEn     (CPU_INT08U  pos);
+void        CPU_IntSrcDis(CPU_INT08U  pos);
+void        CPU_IntSrcEn(CPU_INT08U  pos);
 void        CPU_IntSrcPendClr(CPU_INT08U  pos);
 CPU_INT16S  CPU_IntSrcPrioGet(CPU_INT08U  pos);
 void        CPU_IntSrcPrioSet(CPU_INT08U  pos,
                               CPU_INT08U  prio);
 
 
-CPU_SR      CPU_SR_Save      (void);
-void        CPU_SR_Restore   (CPU_SR      cpu_sr);
+CPU_SR      CPU_SR_Save(void);
+void        CPU_SR_Restore(CPU_SR      cpu_sr);
 
 
-void        CPU_WaitForInt   (void);
+void        CPU_WaitForInt(void);
 void        CPU_WaitForExcept(void);
 
 
-CPU_DATA    CPU_RevBits      (CPU_DATA    val);
+CPU_DATA    CPU_RevBits(CPU_DATA    val);
 
-void        CPU_BitBandClr   (CPU_ADDR    addr,
-                              CPU_INT08U  bit_nbr);
-void        CPU_BitBandSet   (CPU_ADDR    addr,
-                              CPU_INT08U  bit_nbr);
+void        CPU_BitBandClr(CPU_ADDR    addr,
+                           CPU_INT08U  bit_nbr);
+void        CPU_BitBandSet(CPU_ADDR    addr,
+                           CPU_INT08U  bit_nbr);
 
 
 /*$PAGE*/
@@ -492,18 +492,18 @@ void        CPU_BitBandSet   (CPU_ADDR    addr,
 *********************************************************************************************************
 */
 
-                                                                /* ---------- SYSTICK CTRL & STATUS REG BITS ---------- */
+/* ---------- SYSTICK CTRL & STATUS REG BITS ---------- */
 #define  CPU_REG_NVIC_ST_CTRL_COUNTFLAG           0x00010000
 #define  CPU_REG_NVIC_ST_CTRL_CLKSOURCE           0x00000004
 #define  CPU_REG_NVIC_ST_CTRL_TICKINT             0x00000002
 #define  CPU_REG_NVIC_ST_CTRL_ENABLE              0x00000001
 
 
-                                                                /* -------- SYSTICK CALIBRATION VALUE REG BITS -------- */
+/* -------- SYSTICK CALIBRATION VALUE REG BITS -------- */
 #define  CPU_REG_NVIC_ST_CAL_NOREF                0x80000000
 #define  CPU_REG_NVIC_ST_CAL_SKEW                 0x40000000
 
-                                                                /* -------------- INT CTRL STATE REG BITS ------------- */
+/* -------------- INT CTRL STATE REG BITS ------------- */
 #define  CPU_REG_NVIC_ICSR_NMIPENDSET             0x80000000
 #define  CPU_REG_NVIC_ICSR_PENDSVSET              0x10000000
 #define  CPU_REG_NVIC_ICSR_PENDSVCLR              0x08000000
@@ -513,21 +513,21 @@ void        CPU_BitBandSet   (CPU_ADDR    addr,
 #define  CPU_REG_NVIC_ICSR_ISRPENDING             0x00400000
 #define  CPU_REG_NVIC_ICSR_RETTOBASE              0x00000800
 
-                                                                /* ------------- VECT TBL OFFSET REG BITS ------------- */
+/* ------------- VECT TBL OFFSET REG BITS ------------- */
 #define  CPU_REG_NVIC_VTOR_TBLBASE                0x20000000
 
-                                                                /* ------------ APP INT/RESET CTRL REG BITS ----------- */
+/* ------------ APP INT/RESET CTRL REG BITS ----------- */
 #define  CPU_REG_NVIC_AIRCR_ENDIANNESS            0x00008000
 #define  CPU_REG_NVIC_AIRCR_SYSRESETREQ           0x00000004
 #define  CPU_REG_NVIC_AIRCR_VECTCLRACTIVE         0x00000002
 #define  CPU_REG_NVIC_AIRCR_VECTRESET             0x00000001
 
-                                                                /* --------------- SYSTEM CTRL REG BITS --------------- */
+/* --------------- SYSTEM CTRL REG BITS --------------- */
 #define  CPU_REG_NVIC_SCR_SEVONPEND               0x00000010
 #define  CPU_REG_NVIC_SCR_SLEEPDEEP               0x00000004
 #define  CPU_REG_NVIC_SCR_SLEEPONEXIT             0x00000002
 
-                                                                /* ----------------- CFG CTRL REG BITS ---------------- */
+/* ----------------- CFG CTRL REG BITS ---------------- */
 #define  CPU_REG_NVIC_CCR_STKALIGN                0x00000200
 #define  CPU_REG_NVIC_CCR_BFHFNMIGN               0x00000100
 #define  CPU_REG_NVIC_CCR_DIV_0_TRP               0x00000010
@@ -535,7 +535,7 @@ void        CPU_BitBandSet   (CPU_ADDR    addr,
 #define  CPU_REG_NVIC_CCR_USERSETMPEND            0x00000002
 #define  CPU_REG_NVIC_CCR_NONBASETHRDENA          0x00000001
 
-                                                                /* ------- SYSTEM HANDLER CTRL & STATE REG BITS ------- */
+/* ------- SYSTEM HANDLER CTRL & STATE REG BITS ------- */
 #define  CPU_REG_NVIC_SHCSR_USGFAULTENA           0x00040000
 #define  CPU_REG_NVIC_SHCSR_BUSFAULTENA           0x00020000
 #define  CPU_REG_NVIC_SHCSR_MEMFAULTENA           0x00010000
@@ -552,7 +552,7 @@ void        CPU_BitBandSet   (CPU_ADDR    addr,
 #define  CPU_REG_NVIC_SHCSR_MEMFAULTACT           0x00000001
 
 /*$PAGE*/
-                                                                /* -------- CONFIGURABLE FAULT STATUS REG BITS -------- */
+/* -------- CONFIGURABLE FAULT STATUS REG BITS -------- */
 #define  CPU_REG_NVIC_CFSR_DIVBYZERO              0x02000000
 #define  CPU_REG_NVIC_CFSR_UNALIGNED              0x01000000
 #define  CPU_REG_NVIC_CFSR_NOCP                   0x00080000
@@ -571,12 +571,12 @@ void        CPU_BitBandSet   (CPU_ADDR    addr,
 #define  CPU_REG_NVIC_CFSR_DACCVIOL               0x00000002
 #define  CPU_REG_NVIC_CFSR_IACCVIOL               0x00000001
 
-                                                                /* ------------ HARD FAULT STATUS REG BITS ------------ */
+/* ------------ HARD FAULT STATUS REG BITS ------------ */
 #define  CPU_REG_NVIC_HFSR_DEBUGEVT               0x80000000
 #define  CPU_REG_NVIC_HFSR_FORCED                 0x40000000
 #define  CPU_REG_NVIC_HFSR_VECTTBL                0x00000002
 
-                                                                /* ------------ DEBUG FAULT STATUS REG BITS ----------- */
+/* ------------ DEBUG FAULT STATUS REG BITS ----------- */
 #define  CPU_REG_NVIC_DFSR_EXTERNAL               0x00000010
 #define  CPU_REG_NVIC_DFSR_VCATCH                 0x00000008
 #define  CPU_REG_NVIC_DFSR_DWTTRAP                0x00000004

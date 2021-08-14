@@ -15,9 +15,9 @@
 *
 * LICENSING TERMS:
 * ---------------
-*             uC/OS-III is provided in source form to registered licensees ONLY.  It is 
-*             illegal to distribute this source code to any third party unless you receive 
-*             written permission by an authorized Micrium representative.  Knowledge of 
+*             uC/OS-III is provided in source form to registered licensees ONLY.  It is
+*             illegal to distribute this source code to any third party unless you receive
+*             written permission by an authorized Micrium representative.  Knowledge of
 *             the source code may NOT be used to develop a similar product.
 *
 *             Please help us continue to provide the Embedded community with the finest
@@ -65,7 +65,7 @@
 * Note(s) : (1) OS_TS_GET() is generally defined as CPU_TS_Get32() to allow CPU timestamp timer to be of
 *               any data type size.
 *
-*           (2) For architectures that provide 32-bit or higher precision free running counters 
+*           (2) For architectures that provide 32-bit or higher precision free running counters
 *               (i.e. cycle count registers):
 *
 *               (a) OS_TS_GET() may be defined as CPU_TS_TmrRd() to improve performance when retrieving
@@ -84,7 +84,7 @@
 
 #if (CPU_CFG_TS_32_EN    == DEF_ENABLED) && \
     (CPU_CFG_TS_TMR_SIZE  < CPU_WORD_SIZE_32)
-                                                            /* CPU_CFG_TS_TMR_SIZE MUST be >= 32-bit (see Note #2b).  */
+/* CPU_CFG_TS_TMR_SIZE MUST be >= 32-bit (see Note #2b).  */
 #error  "cpu_cfg.h, CPU_CFG_TS_TMR_SIZE MUST be >= CPU_WORD_SIZE_32"
 #endif
 
@@ -128,12 +128,12 @@ OS_CPU_EXT  CPU_STK  *OS_CPU_ExceptStkBase;
 *********************************************************************************************************
 */
 
-void  OSStartHighRdy       (void);
+void  OSStartHighRdy(void);
 
-void  OS_CPU_PendSVHandler (void);
+void  OS_CPU_PendSVHandler(void);
 
 
 void  OS_CPU_SysTickHandler(void);
-void  OS_CPU_SysTickInit   (CPU_INT32U  cnts);
+void  OS_CPU_SysTickInit(CPU_INT32U  cnts);
 
 #endif

@@ -143,11 +143,11 @@
 *********************************************************************************************************
 */
 
-                                                        /* Configure external argument check feature (see Note #1) :    */
+/* Configure external argument check feature (see Note #1) :    */
 #ifndef  LIB_MEM_CFG_ARG_CHK_EXT_EN
 #define  LIB_MEM_CFG_ARG_CHK_EXT_EN     DEF_DISABLED
-                                                        /*   DEF_DISABLED     Argument check DISABLED                   */
-                                                        /*   DEF_ENABLED      Argument check ENABLED                    */
+/*   DEF_DISABLED     Argument check DISABLED                   */
+/*   DEF_ENABLED      Argument check ENABLED                    */
 #endif
 
 
@@ -159,11 +159,11 @@
 *********************************************************************************************************
 */
 
-                                                        /* Configure assembly-optimized function(s) [see Note #1] :     */
+/* Configure assembly-optimized function(s) [see Note #1] :     */
 #ifndef  LIB_MEM_CFG_OPTIMIZE_ASM_EN
 #define  LIB_MEM_CFG_OPTIMIZE_ASM_EN    DEF_DISABLED
-                                                        /*   DEF_DISABLED     Assembly-optimized function(s) DISABLED   */
-                                                        /*   DEF_ENABLED      Assembly-optimized function(s) ENABLED    */
+/*   DEF_DISABLED     Assembly-optimized function(s) DISABLED   */
+/*   DEF_ENABLED      Assembly-optimized function(s) ENABLED    */
 #endif
 
 
@@ -175,11 +175,11 @@
 *********************************************************************************************************
 */
 
-                                                        /* Configure memory allocation feature (see Note #1) :          */
+/* Configure memory allocation feature (see Note #1) :          */
 #ifndef  LIB_MEM_CFG_ALLOC_EN
 #define  LIB_MEM_CFG_ALLOC_EN           DEF_DISABLED
-                                                        /*   DEF_DISABLED     Memory allocation DISABLED                */
-                                                        /*   DEF_ENABLED      Memory allocation ENABLED                 */
+/*   DEF_DISABLED     Memory allocation DISABLED                */
+/*   DEF_ENABLED      Memory allocation ENABLED                 */
 #endif
 
 
@@ -287,8 +287,9 @@ typedef  MEM_POOL_BLK_QTY  MEM_POOL_IX;
 
 typedef  struct  mem_pool  MEM_POOL;
 
-                                                                /* --------------------- MEM POOL --------------------- */
-struct  mem_pool {
+/* --------------------- MEM POOL --------------------- */
+struct  mem_pool
+{
     LIB_MEM_TYPE        Type;                                   /* Pool type : LIB_TYPE_POOL or LIB_TYPE_HEAP.          */
 
     MEM_POOL           *SegHeadPtr;                             /* Ptr to head mem seg.                                 */
@@ -306,7 +307,7 @@ struct  mem_pool {
     CPU_SIZE_T          BlkSize;                                /* Size  of mem pool   blks (in octets).                */
     CPU_SIZE_T          BlkAlign;                               /* Align of mem pool   blks (in octets).                */
 
-                                                                /* --------------------- MEM SEG ---------------------- */
+    /* --------------------- MEM SEG ---------------------- */
     void               *SegAddr;                                /* Ptr      to mem seg's base/start addr.               */
     void               *SegAddrNextAvail;                       /* Ptr      to mem seg's next avail addr.               */
     CPU_SIZE_T          SegSizeTot;                             /* Tot size of mem seg (in octets).                     */
@@ -989,7 +990,7 @@ struct  mem_pool {
 *********************************************************************************************************
 */
 
-                                                                        /* See Note #5.                                 */
+/* See Note #5.                                 */
 #define  MEM_VAL_COPY_SET_INT08U_BIG(addr_dest, addr_src)               MEM_VAL_COPY_GET_INT08U_BIG(addr_dest, addr_src)
 #define  MEM_VAL_COPY_SET_INT16U_BIG(addr_dest, addr_src)               MEM_VAL_COPY_GET_INT16U_BIG(addr_dest, addr_src)
 #define  MEM_VAL_COPY_SET_INT32U_BIG(addr_dest, addr_src)               MEM_VAL_COPY_GET_INT32U_BIG(addr_dest, addr_src)
@@ -1063,7 +1064,7 @@ struct  mem_pool {
 *********************************************************************************************************
 */
 
-                                                                        /* See Note #5.                                 */
+/* See Note #5.                                 */
 #define  MEM_VAL_COPY_SET_INTU_BIG(addr_dest, addr_src, val_size)       MEM_VAL_COPY_GET_INTU_BIG(addr_dest, addr_src, val_size)
 #define  MEM_VAL_COPY_SET_INTU_LITTLE(addr_dest, addr_src, val_size)    MEM_VAL_COPY_GET_INTU_LITTLE(addr_dest, addr_src, val_size)
 #define  MEM_VAL_COPY_SET_INTU(addr_dest, addr_src, val_size)           MEM_VAL_COPY_GET_INTU(addr_dest, addr_src, val_size)
@@ -1143,77 +1144,77 @@ struct  mem_pool {
 *********************************************************************************************************
 */
 
-void               Mem_Init              (       void);
+void               Mem_Init(void);
 
-                                                                    /* ---------------- MEM API  FNCTS ---------------- */
-void               Mem_Clr               (       void              *pmem,
-                                                 CPU_SIZE_T         size);
+/* ---------------- MEM API  FNCTS ---------------- */
+void               Mem_Clr(void              *pmem,
+                           CPU_SIZE_T         size);
 
-void               Mem_Set               (       void              *pmem,
-                                                 CPU_INT08U         data_val,
-                                                 CPU_SIZE_T         size);
+void               Mem_Set(void              *pmem,
+                           CPU_INT08U         data_val,
+                           CPU_SIZE_T         size);
 
-void               Mem_Copy              (       void              *pdest,
-                                          const  void              *psrc,
-                                                 CPU_SIZE_T         size);
+void               Mem_Copy(void              *pdest,
+                            const  void              *psrc,
+                            CPU_SIZE_T         size);
 
-void               Mem_Move              (       void              *pdest,
-                                          const  void              *psrc,
-                                                 CPU_SIZE_T         size);
+void               Mem_Move(void              *pdest,
+                            const  void              *psrc,
+                            CPU_SIZE_T         size);
 
-CPU_BOOLEAN        Mem_Cmp               (const  void              *p1_mem,
-                                          const  void              *p2_mem,
-                                                 CPU_SIZE_T         size);
+CPU_BOOLEAN        Mem_Cmp(const  void              *p1_mem,
+                           const  void              *p2_mem,
+                           CPU_SIZE_T         size);
 
 
 
 #if (LIB_MEM_CFG_ALLOC_EN == DEF_ENABLED)                           /* ---------------- MEM POOL FNCTS ---------------- */
 
-void              *Mem_HeapAlloc         (       CPU_SIZE_T         size,
-                                                 CPU_SIZE_T         align,
-                                                 CPU_SIZE_T        *poctets_reqd,
-                                                 LIB_ERR           *perr);
+void              *Mem_HeapAlloc(CPU_SIZE_T         size,
+                                 CPU_SIZE_T         align,
+                                 CPU_SIZE_T        *poctets_reqd,
+                                 LIB_ERR           *perr);
 
-CPU_SIZE_T         Mem_HeapGetSizeRem    (       CPU_SIZE_T         align,
-                                                 LIB_ERR           *perr);
-
-
-CPU_SIZE_T         Mem_SegGetSizeRem     (       MEM_POOL          *pmem_pool,
-                                                 CPU_SIZE_T         align,
-                                                 LIB_ERR           *perr);
+CPU_SIZE_T         Mem_HeapGetSizeRem(CPU_SIZE_T         align,
+                                      LIB_ERR           *perr);
 
 
-void               Mem_PoolClr           (       MEM_POOL          *pmem_pool,
-                                                 LIB_ERR           *perr);
-
-void               Mem_PoolCreate        (       MEM_POOL          *pmem_pool,
-                                                 void              *pmem_base_addr,
-                                                 CPU_SIZE_T         mem_size,
-                                                 MEM_POOL_BLK_QTY   blk_nbr,
-                                                 CPU_SIZE_T         blk_size,
-                                                 CPU_SIZE_T         blk_align,
-                                                 CPU_SIZE_T        *poctets_reqd,
-                                                 LIB_ERR           *perr);
+CPU_SIZE_T         Mem_SegGetSizeRem(MEM_POOL          *pmem_pool,
+                                     CPU_SIZE_T         align,
+                                     LIB_ERR           *perr);
 
 
-MEM_POOL_BLK_QTY   Mem_PoolBlkGetNbrAvail(       MEM_POOL          *pmem_pool,
-                                                 LIB_ERR           *perr);
+void               Mem_PoolClr(MEM_POOL          *pmem_pool,
+                               LIB_ERR           *perr);
 
-void              *Mem_PoolBlkGet        (       MEM_POOL          *pmem_pool,
-                                                 CPU_SIZE_T         size,
-                                                 LIB_ERR           *perr);
+void               Mem_PoolCreate(MEM_POOL          *pmem_pool,
+                                  void              *pmem_base_addr,
+                                  CPU_SIZE_T         mem_size,
+                                  MEM_POOL_BLK_QTY   blk_nbr,
+                                  CPU_SIZE_T         blk_size,
+                                  CPU_SIZE_T         blk_align,
+                                  CPU_SIZE_T        *poctets_reqd,
+                                  LIB_ERR           *perr);
 
-void              *Mem_PoolBlkGetUsedAtIx(       MEM_POOL          *pmem_pool,
-                                                 MEM_POOL_IX        used_ix,
-                                                 LIB_ERR           *perr);
 
-void               Mem_PoolBlkFree       (       MEM_POOL          *pmem_pool,
-                                                 void              *pmem_blk,
-                                                 LIB_ERR           *perr);
+MEM_POOL_BLK_QTY   Mem_PoolBlkGetNbrAvail(MEM_POOL          *pmem_pool,
+        LIB_ERR           *perr);
 
-MEM_POOL_IX        Mem_PoolBlkIxGet      (       MEM_POOL          *pmem_pool,
-                                                 void              *pmem_blk,
-                                                 LIB_ERR           *perr);
+void              *Mem_PoolBlkGet(MEM_POOL          *pmem_pool,
+                                  CPU_SIZE_T         size,
+                                  LIB_ERR           *perr);
+
+void              *Mem_PoolBlkGetUsedAtIx(MEM_POOL          *pmem_pool,
+        MEM_POOL_IX        used_ix,
+        LIB_ERR           *perr);
+
+void               Mem_PoolBlkFree(MEM_POOL          *pmem_pool,
+                                   void              *pmem_blk,
+                                   LIB_ERR           *perr);
+
+MEM_POOL_IX        Mem_PoolBlkIxGet(MEM_POOL          *pmem_pool,
+                                    void              *pmem_blk,
+                                    LIB_ERR           *perr);
 
 #endif
 
@@ -1295,7 +1296,7 @@ MEM_POOL_IX        Mem_PoolBlkIxGet      (       MEM_POOL          *pmem_pool,
 *********************************************************************************************************
 */
 
-                                                                /* See 'lib_mem.h  Note #2a'.                           */
+/* See 'lib_mem.h  Note #2a'.                           */
 #if     (CPU_CORE_VERSION < 127u)
 #error  "CPU_CORE_VERSION  [SHOULD be >= V1.27]"
 #endif

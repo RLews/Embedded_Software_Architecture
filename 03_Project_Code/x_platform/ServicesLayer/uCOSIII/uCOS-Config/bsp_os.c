@@ -24,7 +24,7 @@ static void Bsp_Os_SysTickHandler(void);
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -32,7 +32,7 @@ static void Bsp_Os_SysTickHandler(void);
 
 static void Bsp_OsTimeStampInit(void)
 {
-	Drv_DwtInit();
+    Drv_DwtInit();
 }
 
 /*!
@@ -42,7 +42,7 @@ static void Bsp_OsTimeStampInit(void)
 * @param void
 * @param void
 * @returns uint32_t：时间戳
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -50,7 +50,7 @@ static void Bsp_OsTimeStampInit(void)
 
 static uint32_t Bsp_GetOsTimeStamp(void)
 {
-	return Drv_GetDwtCnt();
+    return Drv_GetDwtCnt();
 }
 
 /*!
@@ -60,7 +60,7 @@ static uint32_t Bsp_GetOsTimeStamp(void)
 * @param void
 * @param void
 * @returns uint32_t：cpu频率
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -68,7 +68,7 @@ static uint32_t Bsp_GetOsTimeStamp(void)
 
 static uint32_t Bsp_GetCpuFreq(void)
 {
-	return Drv_GetCpuFreq();
+    return Drv_GetCpuFreq();
 }
 
 /*!
@@ -78,7 +78,7 @@ static uint32_t Bsp_GetCpuFreq(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -86,18 +86,18 @@ static uint32_t Bsp_GetCpuFreq(void)
 
 void Bsp_OsTickInit(void)
 {
-	uint32_t tReload = 0;
-	const uint32_t *pSysCoreClock = &SystemCoreClock;
-	const uint32_t *pOsTickRateHz = &OSCfg_TickRate_Hz;
+    uint32_t tReload = 0;
+    const uint32_t *pSysCoreClock = &SystemCoreClock;
+    const uint32_t *pOsTickRateHz = &OSCfg_TickRate_Hz;
 
-	tReload = (*pSysCoreClock) / 8000000;//每秒钟的计数次数 单位为K	   
-	tReload *= 1000000 / (*pOsTickRateHz);//根据delay_ostickspersec设定溢出时间
+    tReload = (*pSysCoreClock) / 8000000;//每秒钟的计数次数 单位为K
+    tReload *= 1000000 / (*pOsTickRateHz);//根据delay_ostickspersec设定溢出时间
 
-	Hal_SysISRSet(EN_SYS_TICK_ISR, Bsp_Os_SysTickHandler);
-	Drv_SysTickSetPriority();
-	Drv_SysTickIntEnable();
-	Drv_SysTickSetReload(tReload);
-	Drv_SysTickOpen();
+    Hal_SysISRSet(EN_SYS_TICK_ISR, Bsp_Os_SysTickHandler);
+    Drv_SysTickSetPriority();
+    Drv_SysTickIntEnable();
+    Drv_SysTickSetReload(tReload);
+    Drv_SysTickOpen();
 }
 
 
@@ -109,13 +109,13 @@ void Bsp_OsTickInit(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
 */
 
-void  CPU_TS_TmrInit (void)
+void  CPU_TS_TmrInit(void)
 {
     CPU_INT32U  tCpuFreq = 0u;
 
@@ -134,13 +134,13 @@ void  CPU_TS_TmrInit (void)
 * @param void
 * @param void
 * @returns CPU_TS_TMR：系统时间戳
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
 */
 
-CPU_TS_TMR  CPU_TS_TmrRd (void)
+CPU_TS_TMR  CPU_TS_TmrRd(void)
 {
     return Bsp_GetOsTimeStamp();
 }
@@ -155,7 +155,7 @@ CPU_TS_TMR  CPU_TS_TmrRd (void)
 * @param CPU_TS32 ts_cnts：需要转换的时间戳
 * @param void
 * @returns CPU_INT64U：us时间
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -163,13 +163,13 @@ CPU_TS_TMR  CPU_TS_TmrRd (void)
 
 CPU_INT64U CPU_TS32_to_uSec(CPU_TS32 ts_cnts)
 {
-	CPU_INT64U tUs = 0u;
-	CPU_INT64U tFreq = 0u;
+    CPU_INT64U tUs = 0u;
+    CPU_INT64U tFreq = 0u;
 
-	tFreq = Bsp_GetCpuFreq();
-	tUs = ts_cnts / (tFreq / DEF_TIME_NBR_uS_PER_SEC);
+    tFreq = Bsp_GetCpuFreq();
+    tUs = ts_cnts / (tFreq / DEF_TIME_NBR_uS_PER_SEC);
 
-	return tUs;
+    return tUs;
 }
 #endif
 
@@ -181,7 +181,7 @@ CPU_INT64U CPU_TS32_to_uSec(CPU_TS32 ts_cnts)
 * @param CPU_TS32 ts_cnts：需要转换的时间戳
 * @param void
 * @returns CPU_INT64U：us时间
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -190,13 +190,13 @@ CPU_INT64U CPU_TS32_to_uSec(CPU_TS32 ts_cnts)
 
 CPU_INT64U CPU_TS64_to_uSec(CPU_TS64 ts_cnts)
 {
-	CPU_INT64U tUs = 0u;
-	CPU_INT64U tFreq = 0u;
+    CPU_INT64U tUs = 0u;
+    CPU_INT64U tFreq = 0u;
 
-	tFreq = Bsp_GetCpuFreq();
-	tUs = ts_cnts / (tFreq / DEF_TIME_NBR_uS_PER_SEC);
+    tFreq = Bsp_GetCpuFreq();
+    tUs = ts_cnts / (tFreq / DEF_TIME_NBR_uS_PER_SEC);
 
-	return tUs;
+    return tUs;
 }
 #endif
 
@@ -207,17 +207,17 @@ CPU_INT64U CPU_TS64_to_uSec(CPU_TS64 ts_cnts)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
 */
 
 static void Bsp_Os_SysTickHandler(void)
-{	
-	if(OSRunning==1)						
-	{
-		OS_CPU_SysTickHandler();       	 					
-	}
+{
+    if(OSRunning==1)
+    {
+        OS_CPU_SysTickHandler();
+    }
 }
 

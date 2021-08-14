@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file drv_dwt.c
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -21,7 +21,7 @@ static StdBoolean_t DwtInitFinished = D_STD_FALSE;
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -29,10 +29,10 @@ static StdBoolean_t DwtInitFinished = D_STD_FALSE;
 
 void Drv_DwtInit(void)
 {
-	DEM_CR |= (uint32_t)DEM_CR_TRCENA;/* enable dwt */
-	DWT_CYCCNT = (uint32_t)0;/* clear counter */
-	DWT_CR |= (uint32_t)DWT_CR_CYCCNTENA;
-	DwtInitFinished = D_STD_TRUE;
+    DEM_CR |= (uint32_t)DEM_CR_TRCENA;/* enable dwt */
+    DWT_CYCCNT = (uint32_t)0;/* clear counter */
+    DWT_CR |= (uint32_t)DWT_CR_CYCCNTENA;
+    DwtInitFinished = D_STD_TRUE;
 }
 
 /*!
@@ -42,7 +42,7 @@ void Drv_DwtInit(void)
 * @param void
 * @param void
 * @returns stdBoolean_t：是否初始化完成
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -50,7 +50,7 @@ void Drv_DwtInit(void)
 
 StdBoolean_t Drv_GetDwtInitSta(void)
 {
-	return DwtInitFinished;
+    return DwtInitFinished;
 }
 
 
@@ -61,7 +61,7 @@ StdBoolean_t Drv_GetDwtInitSta(void)
 * @param void
 * @param void
 * @returns uint32_t：计数值
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -69,7 +69,7 @@ StdBoolean_t Drv_GetDwtInitSta(void)
 
 uint32_t Drv_GetDwtCnt(void)
 {
- 	return ((uint32_t)DWT_CYCCNT);
+    return ((uint32_t)DWT_CYCCNT);
 }
 
 /*!
@@ -79,7 +79,7 @@ uint32_t Drv_GetDwtCnt(void)
 * @param void
 * @param void
 * @returns uint32_t：cpu频率
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -87,7 +87,7 @@ uint32_t Drv_GetDwtCnt(void)
 
 uint32_t Drv_GetCpuFreq(void)
 {
-	RCC_ClocksTypeDef  rccClock = {0};
+    RCC_ClocksTypeDef  rccClock = {0};
 
     RCC_GetClocksFreq(&rccClock);
 

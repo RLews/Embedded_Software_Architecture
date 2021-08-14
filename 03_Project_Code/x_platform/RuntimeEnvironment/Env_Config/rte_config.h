@@ -2,7 +2,7 @@
 ************************************************************************************************************************
 * @file rte_config.h
 * @brief 运行环境配置
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2021-8-14
 ************************************************************************************************************************
@@ -12,9 +12,9 @@
 #define RTE_CONFIG_H
 
 /*! @brief 系统配置 */
-#define D_OS_UC_RTOS			0U
-#define D_OS_LINUX				1U
-#define D_RTE_OS_CONFIG			D_OS_UC_RTOS
+#define D_OS_UC_RTOS            0U
+#define D_OS_LINUX              1U
+#define D_RTE_OS_CONFIG         D_OS_UC_RTOS
 
 #include "rte_bsw_srv_if.h"
 

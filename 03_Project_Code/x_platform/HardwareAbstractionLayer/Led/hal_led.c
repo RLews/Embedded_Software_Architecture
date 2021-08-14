@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file hal_led.c
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -20,7 +20,7 @@ static uint8_t WifiLedSta = D_STD_OFF;
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -28,7 +28,7 @@ static uint8_t WifiLedSta = D_STD_OFF;
 
 void Hal_IoInit(void)
 {
-	Drv_GpioInit();
+    Drv_GpioInit();
 }
 
 /*!
@@ -38,7 +38,7 @@ void Hal_IoInit(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -46,7 +46,7 @@ void Hal_IoInit(void)
 
 void Hal_RunLedOn(void)
 {
-	Drv_GpioNameOut(EN_SYSTEM_RUN_LED, EN_GPIO_LOW);
+    Drv_GpioNameOut(EN_SYSTEM_RUN_LED, EN_GPIO_LOW);
 }
 
 /*!
@@ -56,7 +56,7 @@ void Hal_RunLedOn(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -64,7 +64,7 @@ void Hal_RunLedOn(void)
 
 void Hal_RunLedOff(void)
 {
-	Drv_GpioNameOut(EN_SYSTEM_RUN_LED, EN_GPIO_HIGH);
+    Drv_GpioNameOut(EN_SYSTEM_RUN_LED, EN_GPIO_HIGH);
 }
 
 /*!
@@ -74,7 +74,7 @@ void Hal_RunLedOff(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -82,9 +82,9 @@ void Hal_RunLedOff(void)
 
 void Hal_WifiLedOn(void)
 {
-	Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_LOW);
-	
-	WifiLedSta = D_STD_ON;
+    Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_LOW);
+
+    WifiLedSta = D_STD_ON;
 }
 
 /*!
@@ -94,7 +94,7 @@ void Hal_WifiLedOn(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -102,9 +102,9 @@ void Hal_WifiLedOn(void)
 
 void Hal_WifiLedOff(void)
 {
-	Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_HIGH);
-	
-	WifiLedSta = D_STD_OFF;
+    Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_HIGH);
+
+    WifiLedSta = D_STD_OFF;
 }
 
 
@@ -115,7 +115,7 @@ void Hal_WifiLedOff(void)
 * @param void
 * @param void
 * @returns uint8_t£ºled×´Ì¬
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -123,6 +123,6 @@ void Hal_WifiLedOff(void)
 
 uint8_t Hal_GetWifiLedSta(void)
 {
-	return WifiLedSta;
+    return WifiLedSta;
 }
 

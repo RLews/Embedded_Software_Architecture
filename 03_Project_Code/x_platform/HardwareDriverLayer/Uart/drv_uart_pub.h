@@ -1,8 +1,8 @@
 /*!
 ************************************************************************************************************************
 * @file drv_uart_pub.h
-* @brief 
-* @details 
+* @brief
+* @details
 * @author Lews Hammond
 * @date 2021-8-14
 ************************************************************************************************************************
@@ -21,10 +21,10 @@
 */
 typedef enum UART_NAME_T
 {
-	EN_SYS_COM = 0,
-	EN_WIFI_COM,
-	EN_ALL_UART_NUM
-}UartName_t;
+    EN_SYS_COM = 0,
+    EN_WIFI_COM,
+    EN_ALL_UART_NUM
+} UartName_t;
 
 void Drv_SysUartInit(void);
 StdBoolean_t Drv_GetUartInitSta(void);

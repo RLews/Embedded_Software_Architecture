@@ -1,7 +1,7 @@
 /*!
 ************************************************************************************************************************
 * @file drv_wdg.c
-* @details 
+* @details
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -21,7 +21,7 @@ static StdBoolean_t WdgInitFinished = D_STD_FALSE;
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -29,17 +29,17 @@ static StdBoolean_t WdgInitFinished = D_STD_FALSE;
 
 void Drv_WdgInit(void)
 {
-	IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);
-	
-	IWDG_SetPrescaler(D_DRV_WDG_PERSCALER_FACTOR);
-	
-	IWDG_SetReload(D_DRV_WDG_RELOAD_VAL);
-	
-	IWDG_ReloadCounter();
-	
-	IWDG_Enable();
+    IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);
 
-	WdgInitFinished = D_STD_TRUE;
+    IWDG_SetPrescaler(D_DRV_WDG_PERSCALER_FACTOR);
+
+    IWDG_SetReload(D_DRV_WDG_RELOAD_VAL);
+
+    IWDG_ReloadCounter();
+
+    IWDG_Enable();
+
+    WdgInitFinished = D_STD_TRUE;
 }
 
 /*!
@@ -49,7 +49,7 @@ void Drv_WdgInit(void)
 * @param void
 * @param void
 * @returns StdBoolean_t : watchdog initial state
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -57,7 +57,7 @@ void Drv_WdgInit(void)
 
 StdBoolean_t Drv_GetWdgInitSta(void)
 {
-	return WdgInitFinished;
+    return WdgInitFinished;
 }
 
 /*!
@@ -67,7 +67,7 @@ StdBoolean_t Drv_GetWdgInitSta(void)
 * @param void
 * @param void
 * @returns void
-* @note 
+* @note
 * @author Lews Hammond
 * @date 2019-7-17
 ************************************************************************************************************************
@@ -75,6 +75,6 @@ StdBoolean_t Drv_GetWdgInitSta(void)
 
 void Drv_WdgFeed(void)
 {
-	IWDG_ReloadCounter();
+    IWDG_ReloadCounter();
 }
 
