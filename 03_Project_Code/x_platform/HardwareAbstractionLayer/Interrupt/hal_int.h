@@ -16,7 +16,7 @@
 #include "osal.h"
 
 
-#define D_SYS_EXCEPTION_OUTPUT_PERIOD       (10*1000ul) //10ms
+#define D_SYS_EXCEPTION_OUTPUT_PERIOD       (10*1000UL) //10ms
 
 
 void NMI_Handler(void);
@@ -26,7 +26,7 @@ void BusFault_Handler(void);
 void UsageFault_Handler(void);
 void SVC_Handler(void);
 void DebugMon_Handler(void);
-/*void PendSV_Handler(void); //this uC/OS manage */
+//void PendSV_Handler(void);  this uC/OS manage 
 void SysTick_Handler(void);
 void WWDG_IRQHandler(void);
 void PVD_IRQHandler(void);

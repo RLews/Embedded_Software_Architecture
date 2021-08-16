@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EDRS Version 2.0-->
+<global>
+   <file name="D:\\Program Files\\Polyspace\\R2020b\\polyspace\\verifier\\cxx\\include\\include-libc\\bits\\huge_val.h" comment="">
+      <struct name="__huge_val" comment="" line="50" attributes="static">
+         <array name="__c" comment="" line="50" complete_type="uint8 [8]" attributes="static">
+            <scalar comment="" line="50" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+      </struct>
+   </file>
+   <file name="D:\\Program Files\\Polyspace\\R2020b\\polyspace\\verifier\\cxx\\include\\include-libc\\bits\\huge_valf.h" comment="">
+      <struct name="__huge_valf" comment="" line="48" attributes="static">
+         <array name="__c" comment="" line="48" complete_type="uint8 [4]" attributes="static">
+            <scalar comment="" line="48" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+      </struct>
+   </file>
+   <file name="D:\\Program Files\\Polyspace\\R2020b\\polyspace\\verifier\\cxx\\include\\include-libc\\bits\\huge_vall.h" comment="">
+      <struct name="__huge_vall" comment="" line="37" attributes="static">
+         <array name="__c" comment="" line="37" complete_type="uint8 [12]" attributes="static">
+            <scalar comment="" line="37" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+      </struct>
+   </file>
+   <file name="D:\\Program Files\\Polyspace\\R2020b\\polyspace\\verifier\\cxx\\include\\include-libc\\bits\\nan.h" comment="">
+      <struct name="__qnan_union" comment="" line="48" attributes="static">
+         <array name="__c" comment="" line="48" complete_type="uint8 [4]" attributes="static">
+            <scalar comment="" line="48" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+      </struct>
+   </file>
+   <file name="D:\\Program Files\\Polyspace\\R2020b\\polyspace\\verifier\\cxx\\include\\include-libc\\string.h" comment="">
+      <function name="memset" comment="" line="62" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="62" complete_type="void *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <scalar name="arg2" comment="" line="62" base_type="int32" complete_type="int32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="62" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="return" comment="" line="62" complete_type="void *" init_mode="PERMANENT" init_modes_allowed="4" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MULTI_CERTAIN_WRITE"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareAbstractionLayer\\Interrupt\\hal_int.c" comment="">
+      <function name="Hal_GetCurIntID" comment="" line="163" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="return" comment="" line="163" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SetFaultFunc" comment="" line="142" main_generator_called="MAIN_GENERATOR" attributes="unused"/>
+      <function name="Hal_SysISRSet" comment="" line="79" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="79" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SysIntHandle" comment="" line="181" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="181" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <scalar name="SysIntId" comment="" line="19" base_type="uint8" attributes="volatile static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <function name="__disable_irq" comment="" line="117" main_generator_called="disabled" attributes="extern">
+         <scalar name="return" comment="" line="117" base_type="int32" complete_type="int32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareAbstractionLayer\\Key\\hal_key.c" comment="">
+      <function name="Hal_CheckNewKey" comment="" line="244" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="244" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="244" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_ClearNewKeyFlg" comment="" line="262" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="262" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_GetKeySta" comment="" line="280" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="280" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="280" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_KeyStateManage" comment="" line="72" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="72" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <array name="KeyManage" comment="" line="13" complete_type="struct KEY_MANAGE_T [1]" attributes="static">
+         <struct comment="" line="13" complete_type="struct KEY_MANAGE_T" attributes="static">
+            <scalar name="keySta" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            <scalar name="newKeyFlg" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </struct>
+      </array>
+      <struct name="KeyShake" comment="" line="14" complete_type="struct KEY_SHAKE_T" attributes="static">
+         <array name="dblKeyLock" comment="" line="14" complete_type="uint8 [1]" attributes="static">
+            <scalar comment="" line="14" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+         <array name="keyPrsTim" comment="" line="14" complete_type="uint32 [1]" attributes="static">
+            <scalar comment="" line="14" base_type="uint32" attributes="static" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+         <array name="keydblPrsTim" comment="" line="14" complete_type="uint32 [1]" attributes="static">
+            <scalar comment="" line="14" base_type="uint32" attributes="static" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+         <array name="shakeBuf" comment="" line="14" complete_type="uint8 [1]" attributes="static">
+            <scalar comment="" line="14" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </array>
+      </struct>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareAbstractionLayer\\Led\\hal_led.c" comment="">
+      <function name="Hal_GetWifiLedSta" comment="" line="124" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="return" comment="" line="124" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <scalar name="WifiLedSta" comment="" line="14" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareAbstractionLayer\\Platform\\hal.c" comment="">
+      <scalar name="HalInitSta" comment="" line="14" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      <function name="Hal_GetInitStatus" comment="" line="75" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="return" comment="" line="75" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareAbstractionLayer\\RTC\\hal_rtc.c" comment="">
+      <function name="Hal_RtcGetTime" comment="" line="70" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="70" complete_type="struct RTC_TIME_T *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <struct comment="" line="70" complete_type="struct RTC_TIME_T">
+               <scalar name="rtcDay" comment="" line="70" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rtcHour" comment="" line="70" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rtcMin" comment="" line="70" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rtcMon" comment="" line="70" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rtcSec" comment="" line="70" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rtcWeek" comment="" line="70" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rtcYear" comment="" line="70" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+      </function>
+      <function name="Hal_RtcGetWeek" comment="" line="308" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="308" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="308" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="308" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="308" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_RtcJudgeLeap" comment="" line="121" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="121" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="121" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_RtcSetTime" comment="" line="252" main_generator_called="MAIN_GENERATOR">
+         <struct name="arg1" comment="" line="252" complete_type="struct RTC_TIME_T">
+            <scalar name="rtcDay" comment="" line="252" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            <scalar name="rtcHour" comment="" line="252" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            <scalar name="rtcMin" comment="" line="252" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            <scalar name="rtcMon" comment="" line="252" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            <scalar name="rtcSec" comment="" line="252" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            <scalar name="rtcWeek" comment="" line="252" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            <scalar name="rtcYear" comment="" line="252" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </struct>
+      </function>
+      <array name="RtcMonTbl" comment="" line="15" complete_type="uint8 const [12]" attributes="static">
+         <scalar comment="" line="15" base_type="uint8" attributes="static const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      </array>
+      <array name="RtcWeekTbl" comment="" line="16" complete_type="uint8 const [12]" attributes="static">
+         <scalar comment="" line="16" base_type="uint8" attributes="static const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      </array>
+      <struct name="SysTime" comment="" line="13" complete_type="struct RTC_TIME_T" attributes="static">
+         <scalar name="rtcDay" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         <scalar name="rtcHour" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         <scalar name="rtcMin" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         <scalar name="rtcMon" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         <scalar name="rtcSec" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         <scalar name="rtcWeek" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         <scalar name="rtcYear" comment="" line="13" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      </struct>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareAbstractionLayer\\SD\\hal_sd.c" comment="">
+      <function name="Hal_SDCardGetCID" comment="" line="33" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="33" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="33" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="33" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SDCardGetCSD" comment="" line="64" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="64" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="64" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="64" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SDCardGetSectorNum" comment="" line="99" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="99" complete_type="uint32 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="99" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="99" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SDCardInit" comment="" line="366" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="return" comment="" line="366" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SDCardIntoIDLE" comment="" line="303" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="return" comment="" line="303" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SDCardReadDisk" comment="" line="149" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="149" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="149" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg2" comment="" line="149" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="149" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="149" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SDCardReadOCR" comment="" line="332" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <pointer name="arg1" comment="" line="332" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="332" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="332" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_SDCardWriteDisk" comment="" line="207" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="207" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="207" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg2" comment="" line="207" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="207" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="207" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <scalar name="SdCardType" comment="" line="13" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareAbstractionLayer\\Uart\\hal_uart.c" comment="">
+      <function name="Hal_SetSysRxSemPostFunc" comment="" line="67" main_generator_called="MAIN_GENERATOR" attributes="unused"/>
+      <function name="Hal_SetWifiRxSemPostFunc" comment="" line="85" main_generator_called="MAIN_GENERATOR" attributes="unused"/>
+      <function name="Hal_UartReadByte" comment="" line="103" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="103" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg2" comment="" line="103" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="103" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="103" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Hal_UartWrite" comment="" line="133" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="133" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg2" comment="" line="133" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="133" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg3" comment="" line="133" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="133" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <array name="SysUartRxBuf" comment="" line="14" complete_type="uint8 volatile [256][2]" attributes="static">
+         <array comment="" line="14" complete_type="uint8 volatile [256]" attributes="static">
+            <scalar comment="" line="14" base_type="uint8" attributes="volatile static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </array>
+      </array>
+      <array name="SysUartRxQueue" comment="" line="16" complete_type="struct SRV_QUEUE_T volatile [2]" attributes="static">
+         <struct comment="" line="16" complete_type="struct SRV_QUEUE_T" attributes="volatile static">
+            <scalar name="bufSize" comment="" line="16" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="frontInx" comment="" line="16" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="maxBufSize" comment="" line="16" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <pointer name="qBuffer" comment="" line="16" attributes="volatile static" complete_type="uint8 volatile *" init_mode="unsupported" initialize_pointer="unsupported" number_allocated="unsupported" init_pointed="unsupported"/>
+            <scalar name="rearInx" comment="" line="16" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </array>
+      <array name="SysUartTxBuf" comment="" line="13" complete_type="uint8 volatile [320][2]" attributes="static">
+         <array comment="" line="13" complete_type="uint8 volatile [320]" attributes="static">
+            <scalar comment="" line="13" base_type="uint8" attributes="volatile static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </array>
+      </array>
+      <array name="SysUartTxQueue" comment="" line="15" complete_type="struct SRV_QUEUE_T volatile [2]" attributes="static">
+         <struct comment="" line="15" complete_type="struct SRV_QUEUE_T" attributes="volatile static">
+            <scalar name="bufSize" comment="" line="15" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="frontInx" comment="" line="15" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="maxBufSize" comment="" line="15" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <pointer name="qBuffer" comment="" line="15" attributes="volatile static" complete_type="uint8 volatile *" init_mode="unsupported" initialize_pointer="unsupported" number_allocated="unsupported" init_pointed="unsupported"/>
+            <scalar name="rearInx" comment="" line="15" base_type="uint16" attributes="volatile static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </array>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareDriverLayer\\GPIO\\drv_gpio_pub.h" comment="">
+      <function name="Drv_GpioNameIn" comment="" line="91" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="91" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="91" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_GpioNameOut" comment="" line="90" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="90" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="90" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareDriverLayer\\RTC\\drv_rtc_pub.h" comment="">
+      <function name="Drv_RtcGetCount" comment="" line="34" main_generator_called="disabled" attributes="extern">
+         <scalar name="return" comment="" line="34" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_RtcIsSecInt" comment="" line="35" main_generator_called="disabled" attributes="extern">
+         <scalar name="return" comment="" line="35" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_RtcSetCount" comment="" line="33" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="33" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareDriverLayer\\SD\\drv_sd_pub.h" comment="">
+      <function name="Drv_SDCardRevDat" comment="" line="75" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="75" complete_type="uint8 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="75" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg2" comment="" line="75" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="75" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_SDCardSendBlock" comment="" line="76" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="76" complete_type="uint8 const *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="disabled">
+            <scalar comment="" line="76" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg2" comment="" line="76" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="76" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_SDCardSendCmd" comment="" line="77" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="77" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="77" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="77" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="77" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareDriverLayer\\SPI\\drv_spi_pub.h" comment="">
+      <function name="Drv_Spi2RWByte" comment="" line="38" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="38" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg2" comment="" line="38" complete_type="uint8 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="38" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="38" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_Spi2SetSpeed" comment="" line="39" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="39" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareDriverLayer\\STM32F10x_FWLib\\inc\\misc.h" comment="">
+      <function name="NVIC_PriorityGroupConfig" comment="" line="196" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="196" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareDriverLayer\\STM32F10x_FWLib\\inc\\stm32f10x_rtc.h" comment="">
+      <function name="RTC_ITConfig" comment="" line="103" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="103" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="103" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\HardwareDriverLayer\\Uart\\drv_uart_pub.h" comment="">
+      <function name="Drv_IsUartRxInt" comment="" line="37" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="37" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="37" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_IsUartTxInt" comment="" line="36" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="36" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="36" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_UartGetRevData" comment="" line="38" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="38" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="38" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_UartITRxDisable" comment="" line="33" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="33" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_UartITRxEnable" comment="" line="32" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="32" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_UartITTxDisable" comment="" line="35" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="35" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_UartITTxEnable" comment="" line="34" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="34" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Drv_UartTxByte" comment="" line="31" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="31" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="31" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\Algor\\srv_algor.c" comment="">
+      <function name="Srv_FirstOrderFilter" comment="" line="54" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="54" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="54" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="54" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="54" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_GetRand16" comment="" line="29" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="return" comment="" line="29" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\DataStructOpt\\src\\srv_queue.c" comment="">
+      <function name="Srv_QueueIn" comment="" line="104" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="104" complete_type="struct SRV_QUEUE_T volatile *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="unsupported">
+            <struct comment="" line="104" complete_type="struct SRV_QUEUE_T" attributes="volatile">
+               <scalar name="bufSize" comment="" line="104" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="frontInx" comment="" line="104" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="maxBufSize" comment="" line="104" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rearInx" comment="" line="104" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+         <scalar name="arg2" comment="" line="104" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="104" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_QueueInit" comment="" line="27" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="27" complete_type="struct SRV_QUEUE_T volatile *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="unsupported">
+            <struct comment="" line="27" complete_type="struct SRV_QUEUE_T" attributes="volatile">
+               <scalar name="bufSize" comment="" line="27" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="frontInx" comment="" line="27" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="maxBufSize" comment="" line="27" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rearInx" comment="" line="27" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+         <pointer name="arg2" comment="" line="27" complete_type="uint8 volatile *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="unsupported">
+            <scalar comment="" line="27" base_type="uint8" attributes="volatile" complete_type="uint8" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg3" comment="" line="27" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_QueueIsEmpty" comment="" line="49" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="49" complete_type="struct SRV_QUEUE_T volatile *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="unsupported">
+            <struct comment="" line="49" complete_type="struct SRV_QUEUE_T" attributes="volatile">
+               <scalar name="bufSize" comment="" line="49" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="frontInx" comment="" line="49" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="maxBufSize" comment="" line="49" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rearInx" comment="" line="49" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+         <scalar name="return" comment="" line="49" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_QueueIsFull" comment="" line="74" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="74" complete_type="struct SRV_QUEUE_T volatile *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="unsupported">
+            <struct comment="" line="74" complete_type="struct SRV_QUEUE_T" attributes="volatile">
+               <scalar name="bufSize" comment="" line="74" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="frontInx" comment="" line="74" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="maxBufSize" comment="" line="74" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rearInx" comment="" line="74" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+         <scalar name="return" comment="" line="74" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_QueueOut" comment="" line="140" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="140" complete_type="struct SRV_QUEUE_T volatile *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="unsupported">
+            <struct comment="" line="140" complete_type="struct SRV_QUEUE_T" attributes="volatile">
+               <scalar name="bufSize" comment="" line="140" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="frontInx" comment="" line="140" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="maxBufSize" comment="" line="140" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rearInx" comment="" line="140" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+         <pointer name="arg2" comment="" line="140" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="140" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="140" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_ReadQueueHead" comment="" line="176" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="176" complete_type="struct SRV_QUEUE_T volatile *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="unsupported">
+            <struct comment="" line="176" complete_type="struct SRV_QUEUE_T" attributes="volatile">
+               <scalar name="bufSize" comment="" line="176" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="frontInx" comment="" line="176" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="maxBufSize" comment="" line="176" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+               <scalar name="rearInx" comment="" line="176" base_type="uint16" attributes="volatile" complete_type="uint16" init_mode="unsupported" init_range="unsupported" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+         <pointer name="arg2" comment="" line="176" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="176" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="176" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\FATFS\\src\\ff.h" comment="">
+      <function name="f_getfree" comment="" line="240" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="240" complete_type="uint8 const *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="disabled">
+            <scalar comment="" line="240" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg2" comment="" line="240" complete_type="uint32 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="240" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg3" comment="" line="240" complete_type="struct **" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <scalar name="return" comment="" line="240" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="f_mkdir" comment="" line="231" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="231" complete_type="uint8 const *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="disabled">
+            <scalar comment="" line="231" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="231" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="f_open" comment="" line="218" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="218" complete_type="struct *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg2" comment="" line="218" complete_type="uint8 const *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="disabled">
+            <scalar comment="" line="218" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg3" comment="" line="218" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="218" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="f_opendir" comment="" line="226" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="226" complete_type="struct *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg2" comment="" line="226" complete_type="uint8 const *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="disabled">
+            <scalar comment="" line="226" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="226" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="f_readdir" comment="" line="228" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="228" complete_type="struct *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg2" comment="" line="228" complete_type="struct *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <struct comment="" line="228">
+               <scalar name="fattrib" comment="" line="228" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+               <array name="fname" comment="" line="228" complete_type="uint8 [13]">
+                  <scalar comment="" line="228" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+               </array>
+               <scalar name="lfsize" comment="" line="228" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+            </struct>
+         </pointer>
+         <scalar name="return" comment="" line="228" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="f_unlink" comment="" line="232" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="232" complete_type="uint8 const *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="disabled">
+            <scalar comment="" line="232" base_type="uint8" attributes="const" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="232" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\Lib\\std_lib.c" comment="">
+      <scalar name="EndOfString" comment="" line="17" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      <function name="Srv_AppendString" comment="" line="239" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="239" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="239" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg3" comment="" line="239" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="239" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_FindStringEndIndex" comment="" line="125" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="125" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="125" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg3" comment="" line="125" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="125" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="125" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_FindStringIndex" comment="" line="87" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="87" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="87" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg3" comment="" line="87" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="87" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="87" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_GetStringLen" comment="" line="266" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="266" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="return" comment="" line="266" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_MemCmp" comment="" line="47" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="47" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="47" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg3" comment="" line="47" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="47" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="47" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_RemoveEndString" comment="" line="206" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="206" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg2" comment="" line="206" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="206" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_RemoveHeaderString" comment="" line="161" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="161" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg2" comment="" line="161" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="161" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="fputc" comment="" line="25" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="25" base_type="int32" complete_type="int32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg2" comment="" line="25" complete_type="struct _IO_FILE *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="return" comment="" line="25" base_type="int32" complete_type="int32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\Memory\\srv_memory.c" comment="">
+      <function name="Srv_Free" comment="" line="314" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="314" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg2" comment="" line="314" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+      </function>
+      <function name="Srv_Malloc" comment="" line="274" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="274" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="274" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_MemCopy" comment="" line="59" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="59" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="59" complete_type="void const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg3" comment="" line="59" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_MemInit" comment="" line="116" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="116" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_MemPerused" comment="" line="138" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="138" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="138" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_MemSet" comment="" line="88" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="88" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg2" comment="" line="88" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="88" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Srv_Realloc" comment="" line="350" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="350" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg2" comment="" line="350" complete_type="void *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg3" comment="" line="350" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\osal\\src\\osal.c" comment="">
+      <function name="Fsal_AnaysisDir" comment="" line="462" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <pointer name="arg1" comment="" line="462" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="462" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg2" comment="" line="462" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="462" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg4" comment="" line="462" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="462" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="462" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Fsal_DelDir" comment="" line="628" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="628" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="628" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="628" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Fsal_DiskGetfree" comment="" line="721" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="721" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="721" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg2" comment="" line="721" complete_type="uint32 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="721" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg3" comment="" line="721" complete_type="uint32 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="721" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="721" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Fsal_MkDir" comment="" line="520" main_generator_called="MAIN_GENERATOR">
+         <pointer name="arg1" comment="" line="520" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="520" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg2" comment="" line="520" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="520" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Fsal_OpenR" comment="" line="606" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="606" complete_type="struct *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="606" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="606" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="606" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Fsal_OpenW" comment="" line="569" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="569" complete_type="struct *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="569" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="569" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg3" comment="" line="569" complete_type="uint8 const *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="569" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg4" comment="" line="569" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="569" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Fsal_Time2Str" comment="" line="763" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="763" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="763" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="Osal_DelayMs" comment="" line="362" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <scalar name="arg1" comment="" line="362" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_DiffTsToUsec" comment="" line="425" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="425" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="425" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_GetCurTs" comment="" line="406" main_generator_called="MAIN_GENERATOR">
+         <scalar name="return" comment="" line="406" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_SemCreate" comment="" line="213" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="213" complete_type="struct os_sem *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg2" comment="" line="213" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg3" comment="" line="213" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="213" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="213" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_SemPost" comment="" line="308" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="308" complete_type="struct os_sem *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="return" comment="" line="308" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_SemRead" comment="" line="277" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="277" complete_type="struct os_sem *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="return" comment="" line="277" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_SemSet" comment="" line="337" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="337" complete_type="struct os_sem *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg2" comment="" line="337" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="337" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_SemWait" comment="" line="243" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="243" complete_type="struct os_sem *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg2" comment="" line="243" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="243" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_TaskStkChk" comment="" line="93" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="93" complete_type="struct os_tcb *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="93" complete_type="uint32 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="93" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg3" comment="" line="93" complete_type="uint32 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="93" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="93" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_TmrCreate" comment="" line="124" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="124" complete_type="struct os_tmr *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <pointer name="arg2" comment="" line="124" complete_type="uint8 *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+            <scalar comment="" line="124" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg3" comment="" line="124" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="124" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="124" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_TmrStart" comment="" line="159" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="159" complete_type="struct os_tmr *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="return" comment="" line="159" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Osal_TmrStop" comment="" line="186" main_generator_called="MAIN_GENERATOR" attributes="unused">
+         <pointer name="arg1" comment="" line="186" complete_type="struct os_tmr *" init_mode="MAIN_GENERATOR" init_modes_allowed="10" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR"/>
+         <scalar name="arg2" comment="" line="186" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="186" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\uCOSIII\\uC-CPU\\ARM-Cortex-M3\\GNU\\cpu.h" comment="">
+      <function name="CPU_SR_Restore" comment="" line="381" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="381" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="CPU_SR_Save" comment="" line="380" main_generator_called="disabled" attributes="extern">
+         <scalar name="return" comment="" line="380" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\uCOSIII\\uC-CPU\\cpu_core.h" comment="">
+      <function name="CPU_IntDisMeasMaxCurReset" comment="" line="546" main_generator_called="disabled" attributes="extern">
+         <scalar name="return" comment="" line="546" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="CPU_TS32_to_uSec" comment="" line="825" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="825" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="825" base_type="uint64" complete_type="uint64" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="CPU_TS_TmrRd" comment="" line="764" main_generator_called="disabled" attributes="extern">
+         <scalar name="return" comment="" line="764" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\git\\Embedded_Software_Architecture\\03_Project_Code\\x_platform\\ServicesLayer\\uCOSIII\\uCOS-III\\Source\\os.h" comment="">
+      <scalar name="OSCfg_TickRate_Hz" comment="" line="1313" base_type="uint32" attributes="extern const" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="14" init_range="" global_assert="NO" assert_range=""/>
+      <function name="OSInit" comment="" line="1918" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1918" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1918" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSSchedRoundRobinCfg" comment="" line="1928" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="1928" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="1928" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg3" comment="" line="1928" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1928" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSSemCreate" comment="" line="1603" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1603" complete_type="struct os_sem *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg2" comment="" line="1603" complete_type="uint8 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1603" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg3" comment="" line="1603" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg4" comment="" line="1603" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1603" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSSemPend" comment="" line="1612" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1612" complete_type="struct os_sem *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <scalar name="arg2" comment="" line="1612" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="1612" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg4" comment="" line="1612" complete_type="uint32 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1612" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg5" comment="" line="1612" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1612" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="1612" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="OSSemPost" comment="" line="1624" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1624" complete_type="struct os_sem *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <scalar name="arg2" comment="" line="1624" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg3" comment="" line="1624" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1624" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="1624" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="OSSemSet" comment="" line="1629" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1629" complete_type="struct os_sem *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <scalar name="arg2" comment="" line="1629" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg3" comment="" line="1629" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1629" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSStatTaskCPUUsageInit" comment="" line="1946" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1946" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1946" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSTaskStkChk" comment="" line="1745" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1745" complete_type="struct os_tcb *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg2" comment="" line="1745" complete_type="uint32 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1745" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg3" comment="" line="1745" complete_type="uint32 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1745" base_type="uint32" complete_type="uint32" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <pointer name="arg4" comment="" line="1745" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1745" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSTimeDlyHMSM" comment="" line="1838" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="1838" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="1838" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="1838" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="1838" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg5" comment="" line="1838" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg6" comment="" line="1838" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1838" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSTmrCreate" comment="" line="1864" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1864" complete_type="struct os_tmr *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg2" comment="" line="1864" complete_type="uint8 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1864" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="arg3" comment="" line="1864" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="1864" base_type="uint32" complete_type="uint32" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg5" comment="" line="1864" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg8" comment="" line="1864" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1864" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+      </function>
+      <function name="OSTmrStart" comment="" line="1879" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1879" complete_type="struct os_tmr *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg2" comment="" line="1879" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1879" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="1879" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="OSTmrStop" comment="" line="1885" main_generator_called="disabled" attributes="extern">
+         <pointer name="arg1" comment="" line="1885" complete_type="struct os_tmr *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <scalar name="arg2" comment="" line="1885" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <pointer name="arg3" comment="" line="1885" complete_type="void *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE"/>
+         <pointer name="arg4" comment="" line="1885" complete_type="uint16 *" init_mode="disabled" initialize_pointer="disabled" number_allocated="disabled" init_pointed="MULTI_CERTAIN_WRITE">
+            <scalar comment="" line="1885" base_type="uint16" complete_type="uint16" init_mode="PERMANENT" init_modes_allowed="4" init_range="enum_min..enum_max" global_assert="unsupported" assert_range="unsupported"/>
+         </pointer>
+         <scalar name="return" comment="" line="1885" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+</global>

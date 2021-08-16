@@ -11,8 +11,11 @@
 #ifndef STD_LIB_H
 #define STD_LIB_H
 
-#include "hal_uart_pub.h"
+#include "rte_config.h"
 
+#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+#include "hal_uart_pub.h"
+#endif
 
 
 

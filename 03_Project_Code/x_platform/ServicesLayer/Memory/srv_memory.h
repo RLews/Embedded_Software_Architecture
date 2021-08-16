@@ -11,11 +11,20 @@
 #ifndef SRV_MEMORY_H
 #define SRV_MEMORY_H
 
+#include "rte_config.h"
+
+#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
 
 #include "hal_sram_pub.h"
 
 /*! @brief 是否使用自定义动态内存管理机制 */
 #define USER_MEMORY_MANAGE_ENABLE       D_STD_DISABLE
+
+#else
+/*! @brief 是否使用自定义动态内存管理机制 */
+#define USER_MEMORY_MANAGE_ENABLE       D_STD_DISABLE
+
+#endif
 
 #define D_IN_SRAM   0U  //内部内存池
 #define D_EX_SRAM   1U  //外部内存池

@@ -19,6 +19,8 @@ const char EndOfString = '\0';
 const char SpaceString = ' ';
 
 
+#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+
 /* need MicroLib */
 int fputc(int ch, FILE *f)
 {
@@ -26,6 +28,8 @@ int fputc(int ch, FILE *f)
 
     return ch;
 }
+
+#endif
 
 /*!
 ************************************************************************************************************************
@@ -174,6 +178,7 @@ void Srv_RemoveHeaderString(void * str, uint32_t removeLen, uint32_t strLen)
     if(removeLen >= strLen)
     {
         Srv_MemSet(str, (uint8_t)EndOfString, strLen);
+        Srv_Free(D_IN_SRAM, newStr);
         return;
     }
 

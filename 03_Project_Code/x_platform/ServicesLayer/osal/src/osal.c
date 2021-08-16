@@ -645,6 +645,7 @@ FSAL_FRES Fsal_DelDir(const FSAL_CHAR *path)
 
     if(fno.lfname == NULL)
     {
+        Srv_Free(D_IN_SRAM, file);
         return FR_INT_ERR;
     }
 

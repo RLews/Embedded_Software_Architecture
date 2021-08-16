@@ -1,0 +1,347 @@
+<polyspace-bug-finder R2020b PID13484 PGID13484>
+
+Polyspace verification of x_platform project.
+Starting at 08/16/2021, 20h07.
+
+Remark: -O2 is ignored in Polyspace Bug Finder.
+Remark: -to is ignored in Polyspace Bug Finder.
+Remark: -main-generator-calls is ignored in Polyspace Bug Finder.
+Remark: -class-analyzer is ignored in Polyspace Bug Finder.
+Remark: -unsigned-integer-overflows is ignored in Polyspace Bug Finder.
+Remark: -signed-integer-overflows is ignored in Polyspace Bug Finder.
+Remark: -check-subnormal is ignored in Polyspace Bug Finder.
+Remark: -uncalled-function-checks is ignored in Polyspace Bug Finder.
+Remark: -class-analyzer-calls is ignored in Polyspace Bug Finder.
+Remark: -main-generator-writes-variables is ignored in Polyspace Bug Finder.
+Remark: -float-rounding-mode is ignored in Polyspace Bug Finder.
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-prog=x_platform
+-lang=C-CPP
+-polyspace-version=3.3 (R2020b)
+-results-dir=E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result
+-date=16/08/2021
+
+User:
+-autosar-cpp14=all
+-misra3=mandatory-required
+-target=i386
+-compiler=generic
+-dos=true
+-verif-version=1.0
+-author=HP
+-I1=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform
+-I2=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\.x_platform.si4project\Backup
+-I3=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main
+-I4=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt
+-I5=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key
+-I6=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led
+-I7=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Platform
+-I8=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC
+-I9=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD
+-I10=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Sram
+-I11=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Timer
+-I12=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart
+-I13=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog
+-I14=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT
+-I15=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\GPIO
+-I16=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore
+-I17=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Interrupt
+-I18=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC
+-I19=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD
+-I20=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI
+-I21=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram
+-I22=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer
+-I23=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Uart
+-I24=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Watchdog
+-I25=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config
+-I26=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor
+-I27=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib
+-I28=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory
+-I29=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\STM32F10x_FWLib\inc
+-I30=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Bsw_Interface\Hal_Interface
+-I31=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Bsw_Interface\Service_Interface
+-I32=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc
+-I33=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src
+-I34=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc
+-I35=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU
+-I36=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-LIB
+-I37=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-Config
+-I38=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Source
+-I39=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\GNU
+-I40=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\IAR
+-I41=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\RealView
+-I42=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU
+-I43=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR
+-I44=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView
+
+
+Checkers enabled:
+    Defects 114/300
+    MISRA C:2012 133/171
+    AUTOSAR C++14 308/308
+
+
+Verifying host configuration:
+Number of physical cores:                2
+Number of logical cores:                 4
+Processor type:                          amd64
+Processor model:                Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+Processor frequency:            2.400 GHz
+Memory > 4 GB:                                            15.88 GB
+Tmp space available in C:\Users\HP\AppData\Local\Temp:    17.31 GB
+
+Remark: 2 physical core(s) detected. The verification creates 2 process(es).
+*** Configuration of the host :	OK
+
+
+Type E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result\kill-rte-kernel.bat on host ENVY to halt Verifier process
+
+
+Checking license ...
+License is OK
+
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Aug 16 20:08:01 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** C-CPP source compliance checking
+***
+**********************************************************
+
+Verifying sources ...
+Verifying app1.c (1/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 5: error: identifier "FRESULT" is undefined
+|  FRESULT open_append(
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 6: error: identifier "FIL" is undefined
+|      FIL* fp,            /* [OUT] File object to create */
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 10: error: identifier "FRESULT" is undefined
+|      FRESULT fr;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 13: error: identifier "FA_WRITE" is undefined
+|      fr = f_open(fp, path, FA_WRITE | FA_OPEN_ALWAYS);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 13: error: identifier "FA_OPEN_ALWAYS" is undefined
+|      fr = f_open(fp, path, FA_WRITE | FA_OPEN_ALWAYS);
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 15: error: identifier "FR_OK" is undefined
+|      if(fr == FR_OK)
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 30: error: identifier "FRESULT" is undefined
+|      FRESULT fr;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 31: error: identifier "FATFS" is undefined
+|      FATFS fs;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 32: error: identifier "FIL" is undefined
+|      FIL fil;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 38: error: identifier "FR_OK" is undefined
+|      if(fr != FR_OK) return 1;
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 41: error: identifier "Mday" is undefined
+|      f_printf(&fil, "%02u/%02u/%u, %2u:%02u\n", Mday, Mon, Year, Hour, Min);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 41: error: identifier "Mon" is undefined
+|      f_printf(&fil, "%02u/%02u/%u, %2u:%02u\n", Mday, Mon, Year, Hour, Min);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 41: error: identifier "Year" is undefined
+|      f_printf(&fil, "%02u/%02u/%u, %2u:%02u\n", Mday, Mon, Year, Hour, Min);
+|                                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 41: error: identifier "Hour" is undefined
+|      f_printf(&fil, "%02u/%02u/%u, %2u:%02u\n", Mday, Mon, Year, Hour, Min);
+|                                                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c, line 41: error: identifier "Min" is undefined
+|      f_printf(&fil, "%02u/%02u/%u, %2u:%02u\n", Mday, Mon, Year, Hour, Min);
+|                                                                        ^
+
+15 errors detected in the compilation of "app1.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app1.c: warning: Failed compilation.
+Verifying app2.c (2/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 7: error: identifier "FRESULT" is undefined
+|  FRESULT empty_directory(
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 11: error: identifier "UINT" is undefined
+|      UINT i, j;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 12: error: identifier "FRESULT" is undefined
+|      FRESULT fr;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 13: error: identifier "DIR" is undefined
+|      DIR dir;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 14: error: identifier "FILINFO" is undefined
+|      FILINFO fno;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 21: error: identifier "FR_OK" is undefined
+|      if(fr == FR_OK)
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 33: error: identifier "_FS_RPATH" is undefined
+|              if(_FS_RPATH && fno.fname[0] == '.') continue;
+|                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 42: error: identifier "AM_DIR" is undefined
+|              if(fno.fattrib & AM_DIR)
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 65: error: identifier "FRESULT" is undefined
+|      FRESULT fr;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c, line 66: error: identifier "FATFS" is undefined
+|      FATFS fs;
+|      ^
+
+10 errors detected in the compilation of "app2.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app2.c: warning: Failed compilation.
+Verifying app3.c (3/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app3.c, line 10: error: #error directive: This function may not be compatible with this revision of FatFs module.
+|  #error This function may not be compatible with this revision of FatFs module.
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app3.c: warning: Failed compilation.
+Verifying app4.c (4/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\doc\img\app4.c: warning: Failed compilation.
+Verifying bsp_os.c (5/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-Config\bsp_os.c: warning: Failed compilation.
+Verifying cc932.c (6/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\cc932.c, line 12: error: #error directive: This file is not needed in current configuration. Remove from the project.
+|  #error This file is not needed in current configuration. Remove from the project.
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\cc932.c: warning: Failed compilation.
+Verifying cc949.c (7/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\cc949.c, line 11: error: #error directive: This file is not needed in current configuration. Remove from the project.
+|  #error This file is not needed in current configuration. Remove from the project.
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\cc949.c: warning: Failed compilation.
+Verifying cc950.c (8/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\cc950.c, line 11: error: #error directive: This file is not needed in current configuration. Remove from the project.
+|  #error This file is not needed in current configuration. Remove from the project.
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\cc950.c: warning: Failed compilation.
+Verifying ccsbcs.c (9/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\ccsbcs.c, line 518: error: #error directive: This file is not needed in current configuration. Remove from the project.
+|  #error This file is not needed in current configuration. Remove from the project.
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\option\ccsbcs.c: warning: Failed compilation.
+Verifying cc936.c (10/94) [C]
+Verifying core_cm3.c (11/94) [C]
+Verifying cpu_c.c (12/94) [C]
+Verifying cpu_c.c (13/94) [C]
+Verifying cpu_c.c (14/94) [C]
+Verifying cpu_core.c (15/94) [C]
+Verifying diskio.c (16/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src\diskio.c: warning: Failed compilation.
+Verifying drv_dwt.c (17/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt.c: warning: Failed compilation.
+Verifying drv_gpio.c (18/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\GPIO\drv_gpio.c: warning: Failed compilation.
+Verifying drv_int.c (19/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Interrupt\drv_int.c: warning: Failed compilation.
+Verifying drv_rtc.c (20/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc.c: warning: Failed compilation.
+Verifying drv_sd.c (21/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd.c: warning: Failed compilation.
+Verifying drv_spi.c (22/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi.c: warning: Failed compilation.
+Verifying drv_sram.c (23/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram.c: warning: Failed compilation.
+Verifying drv_timer.c (24/94) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore\stm32f10x.h, line 98: error: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|  #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+|   ^
+
+1 error detected in the compilation of "stdarg.h".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer\drv_timer.c: warning: Failed compilation.
+"Remark: Analysis stopped by envy\hp at 20:08:33 2021/08/16 ÷‹“ª. " 

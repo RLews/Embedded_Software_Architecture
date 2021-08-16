@@ -443,6 +443,11 @@
               <FileType>5</FileType>
               <FilePath>..\RuntimeEnvironment\Bsw_Interface\Service_Interface\rte_bsw_srv_if.h</FilePath>
             </File>
+            <File>
+              <FileName>rte_bsw_rtos_if.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\RuntimeEnvironment\Bsw_Interface\Service_Interface\rte_bsw_rtos_if.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

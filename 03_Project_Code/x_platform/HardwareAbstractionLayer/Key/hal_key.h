@@ -18,9 +18,9 @@
 
 #define D_KEY_SCAN_PEROID_MS            5
 
-#define D_KEY_DOUBLE_PRESS_TIME         (150*1000ul)
-#define D_KEY_DOUBLE_PRESS_SPACE_TIME   (2000*1000ul)
-#define D_KEY_REPEAT_TIME               (1000*1000ul)//1s
+#define D_KEY_DOUBLE_PRESS_TIME         (150*1000UL)
+#define D_KEY_DOUBLE_PRESS_SPACE_TIME   (2000*1000UL)
+#define D_KEY_REPEAT_TIME               (1000*1000UL)//1s
 
 #define D_KEY_PRESS_SHAKE_TIME          (15/D_KEY_SCAN_PEROID_MS) //15ms
 

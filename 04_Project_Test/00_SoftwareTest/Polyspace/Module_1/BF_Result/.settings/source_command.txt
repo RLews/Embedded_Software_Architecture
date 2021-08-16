@@ -1,0 +1,16 @@
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Platform\hal.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Sram\hal_sram.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Timer\hal_timer.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog\hal_wdg.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c

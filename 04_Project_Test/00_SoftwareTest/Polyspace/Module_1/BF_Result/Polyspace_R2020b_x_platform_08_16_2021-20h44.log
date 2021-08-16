@@ -1,0 +1,793 @@
+<polyspace-bug-finder R2020b PID3324 PGID3324>
+
+Polyspace verification of x_platform project.
+Starting at 08/16/2021, 20h44.
+
+Remark: -O2 is ignored in Polyspace Bug Finder.
+Remark: -to is ignored in Polyspace Bug Finder.
+Remark: -main-generator-calls is ignored in Polyspace Bug Finder.
+Remark: -class-analyzer is ignored in Polyspace Bug Finder.
+Remark: -unsigned-integer-overflows is ignored in Polyspace Bug Finder.
+Remark: -signed-integer-overflows is ignored in Polyspace Bug Finder.
+Remark: -check-subnormal is ignored in Polyspace Bug Finder.
+Remark: -uncalled-function-checks is ignored in Polyspace Bug Finder.
+Remark: -class-analyzer-calls is ignored in Polyspace Bug Finder.
+Remark: -main-generator-writes-variables is ignored in Polyspace Bug Finder.
+Remark: -float-rounding-mode is ignored in Polyspace Bug Finder.
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-prog=x_platform
+-lang=C-CPP
+-polyspace-version=3.3 (R2020b)
+-results-dir=E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result
+-date=16/08/2021
+
+User:
+-autosar-cpp14=all
+-misra3=mandatory-required
+-target=arm
+-compiler=armcc
+-dos=true
+-D1=STM32F10X_HD=
+-D2=USE_STDPERIPH_DRIVER=
+-D3=__INLINE=
+-import-comments=E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result\comments_bak
+-verif-version=1.0
+-author=HP
+-I1=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform
+-I2=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\.x_platform.si4project\Backup
+-I3=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main
+-I4=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt
+-I5=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key
+-I6=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led
+-I7=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Platform
+-I8=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC
+-I9=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD
+-I10=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Sram
+-I11=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Timer
+-I12=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart
+-I13=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog
+-I14=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT
+-I15=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\GPIO
+-I16=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore
+-I17=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Interrupt
+-I18=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC
+-I19=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD
+-I20=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI
+-I21=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram
+-I22=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer
+-I23=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Uart
+-I24=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Watchdog
+-I25=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config
+-I26=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor
+-I27=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib
+-I28=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory
+-I29=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\STM32F10x_FWLib\inc
+-I30=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Bsw_Interface\Hal_Interface
+-I31=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Bsw_Interface\Service_Interface
+-I32=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc
+-I33=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src
+-I34=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc
+-I35=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU
+-I36=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-LIB
+-I37=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-Config
+-I38=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Source
+-I39=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\GNU
+-I40=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\IAR
+-I41=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\RealView
+-I42=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU
+-I43=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR
+-I44=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView
+
+
+Checkers enabled:
+    Defects 114/300
+    MISRA C:2012 133/171
+    AUTOSAR C++14 308/308
+
+
+Verifying host configuration:
+Number of physical cores:                2
+Number of logical cores:                 4
+Processor type:                          amd64
+Processor model:                Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+Processor frequency:            2.400 GHz
+Memory > 4 GB:                                            15.88 GB
+Tmp space available in C:\Users\HP\AppData\Local\Temp:    17.29 GB
+
+Remark: 2 physical core(s) detected. The verification creates 2 process(es).
+*** Configuration of the host :	OK
+
+
+Type E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result\kill-rte-kernel.bat on host ENVY to halt Verifier process
+
+
+Checking license ...
+License is OK
+
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Aug 16 20:44:51 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** armcc C-CPP source compliance checking
+***
+**********************************************************
+
+Verifying sources ...
+Verifying hal.c (1/16) [C]
+Verifying hal_int.c (2/16) [C]
+Verifying hal_led.c (3/16) [C]
+Verifying hal_key.c (4/16) [C]
+Verifying hal_rtc.c (5/16) [C]
+Verifying hal_sd.c (6/16) [C]
+Verifying hal_sram.c (7/16) [C]
+Verifying hal_timer.c (8/16) [C]
+Verifying hal_wdg.c (9/16) [C]
+Verifying hal_uart.c (10/16) [C]
+Verifying main.c (11/16) [C]
+Verifying osal.c (12/16) [C]
+Verifying srv_algor.c (13/16) [C]
+Verifying srv_memory.c (14/16) [C]
+Verifying srv_queue.c (15/16) [C]
+Verifying std_lib.c (16/16) [C]
+Global compilation phase...
+Warning: Both C and C++ coding standard checkers enabled: Using C++ checkers to detect project-wide rule violations in mixed C/C++ project.
+Linking phase for C++ coding standards...
+Warning: C++ compilation and linking of translation units failed. This can lead to incomplete results for project-wide C++ coding standard violations. Relaunch with option -verbose to obtain more details.
+
+Number of files                  : 16
+Number of lines                  : 3948
+Number of lines without comments : 2046
+
+Verifying cross-files armcc C-CPP compliance
+
+Stubbing standard library functions ...
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 117 (column 4): Warning: the prototype for function '__disable_irq' is unknown.
+| Derived prototype of function from its call is: int __disable_irq(void)
+Remark: The generated default DRS XML file "drs-template.xml" can be found in <result_dir> folder.
+Doing code transformations ...
+
+
+**********************************************************
+MISRA C:2012 Rule checker results
+ Use the Report Generator in order to get the complete report.
+Coding standards checking might not be complete. Some rule violations
+ are detected after the source compliance checking phase.
+**********************************************************
+Summary per file:
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Platform\hal.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c: 
+    4 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Sram\hal_sram.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Timer\hal_timer.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog\hal_wdg.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c: 
+    9 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c: 
+    12 rules violated
+**********************************************************
+Summary per rule:
+  rule 1.1 violated 16 times
+  rule 10.8 violated 7 times
+  rule 10.1 violated 5 times
+  rule 14.4 violated 3 times
+  rule 21.3 violated 3 times
+  rule D4.12 violated 3 times
+  rule 13.2 violated 2 times
+  rule 20.8 violated 2 times
+  rule 20.9 violated 2 times
+  rule 11.9 violated 1 time
+  rule 17.2 violated 1 time
+  rule 17.7 violated 1 time
+  rule 2.1 violated 1 time
+  rule 21.2 violated 1 time
+  rule 21.6 violated 1 time
+  rule 8.3 violated 1 time
+
+
+
+
+Packing compilation data
+
+Defects statistics:
+  - Total number of defects: 0
+done.
+
+**********************************************************
+***
+*** armcc C-CPP source compliance checking done
+***
+**********************************************************
+Ending at: Mon Aug 16 20:45:52 2021
+User time for compilation: 00:01:01 (61.82real, 61.82u + 0s (0.02gc))
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Aug 16 20:45:52 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Pre-analysis
+***
+**********************************************************
+**** Bug-finder - Pre-analysis - 1 (P_AL)
+Total complexity = 15870
+**** Bug-finder - Pre-analysis - 1 (P_AL) took 3.07real, 3.07u + 0s (0.19gc)
+**** Bug-finder - Pre-analysis - 2 (P_ACP)
+* n-acp-t = 0 n-epp' = 0 n-acp-l = 0
+**** Bug-finder - Pre-analysis - 2 (P_ACP) took 1.11real, 1.11u + 0s
+**** Bug-finder - Pre-analysis - 3 (P_O)
+**** Bug-finder - Pre-analysis - 3 (P_O) took 0.26real, 0.26u + 0s (0.05gc)
+**** Bug-finder - Pre-analysis - 4 (P_MA)
+**** Bug-finder - Pre-analysis - 4 (P_MA) took 0.13real, 0.13u + 0s (0.03gc)
+**** Bug-finder - Pre-analysis - 5 (P_G)
+**** Bug-finder - Pre-analysis - 5 (P_G) took 0.26real, 0.26u + 0s (0.02gc)
+**** Bug-finder - Pre-analysis - 6 (P_DRC)
+**** Bug-finder - Pre-analysis - 6 (P_DRC) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 7 (P_TT)
+**** Bug-finder - Pre-analysis - 7 (P_TT) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 8 (P_FI)
+**** Bug-finder - Pre-analysis - 8 (P_FI) took 1.18real, 1.18u + 0s (0.05gc)
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 0
+
+GUI files generation completed in 0.83real
+
+**********************************************************
+***
+*** Bug-finder - Pre-analysis done
+***
+**********************************************************
+Ending at: Mon Aug 16 20:46:01 2021
+User time for pre-analysis: 00:00:09.1 (9.02real, 9.02u + 0s (0.2gc))
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Aug 16 20:46:01 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Function Analysis
+***
+**********************************************************
+**** Bug-finder - Function Analysis - (Verifying function #1 / 157: Srv_Free)
+**** Bug-finder - Function Analysis - (Verifying function #2 / 157: USB_LP_CAN1_RX0_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #3 / 157: UART5_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #4 / 157: TIM3_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #5 / 157: DMA2_Channel2_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #6 / 157: Srv_QueueOut)
+**** Bug-finder - Function Analysis - (Verifying function #7 / 157: Osal_OsInit)
+**** Bug-finder - Function Analysis - (Verifying function #8 / 157: Osal_SemCreate)
+**** Bug-finder - Function Analysis - (Verifying function #9 / 157: Hal_RtcGetWeek)
+**** Bug-finder - Function Analysis - (Verifying function #10 / 157: Hal_UartWrite)
+**** Bug-finder - Function Analysis - (Verifying function #11 / 157: Hal_SysIntHandle)
+**** Bug-finder - Function Analysis - (Verifying function #12 / 157: SVC_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #13 / 157: DMA1_Channel7_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #14 / 157: Srv_Realloc)
+**** Bug-finder - Function Analysis - (Verifying function #15 / 157: DMA1_Channel2_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #16 / 157: TIM2_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #17 / 157: RTC_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #18 / 157: RCC_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #19 / 157: Hal_CheckNewKey)
+**** Bug-finder - Function Analysis - (Verifying function #20 / 157: Hal_GetKeySta)
+**** Bug-finder - Function Analysis - (Verifying function #21 / 157: Hal_GetWifiLedSta)
+**** Bug-finder - Function Analysis - (Verifying function #22 / 157: Fsal_OpenR)
+**** Bug-finder - Function Analysis - (Verifying function #23 / 157: Fsal_AnaysisDir)
+**** Bug-finder - Function Analysis - (Verifying function #24 / 157: Srv_QueueIn)
+**** Bug-finder - Function Analysis - (Verifying function #25 / 157: FLASH_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #26 / 157: TIM8_CC_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #27 / 157: TIM8_BRK_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #28 / 157: Hal_RtcInit)
+**** Bug-finder - Function Analysis - (Verifying function #29 / 157: Osal_StartTaskConfig)
+**** Bug-finder - Function Analysis - (Verifying function #30 / 157: Srv_AppendString)
+**** Bug-finder - Function Analysis - (Verifying function #31 / 157: TIM8_TRG_COM_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #32 / 157: DMA2_Channel3_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #33 / 157: Srv_FirstOrderFilter)
+**** Bug-finder - Function Analysis - (Verifying function #34 / 157: Fsal_Time2Str)
+**** Bug-finder - Function Analysis - (Verifying function #35 / 157: Hal_RunLedOn)
+**** Bug-finder - Function Analysis - (Verifying function #36 / 157: Srv_MemCopy)
+**** Bug-finder - Function Analysis - (Verifying function #37 / 157: Hal_RtcJudgeLeap)
+**** Bug-finder - Function Analysis - (Verifying function #38 / 157: Hal_RtcIsrHandle)
+**** Bug-finder - Function Analysis - (Verifying function #39 / 157: EXTI1_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #40 / 157: Osal_TmrStop)
+**** Bug-finder - Function Analysis - (Verifying function #41 / 157: Hal_ClearNewKeyFlg)
+**** Bug-finder - Function Analysis - (Verifying function #42 / 157: Fsal_MkDir)
+**** Bug-finder - Function Analysis - (Verifying function #43 / 157: USART2_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #44 / 157: Osal_SemSet)
+**** Bug-finder - Function Analysis - (Verifying function #45 / 157: Hal_SDCardIntoIDLE)
+**** Bug-finder - Function Analysis - (Verifying function #46 / 157: DMA1_Channel3_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #47 / 157: I2C2_ER_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #48 / 157: ADC1_2_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #49 / 157: Hal_IoInit)
+**** Bug-finder - Function Analysis - (Verifying function #50 / 157: Hal_KeyScan)
+**** Bug-finder - Function Analysis - (Verifying function #51 / 157: Hal_SysIntConfig)
+**** Bug-finder - Function Analysis - (Verifying function #52 / 157: ADC3_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #53 / 157: Srv_GetRand16)
+**** Bug-finder - Function Analysis - (Verifying function #54 / 157: EXTI3_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #55 / 157: TIM1_UP_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #56 / 157: I2C1_ER_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #57 / 157: Srv_QueueIsFull)
+**** Bug-finder - Function Analysis - (Verifying function #58 / 157: UART4_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #59 / 157: Hal_SDCardReadDisk)
+**** Bug-finder - Function Analysis - (Verifying function #60 / 157: Fsal_DiskGetfree)
+**** Bug-finder - Function Analysis - (Verifying function #61 / 157: Osal_SemRead)
+**** Bug-finder - Function Analysis - (Verifying function #62 / 157: Hal_SetFaultFunc)
+**** Bug-finder - Function Analysis - (Verifying function #63 / 157: main)
+**** Bug-finder - Function Analysis - (Verifying function #64 / 157: Srv_FindStringEndIndex)
+**** Bug-finder - Function Analysis - (Verifying function #65 / 157: Srv_MemInit)
+**** Bug-finder - Function Analysis - (Verifying function #66 / 157: Osal_DelayMs)
+**** Bug-finder - Function Analysis - (Verifying function #67 / 157: Osal_SemWait)
+**** Bug-finder - Function Analysis - (Verifying function #68 / 157: Hal_WifiComIsrHandle)
+**** Bug-finder - Function Analysis - (Verifying function #69 / 157: Hal_SysUartInit)
+**** Bug-finder - Function Analysis - (Verifying function #70 / 157: DMA1_Channel4_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #71 / 157: Osal_DiffTsToUsec)
+**** Bug-finder - Function Analysis - (Verifying function #72 / 157: WWDG_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #73 / 157: Osal_GetCurTs)
+**** Bug-finder - Function Analysis - (Verifying function #74 / 157: Hal_SysInit)
+**** Bug-finder - Function Analysis - (Verifying function #75 / 157: free)
+**** Bug-finder - Function Analysis - (Verifying function #76 / 157: Srv_RemoveHeaderString)
+**** Bug-finder - Function Analysis - (Verifying function #77 / 157: Fsal_OpenW)
+**** Bug-finder - Function Analysis - (Verifying function #78 / 157: Srv_ReadQueueHead)
+**** Bug-finder - Function Analysis - (Verifying function #79 / 157: NMI_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #80 / 157: TAMPER_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #81 / 157: TIM7_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #82 / 157: PVD_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #83 / 157: USART1_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #84 / 157: Hal_UartReadByte)
+**** Bug-finder - Function Analysis - (Verifying function #85 / 157: Osal_TmrCreate)
+**** Bug-finder - Function Analysis - (Verifying function #86 / 157: Hal_RtcSetTime)
+**** Bug-finder - Function Analysis - (Verifying function #87 / 157: USB_HP_CAN1_TX_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #88 / 157: USBWakeUp_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #89 / 157: Srv_GetStringLen)
+**** Bug-finder - Function Analysis - (Verifying function #90 / 157: Fsal_DelDir)
+**** Bug-finder - Function Analysis - (Verifying function #91 / 157: Hal_KeyStateManage)
+**** Bug-finder - Function Analysis - (Verifying function #92 / 157: Hal_SDCardReadOCR)
+**** Bug-finder - Function Analysis - (Verifying function #93 / 157: HardFault_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #94 / 157: UsageFault_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #95 / 157: CAN1_SCE_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #96 / 157: I2C2_EV_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #97 / 157: TIM8_UP_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #98 / 157: Osal_SemPost)
+**** Bug-finder - Function Analysis - (Verifying function #99 / 157: Hal_RtcUpdate)
+**** Bug-finder - Function Analysis - (Verifying function #100 / 157: Hal_SDCardInit)
+**** Bug-finder - Function Analysis - (Verifying function #101 / 157: EXTI0_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #102 / 157: DMA1_Channel5_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #103 / 157: Osal_TaskStkChk)
+**** Bug-finder - Function Analysis - (Verifying function #104 / 157: TIM6_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #105 / 157: Hal_RunLedOff)
+**** Bug-finder - Function Analysis - (Verifying function #106 / 157: Srv_RemoveEndString)
+**** Bug-finder - Function Analysis - (Verifying function #107 / 157: Srv_FindStringIndex)
+**** Bug-finder - Function Analysis - (Verifying function #108 / 157: EXTI15_10_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #109 / 157: SPI3_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #110 / 157: Srv_QueueIsEmpty)
+**** Bug-finder - Function Analysis - (Verifying function #111 / 157: Hal_SysISRSet)
+**** Bug-finder - Function Analysis - (Verifying function #112 / 157: I2C1_EV_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #113 / 157: fputc)
+**** Bug-finder - Function Analysis - (Verifying function #114 / 157: Srv_MemSet)
+**** Bug-finder - Function Analysis - (Verifying function #115 / 157: FSMC_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #116 / 157: Hal_SetWifiRxSemPostFunc)
+**** Bug-finder - Function Analysis - (Verifying function #117 / 157: SDIO_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #118 / 157: TIM5_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #119 / 157: Srv_MemPerused)
+**** Bug-finder - Function Analysis - (Verifying function #120 / 157: DebugMon_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #121 / 157: EXTI2_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #122 / 157: Hal_SDCardGetCID)
+**** Bug-finder - Function Analysis - (Verifying function #123 / 157: Osal_TmrStart)
+**** Bug-finder - Function Analysis - (Verifying function #124 / 157: Hal_SetSysRxSemPostFunc)
+**** Bug-finder - Function Analysis - (Verifying function #125 / 157: Srv_Malloc)
+**** Bug-finder - Function Analysis - (Verifying function #126 / 157: Hal_ExcptionHandle)
+**** Bug-finder - Function Analysis - (Verifying function #127 / 157: Hal_SysIntInit)
+**** Bug-finder - Function Analysis - (Verifying function #128 / 157: Hal_GetInitStatus)
+**** Bug-finder - Function Analysis - (Verifying function #129 / 157: DMA2_Channel1_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #130 / 157: Hal_SDCardGetSectorNum)
+**** Bug-finder - Function Analysis - (Verifying function #131 / 157: Hal_WifiLedOff)
+**** Bug-finder - Function Analysis - (Verifying function #132 / 157: RTCAlarm_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #133 / 157: SPI2_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #134 / 157: Hal_SDCardInitPulse)
+**** Bug-finder - Function Analysis - (Verifying function #135 / 157: Hal_SDCardWriteDisk)
+**** Bug-finder - Function Analysis - (Verifying function #136 / 157: Hal_SysComIsrHandle)
+**** Bug-finder - Function Analysis - (Verifying function #137 / 157: Srv_MemCmp)
+**** Bug-finder - Function Analysis - (Verifying function #138 / 157: DMA1_Channel6_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #139 / 157: EXTI9_5_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #140 / 157: MemManage_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #141 / 157: TIM4_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #142 / 157: TIM1_CC_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #143 / 157: CAN1_RX1_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #144 / 157: TIM1_BRK_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #145 / 157: SysTick_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #146 / 157: Hal_RtcGetTime)
+**** Bug-finder - Function Analysis - (Verifying function #147 / 157: DMA1_Channel1_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #148 / 157: DMA2_Channel4_5_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #149 / 157: SPI1_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #150 / 157: TIM1_TRG_COM_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #151 / 157: EXTI4_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #152 / 157: Hal_SDCardGetCSD)
+**** Bug-finder - Function Analysis - (Verifying function #153 / 157: Hal_WifiLedOn)
+**** Bug-finder - Function Analysis - (Verifying function #154 / 157: BusFault_Handler)
+**** Bug-finder - Function Analysis - (Verifying function #155 / 157: Hal_GetCurIntID)
+**** Bug-finder - Function Analysis - (Verifying function #156 / 157: USART3_IRQHandler)
+**** Bug-finder - Function Analysis - (Verifying function #157 / 157: Srv_QueueInit)
+**** Bug-finder - Function Analysis - (Verifying function #156 / 157: USART3_IRQHandler) took 0.73real
+**** Bug-finder - Function Analysis - (Verifying function #157 / 157: Srv_QueueInit) took 0.76real
+**** Bug-finder - Function Analysis - (Verifying function #155 / 157: Hal_GetCurIntID) took 0.43real
+**** Bug-finder - Function Analysis - (Verifying function #154 / 157: BusFault_Handler) took 0.46real
+**** Bug-finder - Function Analysis - (Verifying function #153 / 157: Hal_WifiLedOn) took 0.48real
+**** Bug-finder - Function Analysis - (Verifying function #152 / 157: Hal_SDCardGetCSD) took 0.51real
+**** Bug-finder - Function Analysis - (Verifying function #151 / 157: EXTI4_IRQHandler) took 0.51real
+**** Bug-finder - Function Analysis - (Verifying function #150 / 157: TIM1_TRG_COM_IRQHandler) took 0.59real
+**** Bug-finder - Function Analysis - (Verifying function #149 / 157: SPI1_IRQHandler) took 0.57real
+**** Bug-finder - Function Analysis - (Verifying function #148 / 157: DMA2_Channel4_5_IRQHandler) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #147 / 157: DMA1_Channel1_IRQHandler) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #146 / 157: Hal_RtcGetTime) took 0.54real
+**** Bug-finder - Function Analysis - (Verifying function #145 / 157: SysTick_Handler) took 0.59real
+**** Bug-finder - Function Analysis - (Verifying function #144 / 157: TIM1_BRK_IRQHandler) took 0.51real
+**** Bug-finder - Function Analysis - (Verifying function #143 / 157: CAN1_RX1_IRQHandler) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #142 / 157: TIM1_CC_IRQHandler) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #141 / 157: TIM4_IRQHandler) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #140 / 157: MemManage_Handler) took 0.49real
+**** Bug-finder - Function Analysis - (Verifying function #139 / 157: EXTI9_5_IRQHandler) took 0.56real
+**** Bug-finder - Function Analysis - (Verifying function #138 / 157: DMA1_Channel6_IRQHandler) took 0.56real
+**** Bug-finder - Function Analysis - (Verifying function #136 / 157: Hal_SysComIsrHandle) took 0.61real
+**** Bug-finder - Function Analysis - (Verifying function #137 / 157: Srv_MemCmp) took 0.86real
+**** Bug-finder - Function Analysis - (Verifying function #134 / 157: Hal_SDCardInitPulse) took 0.48real
+**** Bug-finder - Function Analysis - (Verifying function #135 / 157: Hal_SDCardWriteDisk) took 0.64real
+**** Bug-finder - Function Analysis - (Verifying function #133 / 157: SPI2_IRQHandler) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #132 / 157: RTCAlarm_IRQHandler) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #131 / 157: Hal_WifiLedOff) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #130 / 157: Hal_SDCardGetSectorNum) took 0.54real
+**** Bug-finder - Function Analysis - (Verifying function #129 / 157: DMA2_Channel1_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #128 / 157: Hal_GetInitStatus) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #127 / 157: Hal_SysIntInit) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #126 / 157: Hal_ExcptionHandle) took 0.37real
+**** Bug-finder - Function Analysis - (Verifying function #125 / 157: Srv_Malloc) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #124 / 157: Hal_SetSysRxSemPostFunc) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #123 / 157: Osal_TmrStart) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #122 / 157: Hal_SDCardGetCID) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #121 / 157: EXTI2_IRQHandler) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #120 / 157: DebugMon_Handler) took 0.32real
+**** Bug-finder - Function Analysis - (Verifying function #119 / 157: Srv_MemPerused) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #118 / 157: TIM5_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #117 / 157: SDIO_IRQHandler) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #116 / 157: Hal_SetWifiRxSemPostFunc) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #115 / 157: FSMC_IRQHandler) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #114 / 157: Srv_MemSet) took 0.47real
+**** Bug-finder - Function Analysis - (Verifying function #113 / 157: fputc) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #112 / 157: I2C1_EV_IRQHandler) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #111 / 157: Hal_SysISRSet) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #110 / 157: Srv_QueueIsEmpty) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #109 / 157: SPI3_IRQHandler) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #108 / 157: EXTI15_10_IRQHandler) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #107 / 157: Srv_FindStringIndex) took 0.48real
+**** Bug-finder - Function Analysis - (Verifying function #106 / 157: Srv_RemoveEndString) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #105 / 157: Hal_RunLedOff) took 0.32real
+**** Bug-finder - Function Analysis - (Verifying function #104 / 157: TIM6_IRQHandler) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #103 / 157: Osal_TaskStkChk) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #102 / 157: DMA1_Channel5_IRQHandler) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #101 / 157: EXTI0_IRQHandler) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #100 / 157: Hal_SDCardInit) took 0.7real
+**** Bug-finder - Function Analysis - (Verifying function #98 / 157: Osal_SemPost) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #99 / 157: Hal_RtcUpdate) took 0.94real
+**** Bug-finder - Function Analysis - (Verifying function #97 / 157: TIM8_UP_IRQHandler) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #96 / 157: I2C2_EV_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #95 / 157: CAN1_SCE_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #94 / 157: UsageFault_Handler) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #93 / 157: HardFault_Handler) took 0.32real
+**** Bug-finder - Function Analysis - (Verifying function #92 / 157: Hal_SDCardReadOCR) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #91 / 157: Hal_KeyStateManage) took 0.75real
+**** Bug-finder - Function Analysis - (Verifying function #89 / 157: Srv_GetStringLen) took 0.46real
+**** Bug-finder - Function Analysis - (Verifying function #88 / 157: USBWakeUp_IRQHandler) took 0.32real
+**** Bug-finder - Function Analysis - (Verifying function #87 / 157: USB_HP_CAN1_TX_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #90 / 157: Fsal_DelDir) took 2.28real
+**** Bug-finder - Function Analysis - (Verifying function #85 / 157: Osal_TmrCreate) took 0.49real
+**** Bug-finder - Function Analysis - (Verifying function #86 / 157: Hal_RtcSetTime) took 0.97real
+**** Bug-finder - Function Analysis - (Verifying function #84 / 157: Hal_UartReadByte) took 0.51real
+**** Bug-finder - Function Analysis - (Verifying function #83 / 157: USART1_IRQHandler) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #82 / 157: PVD_IRQHandler) took 0.45real
+**** Bug-finder - Function Analysis - (Verifying function #81 / 157: TIM7_IRQHandler) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #80 / 157: TAMPER_IRQHandler) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #79 / 157: NMI_Handler) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #78 / 157: Srv_ReadQueueHead) took 0.44real
+**** Bug-finder - Function Analysis - (Verifying function #77 / 157: Fsal_OpenW) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #76 / 157: Srv_RemoveHeaderString) took 0.48real
+**** Bug-finder - Function Analysis - (Verifying function #75 / 157: free) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #74 / 157: Hal_SysInit) took 0.53real
+**** Bug-finder - Function Analysis - (Verifying function #73 / 157: Osal_GetCurTs) took 0.52real
+**** Bug-finder - Function Analysis - (Verifying function #72 / 157: WWDG_IRQHandler) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #71 / 157: Osal_DiffTsToUsec) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #70 / 157: DMA1_Channel4_IRQHandler) took 0.47real
+**** Bug-finder - Function Analysis - (Verifying function #69 / 157: Hal_SysUartInit) took 0.72real
+**** Bug-finder - Function Analysis - (Verifying function #68 / 157: Hal_WifiComIsrHandle) took 0.6real
+**** Bug-finder - Function Analysis - (Verifying function #67 / 157: Osal_SemWait) took 0.55real
+**** Bug-finder - Function Analysis - (Verifying function #66 / 157: Osal_DelayMs) took 0.43real
+**** Bug-finder - Function Analysis - (Verifying function #63 / 157: main) took 1.78real
+**** Bug-finder - Function Analysis - (Verifying function #65 / 157: Srv_MemInit) took 0.45real
+**** Bug-finder - Function Analysis - (Verifying function #62 / 157: Hal_SetFaultFunc) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #61 / 157: Osal_SemRead) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #64 / 157: Srv_FindStringEndIndex) took 0.64real
+**** Bug-finder - Function Analysis - (Verifying function #60 / 157: Fsal_DiskGetfree) took 0.45real
+**** Bug-finder - Function Analysis - (Verifying function #59 / 157: Hal_SDCardReadDisk) took 0.54real
+**** Bug-finder - Function Analysis - (Verifying function #58 / 157: UART4_IRQHandler) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #57 / 157: Srv_QueueIsFull) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #56 / 157: I2C1_ER_IRQHandler) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #55 / 157: TIM1_UP_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #54 / 157: EXTI3_IRQHandler) took 0.37real
+**** Bug-finder - Function Analysis - (Verifying function #53 / 157: Srv_GetRand16) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #52 / 157: ADC3_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #51 / 157: Hal_SysIntConfig) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #50 / 157: Hal_KeyScan) took 0.6real
+**** Bug-finder - Function Analysis - (Verifying function #49 / 157: Hal_IoInit) took 0.43real
+**** Bug-finder - Function Analysis - (Verifying function #48 / 157: ADC1_2_IRQHandler) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #47 / 157: I2C2_ER_IRQHandler) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #46 / 157: DMA1_Channel3_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #45 / 157: Hal_SDCardIntoIDLE) took 0.45real
+**** Bug-finder - Function Analysis - (Verifying function #44 / 157: Osal_SemSet) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #43 / 157: USART2_IRQHandler) took 0.37real
+**** Bug-finder - Function Analysis - (Verifying function #41 / 157: Hal_ClearNewKeyFlg) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #42 / 157: Fsal_MkDir) took 0.7real
+**** Bug-finder - Function Analysis - (Verifying function #40 / 157: Osal_TmrStop) took 0.48real
+**** Bug-finder - Function Analysis - (Verifying function #39 / 157: EXTI1_IRQHandler) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #38 / 157: Hal_RtcIsrHandle) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #37 / 157: Hal_RtcJudgeLeap) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #36 / 157: Srv_MemCopy) took 0.7real
+**** Bug-finder - Function Analysis - (Verifying function #35 / 157: Hal_RunLedOn) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #33 / 157: Srv_FirstOrderFilter) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #34 / 157: Fsal_Time2Str) took 1.37real
+**** Bug-finder - Function Analysis - (Verifying function #32 / 157: DMA2_Channel3_IRQHandler) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #31 / 157: TIM8_TRG_COM_IRQHandler) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #30 / 157: Srv_AppendString) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #29 / 157: Osal_StartTaskConfig) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #28 / 157: Hal_RtcInit) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #27 / 157: TIM8_BRK_IRQHandler) took 0.37real
+**** Bug-finder - Function Analysis - (Verifying function #26 / 157: TIM8_CC_IRQHandler) took 0.34real
+**** Bug-finder - Function Analysis - (Verifying function #25 / 157: FLASH_IRQHandler) took 0.37real
+**** Bug-finder - Function Analysis - (Verifying function #24 / 157: Srv_QueueIn) took 0.56real
+**** Bug-finder - Function Analysis - (Verifying function #23 / 157: Fsal_AnaysisDir) took 0.63real
+**** Bug-finder - Function Analysis - (Verifying function #22 / 157: Fsal_OpenR) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #21 / 157: Hal_GetWifiLedSta) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #20 / 157: Hal_GetKeySta) took 0.48real
+**** Bug-finder - Function Analysis - (Verifying function #19 / 157: Hal_CheckNewKey) took 0.45real
+**** Bug-finder - Function Analysis - (Verifying function #18 / 157: RCC_IRQHandler) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #17 / 157: RTC_IRQHandler) took 0.47real
+**** Bug-finder - Function Analysis - (Verifying function #16 / 157: TIM2_IRQHandler) took 0.44real
+**** Bug-finder - Function Analysis - (Verifying function #15 / 157: DMA1_Channel2_IRQHandler) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #14 / 157: Srv_Realloc) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #13 / 157: DMA1_Channel7_IRQHandler) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #12 / 157: SVC_Handler) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #11 / 157: Hal_SysIntHandle) took 0.47real
+**** Bug-finder - Function Analysis - (Verifying function #10 / 157: Hal_UartWrite) took 0.65real
+**** Bug-finder - Function Analysis - (Verifying function #9 / 157: Hal_RtcGetWeek) took 0.51real
+**** Bug-finder - Function Analysis - (Verifying function #8 / 157: Osal_SemCreate) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #7 / 157: Osal_OsInit) took 0.4real
+**** Bug-finder - Function Analysis - (Verifying function #5 / 157: DMA2_Channel2_IRQHandler) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #6 / 157: Srv_QueueOut) took 0.53real
+**** Bug-finder - Function Analysis - (Verifying function #4 / 157: TIM3_IRQHandler) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #3 / 157: UART5_IRQHandler) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #2 / 157: USB_LP_CAN1_RX0_IRQHandler) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #1 / 157: Srv_Free) took 0.96real
+Maximum Memory Usage: 1151 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 8
+  - USELESS_WRITE: 7
+  - UNREACHABLE: 1
+
+GUI files generation completed in 0.87real
+
+* Total IL complexity: 28550
+
+**********************************************************
+***
+*** Bug-finder - Function Analysis done
+***
+**********************************************************
+Ending at: Mon Aug 16 20:46:42 2021
+User time for function: 00:00:40.95 (40.95real, 40.95u + 0s (0.09gc))
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Aug 16 20:46:42 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Module Analysis
+***
+**********************************************************
+**** Bug-finder - Module Analysis - 1 (Computing modules)
+**** Bug-finder - Module Analysis - 1 (Computing modules) took 0.05real, 0.05u + 0s
+* Created 1 module
+**** Bug-finder - Module Analysis - (Verifying module #1 / 1: 122 functions)
+**** Bug-finder - Module Analysis - (Verifying module #1 / 1: 122 functions) took 7.59real
+Maximum Memory Usage: 575 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 8
+  - USELESS_WRITE: 7
+  - UNREACHABLE: 1
+
+GUI files generation completed in 1.02real
+
+**********************************************************
+***
+*** Bug-finder - Module Analysis done
+***
+**********************************************************
+Ending at: Mon Aug 16 20:46:53 2021
+User time for module: 00:00:10.26 (10.26real, 10.26u + 0s (0.06gc))
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Aug 16 20:46:53 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Global analysis
+***
+**********************************************************
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 8
+  - USELESS_WRITE: 7
+  - UNREACHABLE: 1
+
+GUI files generation completed in 0.94real
+
+
+**********************************************************
+MISRA C:2012 Rule checker results
+ Use the Report Generator in order to get the complete report.
+**********************************************************
+Summary per file:
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Platform\hal.c: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c: 
+    10 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Sram\hal_sram.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Timer\hal_timer.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog\hal_wdg.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c: 
+    9 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c: 
+    13 rules violated
+**********************************************************
+Summary per rule:
+  rule 1.1 violated 16 times
+  rule 10.8 violated 7 times
+  rule 2.2 violated 7 times
+  rule 10.1 violated 5 times
+  rule 14.4 violated 3 times
+  rule 21.3 violated 3 times
+  rule D4.12 violated 3 times
+  rule 13.2 violated 2 times
+  rule 20.8 violated 2 times
+  rule 20.9 violated 2 times
+  rule 11.9 violated 1 time
+  rule 17.2 violated 1 time
+  rule 17.7 violated 1 time
+  rule 2.1 violated 1 time
+  rule 21.2 violated 1 time
+  rule 21.6 violated 1 time
+  rule 8.3 violated 1 time
+  rule D4.1 violated 1 time
+
+Importing comments from E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result\comments_bak folder
+
+Operation completed:
+--------------------
+
+Diff statistics for Defect results:
+-----------------------------------
+| Number of backuped comments attached to disappeared results                : 0
+| Number of unmatched uncommented results                                    : 0
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 8
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 8
+
+Diff statistics for MISRA C:2012 results:
+-----------------------------------------
+| Number of backuped comments attached to disappeared results                : 0
+| Number of unmatched uncommented results                                    : 2
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 58
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 60
+
+
+**********************************************************
+***
+*** Bug-finder - Global analysis done
+***
+**********************************************************
+Ending at: Mon Aug 16 20:46:55 2021
+User time for global: 00:00:02.8 (2.09real, 2.09u + 0s (0.05gc))
+User time for polyspace-bug-finder: 00:02:06 (126.13real, 126.13u + 0s (0.44gc))
+
+***
+*** End of Polyspace analysis
+***

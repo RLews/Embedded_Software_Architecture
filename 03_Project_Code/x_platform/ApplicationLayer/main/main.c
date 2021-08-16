@@ -26,7 +26,7 @@
 
 int main(void)
 {
-#if (D_RTE_OS_CONFIG == D_OS_UC_RTOS)
+#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
     RTE_HAL_SYSINIT();
     RTE_OSAL_OSINIT();
 #endif
