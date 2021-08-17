@@ -16,10 +16,7 @@
 * RTOS：RTOS及其提供的线程间的同步通讯机制等。
 * File System：文件系统，实现对存储设备的进一步管理。（可选配置）
 * Memory Manage：存储管理服务，提供堆空间管理、栈空间管理、存储设备管理等。
-* Terminal：系统终端、提供类似shell服务。（可选配置，或第三方开源服务FinSH等）
-* Power Manage：系统电源管理、提供低功耗、工作模式管理等服务。
 * Communication：通讯服务、提供LwIP、ETH等协议栈。
-* Exception Service：系统异常服务，提供异常状态检测、日志记录等服务。
 
 ### Linux
 * Linux集中在架构图中右边部分，包含Linux Driver、Linux Driver SubSystem、Boot Strap、Linux Kernel。
