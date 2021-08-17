@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\ApplicationLayer\main;..\HardwareAbstractionLayer\Interrupt;..\HardwareAbstractionLayer\Key;..\HardwareAbstractionLayer\Led;..\HardwareAbstractionLayer\Platform;..\HardwareAbstractionLayer\RTC;..\HardwareAbstractionLayer\SD;..\HardwareAbstractionLayer\Sram;..\HardwareAbstractionLayer\Timer;..\HardwareAbstractionLayer\Uart;..\HardwareAbstractionLayer\Watchdog;..\HardwareDriverLayer\DWT;..\HardwareDriverLayer\GPIO;..\HardwareDriverLayer\HardwareCore;..\HardwareDriverLayer\Interrupt;..\HardwareDriverLayer\RTC;..\HardwareDriverLayer\SD;..\HardwareDriverLayer\SPI;..\HardwareDriverLayer\Sram;..\HardwareDriverLayer\STM32F10x_FWLib\inc;..\HardwareDriverLayer\Timer;..\HardwareDriverLayer\Uart;..\HardwareDriverLayer\Watchdog;..\RuntimeEnvironment\Bsw_Interface\Hal_Interface;..\RuntimeEnvironment\Bsw_Interface\Service_Interface;..\RuntimeEnvironment\Env_Config;..\RuntimeEnvironment\Appl_Interface;..\ServicesLayer\Algor;..\ServicesLayer\DataStructOpt\inc;..\ServicesLayer\FATFS\src;..\ServicesLayer\FATFS\src\option;..\ServicesLayer\Lib;..\ServicesLayer\Memory;..\ServicesLayer\osal\inc;..\ServicesLayer\uCOSIII\uC-CPU;..\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\RealView;..\ServicesLayer\uCOSIII\uC-LIB;..\ServicesLayer\uCOSIII\uC-LIB\Ports;..\ServicesLayer\uCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView;..\ServicesLayer\uCOSIII\uCOS-Config;..\ServicesLayer\uCOSIII\uCOS-III\Source;..\ServicesLayer\uCOSIII\uCOS-III\Ports;..\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView</IncludePath>
+              <IncludePath>..\ApplicationLayer\main;..\HardwareAbstractionLayer\Interrupt;..\HardwareAbstractionLayer\Key;..\HardwareAbstractionLayer\Led;..\HardwareAbstractionLayer\Platform;..\HardwareAbstractionLayer\RTC;..\HardwareAbstractionLayer\SD;..\HardwareAbstractionLayer\Sram;..\HardwareAbstractionLayer\Timer;..\HardwareAbstractionLayer\Uart;..\HardwareAbstractionLayer\Watchdog;..\HardwareDriverLayer\DWT;..\HardwareDriverLayer\GPIO;..\HardwareDriverLayer\HardwareCore;..\HardwareDriverLayer\Interrupt;..\HardwareDriverLayer\RTC;..\HardwareDriverLayer\SD;..\HardwareDriverLayer\SPI;..\HardwareDriverLayer\Sram;..\HardwareDriverLayer\STM32F10x_FWLib\inc;..\HardwareDriverLayer\Timer;..\HardwareDriverLayer\Uart;..\HardwareDriverLayer\Watchdog;..\RuntimeEnvironment\Hal_Interface;..\RuntimeEnvironment\Service_Interface;..\RuntimeEnvironment\Env_Config;..\RuntimeEnvironment\Appl_Interface;..\ServicesLayer\Algor;..\ServicesLayer\DataStructOpt\inc;..\ServicesLayer\FATFS\src;..\ServicesLayer\FATFS\src\option;..\ServicesLayer\Lib;..\ServicesLayer\Memory;..\ServicesLayer\osal\inc;..\ServicesLayer\uCOSIII\uC-CPU;..\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\RealView;..\ServicesLayer\uCOSIII\uC-LIB;..\ServicesLayer\uCOSIII\uC-LIB\Ports;..\ServicesLayer\uCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView;..\ServicesLayer\uCOSIII\uCOS-Config;..\ServicesLayer\uCOSIII\uCOS-III\Source;..\ServicesLayer\uCOSIII\uCOS-III\Ports;..\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView;..\RuntimeEnvironment\Rte_Rtos</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -436,17 +436,17 @@
             <File>
               <FileName>rte_bsw_hal_if.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\RuntimeEnvironment\Bsw_Interface\Hal_Interface\rte_bsw_hal_if.h</FilePath>
+              <FilePath>..\RuntimeEnvironment\Hal_Interface\rte_bsw_hal_if.h</FilePath>
             </File>
             <File>
               <FileName>rte_bsw_srv_if.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\RuntimeEnvironment\Bsw_Interface\Service_Interface\rte_bsw_srv_if.h</FilePath>
+              <FilePath>..\RuntimeEnvironment\Service_Interface\rte_bsw_srv_if.h</FilePath>
             </File>
             <File>
               <FileName>rte_bsw_rtos_if.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\RuntimeEnvironment\Bsw_Interface\Service_Interface\rte_bsw_rtos_if.h</FilePath>
+              <FilePath>..\RuntimeEnvironment\Rte_Rtos\rte_bsw_rtos_if.h</FilePath>
             </File>
           </Files>
         </Group>

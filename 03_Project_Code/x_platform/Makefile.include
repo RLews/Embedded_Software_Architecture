@@ -1,0 +1,43 @@
+
+CSRCS = $(wildcard *.c)
+CXXSRCS = $(wildcard *.cpp)   
+ 
+COBJS = $(patsubst %.c, $(OBJ_DIR)/%.c.o, $(CSRCS)) 
+CXXOBJS = $(patsubst %.cpp, $(OBJ_DIR)/%.cpp.o, $(CXXSRCS)) 
+OBJS = $(COBJS) $(CXXOBJS)
+
+CDEP = $(COBJS:.c.o=.c.d)
+CXXDEP = $(CXXOBJS:.cpp.o=.cpp.d)
+
+all: $(OBJ_DIR)  $(COBJS) $(CXXOBJS) $(EXE) 
+
+-include $(CDEP)
+-include $(CXXDEP)
+
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(COBJS): $(OBJ_DIR)/%.c.o:%.c
+	@$(CC) $(CFLAGS) -c $< -o $@
+
+$(CXXOBJS): $(OBJ_DIR)/%.cpp.o:%.cpp
+	@$(CXX) $(CXXFLAGS) -c $<  -o $@ 
+
+$(CDEP):  $(OBJ_DIR)/%.c.d:%.c
+	@mkdir -p $(OBJ_DIR)
+	@set -e; rm -f $@; \
+	$(CC) -MM $(CFLAGS) $< > $@.$$$$; \
+	sed 's,\($*\)\.o[ :]*,${OBJ_DIR}\/\1.c.o $@ : ,g' < $@.$$$$ > $@; \
+	rm -f $@.$$$$
+
+$(CXXDEP): $(OBJ_DIR)/%.cpp.d:%.cpp
+	@mkdir -p $(OBJ_DIR)
+	@set -e; rm -f $@; \
+	$(CXX) -MM $(CXXFLAGS) $< > $@.$$$$; \
+	sed 's,\($*\)\.o[ :]*,${OBJ_DIR}\/\1.cpp.o $@ : ,g' < $@.$$$$ > $@; \
+	rm -f $@.$$$$
+
+
+clean:
+	rm -f $(OBJS) ./*.o  ./*.d  $(EXE) $(CDEP) $(CXXDEP)
+

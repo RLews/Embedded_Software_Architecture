@@ -20,7 +20,7 @@
 
 ### Linux
 * Linux集中在架构图中右边部分，包含Linux Driver、Linux Driver SubSystem、Boot Strap、Linux Kernel。
-* Linux Driver、Linux Driver SubSystem：硬件接口按照Linux驱动框架和驱动子系统实现即可。
+* Linux Driver、Linux Driver SubSystem：硬件接口按照Linux驱动框架和驱动子系统实现即可。参见： [S3C2440驱动和系统](https://github.com/RLews/S3C2440_DriverExercises "S3C2440驱动和系统")
 * Boot Strap：Linux启动配置。
 * Linux Kernel：Linux内核。（自定义配置内核，应用程序除非必要尽量不要依赖某项内核配置功能）
 

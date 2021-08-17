@@ -262,7 +262,7 @@
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\RuntimeEnvironment\Bsw_Interface\Hal_Interface\rte_bsw_hal_if.h</PathWithFileName>
+      <PathWithFileName>..\RuntimeEnvironment\Hal_Interface\rte_bsw_hal_if.h</PathWithFileName>
       <FilenameWithoutPath>rte_bsw_hal_if.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -275,7 +275,7 @@
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\RuntimeEnvironment\Bsw_Interface\Service_Interface\rte_bsw_srv_if.h</PathWithFileName>
+      <PathWithFileName>..\RuntimeEnvironment\Service_Interface\rte_bsw_srv_if.h</PathWithFileName>
       <FilenameWithoutPath>rte_bsw_srv_if.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -288,7 +288,7 @@
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\RuntimeEnvironment\Bsw_Interface\Service_Interface\rte_bsw_rtos_if.h</PathWithFileName>
+      <PathWithFileName>..\RuntimeEnvironment\Rte_Rtos\rte_bsw_rtos_if.h</PathWithFileName>
       <FilenameWithoutPath>rte_bsw_rtos_if.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

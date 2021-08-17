@@ -19,6 +19,8 @@ extern "C" {
 #include "srv_memory.h"
 #include "std_lib.h"
 #include "srv_algor.h"
+#include "srv_queue.h"
+
 
 /* TODO: 使用脚本获取pub模块接口，枚举等信息，导入宏替换规则 */
 

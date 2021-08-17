@@ -23,7 +23,7 @@
 #define D_RTE_OS_UC_III_RTOS    0x0000U /*!< ¦ÌC/OS III + FatFs  */
 #define D_RTE_OS_LINUX          0x0001U /*!< Linux */
 
-#define D_RTE_OS_CONFIG         D_RTE_OS_UC_RTOS
+#define D_RTE_OS_CONFIG         D_RTE_OS_UC_III_RTOS
 
 
 /*! @brief rtos runtime header files */
