@@ -36,6 +36,7 @@ int main(void)
         /* do nothing */
 #if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_SOC)
         printf("x platform demo running...\n");
+        printf("version: %s\n", D_SOFTWARE_VER);
         RTE_OSAL_SLEEP_SEC(1);
 #endif
     }

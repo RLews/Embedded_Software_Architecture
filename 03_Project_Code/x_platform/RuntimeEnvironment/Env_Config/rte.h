@@ -41,6 +41,7 @@ extern "C" {
 }
 #endif
 
+#define D_SOFTWARE_VER              "x_1.0"
 
 #endif
 
