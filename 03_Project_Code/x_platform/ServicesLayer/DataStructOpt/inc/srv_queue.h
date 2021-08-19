@@ -11,8 +11,13 @@
 #ifndef SRV_QUEUE_H
 #define SRV_QUEUE_H
 
+#include "rte_config.h"
 #include "platforms.h"
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 typedef enum QUEUE_ERROR_T
 {
@@ -42,6 +47,11 @@ StdBoolean_t Srv_QueueIsEmpty(volatile SrvQueue_t *pQue);
 StdBoolean_t Srv_QueueIsFull(volatile SrvQueue_t *pQue);
 
 SrvQueueError_t Srv_ReadQueueHead(volatile SrvQueue_t *pQue, uint8_t *dat);
+
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif
 

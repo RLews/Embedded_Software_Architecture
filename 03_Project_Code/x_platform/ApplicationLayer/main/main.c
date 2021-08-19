@@ -34,6 +34,10 @@ int main(void)
     while(1)
     {
         /* do nothing */
+#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_SOC)
+        printf("x platform demo running...\n");
+        RTE_OSAL_SLEEP_SEC(1);
+#endif
     }
 
     return 0;

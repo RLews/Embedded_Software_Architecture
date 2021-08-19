@@ -7,8 +7,8 @@ CXX = $(CROSS_COMPILE)g++
 LD = $(CROSS_COMPILE)ld
 AR = $(CROSS_COMPILE)ar
 
-CFLAGS = -c -std=gnu99  -Wall -fPIC -fvisibility=hidden -rdynamic
-CXXFLAGS = -std=c++11 -Wall -fPIC -fvisibility=hidden
+CFLAGS = -c -std=gnu99  -Wall -g -fPIC -fvisibility=hidden 
+CXXFLAGS = -std=c++11 -Wall -g -fPIC -fvisibility=hidden 
 
 ARFLAGS = -rc
 
@@ -55,7 +55,7 @@ INC += -I$(TOP)/ServicesLayer/Lib
 INC += -I$(TOP)/ServicesLayer/Memory
 
  
-LDFLAGS += -pthread  -Wl,--no-as-needed,-rpath,/usr/lib:./,--defsym, -fPIC -ldl
+LDFLAGS += -pthread  -Wl,--no-as-needed,-rpath,/usr/lib:./:/lib -fPIC -rdynamic -ldl
 CFLAGS += $(INC)
 CXXFLAGS += $(INC)
 
@@ -87,11 +87,12 @@ $(SUBDIRS):
 	@$(MAKE) -C $@
 
 
-$(TESTDIRS):
-	@$(MAKE) -C $@
+#$(TESTDIRS):
+#	@$(MAKE) -C $@
 
 clean:
 	rm -f $(LIB_SDK) 
+	rm -f $(BIN_EXE) 
 	for d in $(SUBDIRS) ; do $(MAKE) -C $$d clean ; done
-	for d in $(TESTDIRS) ; do $(MAKE) -C $$d clean ; done
+#	for d in $(TESTDIRS) ; do $(MAKE) -C $$d clean ; done
 	rm -f $(OBJ_DIR)/*.o

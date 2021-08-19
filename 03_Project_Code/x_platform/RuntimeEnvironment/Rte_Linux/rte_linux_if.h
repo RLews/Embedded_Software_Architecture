@@ -1,21 +1,15 @@
 /*!
 ************************************************************************************************************************
-* @file srv_algor.h
-* @brief
-* @details
+* @file rte_linux_if.h
+* @brief 
+* @details 
 * @author Lews Hammond
-* @date 2019-8-17
+* @date 2021-8-18
 ************************************************************************************************************************
 */
 
-#ifndef SRV_ALGOR_H
-#define SRV_ALGOR_H
-
-
-
-#include "rte_config.h"
-#include "platforms.h"
-
+#ifndef RTE_LINUX_IF_H
+#define RTE_LINUX_IF_H
 
 
 #ifdef __cplusplus
@@ -23,13 +17,18 @@ extern "C" {
 #endif
 
 
-uint16_t Srv_GetRand16(uint16_t seed);
+#include "osal.h"
 
-uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor);
+
+#define RTE_OSAL_SLEEP_US(us)           D_OSAL_SLEEP_US(us)
+#define RTE_OSAL_SLEEP_SEC(sec)         D_OSAL_SLEEP_SEC(sec)
+
+
 
 #ifdef __cplusplus
 }
 #endif
+
 
 
 

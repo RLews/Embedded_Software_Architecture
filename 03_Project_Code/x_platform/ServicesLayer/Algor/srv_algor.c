@@ -9,14 +9,13 @@
 */
 
 #include "srv_algor.h"
-#include "osal.h"
 
 
 
 /*!
 ************************************************************************************************************************
 * @brief 获取16bit随机数
-* @param[in]
+* @param[in] seed 随机数种子
 * @param[out]
 * @returns uint16_t
 * @pre none
@@ -26,10 +25,10 @@
 ************************************************************************************************************************
 */
 
-uint16_t Srv_GetRand16(void)
+uint16_t Srv_GetRand16(uint16_t seed)
 {
     uint16_t randValue = 0;
-    uint16_t tRandSeed = (uint16_t)Osal_GetCurTs();
+    uint16_t tRandSeed = seed;
 
     randValue = (uint16_t)(((0x17U*tRandSeed) + 0x31U) % 0xFFF3U);
 

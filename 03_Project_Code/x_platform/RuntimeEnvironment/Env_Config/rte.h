@@ -18,6 +18,21 @@
 extern "C" {
 #endif
 
+#include "rte_bsw_srv_if.h"
+
+/*! @brief rtos runtime header files */
+#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+
+#include "rte_bsw_hal_if.h"
+#include "rte_bsw_rtos_if.h"
+
+#endif
+
+#if (D_RTE_OS_CONFIG == D_RTE_OS_LINUX)
+
+#include "rte_linux_if.h"
+
+#endif
 
 
 

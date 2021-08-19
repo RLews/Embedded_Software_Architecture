@@ -25,7 +25,7 @@ extern "C" {
 /* TODO: 使用脚本获取pub模块接口，枚举等信息，导入宏替换规则 */
 
 /*! @brief 交互接口使用宏替换 */
-#define RTE_SRV_GETRAND16()             Srv_GetRand16()
+#define RTE_SRV_GETRAND16(seed)                 Srv_GetRand16(seed)
 
 /* ...... */
 

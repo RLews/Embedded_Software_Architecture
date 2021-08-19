@@ -15,8 +15,13 @@
 
 #if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
 #include "hal_uart_pub.h"
+#else
+#include "platforms.h"
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 
 extern const char Str_Space[];
@@ -38,6 +43,11 @@ void Srv_RemoveEndString(void * str, uint32_t removeLen, uint32_t strLen);
 void Srv_AppendString(void *original, void *appendStr, uint32_t appendLen, uint32_t strMaxLen);
 
 uint32_t Srv_GetStringLen(const void * str);
+
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif
 

@@ -16,11 +16,12 @@
 #if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
 
 #include "hal_sram_pub.h"
-
 /*! @brief 是否使用自定义动态内存管理机制 */
 #define USER_MEMORY_MANAGE_ENABLE       D_STD_DISABLE
 
 #else
+
+#include "platforms.h"
 /*! @brief 是否使用自定义动态内存管理机制 */
 #define USER_MEMORY_MANAGE_ENABLE       D_STD_DISABLE
 
@@ -56,6 +57,11 @@ struct _m_mallco_dev
 
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 void Srv_MemInit(uint8_t memx);
 
 void Srv_MemCopy(void *des, const void *src, uint32_t len);
@@ -69,6 +75,10 @@ void * Srv_Malloc(uint8_t memx, uint32_t size);
 void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size);
 
 void Srv_Free(uint8_t memx, void *ptr);
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif

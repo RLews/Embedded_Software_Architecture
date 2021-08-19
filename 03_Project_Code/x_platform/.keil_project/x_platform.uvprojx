@@ -448,6 +448,11 @@
               <FileType>5</FileType>
               <FilePath>..\RuntimeEnvironment\Rte_Rtos\rte_bsw_rtos_if.h</FilePath>
             </File>
+            <File>
+              <FileName>platforms.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\RuntimeEnvironment\Env_Config\platforms.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -982,11 +987,6 @@
               <FileName>core_cm3.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\HardwareDriverLayer\HardwareCore\core_cm3.h</FilePath>
-            </File>
-            <File>
-              <FileName>platforms.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\HardwareDriverLayer\HardwareCore\platforms.h</FilePath>
             </File>
             <File>
               <FileName>startup_stm32f10x_hd.s</FileName>
