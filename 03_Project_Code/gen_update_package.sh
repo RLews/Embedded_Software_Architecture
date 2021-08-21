@@ -8,6 +8,7 @@ CopyExePath="/mnt/hgfs/Lews/Tools/FTP_Path"
 cd ./x_platform || exit
 
 make clean
+wait
 
 make
 wait
