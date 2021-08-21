@@ -21,14 +21,14 @@ extern "C" {
 #include "rte_bsw_srv_if.h"
 
 /*! @brief rtos runtime header files */
-#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+#if defined(D_RTE_PLATFORM_MCU)
 
 #include "rte_bsw_hal_if.h"
 #include "rte_bsw_rtos_if.h"
 
 #endif
 
-#if (D_RTE_OS_CONFIG == D_RTE_OS_LINUX)
+#if defined(D_RTE_OS_LINUX)
 
 #include "rte_linux_if.h"
 
@@ -41,7 +41,7 @@ extern "C" {
 }
 #endif
 
-#define D_SOFTWARE_VER              "x_1.0"
+#define D_SOFTWARE_VER              "x_v1.1"
 
 #endif
 

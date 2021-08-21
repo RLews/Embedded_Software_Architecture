@@ -20,13 +20,13 @@
 
 #include "rte_config.h"
 
-#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+#if defined(D_RTE_PLATFORM_MCU)
 
 #include "stm32f10x.h"
 
 #endif
 
-#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_SOC)
+#if defined(D_RTE_PLATFORM_SOC)
 
 #include <stdint.h>
 

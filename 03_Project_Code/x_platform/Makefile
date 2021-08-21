@@ -7,8 +7,8 @@ CXX = $(CROSS_COMPILE)g++
 LD = $(CROSS_COMPILE)ld
 AR = $(CROSS_COMPILE)ar
 
-CFLAGS = -c -std=gnu99  -Wall -g -fPIC -fvisibility=hidden 
-CXXFLAGS = -std=c++11 -Wall -g -fPIC -fvisibility=hidden 
+CFLAGS = -c -std=gnu99  -Wall -g -fPIC -fvisibility=hidden -DD_RTE_PLATFORM_SOC -DD_RTE_OS_LINUX
+CXXFLAGS = -std=c++11 -Wall -g -fPIC -fvisibility=hidden  -DD_RTE_PLATFORM_SOC -DD_RTE_OS_LINUX
 
 ARFLAGS = -rc
 

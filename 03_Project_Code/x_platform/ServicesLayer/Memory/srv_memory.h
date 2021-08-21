@@ -13,7 +13,7 @@
 
 #include "rte_config.h"
 
-#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+#if defined(D_RTE_PLATFORM_MCU)
 
 #include "hal_sram_pub.h"
 /*! @brief 是否使用自定义动态内存管理机制 */

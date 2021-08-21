@@ -13,7 +13,7 @@
 
 #include "rte_config.h"
 
-#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+#if defined(D_RTE_PLATFORM_MCU)
 #include "hal_uart_pub.h"
 #else
 #include "platforms.h"

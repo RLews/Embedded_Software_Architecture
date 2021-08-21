@@ -19,7 +19,7 @@ const char EndOfString = '\0';
 const char SpaceString = ' ';
 
 
-#if (D_RTE_PLATFORM_CONFIG == D_RTE_PLATFORM_MCU)
+#if defined(D_RTE_PLATFORM_MCU)
 
 /* need MicroLib */
 int fputc(int ch, FILE *f)
