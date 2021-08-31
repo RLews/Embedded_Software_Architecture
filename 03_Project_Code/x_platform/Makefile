@@ -37,6 +37,7 @@ INC += -I$(TOP)
 # application layer
 INC += -I$(TOP)/ApplicationLayer
 INC += -I$(TOP)/ApplicationLayer/main
+INC += -I$(TOP)/ApplicationLayer/cJSON
 
 # rte
 INC += -I$(TOP)/RuntimeEnvironment

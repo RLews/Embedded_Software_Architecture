@@ -5,6 +5,7 @@ SUBDIRS = Algor
 SUBDIRS += DataStructOpt DataStructOpt/src DataStructOpt/inc
 SUBDIRS += Lib
 SUBDIRS += Memory
+SUBDIRS += ExceptionSignalCapture
 
 .PHONY: $(SUBDIRS)
 

@@ -2,6 +2,7 @@
 
 
 SUBDIRS = main
+SUBDIRS += cJSON
 
 .PHONY: $(SUBDIRS)
 
