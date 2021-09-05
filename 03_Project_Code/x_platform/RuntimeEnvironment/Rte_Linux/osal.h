@@ -24,6 +24,9 @@
 #include <sys/time.h>
 #include <time.h>
 
+#include "platforms.h"
+
+
 
 #define D_OSAL_SLEEP_US(us)             usleep(us)
 #define D_OSAL_SLEEP_SEC(sec)           sleep(sec)

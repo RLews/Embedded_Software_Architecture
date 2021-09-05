@@ -31,6 +31,7 @@ extern "C" {
 #if defined(D_RTE_OS_LINUX)
 
 #include "rte_linux_if.h"
+#include "rte_elog_if.h"
 
 #endif
 
@@ -41,7 +42,7 @@ extern "C" {
 }
 #endif
 
-#define D_SOFTWARE_VER              "x_v1.1"
+#define D_SOFTWARE_VER              "x_v1.2"
 
 #endif
 

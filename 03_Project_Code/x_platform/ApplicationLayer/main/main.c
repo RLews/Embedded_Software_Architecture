@@ -31,12 +31,17 @@ int main(void)
     RTE_OSAL_OSINIT();
 #endif
 
+#if defined(D_RTE_PLATFORM_SOC)
+    RTE_ELOG_INIT();
+#endif
+
+
     while(1)
     {
         /* do nothing */
 #if defined(D_RTE_PLATFORM_SOC)
-        printf("x platform demo running...\n");
-        printf("version: %s\n", D_SOFTWARE_VER);
+        RTE_LOG_I("x platform demo running...\n");
+        RTE_LOG_I("version: %s\n", D_SOFTWARE_VER);
         RTE_OSAL_SLEEP_SEC(1);
 #endif
     }

@@ -38,6 +38,12 @@ INC += -I$(TOP)
 INC += -I$(TOP)/ApplicationLayer
 INC += -I$(TOP)/ApplicationLayer/main
 INC += -I$(TOP)/ApplicationLayer/cJSON
+INC += -I$(TOP)/ApplicationLayer/easylogger
+INC += -I$(TOP)/ApplicationLayer/easylogger/inc
+INC += -I$(TOP)/ApplicationLayer/easylogger/port
+INC += -I$(TOP)/ApplicationLayer/easylogger/src
+INC += -I$(TOP)/ApplicationLayer/easylogger/plugins
+INC += -I$(TOP)/ApplicationLayer/easylogger/plugins/file
 
 # rte
 INC += -I$(TOP)/RuntimeEnvironment
@@ -54,6 +60,7 @@ INC += -I$(TOP)/ServicesLayer/DataStructOpt/inc
 INC += -I$(TOP)/ServicesLayer/DataStructOpt/src
 INC += -I$(TOP)/ServicesLayer/Lib
 INC += -I$(TOP)/ServicesLayer/Memory
+INC += -I$(TOP)/ServicesLayer/ExceptionSignalCapture
 
  
 LDFLAGS += -pthread  -Wl,--no-as-needed,-rpath,/usr/lib:./:/lib -fPIC -rdynamic -ldl
