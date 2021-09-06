@@ -9,6 +9,7 @@
 */
 
 #include "main.h"
+#include "rte_debug_if.h"
 
 /*!
 ************************************************************************************************************************
@@ -33,16 +34,17 @@ int main(void)
 
 #if defined(D_RTE_PLATFORM_SOC)
     RTE_ELOG_INIT();
-#endif
+    RTE_DEBUG_INIT();
 
+    RTE_LOG_I("version: %s\n", D_SOFTWARE_VER);
+#endif
 
     while(1)
     {
         /* do nothing */
 #if defined(D_RTE_PLATFORM_SOC)
-        RTE_LOG_I("x platform demo running...\n");
-        RTE_LOG_I("version: %s\n", D_SOFTWARE_VER);
-        RTE_OSAL_SLEEP_SEC(1);
+        RTE_LOG_V("x platform demo running...\n");
+        RTE_OSAL_SLEEP_SEC(5);
 #endif
     }
 

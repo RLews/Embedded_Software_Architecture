@@ -43,6 +43,18 @@
 -I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU
 -I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR
 -I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\Debug
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\cJSON
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Appl_Interface
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Hal_Interface
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Rte_Linux
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Rte_Rtos
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Service_Interface
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\easylogger\inc
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\easylogger\port
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\easylogger\plugins\file
+-I E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\easylogger\plugins\flash
 -prog x_platform
 -verif-version 1.0
 -author HP
@@ -53,6 +65,8 @@
 -D STM32F10X_HD=
 -D USE_STDPERIPH_DRIVER=
 -D __INLINE=
+-D D_RTE_PLATFORM_SOC=
+-D D_RTE_OS_LINUX=
 -dos
 -misra3 mandatory-required
 -autosar-cpp14 all

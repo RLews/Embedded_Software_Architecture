@@ -44,6 +44,7 @@ INC += -I$(TOP)/ApplicationLayer/easylogger/port
 INC += -I$(TOP)/ApplicationLayer/easylogger/src
 INC += -I$(TOP)/ApplicationLayer/easylogger/plugins
 INC += -I$(TOP)/ApplicationLayer/easylogger/plugins/file
+INC += -I$(TOP)/ApplicationLayer/Debug_Cmd
 
 # rte
 INC += -I$(TOP)/RuntimeEnvironment
@@ -95,12 +96,12 @@ $(SUBDIRS):
 	@$(MAKE) -C $@
 
 
-#$(TESTDIRS):
-#	@$(MAKE) -C $@
+$(TESTDIRS):
+	@$(MAKE) -C $@
 
 clean:
 	rm -f $(LIB_SDK) 
 	rm -f $(BIN_EXE) 
 	for d in $(SUBDIRS) ; do $(MAKE) -C $$d clean ; done
-#	for d in $(TESTDIRS) ; do $(MAKE) -C $$d clean ; done
+	for d in $(TESTDIRS) ; do $(MAKE) -C $$d clean ; done
 	rm -f $(OBJ_DIR)/*.o

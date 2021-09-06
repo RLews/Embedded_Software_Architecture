@@ -1,0 +1,3232 @@
+<polyspace-bug-finder R2020b PID11608 PGID11608>
+
+Polyspace verification of x_platform project.
+Starting at 09/06/2021, 21h26.
+
+Remark: -O2 is ignored in Polyspace Bug Finder.
+Remark: -to is ignored in Polyspace Bug Finder.
+Remark: -main-generator-calls is ignored in Polyspace Bug Finder.
+Remark: -class-analyzer is ignored in Polyspace Bug Finder.
+Remark: -unsigned-integer-overflows is ignored in Polyspace Bug Finder.
+Remark: -signed-integer-overflows is ignored in Polyspace Bug Finder.
+Remark: -check-subnormal is ignored in Polyspace Bug Finder.
+Remark: -uncalled-function-checks is ignored in Polyspace Bug Finder.
+Remark: -class-analyzer-calls is ignored in Polyspace Bug Finder.
+Remark: -main-generator-writes-variables is ignored in Polyspace Bug Finder.
+Remark: -float-rounding-mode is ignored in Polyspace Bug Finder.
+Warning: no such directory to include : E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Bsw_Interface\Hal_Interface
+Warning: no such directory to include : E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Bsw_Interface\Service_Interface
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-prog=x_platform
+-lang=C-CPP
+-polyspace-version=3.3 (R2020b)
+-results-dir=E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result
+-date=06/09/2021
+
+User:
+-autosar-cpp14=all
+-misra3=mandatory-required
+-target=arm
+-compiler=armcc
+-dos=true
+-D1=STM32F10X_HD=
+-D2=USE_STDPERIPH_DRIVER=
+-D3=__INLINE=
+-import-comments=E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result\comments_bak
+-verif-version=1.0
+-author=HP
+-I1=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform
+-I2=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\.x_platform.si4project\Backup
+-I3=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main
+-I4=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt
+-I5=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key
+-I6=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led
+-I7=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Platform
+-I8=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC
+-I9=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD
+-I10=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Sram
+-I11=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Timer
+-I12=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart
+-I13=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog
+-I14=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT
+-I15=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\GPIO
+-I16=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\HardwareCore
+-I17=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Interrupt
+-I18=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC
+-I19=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD
+-I20=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI
+-I21=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram
+-I22=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer
+-I23=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Uart
+-I24=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Watchdog
+-I25=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config
+-I26=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor
+-I27=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib
+-I28=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory
+-I29=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\STM32F10x_FWLib\inc
+-I30=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc
+-I31=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\FATFS\src
+-I32=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc
+-I33=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU
+-I34=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-LIB
+-I35=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-Config
+-I36=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Source
+-I37=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\GNU
+-I38=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\IAR
+-I39=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\RealView
+-I40=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU
+-I41=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR
+-I42=E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView
+
+
+Checkers enabled:
+    Defects 114/300
+    MISRA C:2012 133/171
+    AUTOSAR C++14 308/308
+
+
+Verifying host configuration:
+Number of physical cores:                2
+Number of logical cores:                 4
+Processor type:                          amd64
+Processor model:                Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+Processor frequency:            2.400 GHz
+Memory > 4 GB:                                            15.88 GB
+Tmp space available in C:\Users\HP\AppData\Local\Temp:    16.96 GB
+
+Remark: 2 physical core(s) detected. The verification creates 2 process(es).
+*** Configuration of the host :	OK
+
+
+Type E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result\kill-rte-kernel.bat on host ENVY to halt Verifier process
+
+
+Checking license ...
+License is OK
+
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Sep 06 21:26:03 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** armcc C-CPP source compliance checking
+***
+**********************************************************
+
+Verifying sources ...
+Verifying debug_cmd.c (1/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\rte.h, line 21: warning: could not find include file "rte_bsw_srv_if.h"
+|  #include "rte_bsw_srv_if.h"
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.h, line 31: error: identifier "uint16_t" is undefined
+|  typedef void (*Debug_SubFuncPtr)(char pData[], uint16_t dataLen);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.h, line 43: error: identifier "uint8_t" is undefined
+|      uint8_t cmdSubFuncNum;                                  /*!< 子功能数量 */
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.h, line 26: error: identifier "uint16_t" is undefined
+|  typedef void (*DebugTp_ServersHandleFunc)(char pData[], uint16_t dataLen);
+|                                                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h, line 22: error: identifier "uint16_t" is undefined
+|  void DbgElog_OnHandle(char pData[], uint16_t dataLen);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h, line 23: error: identifier "uint16_t" is undefined
+|  void DbgElog_OffHandle(char pData[], uint16_t dataLen);
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h, line 24: error: identifier "uint16_t" is undefined
+|  void DbgElog_SetLevelHandle(char pData[], uint16_t dataLen);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 32: error: expression must have a constant value
+|      {"elog_set", Debug_ElogSetFuncCfg, 2},
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 33: error: expression must have a constant value
+|      {"elog_set_level", Debug_ElogSetLvlCfg, 1},
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 39: error: identifier "uint16_t" is undefined
+|  static void Debug_CmdHandle(char pData[], uint16_t dataLen);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 40: error: identifier "uint16_t" is undefined
+|  static int Debug_ParseCmdType(char pData[], uint16_t dataLen);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 77: error: identifier "uint16_t" is undefined
+|  static void Debug_CmdHandle(char pData[], uint16_t dataLen)
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 79: error: identifier "uint16_t" is undefined
+|      uint16_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 80: error: identifier "uint16_t" is undefined
+|      uint16_t j = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 124: error: identifier "uint16_t" is undefined
+|  static int Debug_ParseCmdType(char pData[], uint16_t dataLen)
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 127: error: identifier "uint16_t" is undefined
+|      uint16_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 128: error: identifier "StdBoolean_t" is undefined
+|      StdBoolean_t cmdTypeInd = D_STD_FALSE;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 128: error: identifier "D_STD_FALSE" is undefined
+|      StdBoolean_t cmdTypeInd = D_STD_FALSE;
+|                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 129: error: identifier "uint16_t" is undefined
+|      uint16_t readIndex = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 131: error: identifier "NULL" is undefined
+|      if (pData == NULL)
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c, line 151: error: identifier "D_STD_TRUE" is undefined
+|                  cmdTypeInd = D_STD_TRUE;
+|                               ^
+
+20 errors detected in the compilation of "debug_cmd.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c: warning: Failed compilation.
+Verifying debug_client.c (2/21) [C]
+Verifying debug_elog_if.c (3/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\rte.h, line 21: warning: could not find include file "rte_bsw_srv_if.h"
+|  #include "rte_bsw_srv_if.h"
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h, line 22: error: identifier "uint16_t" is undefined
+|  void DbgElog_OnHandle(char pData[], uint16_t dataLen);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h, line 23: error: identifier "uint16_t" is undefined
+|  void DbgElog_OffHandle(char pData[], uint16_t dataLen);
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h, line 24: error: identifier "uint16_t" is undefined
+|  void DbgElog_SetLevelHandle(char pData[], uint16_t dataLen);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 28: error: identifier "uint16_t" is undefined
+|  void DbgElog_OnHandle(char pData[], uint16_t dataLen)
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 32: error: identifier "ELOG_LVL_VERBOSE" is undefined
+|      RTE_ELOG_SET_LEVEL(ELOG_LVL_VERBOSE);
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 50: error: identifier "uint16_t" is undefined
+|  void DbgElog_OffHandle(char pData[], uint16_t dataLen)
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 54: error: identifier "ELOG_LVL_ASSERT" is undefined
+|      RTE_ELOG_SET_LEVEL(ELOG_LVL_ASSERT);
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 72: error: identifier "uint16_t" is undefined
+|  void DbgElog_SetLevelHandle(char pData[], uint16_t dataLen)
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 76: error: identifier "NULL" is undefined
+|      if ((pData == NULL)
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 85: error: identifier "ELOG_LVL_VERBOSE" is undefined
+|      if (num > ELOG_LVL_VERBOSE)
+|                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 91: error: identifier "uint8_t" is undefined
+|      RTE_ELOG_SET_LEVEL((uint8_t)num);
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c, line 91: error: expected a ")"
+|      RTE_ELOG_SET_LEVEL((uint8_t)num);
+|                                  ^
+
+12 errors detected in the compilation of "debug_elog_if.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c: warning: Failed compilation.
+Verifying debug_tp.c (4/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\rte.h, line 21: warning: could not find include file "rte_bsw_srv_if.h"
+|  #include "rte_bsw_srv_if.h"
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.h, line 26: error: identifier "uint16_t" is undefined
+|  typedef void (*DebugTp_ServersHandleFunc)(char pData[], uint16_t dataLen);
+|                                                          ^
+
+1 error detected in the compilation of "debug_tp.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.c: warning: Failed compilation.
+Verifying hal.c (5/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h, line 104: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetCurIntID(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h, line 46: error: identifier "uint8_t" is undefined
+|  StdBoolean_t Hal_CheckNewKey(uint8_t id);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h, line 47: error: identifier "uint8_t" is undefined
+|  void Hal_ClearNewKeyFlg(uint8_t id);
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h, line 48: error: identifier "uint8_t" is undefined
+|  KeyState_t Hal_GetKeySta(uint8_t id);
+|                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h, line 27: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetWifiLedSta(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 33: error: identifier "uint32_t" is undefined
+|  void Drv_RtcSetCount(uint32_t secCnt);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 34: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_RtcGetCount(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 23: error: identifier "uint16_t" is undefined
+|      uint16_t rtcYear;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 24: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMon;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 25: error: identifier "uint8_t" is undefined
+|      uint8_t rtcDay;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 26: error: identifier "uint8_t" is undefined
+|      uint8_t rtcHour;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 27: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMin;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 28: error: identifier "uint8_t" is undefined
+|      uint8_t rtcSec;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 29: error: identifier "uint8_t" is undefined
+|      uint8_t rtcWeek;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 39: error: identifier "uint8_t" is undefined
+|  void Drv_Spi2SetSpeed(uint8_t baudRatePre);
+|                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint16_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint32_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 21: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCID(uint8_t *pCID);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 22: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 23: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardGetSectorNum(uint32_t *pSectorNum);
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 28: error: identifier "uint8_t" is undefined
+|  void Drv_SramWrite(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 28: error: identifier "uint32_t" is undefined
+|  void Drv_SramWrite(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 28: error: identifier "uint32_t" is undefined
+|  void Drv_SramWrite(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 29: error: identifier "uint8_t" is undefined
+|  void Drv_SramRead(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 29: error: identifier "uint32_t" is undefined
+|  void Drv_SramRead(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 29: error: identifier "uint32_t" is undefined
+|  void Drv_SramRead(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer\drv_timer_pub.h, line 27: error: identifier "uint32_t" is undefined
+|  void Drv_SysTickSetReload(uint32_t val);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Uart\drv_uart_pub.h, line 31: error: identifier "uint8_t" is undefined
+|  void Drv_UartTxByte(UartName_t name, const uint8_t dat);
+|                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Uart\drv_uart_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_UartGetRevData(UartName_t name);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 32: error: identifier "uint16_t" is undefined
+|      uint16_t frontInx;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 33: error: identifier "uint16_t" is undefined
+|      uint16_t rearInx;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 34: error: identifier "uint8_t" is undefined
+|      volatile uint8_t *qBuffer;
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 35: error: identifier "uint16_t" is undefined
+|      uint16_t bufSize;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 36: error: identifier "uint16_t" is undefined
+|      uint16_t maxBufSize;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 39: error: identifier "uint8_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 39: error: identifier "uint16_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
+|                                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 41: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueIn(volatile SrvQueue_t *pQue, uint8_t dat);
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 43: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueOut(volatile SrvQueue_t *pQue, uint8_t *dat);
+|                                                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 49: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_ReadQueueHead(volatile SrvQueue_t *pQue, uint8_t *dat);
+|                                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h, line 29: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Hal_UartWrite(UartName_t name, const uint8_t dat[], uint16_t len);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h, line 29: error: identifier "uint16_t" is undefined
+|  SrvQueueError_t Hal_UartWrite(UartName_t name, const uint8_t dat[], uint16_t len);
+|                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h, line 30: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Hal_UartReadByte(UartName_t name, uint8_t *dat);
+|                                                    ^
+
+59 errors detected in the compilation of "hal.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Platform\hal.c: warning: Failed compilation.
+Verifying hal_int.c (6/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h, line 104: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetCurIntID(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer\drv_timer_pub.h, line 27: error: identifier "uint32_t" is undefined
+|  void Drv_SysTickSetReload(uint32_t val);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetDwtCnt(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetCpuFreq(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 33: error: identifier "uint32_t" is undefined
+|  void Drv_RtcSetCount(uint32_t secCnt);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 34: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_RtcGetCount(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 23: error: identifier "uint16_t" is undefined
+|      uint16_t rtcYear;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 24: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMon;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 25: error: identifier "uint8_t" is undefined
+|      uint8_t rtcDay;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 26: error: identifier "uint8_t" is undefined
+|      uint8_t rtcHour;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 27: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMin;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 28: error: identifier "uint8_t" is undefined
+|      uint8_t rtcSec;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 29: error: identifier "uint8_t" is undefined
+|      uint8_t rtcWeek;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 133: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_GetCurTs(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 39: error: identifier "uint8_t" is undefined
+|  void Drv_Spi2SetSpeed(uint8_t baudRatePre);
+|                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint16_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint32_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 21: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCID(uint8_t *pCID);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 22: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 23: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardGetSectorNum(uint32_t *pSectorNum);
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h, line 27: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetWifiLedSta(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 183: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_OpenW(FSAL_FIL *pFil, const FSAL_CHAR *pPath, const FSAL_CHAR *pDir, uint32_t dirLen);
+|                                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint8_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 186: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_MkDir(const FSAL_CHAR *pDir, uint32_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 38: error: identifier "NVIC_PriorityGroup_2" is undefined
+|      NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 56: error: identifier "uint8_t" is undefined
+|      uint8_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 60: error: identifier "uint8_t" is undefined
+|      for(i = 0; i < (uint8_t)EN_ALL_SYS_ISR_NUM; i++)
+|                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 60: error: expected a ";"
+|      for(i = 0; i < (uint8_t)EN_ALL_SYS_ISR_NUM; i++)
+|                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 107: error: identifier "uint32_t" is undefined
+|      uint32_t Ts = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 163: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetCurIntID(void)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 165: error: identifier "uint8_t" is undefined
+|      return (uint8_t)SysIntId;
+|              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c, line 165: error: expected a ";"
+|      return (uint8_t)SysIntId;
+|                      ^
+
+53 errors detected in the compilation of "hal_int.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c: warning: Failed compilation.
+Verifying hal_key.c (7/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h, line 46: error: identifier "uint8_t" is undefined
+|  StdBoolean_t Hal_CheckNewKey(uint8_t id);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h, line 47: error: identifier "uint8_t" is undefined
+|  void Hal_ClearNewKeyFlg(uint8_t id);
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h, line 48: error: identifier "uint8_t" is undefined
+|  KeyState_t Hal_GetKeySta(uint8_t id);
+|                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer\drv_timer_pub.h, line 27: error: identifier "uint32_t" is undefined
+|  void Drv_SysTickSetReload(uint32_t val);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetDwtCnt(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetCpuFreq(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h, line 104: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetCurIntID(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 33: error: identifier "uint32_t" is undefined
+|  void Drv_RtcSetCount(uint32_t secCnt);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 34: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_RtcGetCount(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 23: error: identifier "uint16_t" is undefined
+|      uint16_t rtcYear;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 24: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMon;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 25: error: identifier "uint8_t" is undefined
+|      uint8_t rtcDay;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 26: error: identifier "uint8_t" is undefined
+|      uint8_t rtcHour;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 27: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMin;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 28: error: identifier "uint8_t" is undefined
+|      uint8_t rtcSec;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 29: error: identifier "uint8_t" is undefined
+|      uint8_t rtcWeek;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 133: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_GetCurTs(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 39: error: identifier "uint8_t" is undefined
+|  void Drv_Spi2SetSpeed(uint8_t baudRatePre);
+|                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint16_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint32_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 21: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCID(uint8_t *pCID);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 22: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 23: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardGetSectorNum(uint32_t *pSectorNum);
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h, line 27: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetWifiLedSta(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 183: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_OpenW(FSAL_FIL *pFil, const FSAL_CHAR *pPath, const FSAL_CHAR *pDir, uint32_t dirLen);
+|                                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint8_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 186: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_MkDir(const FSAL_CHAR *pDir, uint32_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.h, line 30: error: identifier "uint8_t" is undefined
+|      uint8_t shakeBuf[EN_KEY_ALL_TYPE];
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.h, line 31: error: identifier "uint32_t" is undefined
+|      uint32_t keyPrsTim[EN_KEY_ALL_TYPE];
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.h, line 32: error: identifier "uint32_t" is undefined
+|      uint32_t keydblPrsTim[EN_KEY_ALL_TYPE];
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 16: error: identifier "uint8_t" is undefined
+|  static void Hal_KeyStateManage(uint8_t id);
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 34: error: identifier "uint8_t" is undefined
+|      uint8_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 38: error: identifier "uint8_t" is undefined
+|      for(i = 0; i < (uint8_t)EN_KEY_ALL_TYPE; i++)
+|                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 38: error: expected a ";"
+|      for(i = 0; i < (uint8_t)EN_KEY_ALL_TYPE; i++)
+|                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 40: error: expected a ")"
+|          ioName = (GpioName_t)(i + (uint8_t)EN_WIFI_KEY_IO);
+|                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 72: error: identifier "uint8_t" is undefined
+|  static void Hal_KeyStateManage(uint8_t id)
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 244: error: identifier "uint8_t" is undefined
+|  StdBoolean_t Hal_CheckNewKey(uint8_t id)
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 262: error: identifier "uint8_t" is undefined
+|  void Hal_ClearNewKeyFlg(uint8_t id)
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c, line 280: error: identifier "uint8_t" is undefined
+|  KeyState_t Hal_GetKeySta(uint8_t id)
+|                           ^
+
+60 errors detected in the compilation of "hal_key.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c: warning: Failed compilation.
+Verifying hal_led.c (8/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h, line 27: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetWifiLedSta(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c, line 14: error: identifier "uint8_t" is undefined
+|  static uint8_t WifiLedSta = (0U);
+|         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c, line 124: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetWifiLedSta(void)
+|  ^
+
+4 errors detected in the compilation of "hal_led.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c: warning: Failed compilation.
+Verifying hal_rtc.c (9/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 33: error: identifier "uint32_t" is undefined
+|  void Drv_RtcSetCount(uint32_t secCnt);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 34: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_RtcGetCount(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 23: error: identifier "uint16_t" is undefined
+|      uint16_t rtcYear;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 24: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMon;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 25: error: identifier "uint8_t" is undefined
+|      uint8_t rtcDay;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 26: error: identifier "uint8_t" is undefined
+|      uint8_t rtcHour;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 27: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMin;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 28: error: identifier "uint8_t" is undefined
+|      uint8_t rtcSec;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 29: error: identifier "uint8_t" is undefined
+|      uint8_t rtcWeek;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h, line 104: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetCurIntID(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 15: error: identifier "uint8_t" is undefined
+|  static const uint8_t RtcMonTbl[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 16: error: identifier "uint8_t" is undefined
+|  static const uint8_t RtcWeekTbl[12] = {0,3,3,6,1,4,6,2,5,0,3,5};
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 19: error: identifier "uint16_t" is undefined
+|  static StdBoolean_t Hal_RtcJudgeLeap(uint16_t year);
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 20: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day);
+|         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 20: error: identifier "uint16_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day);
+|                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 20: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day);
+|                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 20: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day);
+|                                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 72: error: identifier "RTC_IT_SEC" is undefined
+|      RTC_ITConfig(RTC_IT_SEC, DISABLE);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 72: error: identifier "DISABLE" is undefined
+|      RTC_ITConfig(RTC_IT_SEC, DISABLE);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 82: error: identifier "ENABLE" is undefined
+|      RTC_ITConfig(RTC_IT_SEC, ENABLE);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 121: error: identifier "uint16_t" is undefined
+|  static StdBoolean_t Hal_RtcJudgeLeap(uint16_t year)
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 162: error: identifier "uint16_t" is undefined
+|      static uint16_t dayCnt = 0xFF;
+|             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 164: error: identifier "uint32_t" is undefined
+|      uint32_t timeCnt = Drv_RtcGetCount();
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 165: error: identifier "uint32_t" is undefined
+|      uint32_t temp = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 166: error: identifier "uint32_t" is undefined
+|      uint32_t temp1 = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 168: error: identifier "uint32_t" is undefined
+|      temp = timeCnt / ( (uint32_t)(((24U) * (60U)) * (60U)) );
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 172: error: identifier "uint16_t" is undefined
+|          dayCnt = (uint16_t)temp;
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 172: error: expected a ";"
+|          dayCnt = (uint16_t)temp;
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 177: error: expected a ")"
+|              if(Hal_RtcJudgeLeap((uint16_t)temp1) == (1U))
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 197: error: expected a ";"
+|          pTime->rtcYear = (uint16_t)temp1;
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 202: error: expected a ")"
+|              if((Hal_RtcJudgeLeap((uint16_t)temp1) == (1U)) && (temp1==1))
+|                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 228: error: identifier "uint8_t" is undefined
+|          pTime->rtcMon = (uint8_t)(temp1 + 1);
+|                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 233: error: identifier "uint8_t" is undefined
+|      pTime->rtcHour = (uint8_t)(temp / ( (uint32_t)((60U) * (60U)) ));
+|                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 254: error: identifier "uint16_t" is undefined
+|      uint16_t t = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 255: error: identifier "uint32_t" is undefined
+|      uint32_t seccount = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 266: error: identifier "uint32_t" is undefined
+|              seccount += ( (uint32_t)((uint32_t)(366U) * ( (uint32_t)(((24U) * (60U)) * (60U)) )) );
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 270: error: identifier "uint32_t" is undefined
+|              seccount += ( (uint32_t)((uint32_t)(365U) * ( (uint32_t)(((24U) * (60U)) * (60U)) )) );
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 278: error: identifier "uint32_t" is undefined
+|          seccount += (uint32_t)RtcMonTbl[t] * ( (uint32_t)(((24U) * (60U)) * (60U)) );
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 278: error: expected a ";"
+|          seccount += (uint32_t)RtcMonTbl[t] * ( (uint32_t)(((24U) * (60U)) * (60U)) );
+|                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 286: error: identifier "uint32_t" is undefined
+|      seccount += (uint32_t)(times.rtcDay - 1) * ( (uint32_t)(((24U) * (60U)) * (60U)) );
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 287: error: expected a ";"
+|      seccount += (uint32_t)times.rtcHour * ( (uint32_t)((60U) * (60U)) );
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 288: error: expected a ";"
+|      seccount += (uint32_t)times.rtcMin * (60U);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 308: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day)
+|         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 308: error: identifier "uint16_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day)
+|                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 308: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day)
+|                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 308: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_RtcGetWeek(uint16_t year, uint8_t mon, uint8_t day)
+|                                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 310: error: identifier "uint16_t" is undefined
+|      uint16_t temp2 = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 311: error: identifier "uint8_t" is undefined
+|      uint8_t yearH = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 312: error: identifier "uint8_t" is undefined
+|      uint8_t yearL = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 322: error: identifier "uint8_t" is undefined
+|      yearH = (uint8_t)(year / 100U);
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c, line 332: error: identifier "uint16_t" is undefined
+|      temp2 = (uint16_t)(yearL + (yearL / 4U));
+|               ^
+
+52 errors detected in the compilation of "hal_rtc.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c: warning: Failed compilation.
+Verifying hal_sd.c (10/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 39: error: identifier "uint8_t" is undefined
+|  void Drv_Spi2SetSpeed(uint8_t baudRatePre);
+|                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint16_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint32_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 21: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCID(uint8_t *pCID);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 22: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 23: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardGetSectorNum(uint32_t *pSectorNum);
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 13: error: identifier "uint8_t" is undefined
+|  static uint8_t SdCardType = 0x00U;
+|         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 16: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_SDCardIntoIDLE(void);
+|         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 17: error: identifier "uint8_t" is undefined
+|  static SdCardErr_t Hal_SDCardReadOCR(uint8_t *pBuf);
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 33: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCID(uint8_t *pCID)
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 35: error: identifier "uint8_t" is undefined
+|      uint8_t revDat = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 64: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD)
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 66: error: identifier "uint8_t" is undefined
+|      uint8_t revDat = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 99: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardGetSectorNum(uint32_t *pSectorNum)
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 101: error: identifier "uint8_t" is undefined
+|      uint8_t csd[16U] = {0};
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 102: error: identifier "uint8_t" is undefined
+|      uint8_t n = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 103: error: identifier "uint16_t" is undefined
+|      uint16_t cSize = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 120: error: identifier "uint16_t" is undefined
+|          cSize = csd[9] + ((uint16_t)csd[8] << 8U) + 1;
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 120: error: expected a ")"
+|          cSize = csd[9] + ((uint16_t)csd[8] << 8U) + 1;
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 121: error: identifier "uint32_t" is undefined
+|          *pSectorNum = (uint32_t)cSize << 10U;
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 121: error: expected a ";"
+|          *pSectorNum = (uint32_t)cSize << 10U;
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 126: error: identifier "uint16_t" is undefined
+|          cSize = (uint16_t)(csd[8] >> 6U) + ((uint16_t)csd[7] << 2U) + ((uint16_t)(csd[6] & 0x03U) << 10U) + 1U;
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 126: error: expected a ")"
+|          cSize = (uint16_t)(csd[8] >> 6U) + ((uint16_t)csd[7] << 2U) + ((uint16_t)(csd[6] & 0x03U) << 10U) + 1U;
+|                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 127: error: identifier "uint32_t" is undefined
+|          *pSectorNum = (uint32_t)cSize << (n - 9U);
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 127: error: expected a ";"
+|          *pSectorNum = (uint32_t)cSize << (n - 9U);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 149: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt)
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 149: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt)
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 149: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt)
+|                                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 207: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt)
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 207: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt)
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 207: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt)
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 210: error: identifier "uint8_t" is undefined
+|      uint8_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 254: error: identifier "uint8_t" is undefined
+|              optRes = Drv_SDCardSendBlock((uint8_t *)0, 0xFD);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 254: error: expected an expression
+|              optRes = Drv_SDCardSendBlock((uint8_t *)0, 0xFD);
+|                                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 254: error: too few arguments in function call
+|              optRes = Drv_SDCardSendBlock((uint8_t *)0, 0xFD);
+|                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 254: error: expected a ")"
+|              optRes = Drv_SDCardSendBlock((uint8_t *)0, 0xFD);
+|                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 279: error: identifier "uint8_t" is undefined
+|      uint8_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 280: error: identifier "uint8_t" is undefined
+|      uint8_t rev = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 303: error: identifier "uint8_t" is undefined
+|  static uint8_t Hal_SDCardIntoIDLE(void)
+|         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 305: error: identifier "uint8_t" is undefined
+|      uint8_t timeCnt = 20;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 306: error: identifier "uint8_t" is undefined
+|      uint8_t rev = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 332: error: identifier "uint8_t" is undefined
+|  static SdCardErr_t Hal_SDCardReadOCR(uint8_t *pBuf)
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 334: error: identifier "uint8_t" is undefined
+|      uint8_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 368: error: identifier "uint8_t" is undefined
+|      uint8_t rev = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 369: error: identifier "uint16_t" is undefined
+|      uint16_t timeCnt = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 370: error: identifier "uint8_t" is undefined
+|      uint8_t buf[4] = {0};
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 371: error: identifier "uint8_t" is undefined
+|      uint8_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 374: error: identifier "SPI_BaudRatePrescaler_256" is undefined
+|      Drv_Spi2SetSpeed(SPI_BaudRatePrescaler_256);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c, line 449: error: identifier "SPI_BaudRatePrescaler_2" is undefined
+|      Drv_Spi2SetSpeed(SPI_BaudRatePrescaler_2);
+|                       ^
+
+66 errors detected in the compilation of "hal_sd.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c: warning: Failed compilation.
+Verifying hal_sram.c (11/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 28: error: identifier "uint8_t" is undefined
+|  void Drv_SramWrite(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 28: error: identifier "uint32_t" is undefined
+|  void Drv_SramWrite(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 28: error: identifier "uint32_t" is undefined
+|  void Drv_SramWrite(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 29: error: identifier "uint8_t" is undefined
+|  void Drv_SramRead(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 29: error: identifier "uint32_t" is undefined
+|  void Drv_SramRead(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Sram\drv_sram_pub.h, line 29: error: identifier "uint32_t" is undefined
+|  void Drv_SramRead(uint8_t *pBuf, uint32_t addr, uint32_t size);
+|                                                  ^
+
+7 errors detected in the compilation of "hal_sram.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Sram\hal_sram.c: warning: Failed compilation.
+Verifying hal_timer.c (12/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer\drv_timer_pub.h, line 27: error: identifier "uint32_t" is undefined
+|  void Drv_SysTickSetReload(uint32_t val);
+|                            ^
+
+2 errors detected in the compilation of "hal_timer.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Timer\hal_timer.c: warning: Failed compilation.
+Verifying hal_uart.c (13/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Uart\drv_uart_pub.h, line 31: error: identifier "uint8_t" is undefined
+|  void Drv_UartTxByte(UartName_t name, const uint8_t dat);
+|                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Uart\drv_uart_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_UartGetRevData(UartName_t name);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 32: error: identifier "uint16_t" is undefined
+|      uint16_t frontInx;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 33: error: identifier "uint16_t" is undefined
+|      uint16_t rearInx;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 34: error: identifier "uint8_t" is undefined
+|      volatile uint8_t *qBuffer;
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 35: error: identifier "uint16_t" is undefined
+|      uint16_t bufSize;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 36: error: identifier "uint16_t" is undefined
+|      uint16_t maxBufSize;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 39: error: identifier "uint8_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 39: error: identifier "uint16_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
+|                                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 41: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueIn(volatile SrvQueue_t *pQue, uint8_t dat);
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 43: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueOut(volatile SrvQueue_t *pQue, uint8_t *dat);
+|                                                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 49: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_ReadQueueHead(volatile SrvQueue_t *pQue, uint8_t *dat);
+|                                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h, line 29: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Hal_UartWrite(UartName_t name, const uint8_t dat[], uint16_t len);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h, line 29: error: identifier "uint16_t" is undefined
+|  SrvQueueError_t Hal_UartWrite(UartName_t name, const uint8_t dat[], uint16_t len);
+|                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h, line 30: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Hal_UartReadByte(UartName_t name, uint8_t *dat);
+|                                                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h, line 104: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetCurIntID(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer\drv_timer_pub.h, line 27: error: identifier "uint32_t" is undefined
+|  void Drv_SysTickSetReload(uint32_t val);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetDwtCnt(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetCpuFreq(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 33: error: identifier "uint32_t" is undefined
+|  void Drv_RtcSetCount(uint32_t secCnt);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 34: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_RtcGetCount(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 23: error: identifier "uint16_t" is undefined
+|      uint16_t rtcYear;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 24: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMon;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 25: error: identifier "uint8_t" is undefined
+|      uint8_t rtcDay;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 26: error: identifier "uint8_t" is undefined
+|      uint8_t rtcHour;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 27: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMin;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 28: error: identifier "uint8_t" is undefined
+|      uint8_t rtcSec;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 29: error: identifier "uint8_t" is undefined
+|      uint8_t rtcWeek;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 133: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_GetCurTs(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 39: error: identifier "uint8_t" is undefined
+|  void Drv_Spi2SetSpeed(uint8_t baudRatePre);
+|                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint16_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint32_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 21: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCID(uint8_t *pCID);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 22: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 23: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardGetSectorNum(uint32_t *pSectorNum);
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h, line 27: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetWifiLedSta(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 183: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_OpenW(FSAL_FIL *pFil, const FSAL_CHAR *pPath, const FSAL_CHAR *pDir, uint32_t dirLen);
+|                                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint8_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 186: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_MkDir(const FSAL_CHAR *pDir, uint32_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 13: error: identifier "uint8_t" is undefined
+|  static volatile uint8_t SysUartTxBuf[(uint8_t)EN_ALL_UART_NUM][(320u)] = {0};
+|                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 13: error: identifier "uint8_t" is undefined
+|  static volatile uint8_t SysUartTxBuf[(uint8_t)EN_ALL_UART_NUM][(320u)] = {0};
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 13: error: expected a "]"
+|  static volatile uint8_t SysUartTxBuf[(uint8_t)EN_ALL_UART_NUM][(320u)] = {0};
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 14: error: "uint8_t" is not a type name
+|  static volatile uint8_t SysUartRxBuf[(uint8_t)EN_ALL_UART_NUM][(256u)] = {0};
+|                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 14: error: expected a "]"
+|  static volatile uint8_t SysUartRxBuf[(uint8_t)EN_ALL_UART_NUM][(256u)] = {0};
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 15: error: expected a "]"
+|  static volatile SrvQueue_t SysUartTxQueue[(uint8_t)EN_ALL_UART_NUM] = {0};
+|                                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 16: error: expected a "]"
+|  static volatile SrvQueue_t SysUartRxQueue[(uint8_t)EN_ALL_UART_NUM] = {0};
+|                                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 39: error: expected a ";"
+|      uint8_t i = 0;
+|              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 41: error: identifier "i" is undefined
+|      for(i = 0; i < (uint8_t)EN_ALL_UART_NUM; i++)
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 41: error: expected a ";"
+|      for(i = 0; i < (uint8_t)EN_ALL_UART_NUM; i++)
+|                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 43: error: "uint8_t" is not a type name
+|          Srv_QueueInit(&SysUartTxQueue[i], (volatile uint8_t *)&SysUartTxBuf[i], (320u));
+|                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 44: error: "uint8_t" is not a type name
+|          Srv_QueueInit(&SysUartRxQueue[i], (volatile uint8_t *)&SysUartRxBuf[i], (256u));
+|                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 103: error: "uint8_t" is not a type name
+|  SrvQueueError_t Hal_UartReadByte(UartName_t name, uint8_t *dat)
+|                                                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 133: error: "uint8_t" is not a type name
+|  SrvQueueError_t Hal_UartWrite(UartName_t name, const uint8_t dat[], uint16_t len)
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 133: error: identifier "uint16_t" is undefined
+|  SrvQueueError_t Hal_UartWrite(UartName_t name, const uint8_t dat[], uint16_t len)
+|                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 136: error: expected a ";"
+|      uint8_t i = 0;
+|              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 139: error: expected a ";"
+|      uint8_t firstDat = 0;
+|              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 156: error: identifier "i" is undefined
+|      for(i = 0; i < len; i++)
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 168: error: identifier "firstDat" is undefined
+|          opt = Srv_ReadQueueHead(pQueue, &firstDat);
+|                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 199: error: expected a ";"
+|      uint8_t uartDat = 0;
+|              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 204: error: identifier "uartDat" is undefined
+|          if(EN_QUEUE_OPT_EMPTY == Srv_QueueOut(pTxQueue, &uartDat))
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 217: error: identifier "uartDat" is undefined
+|          uartDat = Drv_UartGetRevData(EN_SYS_COM);
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 244: error: expected a ";"
+|      uint8_t uartDat = 0;
+|              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 249: error: identifier "uartDat" is undefined
+|          if(EN_QUEUE_OPT_EMPTY == Srv_QueueOut(pTxQueue, &uartDat))
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c, line 262: error: identifier "uartDat" is undefined
+|          uartDat = Drv_UartGetRevData(EN_WIFI_COM);
+|          ^
+
+85 errors detected in the compilation of "hal_uart.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c: warning: Failed compilation.
+Verifying hal_wdg.c (14/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+1 error detected in the compilation of "hal_wdg.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog\hal_wdg.c: warning: Failed compilation.
+Verifying main.c (15/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\rte.h, line 21: warning: could not find include file "rte_bsw_srv_if.h"
+|  #include "rte_bsw_srv_if.h"
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c, line 12: warning: could not find include file "rte_debug_if.h"
+|  #include "rte_debug_if.h"
+|                           ^
+
+Verifying signal_segv.c (16/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 48: error: struct "40" has no field "arm_r0"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",0, uc->uc_mcontext . arm_r0);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 49: error: struct "40" has no field "arm_r1"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",1, uc->uc_mcontext . arm_r1);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 50: error: struct "40" has no field "arm_r2"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",2, uc->uc_mcontext . arm_r2);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 51: error: struct "40" has no field "arm_r3"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",3, uc->uc_mcontext . arm_r3);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 52: error: struct "40" has no field "arm_r4"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",4, uc->uc_mcontext . arm_r4);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 53: error: struct "40" has no field "arm_r5"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",5, uc->uc_mcontext . arm_r5);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 54: error: struct "40" has no field "arm_r6"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",6, uc->uc_mcontext . arm_r6);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 55: error: struct "40" has no field "arm_r7"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",7, uc->uc_mcontext . arm_r7);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 56: error: struct "40" has no field "arm_r8"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",8, uc->uc_mcontext . arm_r8);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 57: error: struct "40" has no field "arm_r9"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",9, uc->uc_mcontext . arm_r9);
+|                                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 58: error: struct "40" has no field "arm_r10"
+|          fprintf(stderr, "reg[%02d]         = 0x" "%lx" "\n",10, uc->uc_mcontext . arm_r10);
+|                                                                                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 59: error: struct "40" has no field "arm_fp"
+|          fprintf(stderr, "FP                = 0x" "%lx" "\n",uc->uc_mcontext . arm_fp);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 60: error: struct "40" has no field "arm_ip"
+|          fprintf(stderr, "IP                = 0x" "%lx" "\n",uc->uc_mcontext . arm_ip);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 61: error: struct "40" has no field "arm_sp"
+|          fprintf(stderr, "SP                = 0x" "%lx" "\n",uc->uc_mcontext . arm_sp);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 62: error: struct "40" has no field "arm_lr"
+|          fprintf(stderr, "LR                = 0x" "%lx" "\n",uc->uc_mcontext . arm_lr);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 63: error: struct "40" has no field "arm_pc"
+|          fprintf(stderr, "PC                = 0x" "%lx" "\n",uc->uc_mcontext . arm_pc);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 64: error: struct "40" has no field "arm_cpsr"
+|          fprintf(stderr, "CPSR              = 0x" "%lx" "\n",uc->uc_mcontext . arm_cpsr);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 65: error: struct "40" has no field "fault_address"
+|          fprintf(stderr, "Fault Address     = 0x" "%lx" "\n",uc->uc_mcontext . fault_address);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 66: error: struct "40" has no field "trap_no"
+|          fprintf(stderr, "Trap no           = 0x" "%lx" "\n",uc->uc_mcontext . trap_no);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 67: error: struct "40" has no field "error_code"
+|          fprintf(stderr, "Err Code  = 0x" "%lx" "\n",uc->uc_mcontext . error_code);
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 99: error: struct "40" has no field "arm_fp"
+|          const void **frame_pointer = (const void **)uc->uc_mcontext.arm_fp;
+|                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c, line 100: error: struct "40" has no field "arm_pc"
+|          const void *return_address = (const void *)uc->uc_mcontext.arm_pc;
+|                                                                     ^
+
+22 errors detected in the compilation of "signal_segv.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c: warning: Failed compilation.
+Verifying osal.c (17/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\Timer\drv_timer_pub.h, line 27: error: identifier "uint32_t" is undefined
+|  void Drv_SysTickSetReload(uint32_t val);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetDwtCnt(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\DWT\drv_dwt_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_GetCpuFreq(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h, line 104: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetCurIntID(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 33: error: identifier "uint32_t" is undefined
+|  void Drv_RtcSetCount(uint32_t secCnt);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\RTC\drv_rtc_pub.h, line 34: error: identifier "uint32_t" is undefined
+|  uint32_t Drv_RtcGetCount(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 23: error: identifier "uint16_t" is undefined
+|      uint16_t rtcYear;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 24: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMon;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 25: error: identifier "uint8_t" is undefined
+|      uint8_t rtcDay;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 26: error: identifier "uint8_t" is undefined
+|      uint8_t rtcHour;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 27: error: identifier "uint8_t" is undefined
+|      uint8_t rtcMin;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 28: error: identifier "uint8_t" is undefined
+|      uint8_t rtcSec;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h, line 29: error: identifier "uint8_t" is undefined
+|      uint8_t rtcWeek;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 133: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_GetCurTs(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 135: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 38: error: identifier "uint8_t" is undefined
+|  SpiError_t Drv_Spi2RWByte(const uint8_t txDat, uint8_t * rxDat);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SPI\drv_spi_pub.h, line 39: error: identifier "uint8_t" is undefined
+|  void Drv_Spi2SetSpeed(uint8_t baudRatePre);
+|                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 74: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardResponseIsCorrect(uint8_t resp);
+|                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 75: error: identifier "uint16_t" is undefined
+|  SdCardErr_t Drv_SDCardRevDat(uint8_t *pBuf, uint16_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 76: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Drv_SDCardSendBlock(const uint8_t pBuf[], uint8_t cmd);
+|                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint32_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareDriverLayer\SD\drv_sd_pub.h, line 77: error: identifier "uint8_t" is undefined
+|  uint8_t Drv_SDCardSendCmd(uint8_t cmd, uint32_t arg, uint8_t crc);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 21: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCID(uint8_t *pCID);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 22: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 23: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardGetSectorNum(uint32_t *pSectorNum);
+|                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 24: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardReadDisk(uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint32_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h, line 25: error: identifier "uint8_t" is undefined
+|  SdCardErr_t Hal_SDCardWriteDisk(const uint8_t *pBuf, uint32_t sector, uint8_t cnt);
+|                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h, line 27: error: identifier "uint8_t" is undefined
+|  uint8_t Hal_GetWifiLedSta(void);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 183: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_OpenW(FSAL_FIL *pFil, const FSAL_CHAR *pPath, const FSAL_CHAR *pDir, uint32_t dirLen);
+|                                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint8_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 184: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree);
+|                                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\inc\osal.h, line 186: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_MkDir(const FSAL_CHAR *pDir, uint32_t len);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 65: error: identifier "uint8_t" is undefined
+|  void Srv_MemInit(uint8_t memx);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 67: error: identifier "uint32_t" is undefined
+|  void Srv_MemCopy(void *des, const void *src, uint32_t len);
+|                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 69: error: identifier "u8" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count);
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 69: error: identifier "u32" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 71: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 71: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx);
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 73: error: identifier "uint8_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size);
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 73: error: identifier "uint32_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 75: error: identifier "uint8_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size);
+|                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 75: error: identifier "uint32_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 77: error: identifier "uint8_t" is undefined
+|  void Srv_Free(uint8_t memx, void *ptr);
+|                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 13: error: identifier "uint32_t" is undefined
+|  static FsDirAnaySta_t Fsal_AnaysisDir(const FSAL_CHAR *pDir, uint32_t dirLev, uint32_t len, FSAL_CHAR *pDest);
+|                                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 13: error: identifier "uint32_t" is undefined
+|  static FsDirAnaySta_t Fsal_AnaysisDir(const FSAL_CHAR *pDir, uint32_t dirLev, uint32_t len, FSAL_CHAR *pDest);
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 375: error: identifier "uint16_t" is undefined
+|          tMs = (uint16_t)(ms % 1000u);
+|                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 381: error: identifier "uint16_t" is undefined
+|          tMs = (uint16_t)ms;
+|                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 381: error: expected a ";"
+|          tMs = (uint16_t)ms;
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 406: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_GetCurTs(void)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 425: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 425: error: identifier "uint32_t" is undefined
+|  uint32_t Osal_DiffTsToUsec(uint32_t lastTs)
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 427: error: identifier "uint32_t" is undefined
+|      uint32_t curTs = Osal_GetCurTs();
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 436: error: identifier "uint32_t" is undefined
+|          curTs = (uint32_t)(((0xFFFFFFFFUL - lastTs) + curTs) + 1U);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 439: error: identifier "uint32_t" is undefined
+|      return (uint32_t)CPU_TS32_to_uSec(curTs);
+|              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 439: error: expected a ";"
+|      return (uint32_t)CPU_TS32_to_uSec(curTs);
+|                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 462: error: identifier "uint32_t" is undefined
+|  static FsDirAnaySta_t Fsal_AnaysisDir(const FSAL_CHAR *pDir, uint32_t dirLev, uint32_t len, FSAL_CHAR *pDest)
+|                                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 462: error: identifier "uint32_t" is undefined
+|  static FsDirAnaySta_t Fsal_AnaysisDir(const FSAL_CHAR *pDir, uint32_t dirLev, uint32_t len, FSAL_CHAR *pDest)
+|                                                                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 464: error: identifier "uint32_t" is undefined
+|      uint32_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 465: error: identifier "uint32_t" is undefined
+|      uint32_t volcnt = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 520: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_MkDir(const FSAL_CHAR *pDir, uint32_t len)
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 522: error: identifier "uint32_t" is undefined
+|      uint32_t i = 1;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 569: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_OpenW(FSAL_FIL *pFil, const FSAL_CHAR *pPath, const FSAL_CHAR *pDir, uint32_t dirLen)
+|                                                                                      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 721: error: identifier "uint8_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree)
+|                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 721: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree)
+|                                            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 721: error: identifier "uint32_t" is undefined
+|  FSAL_FRES Fsal_DiskGetfree(uint8_t *pdrv, uint32_t *total, uint32_t *pFree)
+|                                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c, line 766: error: identifier "uint8_t" is undefined
+|      uint8_t cnt = 0;
+|      ^
+
+79 errors detected in the compilation of "osal.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c: warning: Failed compilation.
+Verifying srv_algor.c (18/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h, line 26: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_GetRand16(uint16_t seed);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h, line 26: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_GetRand16(uint16_t seed);
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h, line 28: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h, line 28: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor);
+|                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h, line 28: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor);
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h, line 28: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor);
+|                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 28: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_GetRand16(uint16_t seed)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 28: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_GetRand16(uint16_t seed)
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 30: error: identifier "uint16_t" is undefined
+|      uint16_t randValue = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 31: error: identifier "uint16_t" is undefined
+|      uint16_t tRandSeed = seed;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 33: error: identifier "uint16_t" is undefined
+|      randValue = (uint16_t)(((0x17U*tRandSeed) + 0x31U) % 0xFFF3U);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 53: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 53: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor)
+|                                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 53: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor)
+|                                                 ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 53: error: identifier "uint16_t" is undefined
+|  uint16_t Srv_FirstOrderFilter(uint16_t curDat, uint16_t lastDat, uint16_t filterFactor)
+|                                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 55: error: identifier "uint16_t" is undefined
+|      uint16_t tFilterRes = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 56: error: identifier "uint32_t" is undefined
+|      uint32_t temp = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 60: error: identifier "uint32_t" is undefined
+|          temp = ((uint32_t)(curDat - lastDat))*((uint32_t)filterFactor);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 60: error: expected a ")"
+|          temp = ((uint32_t)(curDat - lastDat))*((uint32_t)filterFactor);
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 61: error: identifier "uint16_t" is undefined
+|          tFilterRes = lastDat + (uint16_t)(temp / 256U);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 65: error: identifier "uint32_t" is undefined
+|          temp = ((uint32_t)(lastDat - curDat))*((uint32_t)filterFactor);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 65: error: expected a ")"
+|          temp = ((uint32_t)(lastDat - curDat))*((uint32_t)filterFactor);
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c, line 66: error: identifier "uint16_t" is undefined
+|          tFilterRes = (uint16_t)(lastDat - (uint32_t)(temp / 256U));
+|                        ^
+
+24 errors detected in the compilation of "srv_algor.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c: warning: Failed compilation.
+Verifying srv_memory.c (19/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 65: error: identifier "uint8_t" is undefined
+|  void Srv_MemInit(uint8_t memx);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 67: error: identifier "uint32_t" is undefined
+|  void Srv_MemCopy(void *des, const void *src, uint32_t len);
+|                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 69: error: identifier "u8" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count);
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 69: error: identifier "u32" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 71: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 71: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx);
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 73: error: identifier "uint8_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size);
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 73: error: identifier "uint32_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 75: error: identifier "uint8_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size);
+|                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 75: error: identifier "uint32_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 77: error: identifier "uint8_t" is undefined
+|  void Srv_Free(uint8_t memx, void *ptr);
+|                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 59: error: identifier "uint32_t" is undefined
+|  void Srv_MemCopy(void *des, const void *src, uint32_t len)
+|                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 61: error: identifier "u8" is undefined
+|      u8 *xdes = des;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 61: error: identifier "xdes" is undefined
+|      u8 *xdes = des;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 62: error: "u8" is not a type name
+|      const u8 *xsrc = src;
+|            ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 88: error: identifier "u8" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count)
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 88: error: identifier "u32" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count)
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 90: error: identifier "u8" is undefined
+|      u8 *xs = s;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 90: error: identifier "xs" is undefined
+|      u8 *xs = s;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 116: error: identifier "uint8_t" is undefined
+|  void Srv_MemInit(uint8_t memx)
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 138: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 138: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx)
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 274: error: identifier "uint8_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size)
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 274: error: identifier "uint32_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size)
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 314: error: identifier "uint8_t" is undefined
+|  void Srv_Free(uint8_t memx, void *ptr)
+|                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 350: error: identifier "uint8_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size)
+|                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c, line 350: error: identifier "uint32_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size)
+|                                              ^
+
+28 errors detected in the compilation of "srv_memory.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c: warning: Failed compilation.
+Verifying srv_queue.c (20/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 32: error: identifier "uint16_t" is undefined
+|      uint16_t frontInx;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 33: error: identifier "uint16_t" is undefined
+|      uint16_t rearInx;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 34: error: identifier "uint8_t" is undefined
+|      volatile uint8_t *qBuffer;
+|               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 35: error: identifier "uint16_t" is undefined
+|      uint16_t bufSize;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 36: error: identifier "uint16_t" is undefined
+|      uint16_t maxBufSize;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 39: error: identifier "uint8_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 39: error: identifier "uint16_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
+|                                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 41: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueIn(volatile SrvQueue_t *pQue, uint8_t dat);
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 43: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueOut(volatile SrvQueue_t *pQue, uint8_t *dat);
+|                                                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\inc\srv_queue.h, line 49: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_ReadQueueHead(volatile SrvQueue_t *pQue, uint8_t *dat);
+|                                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c, line 27: error: identifier "uint8_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize)
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c, line 27: error: identifier "uint16_t" is undefined
+|  void Srv_QueueInit(volatile SrvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize)
+|                                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c, line 104: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueIn(volatile SrvQueue_t *pQue, uint8_t dat)
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c, line 140: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_QueueOut(volatile SrvQueue_t *pQue, uint8_t *dat)
+|                                                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c, line 176: error: identifier "uint8_t" is undefined
+|  SrvQueueError_t Srv_ReadQueueHead(volatile SrvQueue_t *pQue, uint8_t *dat)
+|                                                               ^
+
+16 errors detected in the compilation of "srv_queue.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c: warning: Failed compilation.
+Verifying std_lib.c (21/21) [C]
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\RuntimeEnvironment\Env_Config\platforms.h, line 53: error: identifier "uint8_t" is undefined
+|  typedef uint8_t StdBoolean_t;
+|          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 33: error: identifier "uint32_t" is undefined
+|  StdBoolean_t Srv_MemCmp(const void * str, const void * des, uint32_t strLen, uint32_t desLen);
+|                                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 33: error: identifier "uint32_t" is undefined
+|  StdBoolean_t Srv_MemCmp(const void * str, const void * des, uint32_t strLen, uint32_t desLen);
+|                                                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 35: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 35: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen);
+|                                                                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 35: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen);
+|                                                                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 37: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringEndIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 37: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringEndIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen);
+|                                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 37: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringEndIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen);
+|                                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 39: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveHeaderString(void * str, uint32_t removeLen, uint32_t strLen);
+|                                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 39: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveHeaderString(void * str, uint32_t removeLen, uint32_t strLen);
+|                                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 41: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveEndString(void * str, uint32_t removeLen, uint32_t strLen);
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 41: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveEndString(void * str, uint32_t removeLen, uint32_t strLen);
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 43: error: identifier "uint32_t" is undefined
+|  void Srv_AppendString(void *original, void *appendStr, uint32_t appendLen, uint32_t strMaxLen);
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 43: error: identifier "uint32_t" is undefined
+|  void Srv_AppendString(void *original, void *appendStr, uint32_t appendLen, uint32_t strMaxLen);
+|                                                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h, line 45: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_GetStringLen(const void * str);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 65: error: identifier "uint8_t" is undefined
+|  void Srv_MemInit(uint8_t memx);
+|                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 67: error: identifier "uint32_t" is undefined
+|  void Srv_MemCopy(void *des, const void *src, uint32_t len);
+|                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 69: error: identifier "u8" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count);
+|                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 69: error: identifier "u32" is undefined
+|  void Srv_MemSet(void *s,u8 c,u32 count);
+|                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 71: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx);
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 71: error: identifier "uint8_t" is undefined
+|  uint8_t Srv_MemPerused(uint8_t memx);
+|                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 73: error: identifier "uint8_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size);
+|                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 73: error: identifier "uint32_t" is undefined
+|  void * Srv_Malloc(uint8_t memx, uint32_t size);
+|                                  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 75: error: identifier "uint8_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size);
+|                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 75: error: identifier "uint32_t" is undefined
+|  void * Srv_Realloc(uint8_t memx, void *ptr, uint32_t size);
+|                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h, line 77: error: identifier "uint8_t" is undefined
+|  void Srv_Free(uint8_t memx, void *ptr);
+|                ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 47: error: identifier "uint32_t" is undefined
+|  StdBoolean_t Srv_MemCmp(const void * str, const void * des, uint32_t strLen, uint32_t desLen)
+|                                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 47: error: identifier "uint32_t" is undefined
+|  StdBoolean_t Srv_MemCmp(const void * str, const void * des, uint32_t strLen, uint32_t desLen)
+|                                                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 50: error: identifier "uint32_t" is undefined
+|      uint32_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 87: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 87: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen)
+|                                                                    ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 87: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen)
+|                                                                                     ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 89: error: identifier "uint32_t" is undefined
+|      uint32_t tIndex = 0xFFFFFFFFUL;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 90: error: identifier "uint32_t" is undefined
+|      uint32_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 125: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringEndIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 125: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringEndIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen)
+|                                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 125: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_FindStringEndIndex(const void * str, const void * dest, uint32_t strLen, uint32_t destLen)
+|                                                                                        ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 127: error: identifier "uint32_t" is undefined
+|      uint32_t tIndex = 0xFFFFFFFFUL;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 128: error: identifier "uint32_t" is undefined
+|      uint32_t i = 0;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 161: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveHeaderString(void * str, uint32_t removeLen, uint32_t strLen)
+|                                          ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 161: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveHeaderString(void * str, uint32_t removeLen, uint32_t strLen)
+|                                                              ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 180: error: identifier "uint8_t" is undefined
+|          Srv_MemSet(str, (uint8_t)EndOfString, strLen);
+|                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 180: error: too few arguments in function call
+|          Srv_MemSet(str, (uint8_t)EndOfString, strLen);
+|                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 180: error: expected a ")"
+|          Srv_MemSet(str, (uint8_t)EndOfString, strLen);
+|                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 187: error: identifier "uint8_t" is undefined
+|      Srv_MemSet(&srcStr[strLen - removeLen], (uint8_t)EndOfString, removeLen);
+|                                               ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 187: error: too few arguments in function call
+|      Srv_MemSet(&srcStr[strLen - removeLen], (uint8_t)EndOfString, removeLen);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 187: error: expected a ")"
+|      Srv_MemSet(&srcStr[strLen - removeLen], (uint8_t)EndOfString, removeLen);
+|                                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 206: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveEndString(void * str, uint32_t removeLen, uint32_t strLen)
+|                                       ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 206: error: identifier "uint32_t" is undefined
+|  void Srv_RemoveEndString(void * str, uint32_t removeLen, uint32_t strLen)
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 217: error: identifier "uint8_t" is undefined
+|          Srv_MemSet(str, (uint8_t)EndOfString, strLen);
+|                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 217: error: too few arguments in function call
+|          Srv_MemSet(str, (uint8_t)EndOfString, strLen);
+|                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 217: error: expected a ")"
+|          Srv_MemSet(str, (uint8_t)EndOfString, strLen);
+|                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 221: error: identifier "uint8_t" is undefined
+|          Srv_MemSet(&srcStr[strLen - removeLen], (uint8_t)EndOfString, removeLen);
+|                                                   ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 221: error: too few arguments in function call
+|          Srv_MemSet(&srcStr[strLen - removeLen], (uint8_t)EndOfString, removeLen);
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 221: error: expected a ")"
+|          Srv_MemSet(&srcStr[strLen - removeLen], (uint8_t)EndOfString, removeLen);
+|                                                           ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 239: error: identifier "uint32_t" is undefined
+|  void Srv_AppendString(void *original, void *appendStr, uint32_t appendLen, uint32_t strMaxLen)
+|                                                         ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 239: error: identifier "uint32_t" is undefined
+|  void Srv_AppendString(void *original, void *appendStr, uint32_t appendLen, uint32_t strMaxLen)
+|                                                                             ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 241: error: identifier "uint32_t" is undefined
+|      uint32_t originalLen = Srv_GetStringLen(original);
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 242: error: identifier "uint32_t" is undefined
+|      uint32_t destStrLen = appendLen + originalLen;
+|      ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 266: error: identifier "uint32_t" is undefined
+|  uint32_t Srv_GetStringLen(const void * str)
+|  ^
+
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c, line 269: error: identifier "uint32_t" is undefined
+|      uint32_t tLen = 0;
+|      ^
+
+62 errors detected in the compilation of "std_lib.c".
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c: warning: Failed compilation.
+Global compilation phase...
+
+Warning: 19 files failed to compile (90% of all files).
+|        Trying to link compiled files anyway.
+Warning: Both C and C++ coding standard checkers enabled: Using C++ checkers to detect project-wide rule violations in mixed C/C++ project.
+Linking phase for C++ coding standards...
+Warning: C++ compilation and linking of translation units failed. This can lead to incomplete results for project-wide C++ coding standard violations. Relaunch with option -verbose to obtain more details.
+
+Number of files                  : 21
+Number of lines                  : 4654
+Number of lines without comments : 2483
+
+Verifying cross-files armcc C-CPP compliance
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c, line 28: Warning: procedure 'main' multiply defined:
+| previously defined at E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\Debug\debug_client.c, line 45
+| warning when linking the 2 translation units:
+| E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c
+| E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\Debug\debug_client.c
+
+
+Stubbing standard library functions ...
+Remark: The generated default DRS XML file "drs-template.xml" can be found in <result_dir> folder.
+Doing code transformations ...
+
+
+**********************************************************
+MISRA C:2012 Rule checker results
+ Use the Report Generator in order to get the complete report.
+Coding standards checking might not be complete. Some rule violations
+ are detected after the source compliance checking phase.
+**********************************************************
+Summary per file:
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c: 
+    23 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.h: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c: 
+    15 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.c: 
+    20 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c: 
+    4 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\Debug\debug_client.c: 
+    9 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c: 
+    9 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c: 
+    11 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c: 
+    36 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h: 
+    7 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c: 
+    41 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h: 
+    9 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c: 
+    19 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c: 
+    17 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h: 
+    6 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c: 
+    5 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c: 
+    51 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c: 
+    35 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h: 
+    15 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c: 
+    16 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h: 
+    11 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c: 
+    26 rules violated
+**********************************************************
+Summary per rule:
+  rule D2.1 violated 321 times
+  rule 17.3 violated 34 times
+  rule 20.7 violated 21 times
+  rule 8.2 violated 5 times
+  rule 21.6 violated 4 times
+  rule 1.3 violated 3 times
+  rule 15.6 violated 3 times
+  rule 9.3 violated 3 times
+  rule 17.7 violated 2 times
+  rule 2.1 violated 2 times
+  rule 20.8 violated 2 times
+  rule 21.5 violated 2 times
+  rule 10.3 violated 1 time
+  rule 11.3 violated 1 time
+  rule 21.1 violated 1 time
+  rule 8.3 violated 1 time
+  rule 8.5 violated 1 time
+  rule 8.6 violated 1 time
+  rule 8.8 violated 1 time
+  rule 9.2 violated 1 time
+
+
+
+
+Packing compilation data
+
+Defects statistics:
+  - Total number of defects: 1
+  - DECL_MISMATCH: 1
+done.
+
+**********************************************************
+***
+*** armcc C-CPP source compliance checking done
+***
+**********************************************************
+Ending at: Mon Sep 06 21:26:49 2021
+User time for compilation: 00:00:45.51 (45.52real, 45.52u + 0s)
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Sep 06 21:26:49 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Pre-analysis
+***
+**********************************************************
+**** Bug-finder - Pre-analysis - 1 (P_AL)
+Total complexity = 1025
+**** Bug-finder - Pre-analysis - 1 (P_AL) took 0.37real, 0.37u + 0s
+**** Bug-finder - Pre-analysis - 2 (P_ACP)
+* n-acp-t = 0 n-epp' = 0 n-acp-l = 0
+**** Bug-finder - Pre-analysis - 2 (P_ACP) took 0.05real, 0.05u + 0s
+**** Bug-finder - Pre-analysis - 3 (P_O)
+**** Bug-finder - Pre-analysis - 3 (P_O) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 4 (P_MA)
+**** Bug-finder - Pre-analysis - 4 (P_MA) took 0.02real, 0.02u + 0s
+**** Bug-finder - Pre-analysis - 5 (P_G)
+**** Bug-finder - Pre-analysis - 5 (P_G) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 6 (P_DRC)
+**** Bug-finder - Pre-analysis - 6 (P_DRC) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 7 (P_TT)
+**** Bug-finder - Pre-analysis - 7 (P_TT) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 8 (P_FI)
+**** Bug-finder - Pre-analysis - 8 (P_FI) took 0.04real, 0.04u + 0s
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 1
+  - DECL_MISMATCH: 1
+
+GUI files generation completed in 0.69real
+
+**********************************************************
+***
+*** Bug-finder - Pre-analysis done
+***
+**********************************************************
+Ending at: Mon Sep 06 21:26:51 2021
+User time for pre-analysis: 00:00:02.63 (2.63real, 2.63u + 0s (0.2gc))
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Sep 06 21:26:51 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Function Analysis
+***
+**********************************************************
+**** Bug-finder - Function Analysis - (Verifying function #1 / 3: close)
+**** Bug-finder - Function Analysis - (Verifying function #2 / 3: main)
+**** Bug-finder - Function Analysis - (Verifying function #3 / 3: main)
+**** Bug-finder - Function Analysis - (Verifying function #2 / 3: main) took 1.11real
+**** Bug-finder - Function Analysis - (Verifying function #1 / 3: close) took 0.96real
+**** Bug-finder - Function Analysis - (Verifying function #3 / 3: main) took 1.93real
+Maximum Memory Usage: 575 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 2
+  - UNREACHABLE: 1
+  - DECL_MISMATCH: 1
+
+GUI files generation completed in 0.88real
+
+* Total IL complexity: 1650
+
+**********************************************************
+***
+*** Bug-finder - Function Analysis done
+***
+**********************************************************
+Ending at: Mon Sep 06 21:26:57 2021
+User time for function: 00:00:05.19 (5.2real, 5.2u + 0s (0.05gc))
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Sep 06 21:26:57 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Module Analysis
+***
+**********************************************************
+**** Bug-finder - Module Analysis - 1 (Computing modules)
+**** Bug-finder - Module Analysis - 1 (Computing modules) took 0.03real, 0.03u + 0s
+* Created 1 module
+**** Bug-finder - Module Analysis - (Verifying module #1 / 1: 2 functions)
+**** Bug-finder - Module Analysis - (Verifying module #1 / 1: 2 functions) took 0.87real
+Maximum Memory Usage: 575 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 2
+  - UNREACHABLE: 1
+  - DECL_MISMATCH: 1
+
+GUI files generation completed in 0.69real
+
+**********************************************************
+***
+*** Bug-finder - Module Analysis done
+***
+**********************************************************
+Ending at: Mon Sep 06 21:26:59 2021
+User time for module: 00:00:02.63 (2.64real, 2.64u + 0s (0.06gc))
+
+Polyspace C/C++ analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Sep 06 21:26:59 2021
+Host: MINGW64_NTx_64-6.2 ENVY 0 amd64
+User: HP
+**********************************************************
+***
+*** Beginning Bug-finder - Global analysis
+***
+**********************************************************
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 2
+  - UNREACHABLE: 1
+  - DECL_MISMATCH: 1
+
+GUI files generation completed in 0.75real
+
+
+**********************************************************
+MISRA C:2012 Rule checker results
+ Use the Report Generator in order to get the complete report.
+**********************************************************
+Summary per file:
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c: 
+    23 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.h: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c: 
+    15 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.c: 
+    20 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c: 
+    4 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\Debug\debug_client.c: 
+    11 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c: 
+    9 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int_pub.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c: 
+    11 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key_pub.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c: 
+    2 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led_pub.h: 
+    1 rule violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.c: 
+    36 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\RTC\hal_rtc_pub.h: 
+    7 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd.c: 
+    41 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\SD\hal_sd_pub.h: 
+    9 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.c: 
+    19 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Uart\hal_uart_pub.h: 
+    3 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c: 
+    17 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.h: 
+    6 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c: 
+    5 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c: 
+    51 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c: 
+    35 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.h: 
+    15 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c: 
+    16 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.h: 
+    11 rules violated
+  File E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c: 
+    26 rules violated
+**********************************************************
+Summary per rule:
+  rule D2.1 violated 321 times
+  rule 17.3 violated 34 times
+  rule 20.7 violated 21 times
+  rule 8.2 violated 5 times
+  rule 21.6 violated 4 times
+  rule 1.3 violated 3 times
+  rule 15.6 violated 3 times
+  rule 9.3 violated 3 times
+  rule 17.7 violated 2 times
+  rule 2.1 violated 2 times
+  rule 20.8 violated 2 times
+  rule 21.5 violated 2 times
+  rule D4.7 violated 2 times
+  rule 10.3 violated 1 time
+  rule 11.3 violated 1 time
+  rule 21.1 violated 1 time
+  rule 8.3 violated 1 time
+  rule 8.5 violated 1 time
+  rule 8.6 violated 1 time
+  rule 8.8 violated 1 time
+  rule 9.2 violated 1 time
+
+Importing comments from E:\git\Embedded_Software_Architecture\04_Project_Test\00_SoftwareTest\Polyspace\Module_1\BF_Result\comments_bak folder
+
+Operation completed:
+--------------------
+
+Diff statistics for Defect results:
+-----------------------------------
+| Number of backuped comments attached to disappeared results                : 0
+| Number of unmatched uncommented results                                    : 7
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 1
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 8
+
+Diff statistics for MISRA C:2012 results:
+-----------------------------------------
+| Number of backuped comments attached to disappeared results                : 0
+| Number of unmatched uncommented results                                    : 55
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 3
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 58
+
+
+**********************************************************
+***
+*** Bug-finder - Global analysis done
+***
+**********************************************************
+Ending at: Mon Sep 06 21:27:01 2021
+User time for global: 00:00:01.81 (1.81real, 1.81u + 0s (0.05gc))
+User time for polyspace-bug-finder: 00:01:00 (60.36real, 60.36u + 0s (0.39gc))
+
+***
+*** End of Polyspace analysis
+***

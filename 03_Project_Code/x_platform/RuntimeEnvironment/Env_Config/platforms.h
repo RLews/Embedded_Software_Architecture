@@ -64,6 +64,9 @@ typedef uint8_t StdBoolean_t;
 #define NULL        ((void *)0x00000000UL)
 #endif
 
+#define ArrayLength(Array) (sizeof(Array) / sizeof(Array[0]))
+
+
 /*! @brief 驱动配置项 */
 #define EXTERN_SRAM_ENABLE              D_STD_DISABLE   /*!< 外部SRAM配置 */
 #define D_SYS_WDG_ENABLE                D_STD_ON        /*!< 看门狗配置 */

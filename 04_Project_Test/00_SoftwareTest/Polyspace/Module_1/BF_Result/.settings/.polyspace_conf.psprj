@@ -3,8 +3,48 @@
 <polyspace_project name="x_platform" product="Polyspace C CPP" author="HP" version="1.0" date="16/08/2021" path="file:/E:/git/Embedded_Software_Architecture/04_Project_Test/00_SoftwareTest/Polyspace/x_platform.psprj" rev="2.1">
   <source>
     <root_folder path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/" isnested="true" filter=".cpp,.cxx,.cc,.c">
+      <file path=".x_platform.si4project/Backup/debug_client(4752).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/debug_cmd(5120).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/debug_cmd(563).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/debug_elog_if(4117).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/debug_tp(2997).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/debug_tp(4846).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/elog_file_port(1678).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/elog_if(3109).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/elog_if(6764).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/elog_level_ctrl(6420).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/elog_port(2423).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/elog_port(7206).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/main(112).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/main(1644).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/main(1678).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/main(2783).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/main(3587).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/main(6474).c" excluded="true"/>
       <file path=".x_platform.si4project/Backup/main(7047).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/main(970).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/osal(1695).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/srv_algor(5136).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/std_lib(2746).c" excluded="true"/>
+      <file path=".x_platform.si4project/Backup/std_lib(4229).c" excluded="true"/>
+      <file path="ApplicationLayer/cJSON/cJSON.c" excluded="true"/>
+      <file path="ApplicationLayer/cJSON/cJSON_Utils.c" excluded="true"/>
+      <file path="ApplicationLayer/Debug_Cmd/debug_cmd.c"/>
+      <file path="ApplicationLayer/Debug_Cmd/debug_elog_if.c"/>
+      <file path="ApplicationLayer/Debug_Cmd/debug_tp.c"/>
+      <file path="ApplicationLayer/easylogger/plugins/file/elog_file.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/plugins/file/elog_file_port.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/plugins/flash/elog_flash.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/plugins/flash/elog_flash_port.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/port/elog_if.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/port/elog_level_ctrl.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/port/elog_port.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/src/elog.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/src/elog_async.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/src/elog_buf.c" excluded="true"/>
+      <file path="ApplicationLayer/easylogger/src/elog_utils.c" excluded="true"/>
       <file path="ApplicationLayer/main/main.c"/>
+      <file path="Debug/debug_client.c"/>
       <file path="HardwareAbstractionLayer/Interrupt/hal_int.c"/>
       <file path="HardwareAbstractionLayer/Key/hal_key.c"/>
       <file path="HardwareAbstractionLayer/Led/hal_led.c"/>
@@ -52,6 +92,7 @@
       <file path="HardwareDriverLayer/Watchdog/drv_wdg.c"/>
       <file path="ServicesLayer/Algor/srv_algor.c"/>
       <file path="ServicesLayer/DataStructOpt/src/srv_queue.c"/>
+      <file path="ServicesLayer/ExceptionSignalCapture/signal_segv.c"/>
       <file path="ServicesLayer/FATFS/doc/img/app1.c"/>
       <file path="ServicesLayer/FATFS/doc/img/app2.c"/>
       <file path="ServicesLayer/FATFS/doc/img/app3.c"/>
@@ -130,8 +171,8 @@
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/Lib/" order="26"/>
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/Memory/" order="27"/>
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/HardwareDriverLayer/STM32F10x_FWLib/inc/" order="28"/>
-    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Hal_Interface/" order="29"/>
-    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Service_Interface/" order="30"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Hal_Interface" order="29"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Service_Interface" order="30"/>
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/DataStructOpt/inc/" order="31"/>
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/FATFS/src/" order="32"/>
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/osal/inc/" order="33"/>
@@ -145,12 +186,64 @@
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/uCOSIII/uCOS-III/Ports/ARM-Cortex-M3/Generic/GNU/" order="41"/>
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/uCOSIII/uCOS-III/Ports/ARM-Cortex-M3/Generic/IAR/" order="42"/>
     <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/uCOSIII/uCOS-III/Ports/ARM-Cortex-M3/Generic/RealView/" order="43"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/Debug/" order="44"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/cJSON/" order="45"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/Debug_Cmd/" order="46"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Appl_Interface/" order="47"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Hal_Interface/" order="48"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Rte_Linux/" order="49"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Rte_Rtos/" order="50"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Service_Interface/" order="51"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/inc/" order="52"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/port/" order="53"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/plugins/file/" order="54"/>
+    <file path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/plugins/flash/" order="55"/>
   </include>
   <module name="Module_1" path="file:/E:/git/Embedded_Software_Architecture/04_Project_Test/00_SoftwareTest/Polyspace/Module_1/" isactive="true">
     <source>
       <root_folder path="file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/" isnested="true">
+        <file path=".x_platform.si4project/Backup/debug_client(4752).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/debug_cmd(5120).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/debug_cmd(563).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/debug_elog_if(4117).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/debug_tp(2997).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/debug_tp(4846).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/elog_file_port(1678).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/elog_if(3109).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/elog_if(6764).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/elog_level_ctrl(6420).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/elog_port(2423).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/elog_port(7206).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/main(112).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/main(1644).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/main(1678).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/main(2783).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/main(3587).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/main(6474).c" excluded="true"/>
         <file path=".x_platform.si4project/Backup/main(7047).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/main(970).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/osal(1695).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/srv_algor(5136).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/std_lib(2746).c" excluded="true"/>
+        <file path=".x_platform.si4project/Backup/std_lib(4229).c" excluded="true"/>
+        <file path="ApplicationLayer/cJSON/cJSON.c" excluded="true"/>
+        <file path="ApplicationLayer/cJSON/cJSON_Utils.c" excluded="true"/>
+        <file path="ApplicationLayer/Debug_Cmd/debug_cmd.c"/>
+        <file path="ApplicationLayer/Debug_Cmd/debug_elog_if.c"/>
+        <file path="ApplicationLayer/Debug_Cmd/debug_tp.c"/>
+        <file path="ApplicationLayer/easylogger/plugins/file/elog_file.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/plugins/file/elog_file_port.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/plugins/flash/elog_flash.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/plugins/flash/elog_flash_port.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/port/elog_if.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/port/elog_level_ctrl.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/port/elog_port.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/src/elog.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/src/elog_async.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/src/elog_buf.c" excluded="true"/>
+        <file path="ApplicationLayer/easylogger/src/elog_utils.c" excluded="true"/>
         <file path="ApplicationLayer/main/main.c"/>
+        <file path="Debug/debug_client.c"/>
         <file path="HardwareAbstractionLayer/Interrupt/hal_int.c"/>
         <file path="HardwareAbstractionLayer/Key/hal_key.c"/>
         <file path="HardwareAbstractionLayer/Led/hal_led.c"/>
@@ -198,6 +291,7 @@
         <file path="HardwareDriverLayer/Watchdog/drv_wdg.c" excluded="true"/>
         <file path="ServicesLayer/Algor/srv_algor.c"/>
         <file path="ServicesLayer/DataStructOpt/src/srv_queue.c"/>
+        <file path="ServicesLayer/ExceptionSignalCapture/signal_segv.c"/>
         <file path="ServicesLayer/FATFS/doc/img/app1.c" excluded="true"/>
         <file path="ServicesLayer/FATFS/doc/img/app2.c" excluded="true"/>
         <file path="ServicesLayer/FATFS/doc/img/app3.c" excluded="true"/>
@@ -254,6 +348,8 @@
         <element>STM32F10X_HD=</element>
         <element>USE_STDPERIPH_DRIVER=</element>
         <element>__INLINE=</element>
+        <element>D_RTE_PLATFORM_SOC=</element>
+        <element>D_RTE_OS_LINUX=</element>
       </option>
       <option flagname="-I">
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/</element>
@@ -285,8 +381,8 @@
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/Lib/</element>
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/Memory/</element>
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/HardwareDriverLayer/STM32F10x_FWLib/inc/</element>
-        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Hal_Interface/</element>
-        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Service_Interface/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Hal_Interface</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Bsw_Interface/Service_Interface</element>
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/DataStructOpt/inc/</element>
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/FATFS/src/</element>
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/osal/inc/</element>
@@ -300,6 +396,18 @@
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/uCOSIII/uCOS-III/Ports/ARM-Cortex-M3/Generic/GNU/</element>
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/uCOSIII/uCOS-III/Ports/ARM-Cortex-M3/Generic/IAR/</element>
         <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ServicesLayer/uCOSIII/uCOS-III/Ports/ARM-Cortex-M3/Generic/RealView/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/Debug/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/cJSON/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/Debug_Cmd/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Appl_Interface/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Hal_Interface/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Rte_Linux/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Rte_Rtos/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/RuntimeEnvironment/Service_Interface/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/inc/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/port/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/plugins/file/</element>
+        <element>file:/E:/git/Embedded_Software_Architecture/03_Project_Code/x_platform/ApplicationLayer/easylogger/plugins/flash/</element>
       </option>
       <option flagname="-bug-finder">true</option>
       <option flagname="-compiler">armcc</option>

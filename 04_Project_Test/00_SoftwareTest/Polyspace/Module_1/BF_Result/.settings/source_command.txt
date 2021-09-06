@@ -1,4 +1,8 @@
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_cmd.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_elog_if.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\Debug_Cmd\debug_tp.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ApplicationLayer\main\main.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\Debug\debug_client.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Interrupt\hal_int.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Key\hal_key.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Led\hal_led.c
@@ -11,6 +15,7 @@ E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstrac
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\HardwareAbstractionLayer\Watchdog\hal_wdg.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Algor\srv_algor.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\DataStructOpt\src\srv_queue.c
+E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\ExceptionSignalCapture\signal_segv.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Lib\std_lib.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\Memory\srv_memory.c
 E:\git\Embedded_Software_Architecture\03_Project_Code\x_platform\ServicesLayer\osal\src\osal.c
