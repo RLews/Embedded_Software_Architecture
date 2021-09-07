@@ -35,55 +35,55 @@
 
 
 ### 工程目录描述
-├─.keil_project  
-├─ApplicationLayer  
-│  ├─cJSON  
-│  ├─Debug_Cmd  
-│  ├─easylogger  
-│  └─main  
-├─bin  
-├─Debug  
-├─HardwareAbstractionLayer  
-│  ├─Interrupt  
-│  ├─Key  
-│  ├─Led  
-│  ├─Platform  
-│  ├─RTC  
-│  ├─SD  
-│  ├─Sram  
-│  ├─Timer  
-│  ├─Uart  
-│  └─Watchdog  
-├─HardwareDriverLayer  
-│  ├─DWT  
-│  ├─GPIO  
-│  ├─HardwareCore  
-│  ├─Interrupt  
-│  ├─RTC  
-│  ├─SD  
-│  ├─SPI  
-│  ├─Sram  
-│  ├─STM32F10x_FWLib  
-│  ├─Timer  
-│  ├─Uart  
-│  └─Watchdog  
-├─lib  
-├─RuntimeEnvironment  
-│  ├─Appl_Interface  
-│  ├─Env_Config  
-│  ├─Hal_Interface  
-│  ├─Rte_Linux  
-│  ├─Rte_Rtos  
-│  └─Service_Interface  
-└─ServicesLayer  
-    ├─Algor  
-    ├─DataStructOpt  
-    ├─ExceptionSignalCapture  
-    ├─FATFS  
-    ├─Lib  
-    ├─Memory  
-    ├─osal  
-    └─uCOSIII  
+> .keil_project  
+> ApplicationLayer  
+>> cJSON  
+>> Debug_Cmd  
+>> easylogger  
+>> main  
+> bin  
+> Debug  
+> HardwareAbstractionLayer  
+>> Interrupt  
+>> Key  
+>> Led  
+>> Platform  
+>> RTC  
+>> SD  
+>> Sram  
+>> Timer  
+>> Uart  
+>> Watchdog  
+> HardwareDriverLayer  
+>> DWT  
+>> GPIO  
+>> HardwareCore  
+>> Interrupt  
+>> RTC  
+>> SD  
+>> SPI  
+>> Sram  
+>> STM32F10x_FWLib  
+>> Timer  
+>> Uart  
+>> Watchdog  
+> lib  
+> RuntimeEnvironment  
+>> Appl_Interface  
+>> Env_Config  
+>> Hal_Interface  
+>> Rte_Linux  
+>> Rte_Rtos  
+>> Service_Interface  
+> ServicesLayer  
+>> Algor  
+>> DataStructOpt  
+>> ExceptionSignalCapture  
+>> FATFS  
+>> Lib  
+>> Memory  
+>> osal  
+>> uCOSIII  
 
 ### 软件开发没有银弹
 每一种软件架构都有其独特性，优缺点等。如同设计模式一般，常用的设计模式包含二十多种；不存在某种模式可以完美的解决所有的问题。  
