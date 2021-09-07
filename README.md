@@ -33,58 +33,6 @@
 ### Application
 * 开发Application、模型等。
 
-
-### 工程目录描述
-> .keil_project  
-> ApplicationLayer  
->> cJSON  
->> Debug_Cmd  
->> easylogger  
->> main  
-> bin  
-> Debug  
-> HardwareAbstractionLayer  
->> Interrupt  
->> Key  
->> Led  
->> Platform  
->> RTC  
->> SD  
->> Sram  
->> Timer  
->> Uart  
->> Watchdog  
-> HardwareDriverLayer  
->> DWT  
->> GPIO  
->> HardwareCore  
->> Interrupt  
->> RTC  
->> SD  
->> SPI  
->> Sram  
->> STM32F10x_FWLib  
->> Timer  
->> Uart  
->> Watchdog  
-> lib  
-> RuntimeEnvironment  
->> Appl_Interface  
->> Env_Config  
->> Hal_Interface  
->> Rte_Linux  
->> Rte_Rtos  
->> Service_Interface  
-> ServicesLayer  
->> Algor  
->> DataStructOpt  
->> ExceptionSignalCapture  
->> FATFS  
->> Lib  
->> Memory  
->> osal  
->> uCOSIII  
-
 ### 软件开发没有银弹
 每一种软件架构都有其独特性，优缺点等。如同设计模式一般，常用的设计模式包含二十多种；不存在某种模式可以完美的解决所有的问题。  
 软件架构设计也是如此，随着需求复杂度逐渐增加，使得原有设计架构显得不那么的适用；即在设计过程中需要平衡软件架构、应用组件设计要求、性能要求等等。充分发挥不同的架构模式和设计模式的优势。  
