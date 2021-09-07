@@ -113,7 +113,7 @@ static void Debug_CmdHandle(char pData[], uint16_t dataLen)
 * @param[in] dataLen √¸¡Ó≥§∂»
 * @param[out] void
 * @param[in,out] void
-* @returns int parse result
+* @returns int parse result. ==0: success <0: fail
 * @pre none
 * @note none
 * @author Lews Hammond
@@ -130,7 +130,7 @@ static int Debug_ParseCmdType(char pData[], uint16_t dataLen)
 
     if (pData == NULL)
     {
-        ret = -1;
+        ret = -1; // input buffer is null
         return ret;
     }
 
@@ -151,6 +151,10 @@ static int Debug_ParseCmdType(char pData[], uint16_t dataLen)
                 cmdTypeInd = D_STD_TRUE;
                 readIndex = 0;
             }
+            else
+            {
+                break; // parse completed
+            }
         }
         else
         {
@@ -158,12 +162,25 @@ static int Debug_ParseCmdType(char pData[], uint16_t dataLen)
             {
                 Debug_ParseStr.cmdType[readIndex] = pData[i];
                 readIndex++;
+                if (readIndex >= D_DEBUG_CMD_STR_MAX_LEN)
+                {
+                    RTE_LOG_E("received cmd type too long!\n");
+                    ret = -3; // cmd type too long.
+                    return ret;
+                }
             }
             else
             {
                 Debug_ParseStr.cmdSubFuncCmd[readIndex] = pData[i];
                 readIndex++;
+                if (readIndex >= D_DEBUG_CMD_FUNC_STR_MAX_LEN)
+                {
+                    RTE_LOG_E("received cmd sub function string too long!\n");
+                    ret = -4; // cmd sub function string too long
+                    return ret;
+                }
             }
+            
         }
     }
 
