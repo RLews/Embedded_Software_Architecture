@@ -15,13 +15,14 @@
 
 
 /*! @brief elog设置调试配置 */
-static const DebugCmdSubFuncCfg_t Debug_ElogSetFuncCfg[] = 
+static const DebugCmdSubFuncCfg_t Debug_ElogSetFuncCfg[D_DEBUG_ELOG_SET_SUB_FUNC_NUM] = 
 {
     {"on", DbgElog_OnHandle},
     {"off", DbgElog_OffHandle},
 };
 
-static const DebugCmdSubFuncCfg_t Debug_ElogSetLvlCfg[] = 
+/*! @brief elog输出等级设置 */
+static const DebugCmdSubFuncCfg_t Debug_ElogSetLvlCfg[D_DEBUG_ELOG_SET_LVL_FUNC_NUM] = 
 {
     {D_DEBUG_SUB_CMD_NONE_STR, DbgElog_SetLevelHandle},
 };
