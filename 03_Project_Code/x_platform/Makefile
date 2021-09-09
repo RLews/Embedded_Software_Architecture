@@ -62,6 +62,7 @@ INC += -I$(TOP)/ServicesLayer/DataStructOpt/src
 INC += -I$(TOP)/ServicesLayer/Lib
 INC += -I$(TOP)/ServicesLayer/Memory
 INC += -I$(TOP)/ServicesLayer/ExceptionSignalCapture
+INC += -I$(TOP)/ServicesLayer/OsalForLinux
 
  
 LDFLAGS += -pthread  -Wl,--no-as-needed,-rpath,/usr/lib:./:/lib -fPIC -rdynamic -ldl

@@ -6,6 +6,7 @@ SUBDIRS += DataStructOpt DataStructOpt/src DataStructOpt/inc
 SUBDIRS += Lib
 SUBDIRS += Memory
 SUBDIRS += ExceptionSignalCapture
+SUBDIRS += OsalForLinux
 
 .PHONY: $(SUBDIRS)
 

@@ -80,7 +80,7 @@ static void Debug_CmdHandle(char pData[], uint16_t dataLen)
     uint16_t i = 0;
     uint16_t j = 0;
     
-    if (Debug_ParseCmdType(pData, dataLen) != 0)
+    if (Debug_ParseCmdType(pData, dataLen) != D_STD_RETURN_TPYE_OK)
     {
         return; // parse fail
     }
@@ -124,21 +124,21 @@ static void Debug_CmdHandle(char pData[], uint16_t dataLen)
 
 static int Debug_ParseCmdType(char pData[], uint16_t dataLen)
 {
-    int ret = 0;
+    int ret = D_STD_RETURN_TPYE_OK;
     uint16_t i = 0;
     StdBoolean_t cmdTypeInd = D_STD_FALSE;
     uint16_t readIndex = 0;
 
     if (pData == NULL)
     {
-        ret = -1; // input buffer is null
+        ret = D_STD_RETURN_TYPE_PARAM_NULL; // input buffer is null
         return ret;
     }
 
     if ((strlen(pData) == 0)
      || (dataLen == 0))
     {
-        ret = -2; // length error
+        ret = D_STD_RETURN_TYPE_PARAM_TOO_SHORT; // length error
         return ret;
     }
 
@@ -166,7 +166,7 @@ static int Debug_ParseCmdType(char pData[], uint16_t dataLen)
                 if (readIndex >= D_DEBUG_CMD_STR_MAX_LEN)
                 {
                     RTE_LOG_E("received cmd type too long!\n");
-                    ret = -3; // cmd type too long.
+                    ret = D_STD_RETURN_TYPE_PARAM_TOO_LONG; // cmd type too long.
                     return ret;
                 }
             }
@@ -177,7 +177,7 @@ static int Debug_ParseCmdType(char pData[], uint16_t dataLen)
                 if (readIndex >= D_DEBUG_CMD_FUNC_STR_MAX_LEN)
                 {
                     RTE_LOG_E("received cmd sub function string too long!\n");
-                    ret = -4; // cmd sub function string too long
+                    ret = D_STD_RETURN_TYPE_PARAM_TOO_LONG; // cmd sub function string too long
                     return ret;
                 }
             }

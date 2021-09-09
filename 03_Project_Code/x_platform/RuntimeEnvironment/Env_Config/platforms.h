@@ -66,6 +66,18 @@ typedef uint8_t StdBoolean_t;
 
 #define ArrayLength(Array) (sizeof(Array) / sizeof(Array[0]))
 
+#define D_STD_RETURN_TPYE_OK                    0
+/*! @brief 函数参数错误类型。-1 - -99 */
+#define D_STD_RETURN_TYPE_PARAM_NULL            -1
+#define D_STD_RETURN_TYPE_PARAM_ERROR           -2
+#define D_STD_RETURN_TYPE_PARAM_OUT_OF_RANGE    -3
+#define D_STD_RETURN_TYPE_PARAM_NOT_MATCH       -4
+#define D_STD_RETURN_TYPE_PARAM_TOO_LONG        -5
+#define D_STD_RETURN_TYPE_PARAM_TOO_SHORT       -6
+/*! @brief 函数过程错误类型。-100 - -999 */
+#define D_STD_RETURN_TYPE_CREATE_FAIL           -100
+#define D_STD_RETURN_TYPE_MEMORY_ALLOC_FAIL     -101
+
 
 /*! @brief 驱动配置项 */
 #define EXTERN_SRAM_ENABLE              D_STD_DISABLE   /*!< 外部SRAM配置 */

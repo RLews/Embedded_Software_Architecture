@@ -3,7 +3,9 @@ echo "Package-Generate Start."
 
 # export PATH=$PATH:/CompileChain/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabi/bin
 # 可执行文件复制路径
-CopyExePath="/home/jlews/work/Embedded_Software_Architecture/03_Project_Code/RunDir"
+#CopyExePath="/home/jlews/work/Embedded_Software_Architecture/03_Project_Code/RunDir"
+CurParh=$(pwd)
+CopyExePath=$CurParh"/RunDir"
 
 if ls $CopyExePath; then
     echo "RunDir exist. not create."

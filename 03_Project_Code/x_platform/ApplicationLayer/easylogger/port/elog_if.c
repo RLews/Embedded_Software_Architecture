@@ -8,15 +8,12 @@
 ************************************************************************************************************************
 */
 
+#include "rte.h"
 #include "elog_if.h"
-#include <stdio.h>
-#include <pthread.h>
-#include <unistd.h>
-#include <time.h>
 #include "elog.h"
 
-static pthread_mutex_t OutputLock;
-static pthread_mutex_t FileLock;
+static Rte_Pthread_Mutex_t OutputLock;
+static Rte_Pthread_Mutex_t FileLock;
 
 /*!
 ************************************************************************************************************************
@@ -67,7 +64,7 @@ void Elog_Init(void)
 
 void Elog_OutputLockInit(void)
 {
-    (void)pthread_mutex_init(&OutputLock, NULL);
+    (void)RTE_OSAL_PTHREAD_MUTEX_INIT(&OutputLock);
 }
 
 /*!
@@ -86,7 +83,7 @@ void Elog_OutputLockInit(void)
 
 void Elog_OutputLock(void)
 {
-    (void)pthread_mutex_lock(&OutputLock);
+    (void)RTE_OSAL_PTHREAD_MUTEX_LOCK(&OutputLock);
 }
 
 /*!
@@ -105,7 +102,7 @@ void Elog_OutputLock(void)
 
 void Elog_OutputUnlock(void)
 {
-    (void)pthread_mutex_unlock(&OutputLock);
+    (void)RTE_OSAL_PTHREAD_MUTEX_UNLOCK(&OutputLock);
 }
 
 /*!
@@ -124,7 +121,7 @@ void Elog_OutputUnlock(void)
 
 void Elog_OutputLockDeinit(void)
 {
-    (void)pthread_mutex_destroy(&OutputLock);
+    (void)RTE_OSAL_PTHREAD_MUTEX_DESTORY(&OutputLock);
 }
 
 /*!
@@ -143,7 +140,7 @@ void Elog_OutputLockDeinit(void)
 
 void Elog_FileLockInit(void)
 {
-    (void)pthread_mutex_init(&FileLock, NULL);
+    (void)RTE_OSAL_PTHREAD_MUTEX_INIT(&FileLock);
 }
 
 /*!
@@ -162,7 +159,7 @@ void Elog_FileLockInit(void)
 
 void Elog_FileLock(void)
 {
-    (void)pthread_mutex_lock(&FileLock);
+    (void)RTE_OSAL_PTHREAD_MUTEX_LOCK(&FileLock);
 }
 
 /*!
@@ -181,7 +178,7 @@ void Elog_FileLock(void)
 
 void Elog_FileUnlock(void)
 {
-    (void)pthread_mutex_unlock(&FileLock);
+    (void)RTE_OSAL_PTHREAD_MUTEX_UNLOCK(&FileLock);
 }
 
 /*!
@@ -200,7 +197,7 @@ void Elog_FileUnlock(void)
 
 void Elog_FileLockDeinit(void)
 {
-    (void)pthread_mutex_destroy(&FileLock);
+    (void)RTE_OSAL_PTHREAD_MUTEX_DESTORY(&FileLock);
 }
 
 /*!
@@ -221,13 +218,7 @@ const char * Elog_GetCurrentTime(void)
 {
     static char CurSysTime[D_ELOG_CURRENT_TIME_BUF_SIZE] = { 0 };
 
-    time_t tCur;
-    struct tm tmCur;
-
-    time(&tCur);
-    localtime_r(&tCur, &tmCur);
-
-    strftime(CurSysTime, sizeof(CurSysTime), "%Y-%m-%d %T", &tmCur);
+    RTE_OSAL_GET_CURRENT_TIME("%Y-%m-%d %T", CurSysTime, sizeof(CurSysTime));
 
     return CurSysTime;
 }
@@ -250,7 +241,7 @@ const char * Elog_GetPid(void)
 {
     static char CurProcessInfo[D_ELOG_PID_BUF_SIZE] = { 0 };
 
-    snprintf(CurProcessInfo, D_ELOG_PID_BUF_SIZE, "pid:%04d", getpid());
+    snprintf(CurProcessInfo, D_ELOG_PID_BUF_SIZE, "pid:%04d", RTE_OSAL_GET_PID());
 
     return CurProcessInfo;
 }
@@ -273,7 +264,7 @@ const char * Elog_GetThreadId(void)
 {
     static char CurThreadInfo[D_ELOG_TID_BUF_SIZE] = { 0 };
 
-    snprintf(CurThreadInfo, D_ELOG_TID_BUF_SIZE, "tid:%04ld", pthread_self());
+    snprintf(CurThreadInfo, D_ELOG_TID_BUF_SIZE, "tid:%04ld", RTE_OSAL_GET_TID());
 
     return CurThreadInfo;
 }
